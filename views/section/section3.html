@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-offset-1 col-md-4">
+      <h1>
+        Clients
+      </h1>
+      <p>
+        Since our inception, we’ve worked on a plethora of sectors and brands, often over a sustained period of time. We do respect confidentiality & that’s why all we can say is that there is more to us than meets the eye.
+      </p>
+      <p>
+        Write to us at <a href="">contact@itsyellowseed.com</a> for a detailed credential presentation or work samples.
+      </p>
+      <p>
+        Also View:Our Partners
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="brands">
+  <div class="client-slider">
+     <flex-slider class="carousel" flex-slide="img in AllClients track by $index" item-width="1200" item-margin="10" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false">
+       <li>
+         <div class="client-imgholder">
+           <div class="row bord-cus" ng-repeat="row in img track by $index">
+             <div class="col-xs-4 bord-cus1" ng-repeat="clientimg in row track by $index">
+               <div class="img-holder listing">
+                 <img ng-src="{{clientimg}}" alt="" class="img-responsive">
+               </div>
+             </div>
+           </div>
+         </div>
+       </li>
+     </flex-slider>
+  </div>
+</div>

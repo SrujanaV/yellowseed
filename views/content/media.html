@@ -1,0 +1,47 @@
+<section class="media">
+    <div class="img-banner">
+        <img src="img/inside-pages/Media.jpg" alt="" class="img-responsive">
+    </div>
+
+
+    <div class="container">
+        <div class="sub-para">
+            <p class="text-center">
+                You won't really hear us blow our own trumpet. It's just the way we are. But then, you can't really hide being happy. Enough
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <!--<div class="media-slider">
+              <flex-slider flex-slide="s in medias track by $index"  class="bg-color" animation="slide" margin="10">
+                 <li auto-heightfixed>
+                    <a href=""><img ng-src="{{s}}" alt=""></a>
+                 </li>
+              </flex-slider>
+            </div>-->
+
+                <div class="media-slider">
+                    <flex-slider class="carousel" flex-slide="img in medias track by $index" animation="slide" animation-loop="false" as-nav-for="#slider"
+                        slide-show="false">
+                        <li>
+                            <div class="media-imgholder">
+                                <div class="row bord-cus" ng-repeat="row in img track by $index">
+                                    <div class="col-xs-2 bord-cus1" ng-repeat="clientimg in row track by $index">
+                                        <div class="img-holder listing">
+                                            <img ng-src="{{clientimg}}" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </flex-slider>
+                </div>
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+    </div>
+</section>
