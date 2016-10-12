@@ -258,6 +258,7 @@ header {
     @include transform(translateY(-40%));
     span {
       display: block;
+      margin-top: 10px;
     }
   }
   .view-all {
@@ -836,6 +837,18 @@ footer {
   .flex-prev,
   .flex-next {
     display: none;
+  }
+}
+
+.blog-info {
+  background-color: #fff;
+  padding: 20px;
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: initial;
+    margin: 0;
+    line-height: 120%;
   }
 }
 
