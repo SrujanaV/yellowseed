@@ -150,6 +150,9 @@ header {
       li {
         a {
           color: #fff;
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }
@@ -183,6 +186,11 @@ header {
   label {
     color: #ffca08;
   }
+  .wait {
+    span {
+      text-decoration: underline;
+    }
+  }
 }
 
 .three {
@@ -195,7 +203,13 @@ header {
   p {
     a {
       color: #333333;
+      text-decoration: underline;
     }
+  }
+  .view {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
   }
   .brands {
     position: absolute;
@@ -242,6 +256,9 @@ header {
     background-size: cover;
     z-index: 1;
     @include transform(translateY(-40%));
+    span {
+      display: block;
+    }
   }
   .view-all {
     @include position(absolute, 21% 33% null null);
@@ -376,6 +393,7 @@ p {
     margin-bottom: 10px;
     width: 100%;
     margin: 4px 0 0 0;
+    resize: none;
     @include placeholder {}
   }
   .btn1 {
@@ -385,6 +403,10 @@ p {
     font-size: 9px;
     text-transform: uppercase;
     padding: 5px 7px;
+    &:hover {
+      background: #ffca08;
+      color: #fff;
+    }
   }
   .btn2 {
     color: #000;
@@ -393,6 +415,10 @@ p {
     text-transform: uppercase;
     background: #ffca08;
     padding: 5px 7px;
+    &:hover {
+      background: transparent;
+      color: #000!important;
+    }
   }
   ul.img-list li:hover span.text-content {
     opacity: 1;
@@ -500,6 +526,9 @@ p {
         border-bottom: 1px solid #fff;
         font-size: 16px;
         font-family: 'Rubik', sans-serif;
+        a {
+          color: #fff;
+        }
       }
       li:last-child {
         border: none;
@@ -680,11 +709,14 @@ p {
 
 footer {
   font-size: 12px;
-  background-color: rgba(64, 54, 53, 0.8);
+  background-color: rgba(12, 12, 12, 0.88);
+  ;
   padding: 10px 0;
   p {
     font-size: 10px;
     color: #fff;
+    text-align: center;
+    margin: 0;
   }
   .list-inline {
     li {
@@ -793,6 +825,17 @@ footer {
         color: #fff;
       }
     }
+  }
+}
+
+.yellow {
+  color: #ffca08 !important;
+}
+
+.flexslider:hover .flex-direction-nav {
+  .flex-prev,
+  .flex-next {
+    display: none;
   }
 }
 

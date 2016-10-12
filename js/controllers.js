@@ -72,12 +72,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // })
 
     $scope.testimon = [{
+        id: 0,
+        name: "Ashish Jain -Director,Medgini",
         para: "We are very pleased with our decision to use Yellow Seed. We had excellent support from the team for the content required for our website. To successfully implement an extensive website content task, we needed a versatile, well-structured and proven company to do it; Yellow Seed has proved to be all of this and more. "
     }, {
+        id: 1,
+        name: "Ashish Jain -Director,Medgini",
         para: "We are very pleased with our decision to use Yellow Seed. We had excellent support from the team for the content required for our website. To successfully implement an extensive website content task, we needed a versatile, well-structured and proven company to do it; Yellow Seed has proved to be all of this and more. "
     }, {
+        id: 2,
+        name: "Ashish Jain -Director,Medgini",
         para: "We are very pleased with our decision to use Yellow Seed. We had excellent support from the team for the content required for our website. To successfully implement an extensive website content task, we needed a versatile, well-structured and proven company to do it; Yellow Seed has proved to be all of this and more. "
     }, {
+        id: 3,
+        name: "Ashish Jain -Director,Medgini",
         para: "We are very pleased with our decision to use Yellow Seed. We had excellent support from the team for the content required for our website. To successfully implement an extensive website content task, we needed a versatile, well-structured and proven company to do it; Yellow Seed has proved to be all of this and more. "
     }];
 
