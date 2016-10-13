@@ -199,6 +199,13 @@ header {
   }
 }
 
+.head{
+  height: 100vh;
+  .social-links{
+    display: none;
+  }
+}
+
 .one {
   background-color: #ededed;
   padding: 50px 0 80px 0;
@@ -209,7 +216,7 @@ header {
 
 .two {
   background-color: #403635;
-  padding: 80px 0;
+  padding: 12em 0;
   h3 {
     color: #ffca08;
   }
@@ -228,7 +235,7 @@ header {
 
 .three {
   background-color: #ffca08;
-  padding: 7em 0 18em 0;
+  padding: 7em 0 22em 0;
   h1 {
     color: #ffca08;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px!important;
@@ -295,7 +302,8 @@ header {
     }
   }
   .view-all {
-    @include position(absolute, 21% 33% null null);
+    z-index: 9999;
+    @include position(absolute, 28% 31% null null);
   }
   .slider {
     margin: -6% 0 0;
@@ -330,8 +338,8 @@ header {
   -webkit-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
-  padding-top: 20em;
-  padding-bottom: 3em;
+  padding-top: 23em;
+  padding-bottom: 1em;
   h1 {
     color: #ffca08;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px!important;
@@ -349,7 +357,7 @@ header {
 
 .seven {
   background-color: #d2d1cf;
-  padding: 12em 0 80px 0;
+  padding: 12em 0 11em 0;
   h1 {
     color: #efefef;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.59), #bfb9b9 4px 4px 4px !important;
@@ -369,6 +377,8 @@ header {
 }
 
 p {
+  font-size: 15px;
+  margin: 0 0 25px;
   text-align: justify;
   font-family: 'Rubik', sans-serif;
 }
@@ -396,16 +406,16 @@ p {
 .eight {
   position: relative;
   h1 {
-    font-size: 88px;
+    font-size: 85px;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
-    line-height: 0.9em;
     text-shadow: #cccccc 3px 5px 2px;
   }
   .extra-size {
     font-size: 8em;
     text-align: left;
     text-transform: uppercase;
+    line-height: 0.9em;
   }
   .zero-tag{
     @include position(absolute, 27.5% null null 11.7%);
@@ -461,7 +471,9 @@ p {
     font-weight: lighter;
   }
   h3 {
+    font-family: 'Rubik', sans-serif;
     font-size: 30px;
+    margin-bottom: 30px;
   }
   input {
     background: none;
@@ -486,7 +498,8 @@ p {
     border: 1px solid #ffca08;
     font-size: 9px;
     text-transform: uppercase;
-    padding: 5px 7px;
+    padding: 6px 15px;
+    letter-spacing: 1px;
     &:hover {
       background: #ffca08;
       color: #fff;
@@ -498,10 +511,11 @@ p {
     font-size: 9px;
     text-transform: uppercase;
     background: #ffca08;
-    padding: 5px 7px;
+    padding: 6px 15px;
+    letter-spacing: 1px;
     &:hover {
       background: transparent;
-      color: #000!important;
+      color: #ffca08!important;
     }
   }
   ul.img-list li:hover span.text-content {
@@ -511,13 +525,15 @@ p {
     color: #333;
     cursor: pointer;
     display: table;
-    @include position(absolute, 0 null null -20%);
+    @include position(absolute, 50% null null -13%);
+    @include transform(translateY(-50%));
     opacity: 0;
     @include transition(opacity 500ms);
     border-left: 3px solid #ffca08;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
     padding-left: 7px;
+    line-height: 18px;
   }
   .circle-cont {
     margin-left: 50px;
@@ -558,13 +574,13 @@ p {
     .circle1 {
       position: absolute;
       border-radius: 50%;
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       background: #ffca08;
+      overflow: hidden;
       img {
-        height: 110px;
-        border-radius: 50%;
-        @include position(absolute, 5px null null 15px);
+        height: 92px;
+        @include position(absolute, 5px null null 19px);
       }
     }
     .prof {
@@ -590,6 +606,10 @@ p {
     float: right;
     text-align: right;
     width: 50%!important;
+    @include position(absolute, -60px 25px null null);
+  }
+  .crack{
+    @include position(absolute, -27px null null 10%);
   }
   .info {
     p {
@@ -608,10 +628,10 @@ p {
       li {
         padding: 0;
         border-bottom: 1px solid #fff;
-        font-size: 16px;
+        font-size: 20px;
         font-family: 'Rubik', sans-serif;
         a {
-          color: #fff;
+          color: #333;
         }
       }
       li:last-child {
@@ -706,10 +726,10 @@ p {
     }
   }
   .pen-stand {
-    @include position(absolute, null null null 6.5%);
+    @include position(absolute, null null null 5%);
     z-index: 2;
     img {
-      height: 340px;
+      height: 382px;
     }
   }
 
