@@ -494,7 +494,97 @@ h2 {
 
 //Awsome
 .awsome {
+    // margin: 0 0 60px;
     .img-border+.img-border {
         border-top: 1px solid black;
+    }
+    .col+.col {
+        border-left: 1px solid black;
+    }
+    .txt {
+        text-align: center;
+        margin: 0;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+}
+
+.slider-sec {
+    margin-bottom: 20px;
+}
+
+.agency-slide {
+    .flexslider {
+        margin: 0;
+        padding: 20px;
+        .slides img {
+            // max-width: 100%;
+            // padding: 5px;
+            height: 85px;
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    .flex-control-nav {
+        position: absolute;
+        left: -24px;
+        top: 50%;
+        li {
+            margin: 6px 0;
+            display: block;
+            zoom: 1;
+        }
+    }
+}
+
+.brand-slide {
+    .flexslider {
+        margin: 0;
+        padding: 20px;
+        .slides img {
+            // max-width: 100%;
+            // padding: 5px;
+            height: 85px;
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    .flex-control-nav {
+        position: absolute;
+        right: -24px;
+        width: auto;
+        text-align: center;
+        top: 50%;
+        li {
+            margin: 6px 0;
+            display: block;
+            zoom: 1;
+        }
+    }
+}
+
+.row-flex {
+    @include display(flex);
+}
+
+.col-flex1 {
+    width: 44.6%
+}
+
+.col-flex2 {
+    width: 55.5%
+}
+
+.agency {
+    background-color: #ffca08;
+    padding: 92px 0 0;
+    text-align: center;
+    h1 {
+        text-transform: uppercase;
+        font-size: 88px;
+        color: #ffca08;
+        font-family: 'Rubik', sans-serif;
+        font-weight: bold;
+        text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px
     }
 }

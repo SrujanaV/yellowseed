@@ -346,39 +346,39 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.awsomebrands = [{
         img: "img/home-page/clients/1.png",
     }, {
-        img: "img/home-page/clients/2.jpg",
-    }, {
-        img: "img/home-page/clients/3.jpg",
-    }, {
-        img: "img/home-page/clients/4.jpg",
-    }, {
-        img: "img/home-page/clients/5.jpg",
-    }, {
-        img: "img/home-page/clients/6.jpg"
+        img: "img/home-page/clients/1.png",
     }, {
         img: "img/home-page/clients/1.png",
     }, {
-        img: "img/home-page/clients/2.jpg",
-    }, {
-        img: "img/home-page/clients/3.jpg",
+        img: "img/home-page/clients/1.png",
     }, {
         img: "img/home-page/clients/1.png",
     }, {
-        img: "img/home-page/clients/2.jpg",
-    }, {
-        img: "img/home-page/clients/3.jpg",
-    }, {
-        img: "img/home-page/clients/4.jpg",
-    }, {
-        img: "img/home-page/clients/5.jpg",
-    }, {
-        img: "img/home-page/clients/6.jpg"
+        img: "img/home-page/clients/1.png"
     }, {
         img: "img/home-page/clients/1.png",
     }, {
-        img: "img/home-page/clients/2.jpg",
+        img: "img/home-page/clients/1.png",
     }, {
-        img: "img/home-page/clients/3.jpg",
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/1.png"
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/1.png",
     }];
 
 
