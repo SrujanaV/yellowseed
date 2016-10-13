@@ -372,7 +372,9 @@ p {
   text-align: justify;
   font-family: 'Rubik', sans-serif;
 }
-
+.yellow-tag{
+  font-size: 16px!important;
+}
 .flex-control-paging li a {
   width: 7px;
   height: 7px;
@@ -406,7 +408,7 @@ p {
     text-transform: uppercase;
   }
   .zero-tag{
-    @include position(absolute, 25% null null 12%);
+    @include position(absolute, 27.5% null null 11.7%);
     z-index: 1;
     p{
       font-size: 30px;
@@ -417,6 +419,7 @@ p {
       font-weight: 400;
     }
   }
+
   .social-links{
     @include position(fixed, 30% 0 null null);
     z-index: 99999;
@@ -655,8 +658,14 @@ p {
       height: 150px;
     }
   }
+  .yseed-small{
+    @include position(absolute, null 48% -9px null);
+    img{
+      height: 42px;
+    }
+  }
   .yseed-top {
-    @include position(absolute, 35% null null 14.7%);
+    @include position(absolute, 37.3% null null 15%);
     img{
       height: 95px;
     }
@@ -812,118 +821,47 @@ p {
 
 footer {
   font-size: 12px;
-  background-color: rgba(12, 12, 12, 0.88);
-  ;
+  background-color: #0c0c0c;
   padding: 10px 0;
   p {
     font-size: 10px;
     color: #fff;
     text-align: center;
     margin: 0;
+    a{
+      color: #fff;
+      &:hover{
+        color: #fff;
+      }
+    }
   }
   .list-inline {
     li {
-      .the-studio {
-        background-color: #f3f3f3;
-        position: relative;
-        h3 {
-          font-size: 18px;
-          font-weight: bold;
-          color: #403635;
-          .icon {
-            padding-right: 30px;
-            &:before {
-              @include position(absolute, 21% null null null);
-            }
-            &.icon-script:before {
-              content: url('../img/scripting.png');
-            }
-          }
-        }
-        p {
-          font-size: 14px;
-          color: #403635;
-          line-height: 25px;
-          text-align: justify;
-        }
-        .resize-padd {
-          padding: 30px;
-          .the-studio {
-            background-color: #f3f3f3;
-            position: relative;
-            h3 {
-              font-size: 18px;
-              font-weight: bold;
-              color: #403635;
-              .icon {
-                padding-right: 30px;
-                &:before {
-                  @include position(absolute,
-                  21% null null null);
-                }
-                &.icon-script:before {
-                  content: url('../img/scripting.png');
-                }
-              }
-            }
-            p {
-              font-size: 14px;
-              color: #403635;
-              line-height: 25px;
-              text-align: justify;
-            }
-            .resize-padd {
-              padding: 30px 6em 0 6em;
-              min-height: 214px;
-            }
-            .sub-para {
-              background-color: #ffca08;
-              padding: 2.5em 6em;
-              z-index: 0;
-              position: relative;
-              margin-top: -70px;
-            }
-            .reel {
-              @include position(absolute,
-              null null 14% null);
-              img {
-                width: 230px;
-              }
-            }
-            .camera {
-              @include position(absolute,
-              30% 0 null null);
-              z-index: 2;
-              img {
-                width: 230px;
-              }
-            }
-          }
-          min-height: 214px;
-        }
-        .sub-para {
-          background-color: #ffca08;
-          padding: 2.5em 6em;
-          z-index: 0;
-          position: relative;
-          margin-top: -70px;
-        }
-        .reel {
-          @include position(absolute,
-          null null 14% null);
-          img {
-            width: 230px;
-          }
-        }
-        .camera {
-          @include position(absolute,
-          30% 0 null null);
-          z-index: 2;
-          img {
-            width: 230px;
-          }
-        }
+      a {
+        color: #fff;
       }
+    }
+  }
+}
+
+.inner-foot {
+  font-size: 12px;
+  background-color: #534334;
+  padding: 10px 0;
+  p {
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    a{
+      color: #fff;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+  .list-inline {
+    li {
       a {
         color: #fff;
       }
