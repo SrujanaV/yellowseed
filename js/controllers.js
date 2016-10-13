@@ -91,6 +91,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.section = {
         head: "views/section/section.html",
+        zero: "views/section/section0.html",
         one: "views/section/section1.html",
         two: "views/section/section2.html",
         three: "views/section/section3.html",

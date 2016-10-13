@@ -166,6 +166,39 @@ header {
   }
 }
 
+
+.zero {
+  background-color: #ededed;
+  padding: 5em 0 80px 0;
+  h1 {
+    color: #fff;
+  }
+  .padd-top{
+    padding: 6em 0;
+  }
+  .navbar {
+    background-color: #ededed;
+    border-color: #ededed;
+    .nav {
+      li {
+        a {
+          color: #333;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .head-padd {
+    padding: 0 7em;
+    .logo {
+      height: 25px;
+      margin-top: -3px;
+    }
+  }
+}
+
 .one {
   background-color: #ededed;
   padding: 50px 0 80px 0;
@@ -350,6 +383,7 @@ p {
 }
 
 .head,
+.zero,
 .one,
 .two,
 .three,
@@ -363,11 +397,57 @@ p {
     font-size: 88px;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
+    line-height: 0.9em;
     text-shadow: #cccccc 3px 5px 2px;
+  }
+  .extra-size {
+    font-size: 8em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .zero-tag{
+    @include position(absolute, 25% null null 12%);
+    z-index: 1;
+    p{
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: 300;
+    }
+    span{
+      font-weight: 400;
+    }
+  }
+  .social-links{
+    @include position(fixed, 30% 0 null null);
+    z-index: 99999;
+    ul{
+      list-style: none;
+      background-color: #f0f0f0;
+      margin: 0;
+      border-radius: 50px;
+      padding: 5px;
+      li{
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 5px;
+        text-align: center;
+      }
+      li+li{
+        margin-top: 5px;
+      }
+      i{
+        color: #a2a2a2;
+        font-size: 20px;
+      }
+    }
   }
   .head-tag {
     @include position(absolute, 50% null null 50%);
     @include transform(translate(-50%, -50%));
+  }
+  .scroll-down{
+    @include position(absolute, null null 10% 50%);
+    @include transform(translate(-50%));
   }
   h2 {
     font-family: 'Rubik', sans-serif;
@@ -569,6 +649,18 @@ p {
       height: 200px;
     }
   }
+  .yseed-big {
+    @include position(absolute, -5% null null 27.5%);
+    img{
+      height: 150px;
+    }
+  }
+  .yseed-top {
+    @include position(absolute, 35% null null 14.7%);
+    img{
+      height: 95px;
+    }
+  }
   .con-top {
     @include position(absolute, 4% null null 8%);
   }
@@ -604,6 +696,16 @@ p {
       height: 185px;
     }
   }
+  .pen-stand {
+    @include position(absolute, null null null 6.5%);
+    z-index: 2;
+    img {
+      height: 340px;
+    }
+  }
+
+
+
   .flexslider {
     background: none;
     border: 0;
