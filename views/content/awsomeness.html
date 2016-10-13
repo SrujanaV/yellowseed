@@ -1,0 +1,52 @@
+<section class="awsome">
+    <div class="img-banner">
+        <img src="img/inside-pages/Media.jpg" alt="" class="img-responsive">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+                <flex-slider flex-slide="slide in awsomebrands track by $index" animation="slide" animation-loop="false" slideshow="false"
+                    prev-text="" next-text="" direction="vertical">
+                    <li>
+                        <div class="row img-border" ng-repeat="row in slide track by $index">
+                            <div class="col-md-4 col-xs-4" ng-repeat="wall in row track by $index">
+                                <!--<a fancybox href="{{wall.image|uploadpath}}">-->
+                                <div class="media-image">
+                                    <img ng-src="{{wall.img}}" alt="" class="img-responsive">
+                                    <!--<i class="fa {{wall.icon}}"></i>-->
+                                </div>
+                                <!--</a>-->
+                            </div>
+                        </div>
+                    </li>
+                </flex-slider>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <flex-slider flex-slide="slide in awsomebrands track by $index" animation="slide" animation-loop="false" slideshow="false"
+                    prev-text="" next-text="" direction="vertical">
+                    <li>
+                        <div class="row img-border" ng-repeat="row in slide track by $index">
+                            <div class="col-md-4 col-xs-4" ng-repeat="wall in row track by $index">
+                                <!--<a fancybox href="{{wall.image|uploadpath}}">-->
+                                <div class="media-image">
+                                    <img ng-src="{{wall.img}}" alt="" class="img-responsive">
+                                    <!--<i class="fa {{wall.icon}}"></i>-->
+                                </div>
+                                <!--</a>-->
+                            </div>
+                        </div>
+                    </li>
+                </flex-slider>
+            </div>
+            <div class="col-md-6">
+                <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</section>

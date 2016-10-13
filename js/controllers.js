@@ -337,6 +337,58 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('AwsomenessCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("awsomeness");
+    $scope.menutitle = NavigationService.makeactive("awsomeness");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+    $scope.awsomebrands = [{
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/2.jpg",
+    }, {
+        img: "img/home-page/clients/3.jpg",
+    }, {
+        img: "img/home-page/clients/4.jpg",
+    }, {
+        img: "img/home-page/clients/5.jpg",
+    }, {
+        img: "img/home-page/clients/6.jpg"
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/2.jpg",
+    }, {
+        img: "img/home-page/clients/3.jpg",
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/2.jpg",
+    }, {
+        img: "img/home-page/clients/3.jpg",
+    }, {
+        img: "img/home-page/clients/4.jpg",
+    }, {
+        img: "img/home-page/clients/5.jpg",
+    }, {
+        img: "img/home-page/clients/6.jpg"
+    }, {
+        img: "img/home-page/clients/1.png",
+    }, {
+        img: "img/home-page/clients/2.jpg",
+    }, {
+        img: "img/home-page/clients/3.jpg",
+    }];
+
+
+    $scope.awsomebrands = _.chunk($scope.awsomebrands, 9);
+    for (var i = 0; i < $scope.awsomebrands.length; i++) {
+        $scope.awsomebrands[i] = _.chunk($scope.awsomebrands[i], 3);
+    }
+
+})
+
 .controller('headerctrl', function ($scope, TemplateService) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
