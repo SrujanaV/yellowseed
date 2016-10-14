@@ -410,6 +410,11 @@ header {
       @include position(absolute, 36% 23% null null);
     }
   }
+  .blog-slider{
+    .blogs-details{
+      padding: 0 20px 0 0;
+    }
+  }
 }
 
 .six {

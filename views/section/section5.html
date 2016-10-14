@@ -1,22 +1,25 @@
+
+<div class="testimonials">
+
+
+  <h1>Testimonials</h1>
+  <a type="button" class="btn btn1 view-all" name="viewall">view all</a>
+  <div class="slider">
+    <flex-slider flex-slide="s in testimon track by $index" animation="slide">
+      <li auto-heightfixed>
+        <p class="relative">{{s.para}} <span class="yellow">{{s.name}}</span></p>
+
+      </li>
+    </flex-slider>
+  </div>
+
+
+</div>
+
 <div class="container">
 
 
-  <div class="testimonials">
 
-
-    <h1>Testimonials</h1>
-    <a type="button" class="btn btn1 view-all" name="viewall">view all</a>
-    <div class="slider">
-      <flex-slider flex-slide="s in testimon track by $index" animation="slide" item-width="700">
-        <li auto-heightfixed>
-          <p class="relative">{{s.para}} <span class="yellow">{{s.name}}</span></p>
-
-        </li>
-      </flex-slider>
-    </div>
-
-
-  </div>
 
   <div class="pen-stand">
     <img src="img/home-page/pen-stand.png" class="img-responsive" alt="" />
@@ -33,10 +36,10 @@
   <div class="row">
     <div class="col-md-offset-1 col-md-10">
 
-      <div class="">
+      <div class="blog-slider">
         <flex-slider class="carousel" slide="s in blogs track by $index" animation="slide" item-width="335">
           <li auto-heightfixed>
-            <div class="blogs">
+            <div class="blogs-details">
               <div class="blog-image">
                 <img src="{{s}}" class="img-responsive" alt="blog-image">
               </div>

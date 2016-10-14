@@ -1,14 +1,94 @@
 @media (max-width: $screen-xs-max) {
 
-  .camera{
-    position: absolute;
-    right: 0;
-    top: 30%;
-    z-index: 2;
-    img{
-      width: 170px;
+
+  .head{
+    min-height: 263px!important;
+    height: 0;
+    .head-tag{
+      h2{
+        font-size: 14px;
+      }
+    }
+    .scroll-down{
+      img{
+        height: 48px;
+      }
     }
   }
+
+  .zero{
+    .navbar-toggle .icon-bar{
+      background: #403635;
+    }
+  }
+
+  .three{
+    .brands{
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .five{
+    .testimonials{
+      padding: 1em 0 0 5em;
+      h1{
+        font-size: 5em !important;
+      }
+      .view-all{
+        @include position(absolute, 25% 0 null null )
+      }
+      .slider{
+        li{
+          padding: 0;
+          p{
+            padding: 0;
+            &:before{
+              @include position(absolute, -30px null null -14%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .head, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight{
+    h1{
+      font-size: 3.5em;
+    }
+    .extra-size{
+      font-size: 5em;
+    }
+    .wait{
+      margin: 0;
+    }
+    .blogs{
+      .circle1{
+        top:0;
+        left:0;
+      }
+    }
+    .crack{
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .right-arrow{
+      display: none;
+    }
+    .pen-stand{
+      display: none;
+    }
+  }
+  // .camera{
+  //   position: absolute;
+  //   right: 0;
+  //   top: 30%;
+  //   z-index: 2;
+  //   img{
+  //     width: 170px;
+  //   }
+  // }
 
 }
 
