@@ -2,8 +2,8 @@
 
 
   .head{
-    min-height: 263px!important;
-    height: 0;
+    height: 40vh;
+    min-height: 0!important;
     .head-tag{
       h2{
         font-size: 14px;
@@ -30,8 +30,13 @@
   }
 
   .five{
+    padding: 21em 0 5em 0;
+    h1{
+      font-size: 3.5em!important;
+    }
     .testimonials{
       padding: 1em 0 0 5em;
+      height: 350px;
       h1{
         font-size: 5em !important;
       }
@@ -52,9 +57,16 @@
     }
   }
 
+  .six{
+    padding: 19em 0 10em 0;
+  }
+
   .head, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight{
     h1{
       font-size: 3.5em;
+    }
+    p{
+      font-size: 12px;
     }
     .extra-size{
       font-size: 5em;
@@ -72,12 +84,33 @@
       position: relative;
       top: 0;
       left: 0;
+      width: 100%;
+      ul{
+        li{
+          font-size: 14px;
+        }
+      }
+    }
+    .spee-blg{
+      position: relative;
+      top: 0;
+      right: 0;
+      ul{
+        li{
+          font-size: 14px;
+        }
+      }
     }
     .right-arrow{
       display: none;
     }
     .pen-stand{
       display: none;
+    }
+    .imac{
+      img{
+        height: 300px;
+      }
     }
   }
   // .camera{
