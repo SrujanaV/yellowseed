@@ -17,7 +17,7 @@
                             <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
                                 <!--<a fancybox href="{{wall.image|uploadpath}}">-->
                                 <div class="media-image">
-                                    <img ng-src="{{wall.img}}" alt="" class="">
+                                    <img ng-src="{{wall.img}}" alt="" class="" ng-click="openBrand()">
                                     <!--<i class="fa {{wall.icon}}"></i>-->
                                 </div>
                                 <!--</a>-->
@@ -38,7 +38,7 @@
                             <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
                                 <!--<a fancybox href="{{wall.image|uploadpath}}">-->
                                 <div class="media-image">
-                                    <img ng-src="{{wall.img}}" alt="" class="">
+                                    <img ng-src="{{wall.img}}" alt="" class="" ng-click="openBrand()">
                                     <!--<i class="fa {{wall.icon}}"></i>-->
                                 </div>
                                 <!--</a>-->
@@ -47,7 +47,7 @@
                     </li>
                 </flex-slider>
             </div>
-            <div class="col-flex1 agency">
+            <div class="col-flex1 brands">
                 <div class="title">
                     <h1>Brands</h1>
                 </div>

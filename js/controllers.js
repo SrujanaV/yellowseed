@@ -1,4 +1,4 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', ])
 
 .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
@@ -337,7 +337,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('AwsomenessCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+.controller('AwsomenessCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
     $scope.template = TemplateService.changecontent("awsomeness");
     $scope.menutitle = NavigationService.makeactive("awsomeness");
     TemplateService.title = $scope.menutitle;
@@ -381,11 +381,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         img: "img/home-page/clients/1.png",
     }];
 
-
     $scope.awsomebrands = _.chunk($scope.awsomebrands, 9);
     for (var i = 0; i < $scope.awsomebrands.length; i++) {
         $scope.awsomebrands[i] = _.chunk($scope.awsomebrands[i], 3);
-    }
+    };
+
+    $scope.openBrand = function () {
+        $uibModal.open({
+            animation: true,
+            templateUrl: 'views/modal/brand.html',
+            scope: $scope,
+            size: 'lg',
+            windowClass: "brand-modal"
+        });
+    };
 
 })
 

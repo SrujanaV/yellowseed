@@ -495,11 +495,14 @@ h2 {
 //Awsome
 .awsome {
     // margin: 0 0 60px;
+    .flex-control-paging li a.flex-active {
+        background: #ffffff;
+    }
     .img-border+.img-border {
-        border-top: 1px solid black;
+        border-top: 1px solid #fec60f;
     }
     .col+.col {
-        border-left: 1px solid black;
+        border-left: 1px solid #fec60f;
     }
     .txt {
         text-align: center;
@@ -523,12 +526,14 @@ h2 {
             height: 85px;
             margin: 0 auto;
             width: auto;
+            cursor: pointer;
         }
     }
     .flex-control-nav {
         position: absolute;
         left: -24px;
         top: 50%;
+        width: auto;
         li {
             margin: 6px 0;
             display: block;
@@ -547,6 +552,7 @@ h2 {
             height: 85px;
             margin: 0 auto;
             width: auto;
+            cursor: pointer;
         }
     }
     .flex-control-nav {
@@ -586,5 +592,76 @@ h2 {
         font-family: 'Rubik', sans-serif;
         font-weight: bold;
         text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px
+    }
+}
+
+.brands {
+    background-color: #4e4242;
+    padding: 92px 0 0;
+    text-align: center;
+    h1 {
+        text-transform: uppercase;
+        font-size: 88px;
+        color: #4e4242;
+        font-family: 'Rubik', sans-serif;
+        font-weight: bold;
+        text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px;
+    }
+}
+
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.brand-modal {
+    .modal-content {
+        border-radius: 0;
+    }
+    .brand-img {
+        text-align: center;
+    }
+    .b-content {
+        padding: 30px 60px 5px;
+        position: relative;
+        .close-brand {
+            position: absolute;
+            right: 5px;
+            top: 0px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+    .txt {
+        margin-top: 20px;
+    }
+    p span {
+        color: #ffca08;
+        background: #4e4242;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+.modal-open {
+    padding-right: 15px !important;
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        right: 15px;
     }
 }
