@@ -201,6 +201,11 @@ header {
 
 .head{
   height: 100vh;
+  .img-banner{
+    img{
+      width: 100%;
+    }
+  }
   .social-links{
     display: none;
   }
