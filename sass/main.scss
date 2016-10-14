@@ -216,7 +216,7 @@ header {
 
 .two {
   background-color: #403635;
-  padding: 12em 0;
+  padding: 8em 0;
   h3 {
     color: #ffca08;
   }
@@ -235,7 +235,7 @@ header {
 
 .three {
   background-color: #ffca08;
-  padding: 7em 0 22em 0;
+  padding: 7em 0 14em 0;
   h1 {
     color: #ffca08;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px!important;
@@ -253,18 +253,24 @@ header {
   }
   .brands {
     position: absolute;
-    width: 50%;
+    width: 55%;
     right: 0;
-    top: 18%;
+    top: 13%;
     z-index: 99;
     .flexslider .slides img {
       max-width: 70%;
       margin: 6px 28px;
       padding: 5px;
     }
+    .flexslider .slides li{
+      padding: 50px;
+    }
     .flex-control-paging li a.flex-active {
       background: #fff;
       cursor: default;
+    }
+    .flex-control-nav{
+      bottom: -15%;
     }
     .client-slider {
       background-color: #fff;
@@ -288,49 +294,51 @@ header {
     color: #4e4242;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px !important;
   }
-  .testimonials {
-    width: 82%;
-    padding: 4em 0 0 7em;
-    @include position(absolute, 0 0 null null);
-    background-image: url(../img/home-page/testimon-bg.jpg);
-    background-size: cover;
-    z-index: 1;
-    @include transform(translateY(-40%));
-    span {
-      display: block;
-      margin-top: 10px;
-    }
-  }
-  .view-all {
-    z-index: 9999;
-    @include position(absolute, 28% 31% null null);
-  }
-  .slider {
-    margin: -6% 0 0;
-    ul {
-      li {
-        padding: 2em 4em 0 0!important;
-      }
-    }
-    p {
-      color: #fff;
-      padding: 0 7em;
-      &:before {
-        content: "\f10d";
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: 42px;
-        @include position(absolute, -28px null null 9%);
-        color: #fec60f;
-      }
-    }
-    .flexslider-container {
-      width: 78%;
-    }
-    .flex-control-paging li a.flex-active {
-      background: #ffca08;
-      cursor: default;
-    }
-  }
+  // .testimonials {
+  //   width: 82%;
+  //   padding: 4em 0 0 7em;
+  //   @include position(absolute, 77px 0 null null);
+  //   background-image: url(../img/home-page/testimon-bg.jpg);
+  //   background-size: cover;
+  //   z-index: 1;
+  //   @include transform(translateY(-40%));
+  //   span {
+  //     display: block;
+  //     margin-top: 10px;
+  //   }
+  //   .slider {
+  //     margin: -6% 0 0;
+  //     ul {
+  //       li {
+  //         padding: 2em 4em 0 0!important;
+  //       }
+  //     }
+  //     p {
+  //       color: #fff;
+  //       padding: 0 7em;
+  //       &:before {
+  //         content: "\f10d";
+  //         font: normal normal normal 14px/1 FontAwesome;
+  //         font-size: 42px;
+  //         @include position(absolute, -28px null null 9%);
+  //         color: #fec60f;
+  //       }
+  //     }
+  //     .flexslider-container {
+  //       width: 78%;
+  //     }
+  //     .flex-control-paging li a.flex-active {
+  //       background: #ffca08;
+  //       cursor: default;
+  //     }
+  //   }
+  //   .view-all {
+  //     z-index: 9999;
+  //     @include position(absolute, 26% 31% null null);
+  //   }
+  // }
+
+
 }
 
 .five {
@@ -338,17 +346,73 @@ header {
   -webkit-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
-  padding-top: 23em;
-  padding-bottom: 1em;
+  padding-top: 26em;
+  padding-bottom: 5em;
   h1 {
+    font-size: 7em!important;
     color: #ffca08;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px!important;
+  }
+
+  .flex-control-nav{
+    bottom: -30%;
+  }
+  .testimonials {
+    width: 82%;
+    padding: 6em 0 0 7em;
+    @include position(absolute, 77px 0 null null);
+    background-image: url(../img/home-page/testimon-bg.jpg);
+    background-size: cover;
+    z-index: 1;
+    @include transform(translateY(-40%));
+    height: 420px;
+    h1 {
+      color: #4e4242;
+      text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px !important;
+    }
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+    .slider {
+      margin: -6% 0 0;
+      ul {
+        li {
+          padding: 2em 4em 0 0!important;
+        }
+      }
+      p {
+        color: #fff;
+        padding: 0 7em;
+        &:before {
+          content: "\f10d";
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 42px;
+          @include position(absolute, -28px null null 9%);
+          color: #fec60f;
+        }
+      }
+      .flex-control-nav{
+        bottom: 25px;
+      }
+      .flexslider-container {
+        width: 78%;
+      }
+      .flex-control-paging li a.flex-active {
+        background: #ffca08;
+        cursor: default;
+      }
+    }
+    .view-all {
+      z-index: 9999;
+      @include position(absolute, 36% 23% null null);
+    }
   }
 }
 
 .six {
   background-color: #e4e4e4;
-  padding: 80px 0 12em 0;
+  padding: 80px 0 10em 0;
   h1 {
     color: #efefef;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.59), #bfb9b9 4px 4px 4px !important;
@@ -366,8 +430,9 @@ header {
 
 .eight {
   background-color: #403635;
-  padding: 80px 0;
+  padding: 3em 0 2em 0;
   h1 {
+    font-size: 7em!important;
     color: #483c3c;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px !important;
   }
@@ -472,7 +537,7 @@ p {
   }
   h3 {
     font-family: 'Rubik', sans-serif;
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 30px;
   }
   input {
@@ -566,11 +631,11 @@ p {
     }
   }
   .wait {
-    margin: 7em 0 0 0;
+    margin: 6em 4em 0 0;
   }
   .blogs {
     position: relative;
-    margin: 22px 0;
+    margin: 22px 2em 0 0;
     .circle1 {
       position: absolute;
       border-radius: 50%;
@@ -578,6 +643,8 @@ p {
       height: 100px;
       background: #ffca08;
       overflow: hidden;
+      left: 5%;
+      top: 3px;
       img {
         height: 92px;
         @include position(absolute, 5px null null 19px);
@@ -649,13 +716,13 @@ p {
     }
   }
   .tree {
-    @include position(absolute, -23% 14% null null);
+    @include position(absolute, -16% 11% null null);
     img {
-      height: 200px;
+      height: 170px;
     }
   }
   .note-book {
-    @include position(absolute, null null 0 16%);
+    @include position(absolute, null null 0 21%);
     img {
       height: 120px;
     }
@@ -669,7 +736,7 @@ p {
   .coffee {
     @include position(absolute, -22% 0 null null);
     img {
-      height: 200px;
+      height: 267px;
     }
   }
   .yseed-big {
@@ -694,7 +761,7 @@ p {
     @include position(absolute, 4% null null 8%);
   }
   .right-arrow {
-    @include position(absolute, 81% null null 42%);
+    @include position(absolute, null null 18% 45%);
     img {
       height: 40px;
     }
@@ -714,9 +781,9 @@ p {
   }
   .ipad {
     z-index: 1;
-    @include position(absolute, null 11% -15% null);
+    @include position(absolute, null 11% -11% null);
     img {
-      height: 235px;
+      height: 220px;
     }
   }
   .note-tab {
@@ -726,10 +793,10 @@ p {
     }
   }
   .pen-stand {
-    @include position(absolute, null null null 5%);
+    @include position(absolute, 5% null null 5%);
     z-index: 2;
     img {
-      height: 382px;
+      height: 400px;
     }
   }
 
@@ -740,7 +807,7 @@ p {
     border: 0;
     .slides {
       li {
-        padding: 10px;
+        padding: 0;
       }
     }
     // .flex-control-nav{
