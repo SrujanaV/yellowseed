@@ -349,7 +349,7 @@
 @media (max-width: 480px) {
 
 .three{
-  padding: 10em 0;
+  padding: 3em 0 10em 0;
   .brands{
     .flexslider .slides li {
         padding: 30px;
@@ -416,6 +416,23 @@ p{
       bottom: -4.5%;
       img{
         height: 150px;
+      }
+    }
+    .chasma{
+      top: 6%;
+      img{
+        height: 230px;
+      }
+    }
+    .pinpaper{
+      img{
+        height: 175px;
+      }
+    }
+    .coffee{
+      top: -6%;
+      img{
+        height: 130px;
       }
     }
 
