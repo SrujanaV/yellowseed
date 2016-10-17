@@ -472,11 +472,11 @@ p {
 }
 
 .no-margin{
-  margin: 0;
+  margin: 0!important;
 }
 
 .no-padding{
-  padding: 0;
+  padding: 0!important;
 }
 
 .head,
@@ -571,9 +571,8 @@ p {
     background: none;
     border: none;
     border-bottom: 1px solid #fff;
-    margin-bottom: 10px;
     width: 100%;
-    margin: 4px 0 0 0;
+    margin: 5px 0 10px 0;
     resize: none;
     @include placeholder {}
   }
@@ -634,10 +633,10 @@ p {
       border-radius: 50%;
       width: 150px;
       height: 150px;
-      box-shadow: inset 10px 9px 10px -10px #000000;
-      -webkit-box-shadow: inset 10px 9px 10px -10px #000000;
-      -moz-box-shadow: inset 10px 9px 10px -10px #000000;
-      -o-box-shadow: inset 10px 9px 10px -10px #000000;
+      // box-shadow: inset 10px 9px 10px -10px #000000;
+      // -webkit-box-shadow: inset 10px 9px 10px -10px #000000;
+      // -moz-box-shadow: inset 10px 9px 10px -10px #000000;
+      // -o-box-shadow: inset 10px 9px 10px -10px #000000;
       a {
         position: relative;
       }
