@@ -20,7 +20,7 @@ $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
-  padding-top: 50px;
+  padding-top: 0;
 }
 
 img.loading {
@@ -158,11 +158,26 @@ header {
     }
   }
   .head-padd {
-    padding: 0 7em;
+    // padding: 0 7em;
     .logo {
       height: 25px;
       margin-top: -3px;
     }
+  }
+}
+
+.pn50{
+  padding-top: 50px;
+}
+.head{
+  height: 100vh;
+  .img-banner{
+    img{
+      width: 100%;
+    }
+  }
+  .social-links{
+    display: none;
   }
 }
 
@@ -190,24 +205,14 @@ header {
       }
     }
   }
+  .navbar-collapse {
+    padding: 0;
+  }
   .head-padd {
-    padding: 0 7em;
     .logo {
       height: 25px;
       margin-top: -3px;
     }
-  }
-}
-
-.head{
-  height: 100vh;
-  .img-banner{
-    img{
-      width: 100%;
-    }
-  }
-  .social-links{
-    display: none;
   }
 }
 
@@ -301,50 +306,6 @@ header {
     color: #4e4242;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px !important;
   }
-  // .testimonials {
-  //   width: 82%;
-  //   padding: 4em 0 0 7em;
-  //   @include position(absolute, 77px 0 null null);
-  //   background-image: url(../img/home-page/testimon-bg.jpg);
-  //   background-size: cover;
-  //   z-index: 1;
-  //   @include transform(translateY(-40%));
-  //   span {
-  //     display: block;
-  //     margin-top: 10px;
-  //   }
-  //   .slider {
-  //     margin: -6% 0 0;
-  //     ul {
-  //       li {
-  //         padding: 2em 4em 0 0!important;
-  //       }
-  //     }
-  //     p {
-  //       color: #fff;
-  //       padding: 0 7em;
-  //       &:before {
-  //         content: "\f10d";
-  //         font: normal normal normal 14px/1 FontAwesome;
-  //         font-size: 42px;
-  //         @include position(absolute, -28px null null 9%);
-  //         color: #fec60f;
-  //       }
-  //     }
-  //     .flexslider-container {
-  //       width: 78%;
-  //     }
-  //     .flex-control-paging li a.flex-active {
-  //       background: #ffca08;
-  //       cursor: default;
-  //     }
-  //   }
-  //   .view-all {
-  //     z-index: 9999;
-  //     @include position(absolute, 26% 31% null null);
-  //   }
-  // }
-
 
 }
 
@@ -426,6 +387,7 @@ header {
   background-color: #e4e4e4;
   padding: 80px 0 10em 0;
   h1 {
+    font-size: 85px!important;
     color: #efefef;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.59), #bfb9b9 4px 4px 4px !important;
   }
@@ -435,6 +397,7 @@ header {
   background-color: #d2d1cf;
   padding: 12em 0 11em 0;
   h1 {
+    font-size: 85px!important;
     color: #efefef;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.59), #bfb9b9 4px 4px 4px !important;
   }
@@ -491,13 +454,13 @@ p {
 .eight {
   position: relative;
   h1 {
-    font-size: 85px;
+    font-size: 100px;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     text-shadow: #cccccc 3px 5px 2px;
   }
   .extra-size {
-    font-size: 8em;
+    font-size: 9em;
     text-align: left;
     text-transform: uppercase;
     line-height: 0.9em;
@@ -506,7 +469,7 @@ p {
     @include position(absolute, 27.5% null null 11.7%);
     z-index: 1;
     p{
-      font-size: 30px;
+      font-size: 35px;
       letter-spacing: 1px;
       font-weight: 300;
     }
@@ -611,13 +574,15 @@ p {
     display: table;
     @include position(absolute, 50% null null -13%);
     @include transform(translateY(-50%));
-    opacity: 0;
-    @include transition(opacity 500ms);
-    border-left: 3px solid #ffca08;
     font-weight: 500;
     font-size: 18px;
     padding-left: 7px;
     line-height: 18px;
+    &:hover{
+      opacity: 0;
+      @include transition(opacity 500ms);
+      border-left: 4px solid #ffca08;
+    }
   }
   .circle-cont {
     margin-left: 50px;
@@ -718,6 +683,13 @@ p {
         font-family: 'Rubik', sans-serif;
         a {
           color: #333;
+          text-decoration: none;
+          &:hover{
+            text-decoration: none;
+          }
+          &:focus{
+            outline: 0;
+          }
         }
       }
       li:last-child {
@@ -898,7 +870,7 @@ p {
       }
     }
     .tree {
-      @include position(absolute, 12% 14% null null);
+      @include position(absolute, -26% 42% null null);
       z-index: 2;
       img {
         height: 130px;

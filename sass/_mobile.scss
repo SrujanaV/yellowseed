@@ -2,12 +2,12 @@
 
 @media (max-width: 1200px) {
   .nav > li > a {
-    padding: 15px 4px;
+    padding: 15px 3px;
   }
 
   .header{
     .head-padd{
-      padding: 0;
+      // padding: 0;
     }
   }
 
@@ -21,7 +21,7 @@
   }
   .zero{
     .head-padd{
-      padding: 0;
+      // padding: 0;
     }
   }
   .one{
@@ -47,6 +47,7 @@
     }
   }
   .six{
+    padding: 17em 0 10em 0;
     z-index: 0;
   }
 
@@ -56,6 +57,9 @@
     }
     h3{
       font-size: 28px;
+    }
+    .circle-cont{
+      margin-left: 14em!important;
     }
     .blogs{
       .circle1{
@@ -74,6 +78,16 @@
     }
     .chasma{
       z-index: -1;
+      top: -22px;
+    }
+    .coffee{
+      top: -12%!important;
+    }
+    .note-book{
+      left: 5%;
+      img{
+        height: 100px;
+      }
     }
     .ipad{
       img{
@@ -95,15 +109,91 @@
     }
 
   }
+
+
+
+  .the-studio, .branded, .cont-strategy, .design, .digital, .internal, .workshop, .media, .blog, .brainwave,
+  .awsome {
+    z-index: 0;
+    .sub-para{
+      padding: 3em!important;
+    }
+    .resize-padd{
+      min-height: 0!important;
+    }
+    .pencil-inner{
+      img{
+        height: 280px!important;
+      }
+    }
+    .paper{
+      top: 35%!important;
+      img{
+        height: 290px!important;
+      }
+    }
+
+  }
+
+  .we-believe{
+    .we-one, .we-two, .we-three, .we-four{
+      h1{
+        font-size: 64px;
+      }
+      .extra-size{
+        font-size: 6em;
+      }
+      h2{
+        font-size: 18px;
+      }
+      .mt2em{
+        margin-top: 2em;
+      }
+      .tree{
+        right: 22%;
+      }
+      .clock{
+        top: -22%;
+      }
+      .pencil{
+        top: 0;
+        img{
+          height: 228px;
+        }
+      }
+    }
+  }
+
+  .blog{
+    .sub-para{
+      padding: 2em !important;
+    }
+    p{
+      line-height: 20px!important;
+    }
+    .img-grid{
+      .img-sec{
+        padding: 15px;
+      }
+      .foot-sec{
+        .img-spac{
+          padding: 5px 5px 30px;
+        }
+        h3{
+          font-size: 16px!important;
+          line-height: 18px!important;
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: $screen-sm-max) {
 
   .one{
     z-index: 0;
-    .circle-cont{
-      margin-left: 7em;
-    }
+
   }
 
   .three{
@@ -150,6 +240,9 @@
         left:0;
       }
     }
+    .circle-cont{
+      margin-left: 7em!important;
+    }
     .spee-blg{
       top: 0;
     }
@@ -174,6 +267,10 @@
         height: 105px;
       }
     }
+  }
+
+  .we-believe{
+    .we-one, .we-two, .we-three, .we-four{}
   }
 }
 
@@ -269,8 +366,13 @@
     p{
       font-size: 13px;
     }
+    span.text-content{
+      left: -3%;
+      font-size: 18px;
+      line-height: 18px;
+    }
     .circle-cont {
-      margin-left:0;
+      margin-left:0!important;
       ul {
         li{
           padding-left: 12px;
@@ -324,6 +426,14 @@
         height: 80px;
       }
     }
+    .pinpaper{
+      img{
+        height: 172px;
+      }
+    }
+    .ipad{
+      bottom: -9%;
+    }
     .tree{
       top: -7%;
       right: 6%;
@@ -343,10 +453,66 @@
       }
     }
   }
+
+  .we-believe{
+    .we-one{
+      padding: 0;
+    }
+    .we-one, .we-two, .we-three, .we-four{
+      h1{
+        font-size: 69px;
+      }
+      .respect{
+        padding: 25px 15px;
+        position: relative;
+        width: auto;
+      }
+      .clock{
+        top: -13%;
+        img{
+          height: 160px;
+        }
+      }
+    }
+  }
+
+  .blog{
+    .sub-para{
+      padding: 2em !important;
+    }
+    p{
+      line-height: 20px!important;
+      margin: 0 0 5px;
+    }
+    .mb30{
+      margin-bottom: 30px;
+    }
+    .img-grid{
+      .img-spac{
+        margin-bottom: 0!important;
+        .img-sec{
+          padding: 10px;
+        }
+      }
+    }
+  }
+
 }
 
 
 @media (max-width: 480px) {
+
+.head{
+  .head-tag{
+    h2{
+      font-size: 13px;
+    }
+  }
+}
+
+.one{
+  padding: 16em 0 8em 0;
+}
 
 .three{
   padding: 3em 0 10em 0;
@@ -386,7 +552,11 @@ p{
 }
 
 
-.head, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight{
+.head, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight {
+
+    h3{
+      font-size: 26px;
+    }
 
     .extra-size{
       font-size: 4em !important;
@@ -397,7 +567,14 @@ p{
         padding: 0 0 0 8em;
       }
     }
+    span.text-content{
+      left: -3%;
+      font-size: 12px;
+      line-height: 12px;
+    }
+
     .circle-cont {
+      margin-left: 0!important;
       ul {
         li{
           padding-left: 8px;
@@ -424,9 +601,17 @@ p{
         height: 230px;
       }
     }
+    .note-book{
+      left: 0;
+    }
+    .imac{
+      img{
+        height: 230px;
+      }
+    }
     .pinpaper{
       img{
-        height: 175px;
+        height: 140px;
       }
     }
     .coffee{
@@ -435,7 +620,137 @@ p{
         height: 130px;
       }
     }
+  }
 
+
+  .the-studio, .branded, .cont-strategy, .design, .digital, .internal, .workshop, .media, .blog, .brainwave,
+  .awsome {
+    z-index: 0;
+    h3{
+      font-size: 15px!important;
+    }
+    .sub-para{
+      padding: 2em !important;
+      .yellow-tag{
+        font-size: 13px !important;
+      }
+    }
+    .resize-padd{
+      padding: 30px 0 0 0!important;
+      h3{
+        text-align: left;
+      }
+    }
+    .pencil-inner, .paper, .book, .mac, .pot, .iphone, .news-paper, .mike, .headphone, .note-tab, .pencil-color-box,
+    .reel, .camera, .pencil-crap, .ys-book, .coffee, .brain-clock, .macbook-pro, .pen-book{
+      display: none;
+    }
+
+  }
+
+  .we-believe{
+
+    .we-one{
+      padding: 0;
+    }
+    .we-four{
+      padding: 2em 0;
+    }
+
+    .we-one, .we-two, .we-three, .we-four {
+      h1{
+        font-size: 3.5em;
+      }
+      .extra-size{
+        font-size: 4.5em;
+      }
+      .mt2em{
+        margin-top: 2em;
+      }
+      h2{
+        font-size: 18px;
+      }
+      p{
+        margin: 0 0 15px;
+      }
+      .respect{
+        width: auto;
+        position: relative;
+        .tree {
+          @include position(absolute, -29% 15% null null);
+        }
+      }
+      .pencil{
+        top: 0;
+        img{
+          height: 180px;
+        }
+      }
+      .clock{
+        top: -13%;
+        img{
+          height: 120px;
+        }
+      }
+      .coffee{
+        img{
+          height: 150px;
+        }
+      }
+    }
+  }
+
+  .blog{
+    .sub-para{
+      padding: 2em !important;
+    }
+    p{
+      line-height: 20px!important;
+    }
+
+    .img-grid{
+      margin: 20px 0!important;
+      h2{
+        font-size: 22px;
+      }
+      .img-sec{
+        padding: 15px;
+        .txt{
+          letter-spacing: 0px;
+        }
+        h3{
+          line-height: 18px;
+          letter-spacing: 0;
+          margin: 0 0 10px;
+        }
+      }
+      .calender{
+          width: auto;
+          ul{
+            li{
+              font-size: 12px;
+            }
+          }
+      }
+      .foot-sec{
+        margin: 10px 0;
+        ul{
+          text-align: center;
+        }
+        h2{
+          font-size: 20px;
+        }
+        h3{
+          font-size: 14px !important;
+          line-height: 18px!important;
+        }
+        .img-spac{
+          .img-sec{
+            padding: 10px 0;
+          }
+        }
+      }
+    }
   }
 
 }
