@@ -111,7 +111,6 @@
   }
 
 
-
   .the-studio, .branded, .cont-strategy, .design, .digital, .internal, .workshop, .media, .blog, .brainwave,
   .awsome {
     z-index: 0;
@@ -121,35 +120,43 @@
     .resize-padd{
       padding: 30px 3em 0 3em !important;
       min-height: 0!important;
+      p{
+        line-height: 18px;
+      }
     }
     .pencil-inner{
-      top: 64% !important;
+      top: 62% !important;
       img{
         height: 220px !important;
       }
     }
     .paper{
-      top: 40% !important;
+      top: 43% !important;
       img{
         height: 240px !important;
       }
     }
     .mac{
-      top: 20% !important;
+      top: 24% !important;
       img{
         height: 355px !important;
       }
     }
     .pot{
-      top: 23% !important;
+      top: 27% !important;
       img{
         height: 242px !important;
       }
     }
     .iphone{
-      top: 36% !important;
       img{
         height: 250px !important;
+      }
+    }
+    .news-paper{
+      top: 52% !important;
+      img{
+        height: 410px !important;
       }
     }
 

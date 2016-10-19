@@ -249,7 +249,7 @@ header {
 
 .three {
   background-color: #ffca08;
-  padding: 7em 0 14em 0;
+  padding: 7em 0 12em 0;
   h1 {
     color: #ffca08;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px!important;
@@ -269,7 +269,7 @@ header {
     position: absolute;
     width: 715px;
     right: 0;
-    top: 13%;
+    top: 17%;
     z-index: 99;
     .flexslider .slides img {
       max-width: 70%;
@@ -337,7 +337,7 @@ header {
     background-size: cover;
     z-index: 1;
     @include transform(translateY(-40%));
-    height: 420px;
+    height: 375px;
     h1 {
       color: #4e4242;
       text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px !important;
@@ -431,6 +431,9 @@ p {
 .yellow-tag{
   font-size: 16px!important;
 }
+.text-center{
+  text-align: center!important;
+}
 .flex-control-paging li a {
   width: 7px;
   height: 7px;
@@ -472,7 +475,7 @@ p {
     line-height: 0.9em;
   }
   .zero-tag{
-    @include position(absolute, -10% null null -12.5%);
+    @include position(absolute, -10% null null -10%);
     z-index: 1;
     p{
       font-size: 35px;
@@ -528,20 +531,28 @@ p {
     font-size: 32px;
     margin-bottom: 30px;
   }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .form-control{
+    padding: 0;
+  }
   input {
     background: none;
     border: none;
     border-bottom: 1px solid #fff;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     width: 100%;
+    color: #fff;
   }
   textarea {
     background: none;
     border: none;
     border-bottom: 1px solid #fff;
     width: 100%;
-    margin: 5px 0 10px 0;
+    margin: 25px 0 10px 0;
     resize: none;
+    color: #fff;
     @include placeholder {}
   }
   .btn1 {
@@ -602,8 +613,8 @@ p {
     }
     .circle {
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      width: 165px;
+      height: 165px;
       // box-shadow: inset 10px 9px 10px -10px #000000;
       // -webkit-box-shadow: inset 10px 9px 10px -10px #000000;
       // -moz-box-shadow: inset 10px 9px 10px -10px #000000;
@@ -612,7 +623,7 @@ p {
         position: relative;
       }
       img {
-        height: 150px;
+        height: 165px;
         border-radius: 50%;
       }
       .img-responsive {
@@ -850,7 +861,7 @@ p {
   .we-four {
     position: relative;
     h1 {
-      font-size: 88px;
+      font-size: 100px;
       font-family: 'Rubik', sans-serif;
       font-weight: bold;
       color: #fff;
@@ -859,13 +870,17 @@ p {
     }
     h2 {
       font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+    }
+    .mb20{
+      margin-bottom: 20px;
     }
     .respect {
       background-image: url(../img/home-page/we-believe-bg.jpg);
       background-size: cover;
       z-index: 1;
       width: 50%;
-      padding: 25px 3em;
+      padding: 25px 3em 25px 6em;
       @include position(absolute, null 0 -30px null);
       h1 {
         color: #483c3c;
@@ -876,10 +891,10 @@ p {
       }
     }
     .tree {
-      @include position(absolute, -26% 42% null null);
+      @include position(absolute, -26% 26% null null);
       z-index: 2;
       img {
-        height: 130px;
+        height: 160px;
       }
     }
     .pencil {

@@ -1,3 +1,25 @@
+
+.internal{
+  .sub-para{
+    margin-top: -5% !important;
+  }
+}
+
+.blog{
+  .sub-para{
+    padding: 2.5em 0 !important;
+    ul{
+      font-size: 20px !important;
+      li{
+        padding: 0 15px !important;
+        font-weight: 400 !important;
+      }
+    }
+  }
+
+}
+
+
 .the-studio,
 .branded,
 .cont-strategy,
@@ -143,6 +165,9 @@
         line-height: 25px;
         text-align: justify;
     }
+    .spacer{
+      margin-bottom:50px;
+    }
     .img-banner{
       img{
         width: 100%;
@@ -150,11 +175,14 @@
     }
     .resize-padd {
         padding: 30px 6em 0 6em;
-        min-height: 214px;
+        min-height: 0;
+        p{
+          margin: 0;
+        }
     }
     .sub-para {
         background-color: #ffca08;
-        padding: 2.5em 6em;
+        padding: 2.5em 4em;
         z-index: 0;
         position: relative;
         margin-top: -7%;
@@ -306,8 +334,11 @@
         }
     }
     .flexslider .slides img {
-        max-width: 100%;
+        max-width: 70%;
+        margin: 6px 28px;
         padding: 5px;
+        height: 75px;
+        width: auto;
     }
     .flex-control-paging li a.flex-active {
         background: #fff;
@@ -326,7 +357,7 @@
             .media-imgholder {
                 padding: 22px;
                 .bord-cus1 {
-                    margin: 15px;
+                    margin: 0 15px;
                 }
             }
             .bord-cus+.bord-cus {
@@ -513,7 +544,7 @@ h2 {
     .txt {
         text-align: center;
         margin: 0;
-        padding: 15px 0;
+        padding: 1.5em 0;
         font-size: 18px;
     }
 }
@@ -551,7 +582,7 @@ h2 {
 .brand-slide {
     .flexslider {
         margin: 0;
-        padding: 20px;
+        padding: 30px;
         .slides img {
             // max-width: 100%;
             // padding: 5px;
