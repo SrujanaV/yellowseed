@@ -170,8 +170,12 @@ header {
   padding-top: 50px;
 }
 .head{
-  height: 100vh;
-  .img-banner{
+  // height: 100vh;
+  .head-img-banner{
+    background: url('../img/inside-pages/top-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
     img{
       width: 100%;
     }
@@ -263,7 +267,7 @@ header {
   }
   .brands {
     position: absolute;
-    width: 55%;
+    width: 715px;
     right: 0;
     top: 13%;
     z-index: 99;
@@ -343,6 +347,7 @@ header {
       margin-top: 10px;
     }
     .slider {
+      width: 750px;
       margin: -6% 0 0;
       ul {
         li {
@@ -363,9 +368,9 @@ header {
       .flex-control-nav{
         bottom: 25px;
       }
-      .flexslider-container {
-        width: 78%;
-      }
+      // .flexslider-container {
+      //   width: 78%;
+      // }
       .flex-control-paging li a.flex-active {
         background: #ffca08;
         cursor: default;
@@ -377,6 +382,7 @@ header {
     }
   }
   .blog-slider{
+    width: 925px;
     .blogs-details{
       padding: 0 20px 0 0;
     }
@@ -466,7 +472,7 @@ p {
     line-height: 0.9em;
   }
   .zero-tag{
-    @include position(absolute, 27.5% null null 11.7%);
+    @include position(absolute, -10% null null -12.5%);
     z-index: 1;
     p{
       font-size: 35px;
@@ -477,7 +483,6 @@ p {
       font-weight: 400;
     }
   }
-
   .social-links{
     @include position(fixed, 30% 0 null null);
     z-index: 99999;
@@ -572,12 +577,13 @@ p {
     color: #333;
     cursor: pointer;
     display: table;
-    @include position(absolute, 50% null null -13%);
+    @include position(absolute, 50% null null -15%);
     @include transform(translateY(-50%));
     font-weight: 500;
     font-size: 18px;
     padding-left: 7px;
     line-height: 18px;
+    border-left: 4px solid transparent;
     &:hover{
       opacity: 0;
       @include transition(opacity 500ms);

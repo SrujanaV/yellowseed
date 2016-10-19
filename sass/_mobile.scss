@@ -119,17 +119,37 @@
       padding: 3em!important;
     }
     .resize-padd{
+      padding: 30px 3em 0 3em !important;
       min-height: 0!important;
     }
     .pencil-inner{
+      top: 64% !important;
       img{
-        height: 280px!important;
+        height: 220px !important;
       }
     }
     .paper{
-      top: 35%!important;
+      top: 40% !important;
       img{
-        height: 290px!important;
+        height: 240px !important;
+      }
+    }
+    .mac{
+      top: 20% !important;
+      img{
+        height: 355px !important;
+      }
+    }
+    .pot{
+      top: 23% !important;
+      img{
+        height: 242px !important;
+      }
+    }
+    .iphone{
+      top: 36% !important;
+      img{
+        height: 250px !important;
       }
     }
 
