@@ -513,6 +513,9 @@ p {
   .head-tag {
     @include position(absolute, 50% null null 50%);
     @include transform(translate(-50%, -50%));
+    h2{
+      font-weight: 500;
+    }
   }
   .scroll-down{
     @include position(absolute, null null 10% 50%);
@@ -524,7 +527,7 @@ p {
     margin: 0;
   }
   .lighter {
-    font-weight: lighter;
+    font-weight: lighter!important;
   }
   h3 {
     font-family: 'Rubik', sans-serif;
