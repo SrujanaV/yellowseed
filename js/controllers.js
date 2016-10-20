@@ -11,6 +11,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.getHome = data.data.result;
         console.log($scope.getHome);
     });
+    NavigationService.getTestimonial(function(data) {
+      console.log(data);
+        $scope.testimonial = data.data.results;
+        console.log($scope.testimonial);
+    });
 
 
     $scope.blogs = [

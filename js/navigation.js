@@ -55,6 +55,14 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
+        getTestimonial : function(callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Testimonial/Search',
+                method: 'POST',
+                withCredentials: true
+            }).success(callback);
+        },
 
     };
 });

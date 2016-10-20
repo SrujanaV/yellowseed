@@ -192,6 +192,13 @@ firstapp.filter('shorten', function() {
 
     };
 });
+firstapp.filter('rawHtml', ['$sce',
+    function($sce) {
+        return function(val) {
+            return $sce.trustAsHtml(val);
+        };
+    }
+]);
 firstapp.config(function ($translateProvider) {
     $translateProvider.translations('en', LanguageEnglish);
     $translateProvider.translations('hi', LanguageHindi);
