@@ -150,7 +150,48 @@ firstapp.directive('autoHeight', function ($compile, $parse) {
         }
     };
 });
+firstapp.filter('uploadpath', function() {
+    return function(input, width, height, style, defaultFlag) {
+        //console.log(width, height, style, defaultFlag)
+        var other = "";
+        if (width && width !== "") {
+            other += "&width=" + width;
+        }
+        if (height && height !== "") {
+            other += "&height=" + height;
+        }
+        if (style && style !== "") {
+            other += "&style=" + style;
+        }
+        if (input) {
+            if (input.indexOf('https://') == -1) {
+                return imgpath + "?file=" + input + other;
+            } else {
+                return input;
+            }
+        } else {
+            if (defaultFlag === false) {
+                return "img/sf-handball.png";
 
+            } else {
+                return "img/noimage.png";
+
+            }
+        }
+    };
+});
+firstapp.filter('shorten', function() {
+    return function(value, limit) {
+        if (value)
+            if (value.length < limit) {
+                return value;
+            } else {
+                return value.slice(0, limit - 2) + "..";
+
+            }
+
+    };
+});
 firstapp.config(function ($translateProvider) {
     $translateProvider.translations('en', LanguageEnglish);
     $translateProvider.translations('hi', LanguageHindi);

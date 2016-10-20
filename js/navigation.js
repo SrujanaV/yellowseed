@@ -1,10 +1,11 @@
-var adminURL = "";
-if (isproduction) {
-    adminURL = "http://www.wohlig.co.in/demo/index.php";
-} else {
-    adminURL = "http://localhost/demo/index.php";
-}
-
+var adminurl = "";
+// if (isproduction) {
+//     adminURL = "http://www.wohlig.co.in/demo/index.php";
+// } else {
+//     adminURL = "http://localhost/demo/index.php";
+// }
+var imgpath = adminurl + "upload/readFile";
+var uploadurl = adminurl + "upload/";
 var navigationservice = angular.module('navigationservice', [])
 
 .factory('NavigationService', function() {
@@ -37,6 +38,14 @@ var navigationservice = angular.module('navigationservice', [])
                 }
             }
             return menuname;
+        },
+        getNews: function(callback) {
+
+            $http({
+                url: adminurl + 'News/getAll',
+                method: 'POST',
+                withCredentials: true
+            }).success(callback);
         },
 
     };

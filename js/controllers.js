@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', ])
 
-.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout,$state) {
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -146,12 +146,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
     };
 
-    $scope.$on('$viewContentLoaded', function () {
-        $timeout(function () {
-            $('body').addClass('fp-');
-            $scope.changePage($stateParams.id);
-        }, 1000);
-    });
+    // $scope.$on('$viewContentLoaded', function () {
+    //     $timeout(function () {
+    //         $('body').addClass('fp-');
+    //         $scope.changePage($stateParams.id);
+    //     }, 1000);
+    // });
 
 })
 
