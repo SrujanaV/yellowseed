@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-offset-1 col-md-4">
-      <h1>
+    <div class="col-md-offset-1 col-md-5 no-padding">
+      <h1 class="no-margin">
         Contact
       </h1>
 
@@ -10,7 +10,7 @@
   </div>.
 
   <div class="row">
-    <div class="col-md-offset-1 col-md-4">
+    <div class="col-md-offset-1 col-md-5 pr60">
       <p>
         We like to see ourselves as explorers. Our constant search for quality and our commitment towards creating dazzling content
         is what has made us what we are today. If you find a little bit of us in you, it would be an amazing idea to work
@@ -25,7 +25,8 @@
     </div>
 
     <form name="formName" ng-submit="submitForm(formData);" ng-if="!formSubmitted">
-      <div class="col-md-3">
+
+      <div class="col-md-3 pl0">
 
         <div class="form-group" ng-class="{'form-invalid': formName.name.$invalid && formName.name.$touched}">
             <input type="text" name="name" class="form-control" ng-model="formData.name" placeholder="Name*" required>
@@ -38,19 +39,15 @@
         <div class="form-group" ng-class="{'form-invalid': formName.mobile.$invalid && formName.mobile.$touched}">
             <input type="text" name="mobile" class="form-control" ng-model="formData.mobile" placeholder="Mobile No.*" required>
         </div>
-        <!-- <div class="">
-          <input type="text" name="name" value="" placeholder="Name">
-          <input type="text" name="email" value="" placeholder="Email">
-          <input type="text" name="mobile" value="" placeholder="Mobile No.">
-        </div> -->
       </div>
-      <div class="col-md-3">
+
+      <div class="col-md-3 pr0">
         <div class="form-group" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
             <textarea name="summary" rows="4" cols="40" class="form-control" ng-model="formData.summary" placeholder="Summary*" required></textarea>
         </div>
-        <!-- <textarea name="summary" rows="4" cols="40" placeholder="Summary"></textarea> -->
         <a type="button" class="btn btn2 pull-right" name="submit" ng-disabled="formName.$invalid">Submit</a>
       </div>
+
     </form>
     <div class="form-submission text-center" ng-if="formSubmitted">
         <h3>Thank you for submitting the form!</h3>

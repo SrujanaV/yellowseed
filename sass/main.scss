@@ -150,6 +150,7 @@ header {
       li {
         a {
           color: #fff;
+          padding: 18px 12px;
           &:hover {
             color: #fff;
           }
@@ -160,7 +161,7 @@ header {
   .head-padd {
     // padding: 0 7em;
     .logo {
-      height: 25px;
+      height: 30px;
       margin-top: -3px;
     }
   }
@@ -201,7 +202,8 @@ header {
     .nav {
       li {
         a {
-          color: #333;
+          color: #413636;
+          padding: 18px 12px;
           &:hover {
             color: #000;
           }
@@ -214,7 +216,7 @@ header {
   }
   .head-padd {
     .logo {
-      height: 25px;
+      height: 30px;
       margin-top: -3px;
     }
   }
@@ -241,6 +243,10 @@ header {
     color: #ffca08;
   }
   .wait {
+    margin: 6em 2em 0 0;
+    p{
+      color: #f4f4f4;
+    }
     span {
       text-decoration: underline;
     }
@@ -264,6 +270,7 @@ header {
     cursor: pointer;
     font-weight: 500;
     font-size: 18px;
+    color: #252525;
   }
   .brands {
     position: absolute;
@@ -379,6 +386,7 @@ header {
     .view-all {
       z-index: 9999;
       @include position(absolute, 36% 23% null null);
+      display: none;
     }
   }
   .blog-slider{
@@ -393,9 +401,12 @@ header {
   background-color: #e4e4e4;
   padding: 80px 0 10em 0;
   h1 {
-    font-size: 85px!important;
+    font-size: 80px!important;
     color: #efefef;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.59), #bfb9b9 4px 4px 4px !important;
+  }
+  .crack ul li a{
+    color: #413636 !important;
   }
 }
 
@@ -403,27 +414,31 @@ header {
   background-color: #d2d1cf;
   padding: 12em 0 11em 0;
   h1 {
-    font-size: 85px!important;
+    font-size: 80px!important;
     color: #efefef;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.59), #bfb9b9 4px 4px 4px !important;
+  }
+  .spee-blg ul li a{
+    color: #413636 !important;
   }
 }
 
 .eight {
   background-color: #403635;
-  padding: 3em 0 2em 0;
+  padding: 5em 0 2em 0;
   h1 {
     font-size: 7em!important;
     color: #483c3c;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px !important;
   }
   p {
-    color: #fff;
+    color: #f1f1f1;
   }
 }
 
 p {
   font-size: 15px;
+  color: #393333;
   margin: 0 0 25px;
   text-align: justify;
   font-family: 'Rubik', sans-serif;
@@ -451,6 +466,17 @@ p {
   padding: 0!important;
 }
 
+.mb10{margin-bottom: 10px;}
+.ml20{margin-left: 20px;}
+.ml35{margin-left: 35px;}
+.mr40{margin-right: 40px; margin-bottom: 15px;}
+
+.pl0{padding-left: 0;}
+.pr0{padding-right: 0;}
+.pl10{padding-left: 10px;}
+.pr39{padding-right: 39px;}
+.pr60{padding: 0 60px 0 0;}
+
 .head,
 .zero,
 .one,
@@ -462,6 +488,7 @@ p {
 .seven,
 .eight {
   position: relative;
+  z-index: 0;
   h1 {
     font-size: 100px;
     font-family: 'Rubik', sans-serif;
@@ -473,6 +500,7 @@ p {
     text-align: left;
     text-transform: uppercase;
     line-height: 0.9em;
+    padding-left: 25px;
   }
   .zero-tag{
     @include position(absolute, -10% null null -10%);
@@ -543,15 +571,14 @@ p {
   input {
     background: none;
     border: none;
-    border-bottom: 1px solid #fff;
-    // margin-bottom: 10px;
+    border-bottom: 1px solid #d3d0d0;
     width: 100%;
     color: #fff;
   }
   textarea {
     background: none;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #d3d0d0;
     width: 100%;
     margin: 25px 0 10px 0;
     resize: none;
@@ -588,7 +615,7 @@ p {
     opacity: 1;
   }
   span.text-content {
-    color: #333;
+    color: #393333;
     cursor: pointer;
     display: table;
     @include position(absolute, 50% null null -15%);
@@ -609,6 +636,11 @@ p {
     z-index: 1;
     position: relative;
     ul {
+      li{
+        a{
+
+        }
+      }
       li+li {
         padding-left: 25px;
         padding-bottom: 10px;
@@ -681,28 +713,30 @@ p {
   }
   .crack{
     @include position(absolute, -27px null null 10%);
+    ul{
+      padding-right: 3em;
+    }
   }
   .info {
     p {
       a {
-        color: #fff;
+        color: #f1f1f1;
       }
     }
   }
   .crack,
   .spee-blg {
-    width: 76%;
+    width: auto;
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
       li {
         padding: 0;
-        border-bottom: 1px solid #fff;
+
         font-size: 20px;
         font-family: 'Rubik', sans-serif;
         a {
-          color: #333;
           text-decoration: none;
           &:hover{
             text-decoration: none;
@@ -712,11 +746,12 @@ p {
           }
         }
       }
-      li:last-child {
-        border: none;
-      }
+      // li:last-child {
+      //   border: none;
+      // }
       li+li {
-        padding-top: 7px;
+        border-top: 2px solid #fff;
+        padding-top: 5px;
       }
     }
   }
@@ -739,9 +774,10 @@ p {
     }
   }
   .pencil {
-    @include position(absolute, 8% null null null);
+    @include position(absolute, 6% null null null);
+    z-index: -1;
     img {
-      height: 230px;
+      height: 265px;
     }
   }
   .coffee {
@@ -769,7 +805,10 @@ p {
     }
   }
   .con-top {
-    @include position(absolute, 4% null null 8%);
+    @include position(absolute, 14% null null 9%);
+    img{
+      height: 110px;
+    }
   }
   .right-arrow {
     @include position(absolute, null null 18% 45%);
@@ -924,14 +963,14 @@ p {
 footer {
   font-size: 12px;
   background-color: #0c0c0c;
-  padding: 10px 0;
+  padding: 2em 0;
   p {
     font-size: 10px;
-    color: #fff;
+    color: #8f8f8f;
     text-align: center;
     margin: 0;
     a{
-      color: #fff;
+      color: #8f8f8f;
       &:hover{
         color: #fff;
       }
@@ -940,7 +979,7 @@ footer {
   .list-inline {
     li {
       a {
-        color: #fff;
+        color: #8f8f8f;
       }
     }
   }
