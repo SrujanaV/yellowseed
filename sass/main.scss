@@ -256,6 +256,7 @@ header {
 .three {
   background-color: #ffca08;
   padding: 7em 0 12em 0;
+  z-index: -1 !important;
   h1 {
     color: #ffca08;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px!important;

@@ -8,16 +8,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.blogs = [
         'img/home-page/b1.jpg',
-        'img/home-page/b1.jpg',
-        'img/home-page/b1.jpg',
+        'img/home-page/b2.png',
+        'img/home-page/b3.png',
 
         'img/home-page/b1.jpg',
-        'img/home-page/b1.jpg',
-        'img/home-page/b1.jpg',
+        'img/home-page/b2.png',
+        'img/home-page/b3.png',
 
         'img/home-page/b1.jpg',
-        'img/home-page/b1.jpg',
-        'img/home-page/b1.jpg',
+        'img/home-page/b2.png',
+        'img/home-page/b3.png',
     ];
     $scope.AllClients = [
         'img/home-page/clients/1.png',
