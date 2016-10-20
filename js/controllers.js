@@ -6,6 +6,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
+    NavigationService.getHome(function(data) {
+      console.log(data);
+        $scope.getHome = data.data.result;
+        console.log($scope.getHome);
+    });
+
+
     $scope.blogs = [
         'img/home-page/b1.jpg',
         'img/home-page/b2.png',
@@ -398,12 +405,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('headerctrl', function ($scope, TemplateService) {
+.controller('headerctrl', function ($scope, TemplateService,NavigationService) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
+
+    NavigationService.getCategory(function(data) {
+      console.log(data);
+        $scope.Category = data.data.results;
+        console.log(data.data.results);
+    });
+
 })
 
 .controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
