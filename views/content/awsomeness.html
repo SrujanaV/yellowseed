@@ -10,14 +10,14 @@
                 </div>
             </div>
             <div class="col-flex2 agency-slide">
-                <flex-slider flex-slide="slide in awsomebrands track by $index" animation="slide" animation-loop="false" slideshow="false"
+                <flex-slider flex-slide="slide in agency track by $index" animation="slide" animation-loop="false" slideshow="false"
                     prev-text="" next-text="" direction="vertical">
                     <li>
                         <div class="row img-border" ng-repeat="row in slide track by $index">
                             <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
                                 <!--<a fancybox href="{{wall.image|uploadpath}}">-->
                                 <div class="media-image">
-                                    <img ng-src="{{wall.img}}" alt="" class="" ng-click="openBrand()">
+                                    <img ng-src="{{wall.logo|uploadpath}}" alt="" class="" ng-click="openBrand(wall)">
                                     <!--<i class="fa {{wall.icon}}"></i>-->
                                 </div>
                                 <!--</a>-->
@@ -31,14 +31,14 @@
     <div class="">
         <div class="row-flex">
             <div class="col-flex2 brand-slide">
-                <flex-slider flex-slide="slide in awsomebrands track by $index" animation="slide" animation-loop="false" slideshow="false"
+                <flex-slider flex-slide="slide in brand track by $index" animation="slide" animation-loop="false" slideshow="false"
                     prev-text="" next-text="" direction="vertical">
                     <li>
                         <div class="row img-border" ng-repeat="row in slide track by $index">
                             <div class="col-md-4 col-xs-4 col" ng-repeat="wall in row track by $index">
                                 <!--<a fancybox href="{{wall.image|uploadpath}}">-->
                                 <div class="media-image">
-                                    <img ng-src="{{wall.img}}" alt="" class="" ng-click="openBrand()">
+                                    <img ng-src="{{wall.logo|uploadpath}}" alt="" class="" ng-click="openBrand(wall)">
                                     <!--<i class="fa {{wall.icon}}"></i>-->
                                 </div>
                                 <!--</a>-->

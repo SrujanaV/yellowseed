@@ -71,10 +71,21 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
+        getRelatedBlogs : function(id,callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Blog/getOneBlog',
+                method: 'POST',
+                withCredentials: true,
+                data: {
+                    _id: id
+                }
+            }).success(callback);
+        },
         getOneBlog : function(id, callback) {
       // console.log('nevigate');
             $http({
-                url: adminurl + 'Blog/getone',
+                url: adminurl + 'Blog/getOneBlog',
                 method: 'POST',
                 withCredentials: true,
                 data: {
@@ -105,6 +116,24 @@ var navigationservice = angular.module('navigationservice', [])
                 method: 'POST',
                 withCredentials: true,
                 data:request
+            }).success(callback);
+        },
+        getAllBrand : function(callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Brand/Search',
+                method: 'POST',
+                withCredentials: true
+
+            }).success(callback);
+        },
+        getAllAgency : function(callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Agency/search',
+                method: 'POST',
+                withCredentials: true
+
             }).success(callback);
         },
 

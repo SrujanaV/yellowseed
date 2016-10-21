@@ -1037,7 +1037,69 @@ footer {
     line-height: 120%;
   }
 }
+//BLOG
+.blog {
+.sub-para {
+ul {
+text-transform: uppercase;
+font-size: 16px;
+margin: 0;
+li+li {
+border-left: 1px solid #534334;
+}
+li {
+padding: 0 12px;
+color: #534334;
+font-weight: 500;
+cursor: pointer;
+margin: 0 -3px;
+&:hover {
+background: #534334;
+a {
+color: white;
+}
+}
+a {
+text-decoration: none;
+color: #534334;
+}
+}
+}
+}
+.img-grid {
+margin: 40px 0 80px;
+.img-spac {
+margin-bottom: 30px;
+}
+}
+.img-sec {
+background: #ffffff;
+padding: 12px 26px;
+h3 {
+line-height: 22px;
+letter-spacing: 1px;
+margin: 0 0 10px;
+}
+.date {
+background: #ffca08;
+width: 150px;
+text-transform: uppercase;
+padding: 0 8px;
+}
+.txt {
+font-size: 16px;
+letter-spacing: 1px;
+}
+}
+}
 
+.disp-blog {
+display: none;
+}
+
+.active-tab {
+display: block !important;
+}
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";

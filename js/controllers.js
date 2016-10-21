@@ -372,40 +372,48 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
- $scope.tabs = 'media';
-   $scope.classp = 'active-tab';
-   $scope.classv = '';
+    NavigationService.getBlog(function(data) {
 
-   $scope.oneAtATime = true;
+        $scope.blog = data.data.results;
 
-   TemplateService.menu = "";
-   $scope.tabchanges = function (tabs, a) {
+    });
 
-       $scope.tabs = tabs;
-       if (a == 1) {
+    $scope.tabs = 'media';
+    $scope.classp = 'active-tab';
+    $scope.classv = '';
 
-           $scope.classp = "active-tab";
-           $scope.classv = '';
+    $scope.oneAtATime = true;
 
-       } else {
+    TemplateService.menu = "";
+    $scope.tabchanges = function(tabs, a) {
 
-           $scope.classp = '';
-           $scope.classv = "active-tab";
-       }
-   };
+        $scope.tabs = tabs;
+        if (a == 1) {
+
+            $scope.classp = "active-tab";
+            $scope.classv = '';
+
+        } else {
+
+            $scope.classp = '';
+            $scope.classv = "active-tab";
+        }
+    };
 
 })
 
-.controller('IndividualBlogCtrl', function($scope, TemplateService, NavigationService, $timeout, $state,$stateParams) {
+.controller('IndividualBlogCtrl', function($scope, TemplateService, NavigationService, $timeout, $state, $stateParams) {
     $scope.template = TemplateService.changecontent("individual-blog");
     $scope.menutitle = NavigationService.makeactive("Individual Blog");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
-    $scope.blogDetail = function () {
+    $scope.blogDetail = function() {
         NavigationService.getOneBlog($stateParams.id, function(data) {
-            $scope.getone = data.data;
-          // console.log($scope.getone);
+            $scope.getone = data.data.blog;
+            $scope.rel = data.data.related;
+            // $scope.getRelatedBlogs = data.data;
+            console.log(data.data);
         });
     }
 
@@ -419,6 +427,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("awsomeness");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.detail = {};
+    NavigationService.getAllBrand(function(data) {
+
+        $scope.brand = data.data.results;
+        $scope.brand = _.chunk($scope.brand, 9);
+        for (var i = 0; i < $scope.brand.length; i++) {
+            $scope.brand[i] = _.chunk($scope.brand[i], 3);
+            console.log($scope.brand);
+        }
+
+
+    });
+    NavigationService.getAllAgency(function(data) {
+
+        $scope.agency = data.data.results;
+        $scope.agency = _.chunk($scope.agency, 9);
+        for (var i = 0; i < $scope.agency.length; i++) {
+            $scope.agency[i] = _.chunk($scope.agency[i], 3);
+            console.log($scope.agency);
+        }
+        console.log($scope.client);
+
+    });
 
     $scope.awsomebrands = [{
         img: "img/home-page/clients/1.png",
@@ -463,7 +494,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.awsomebrands[i] = _.chunk($scope.awsomebrands[i], 3);
     };
 
-    $scope.openBrand = function() {
+    $scope.openBrand = function(selected) {
+      console.log(selected);
+      $scope.detail = selected;
         $uibModal.open({
             animation: true,
             templateUrl: 'views/modal/brand.html',

@@ -49,27 +49,14 @@
                     </ul>
                     <div class="row img-spac">
                         <h2>Related Post</h2>
-                        <div class="col-md-4 col-sm-4">
-                            <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
+                        <div class="col-md-4 col-sm-4" ng-repeat="item in rel track by $index">
+                            <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive">
                             <div class="img-sec">
-                                <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
+                                <h3>{{item.name}}</h3>
 
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
-                            <div class="img-sec">
-                                <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
 
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
-                            <div class="img-sec">
-                                <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
 

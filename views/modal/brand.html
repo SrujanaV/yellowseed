@@ -4,16 +4,12 @@
             <div class="b-content">
                 <div class="close-brand" ng-click="$close()"><span>X</span></div>
                 <div class="brand-img">
-                    <img src="img/home-page/clients/atomicads.png" alt="">
+                    <img ng-src="{{detail.logo|uploadpath}}" alt="">
                 </div>
                 <div class="txt">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, itaque dolor animi beatae labore
-                        quod laborum asperiores omnis odit praesentium sit delectus laudantium cupiditate, sed nam, distinctio
-                        obcaecati tempore vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, itaque
-                        dolor animi beatae labore quod laborum asperiores omnis odit praesentium sit delectus laudantium
-                        cupiditate, sed nam, distinctio obcaecati tempore vitae.
+                    <p ng-bind-html="detail.content | rawHtml">
                     </p>
-                    <p><span>Industry: Entertainment</span></p>
+                    <p><span>Industry: {{detail.industry}}</span></p>
                 </div>
             </div>
         </div>
