@@ -12,16 +12,18 @@
         <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
 
             <div class="blog-slider">
-                <flex-slider class="carousel" slide="s in blogs track by $index" animation="slide" item-width="310">
+                <flex-slider class="carousel" slide="s in blog track by $index" animation="slide" item-width="310">
                     <li auto-heightfixed>
+                      <a ui-sref="individual-blog({id:s._id})">
                         <div class="blogs-details">
                             <div class="blog-image">
-                                <img src="{{s}}" class="img-responsive" alt="blog-image">
+                                <img ng-src="{{s.image|uploadpath}}" class="img-responsive" alt="blog-image">
                             </div>
                             <div class="blog-info">
-                                <p>Healthy Communication for a Healthier ROI</p>
+                                <p>{{s.name|shorten : 60}}</p>
                             </div>
                         </div>
+                      </a>
                     </li>
                 </flex-slider>
             </div>

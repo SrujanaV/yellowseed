@@ -1,6 +1,6 @@
 <div ng-controller="headerctrl">
   <ul class="nav navbar-nav pull-right" ng-repeat="item in Category">
-  <li><a href="">{{item.name}}</a></li>
+  <li><a ui-sref="{{item.categoryUrl}}">{{item.name}}</a></li>
   <!-- <li><a href="">About Us</a></li>
   <li><a href="">Clients</a></li>
   <li><a href="">Testimonials</a></li>

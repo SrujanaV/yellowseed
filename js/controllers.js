@@ -16,6 +16,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.testimonial = data.data.results;
         console.log($scope.testimonial);
     });
+    NavigationService.getBlog(function(data) {
+
+        $scope.blog = data.data.results;
+
+    });
+    NavigationService.getPartner(function(data) {
+
+        $scope.blog = data.data.results;
+
+    });
 
 
     $scope.blogs = [
@@ -346,6 +356,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Individual Blog");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+
+
+            function newsDetail() {
+                NavigationService.getOneNews($stateParams.id, function(data) {
+                    $scope.getOneNews = data.data.data;
+
+                    $scope.getOneRelated = data.data.related;
+                    TemplateService.removeLoader();
+                });
+            }
+
 
 })
 
