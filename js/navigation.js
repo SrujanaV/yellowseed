@@ -40,7 +40,7 @@ var navigationservice = angular.module('navigationservice', [])
             return menuname;
         },
         getHome: function(callback) {
-      console.log('nevigate');
+      // console.log('nevigate');
             $http({
                 url: adminurl + 'Home/search',
                 method: 'POST',
@@ -69,6 +69,17 @@ var navigationservice = angular.module('navigationservice', [])
                 url: adminurl + 'Blog/search',
                 method: 'POST',
                 withCredentials: true
+            }).success(callback);
+        },
+        getOneBlog : function(id, callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Blog/getone',
+                method: 'POST',
+                withCredentials: true,
+                data: {
+                    _id: id
+                }
             }).success(callback);
         },
         getPartner : function(callback) {

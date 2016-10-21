@@ -19,76 +19,23 @@
         <div class="img-grid">
             <div class="row img-spac">
                 <div class="col-md-12">
-                    <img src="img/inside-pages/blog-detail.jpg" alt="" class="img-responsive">
+                    <img ng-src="{{getone.banner|uploadpath}}" alt="" class="img-responsive">
 
                 </div>
             </div>
             <div>
-                <h2>Five Ways To Make It Easier For You To Brainstorm For Your Next Blog Post</h2>
+                <h2>{{getone.name}}</h2>
                 <div class="calender">
                     <ul class="list-inline">
-                        <li><span><i class="fa fa-calendar" aria-hidden="true"></i></span> January 15, 2016</li>
+                        <li><span><i class="fa fa-calendar" aria-hidden="true"></i></span> {{getone.date |date:'longDate'}}</li>
                         <li><span><i class="fa fa-comment-o" aria-hidden="true"></i></span> Comment</li>
                         <li><span><i class="fa fa-eye" aria-hidden="true"></i></span> Views</li>
                         <li><span><i class="fa fa-pencil" aria-hidden="true"></i></span> We Write</li>
                     </ul>
                 </div>
                 <div class="sec-border">
-                    <p>So, we rocked at Social Media Week Mumbai this year too! Not only were we content partners with SMW,
-                        but we also hosted two sessions. A Talk on how to make your content work for your customers as well
-                        as the importance of publishing relevant content and ‘Think and Do Dum De Da’ – an interactive workshop
-                        where we discussed easy and fun ways to crack content briefs. And we are sure we were a hit, with
-                        the amount of response we got on Twitter – 105 Mentions, and 98 Followers in a single day!</p>
-                    <p>
-                        Anyway, while at SMW 2015, we shared tips on brainstorming for content briefs. So, here we thought of sharing a few ways
-                        which could help you brainstorm for your next blog post instead!</p>
-                    <div class="list-para">
-                        <ul class="list-group list-unstyled">
-                            <li><span>1. Tell Your Story</span>
-                                <p>People love that. Any article that has a personal touch, people love reading. Moreover, it
-                                    helps you connect with your readers because chances are that, they’ve been through something
-                                    similar. Talk about how you started and what has changed since then. Or even whatever
-                                    you’ve learnt since then. It can also prove to be a conversation starter, what with people
-                                    commenting and sharing their stories.</p>
-                            </li>
-                            <li><span>2. Give Answers</span>
-                                <p>
-                                    Most people are looking for exactly that, on the internet. We do. We are sure you do too. Everyone wants answers to their
-                                    questions and doubts. So give it to them without another thought. Say, kitchen hacks
-                                    or organizing tips. You can also put up a ‘How To’ blog post or review movies, books
-                                    or even products for that matter. There is always something you know, which you think
-                                    is common knowledge. But there is always someone who is looking for exactly that. It
-                                    may be a recipe which is so common to your culture, that you would wonder why you should
-                                    be writing about it. But what if, someone in the other part of the world wants to learn
-                                    to cook it?
-                                </p>
-                            </li>
-                            <li><span>3. Observations</span>
-                                <p>
-                                    It’s been told and retold, but always keep your eyes and ears open, no matter how ordinary it sounds. Observe everything
-                                    that goes on around you. It doesn’t have to be something unique. Even description of
-                                    a busy Railway platform, sometimes sounds interesting. Just carry a notepad with you,
-                                    or even your smartphone will do. The next time you’re travelling, or waiting at a café
-                                    for your friends to arrive, you know how to keep yourself busy!
-                                </p>
-                            </li>
-                            <li><span>4. Something Old, Something New</span>
-                                <p>
-                                    Your older blog can actually give you something to write about for your next blog post. You can write a follow-up blog if
-                                    you have something more to add to it. Or take an old image you’ve clicked and turn it
-                                    into a photo blog. This can go on!
-                                </p>
-                            </li>
-                            <li><span>5. Keep an eye on the trends</span>
-                                <p>
-                                    For many, trends act like writing prompts. For one, you get cues from what’s trending. Secondly, you know what people are
-                                    discussing. That way, you know what people are interested in and what they are looking
-                                    for right now. The best way to look for trends is to keep going through Google Trends,
-                                    or even Twitter Trends.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+                    <p ng-bind-html="getone.content | rawHtml"></p>
+
                 </div>
                 <div class="foot-sec">
                     <ul class="list-inline">
