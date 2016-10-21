@@ -7,14 +7,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
 
     NavigationService.getHome(function(data) {
-      console.log(data);
+      // console.log(data);
         $scope.getHome = data.data.result;
-        console.log($scope.getHome);
+        // console.log($scope.getHome);
     });
     NavigationService.getTestimonial(function(data) {
-      console.log(data);
+      // console.log(data);
         $scope.testimonial = data.data.results;
-        console.log($scope.testimonial);
+        // console.log($scope.testimonial);
     });
     NavigationService.getBlog(function(data) {
 
@@ -26,7 +26,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.blog = data.data.results;
 
     });
+    NavigationService.getClients(function(data) {
 
+        $scope.client = data.data.results;
+        $scope.client = _.chunk($scope.client, 9);
+        for (var i = 0; i < $scope.client.length; i++) {
+            $scope.client[i] = _.chunk($scope.client[i], 3);
+            // console.log($scope.client);
+        }
+        console.log(  $scope.client);
+
+    });
+
+    $scope.formSubmitted = false;
+    $scope.formData = {};
+    $scope.submitForm = function(formData) {
+        NavigationService.saveContact($scope.formData, function(data) {
+            if (data.value === true) {
+                $scope.formSubmitted = true;
+            }
+        });
+    };
 
     $scope.blogs = [
         'img/home-page/b1.jpg',
@@ -84,13 +104,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     ];
     // NavigationService.getClients(function (data) {
     // $scope.AllClients = data;
-    $scope.AllClients = _.chunk($scope.AllClients, 9);
-    for (var i = 0; i < $scope.AllClients.length; i++) {
-        $scope.AllClients[i] = _.chunk($scope.AllClients[i], 3);
-        console.log($scope.AllClients);
+    $scope.client = _.chunk($scope.client, 9);
+    for (var i = 0; i < $scope.client.length; i++) {
+        $scope.client[i] = _.chunk($scope.client[i], 3);
+        // console.log($scope.client);
     }
-    console.log("this is client");
-    console.log($scope.AllClients);
+    console.log(  $scope.client);
+    // console.log($scope.AllClients);
     // })
 
     $scope.testimon = [{

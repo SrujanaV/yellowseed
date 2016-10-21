@@ -79,6 +79,23 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
+        getClients : function(callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Client/search',
+                method: 'POST',
+                withCredentials: true
+            }).success(callback);
+        },
+        saveContact : function(request,callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Contact/save',
+                method: 'POST',
+                withCredentials: true,
+                data:request
+            }).success(callback);
+        },
 
     };
 });
