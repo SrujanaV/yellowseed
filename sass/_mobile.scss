@@ -35,10 +35,13 @@
       .slider{
         p{
           padding: 0;
-          margin: 0 0 0 4em;
+          margin: 0 0 0 40px;
           &::before{
-            left: -38px;
+            left: 0;
           }
+        }
+        .yellow{
+          padding: 0 80px;
         }
         .flexslider-container {
             width: 73%;

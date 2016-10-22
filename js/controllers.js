@@ -51,6 +51,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         });
     };
 
+
     $scope.blogs = [
         'img/home-page/b1.jpg',
         'img/home-page/b2.png',
@@ -64,6 +65,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         'img/home-page/b2.png',
         'img/home-page/b3.png',
     ];
+
+
     $scope.AllClients = [
         'img/home-page/clients/1.png',
         'img/home-page/clients/2.jpg',
@@ -133,6 +136,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         name: "Ashish Jain -Director,Medgini",
         para: "We are very pleased with our decision to use Yellow Seed. We had excellent support from the team for the content required for our website. To successfully implement an extensive website content task, we needed a versatile, well-structured and proven company to do it; Yellow Seed has proved to be all of this and more. "
     }];
+
 
     $scope.section = {
         head: "views/section/section.html",
@@ -399,6 +403,37 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.classv = "active-tab";
         }
     };
+
+
+    $scope.blogcontent = [{
+
+        blogname: "Media"
+
+    }, {
+
+        blogname: "Content Works"
+
+    }, {
+
+        blogname: "People Matter"
+
+    }, {
+
+        blogname: "Content Workshop"
+
+    }, {
+
+        blogname: "Right Brain"
+
+    }, {
+
+        blogname: "Reviews"
+
+    }, {
+
+        blogname: "Live Well"
+
+    }];
 
 })
 

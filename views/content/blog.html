@@ -6,7 +6,16 @@
 
     <div class="container">
         <div class="sub-para">
-            <ul class="list-inline text-center">
+
+          <div class="tab-slider">
+            <flex-slider flex-slide="s in blogcontent track by $index"  class="bg-color" animation="slide" item-width="280" item-margin="10" animationloop="true" move="2">
+               <li auto-heightfixed>
+                  <a href="">{{s.blogname}}</a>
+                   <!-- <img ng-src="{{s}}" class="img-responsive" alt="Hindustan Platinum" auto-heightfixed> -->
+               </li>
+            </flex-slider>
+          </div>
+            <!-- <ul class="list-inline text-center">
                 <li ng-click="tabchanges('media',1)" ng-class="{{}}"><a href="">Media</a></li>
                 <li ng-click="tabchanges('works',2)"><a href="">Content Works</a></li>
                 <li ng-click="tabchanges('matter',3)"><a href="">People Matter</a></li>
@@ -14,7 +23,7 @@
                 <li ng-click="tabchanges('brain',5)"><a href="">Right Brain</a></li>
                 <li ng-click="tabchanges('review',6)"><a href="">Reviews</a></li>
                 <li ng-click="tabchanges('live',7)"><a href="">Live Well</a></li>
-            </ul>
+            </ul> -->
         </div>
         <!--Media Grid-->
         <div class="{{classp}} img-grid" ng-if="tabs=='media'">

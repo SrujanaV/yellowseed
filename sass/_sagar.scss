@@ -7,7 +7,7 @@
 
 .blog{
   .sub-para{
-    padding: 2.5em 0 !important;
+    padding: 1em 0 !important;
     ul{
       font-size: 20px !important;
       li{
@@ -17,8 +17,69 @@
     }
   }
 
-}
+  .bg-color{
+    padding: 11px;
 
+    .flexslider{
+      margin: 0;
+      background: none;
+      border: none;
+    .slides{
+        text-align: center;
+        margin: 10px 53px;
+        li{
+          margin-right: 0 !important;
+          a{
+            font-size: 19px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 8px;
+            &:hover{
+              color: #fff;
+            }
+          }
+        }
+
+      }
+      .flex-control-nav{
+        display: none;
+      }
+      .flex-direction-nav{
+        a {
+          text-decoration: none;
+          display: block;
+          width: 42px;
+          height: 45px;
+          margin: -20px 0 0;
+          position: absolute;
+          top: 40%;
+          z-index: 10;
+          overflow: hidden;
+          opacity: 0;
+          cursor: pointer;
+          color: rgba(0, 0, 0, 0.8);
+          text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+}
+.mb30{
+  margin-bottom: 30px;
+}
+.media{
+  .sub-para{
+    margin: -65px 50px 0 !important;
+    padding: 40px 4em !important;
+    min-height: 0 !important;
+  }
+}
 
 .the-studio,
 .branded,
@@ -204,7 +265,7 @@
         }
     }
     .media-slider {
-        margin-top: -65px;
+        margin-top: -50px;
     }
     .camera {
         @include position(absolute,
@@ -334,11 +395,10 @@
         }
     }
     .flexslider .slides img {
-        max-width: 70%;
-        margin: 6px 28px;
-        padding: 5px;
-        height: 75px;
-        width: auto;
+      margin: 10px auto 10px 15px;
+      padding: 5px;
+      height: 75px;
+      width: auto;
     }
     .flex-control-paging li a.flex-active {
         background: #fff;
