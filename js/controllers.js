@@ -379,9 +379,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     NavigationService.getBlog(function(data) {
 
         $scope.blog = data.data.results;
+        console.log($scope.blog);
 
     });
-
     $scope.tabs = 'media';
     $scope.classp = 'active-tab';
     $scope.classv = '';
