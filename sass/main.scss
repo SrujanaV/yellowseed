@@ -803,7 +803,7 @@ p {
     }
   }
   .yseed-small{
-    @include position(absolute, null 48% -9px null);
+    @include position(absolute, null 38% -5px null);
     img{
       height: 42px;
     }
@@ -1118,6 +1118,17 @@ display: none;
 .active-tab {
 display: block !important;
 }
+
+.three{
+  .flex-control-paging li a.flex-active{
+    background-color: #fff;
+  }
+}
+.flex-control-paging li a{
+  width: 10px;
+  height: 10px;
+}
+
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";
