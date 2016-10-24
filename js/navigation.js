@@ -9,21 +9,55 @@ var uploadurl = adminurl + "upload/";
 var navigationservice = angular.module('navigationservice', [])
 
 .factory('NavigationService', function($http) {
-    var navigation = [{
-        name: "Home",
+    var navigation = [ {
+        name: "What We Do",
         classis: "active",
-        anchor: "home",
-        subnav: [{
-            name: "Subnav1",
-            classis: "active",
-            anchor: "home"
-        }]
+         anchor: "wedo",
+    target: "_self",
+    },{
+        name: "About Us",
+        classis: "active",
+         anchor: "abouts",
+    target: "_self",
+    },{
+        name: " Clients",
+        classis: "active",
+         anchor: "clients",
+    target: "_self",
     }, {
-        name: "Form",
+        name: "Testimonials",
         classis: "active",
-        anchor: "form",
-        subnav: []
-    }];
+         anchor: "testimonials",
+    target: "_self",
+    },{
+        name: "Blog",
+        classis: "active",
+         anchor: "testimonials",
+    target: "_self",
+    },
+     {
+        name: "Workshops",
+        classis: "active",
+         anchor: "workshop",
+    target: "_self",
+    },
+     {
+        name: "Brainwave",
+        classis: "active",
+         anchor: "brainwave",
+    target: "_self",
+    },{
+    name: " Contact Us",
+    classis: "active",
+    anchor: "contact",
+    target: "_self",
+  },{
+        name: "Media",
+        classis: "active",
+         anchor: "media",
+    target: "_self",
+    }
+    ];
 
     return {
         getnav: function() {

@@ -1,24 +1,11 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', ])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper','duScroll' ])
 
-.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout, $state, $filter) {
+.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout, $state, $filter,$stateParams, $document, $location) {
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
      $scope.template.header = ""; 
-
-  $scope.changePage = function(id) {
-        $scope.menutitle = NavigationService.makeactive(id);
-        $state.transitionTo('home', {
-          id: id
-        }, {
-          notify: false
-        });
-        makeAnimation(id);
-        $location.replace();
-      };
-
-
 
     NavigationService.getHome(function(data) {
         // console.log(data);
@@ -166,50 +153,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         eight: "views/section/section8.html",
     };
 
-    // $scope.changePage = function(text) {
-    //     console.log(text);
-    //     var length = $(".fp-section").length;
-    //     console.log(length);
-    //     console.log($(".fp-section"));
-    //     if (typeof $.fn.fullpage.destroy == 'function') {
-    //       $.fn.fullpage.destroy('all');
-    //     }
-    //     if (length === 0) {
-    //         $('.fullpage').fullpage();
-    //     }
-    //     console.log(text);
-    //     $scope.homeval = text;
-    //     switch (text) {
-    //         case "contact":
-    //             $.fn.fullpage.moveTo(8);
-    //             break;
-    //         case "contact":
-    //             $.fn.fullpage.moveTo(7);
-    //             break;
-    //         case "brainwave":
-    //             $.fn.fullpage.moveTo(6);
-    //             break;
-    //         case "workshop":
-    //             $.fn.fullpage.moveTo(5);
-    //             break;
-    //         case "client":
-    //             $.fn.fullpage.moveTo(4);
-    //             break;
-    //         case "about":
-    //             $.fn.fullpage.moveTo(3);
-    //             break;
-    //         case "what":
-    //             $.fn.fullpage.moveTo(2);
-    //             break;
-    //         case "home":
-    //             $.fn.fullpage.moveTo(1);
-    //             break;
-    //         default:
-    //             $.fn.fullpage.moveTo(1);
-    //             break;
-    //     }
-    // };
-
     $scope.$on('$viewContentLoaded', function () {
         $timeout(function () {
              $(window).scroll(function () {
@@ -223,8 +166,36 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
             }
         });
+
+              function makeAnimation(id) {
+    if (_.isEmpty(id)) {
+      id = "home";
+    }
+    var someElement = angular.element(document.getElementById(id));
+    $document.scrollToElement(someElement, 0, 1400);
+  }
+
+  $scope.$on('$viewContentLoaded', function(event) {
+    setTimeout(function() {
+      makeAnimation($stateParams.id);
+    }, 1000);
+  });
+
+
+  $scope.changeURL = function(id) {
+    $scope.menutitle = NavigationService.makeactive(id);
+    $state.transitionTo('homeid', {
+      id: id
+    }, {
+      notify: false
+    });
+    makeAnimation(id);
+    $location.replace();
+  };
         }, 1000);
     });
+
+
 
 })
 
@@ -242,11 +213,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     }
 })
 
-.controller('ContentStrategyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('ContentStrategyCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("content-strategy");
     $scope.menutitle = NavigationService.makeactive("Content Strategy");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+       $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -255,6 +230,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Digital");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -263,6 +242,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Branded Content");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -271,6 +254,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Internal Communication");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -279,6 +266,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Design");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -287,6 +278,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("The Studio");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -295,6 +290,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Workshop");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -303,6 +302,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Brainwave");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -311,6 +314,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Media");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
     $scope.medias = [
         'img/home-page/clients/1.png',
@@ -391,6 +398,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("We Believe");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
 })
 
@@ -399,6 +410,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Blog");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
     NavigationService.getBlog(function(data) {
 
@@ -466,6 +481,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Individual Blog");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+         $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
 
     $scope.blogDetail = function() {
         NavigationService.getOneBlog($stateParams.id, function(data) {
@@ -498,6 +517,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     });
+
+     $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
+
+
     NavigationService.getAllAgency(function(data) {
 
         $scope.agency = data.data.results;
