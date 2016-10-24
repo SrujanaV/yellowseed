@@ -16,7 +16,10 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
         .state('home', {
             url: "/",
             templateUrl: "views/template.html",
-            controller: 'HomeCtrl'
+            controller: 'HomeCtrl',
+            //   params: {
+            //     'id': 'abouts',
+            // }
         })
         .state('form', {
             url: "/form",

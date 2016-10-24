@@ -7,6 +7,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
      $scope.template.header = ""; 
 
+  $scope.changePage = function(id) {
+        $scope.menutitle = NavigationService.makeactive(id);
+        $state.transitionTo('home', {
+          id: id
+        }, {
+          notify: false
+        });
+        makeAnimation(id);
+        $location.replace();
+      };
+
+
+
     NavigationService.getHome(function(data) {
         // console.log(data);
         $scope.home = data.data.results;
@@ -153,49 +166,49 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         eight: "views/section/section8.html",
     };
 
-    $scope.changePage = function(text) {
-        console.log(text);
-        var length = $(".fp-section").length;
-        console.log(length);
-        console.log($(".fp-section"));
-        // if (typeof $.fn.fullpage.destroy == 'function') {
-        //   $.fn.fullpage.destroy('all');
-        // }
-        if (length === 0) {
-            $('.fullpage').fullpage();
-        }
-        console.log(text);
-        $scope.homeval = text;
-        switch (text) {
-            case "contact":
-                $.fn.fullpage.moveTo(8);
-                break;
-            case "contact":
-                $.fn.fullpage.moveTo(7);
-                break;
-            case "brainwave":
-                $.fn.fullpage.moveTo(6);
-                break;
-            case "workshop":
-                $.fn.fullpage.moveTo(5);
-                break;
-            case "client":
-                $.fn.fullpage.moveTo(4);
-                break;
-            case "about":
-                $.fn.fullpage.moveTo(3);
-                break;
-            case "what":
-                $.fn.fullpage.moveTo(2);
-                break;
-            case "home":
-                $.fn.fullpage.moveTo(1);
-                break;
-            default:
-                $.fn.fullpage.moveTo(1);
-                break;
-        }
-    };
+    // $scope.changePage = function(text) {
+    //     console.log(text);
+    //     var length = $(".fp-section").length;
+    //     console.log(length);
+    //     console.log($(".fp-section"));
+    //     if (typeof $.fn.fullpage.destroy == 'function') {
+    //       $.fn.fullpage.destroy('all');
+    //     }
+    //     if (length === 0) {
+    //         $('.fullpage').fullpage();
+    //     }
+    //     console.log(text);
+    //     $scope.homeval = text;
+    //     switch (text) {
+    //         case "contact":
+    //             $.fn.fullpage.moveTo(8);
+    //             break;
+    //         case "contact":
+    //             $.fn.fullpage.moveTo(7);
+    //             break;
+    //         case "brainwave":
+    //             $.fn.fullpage.moveTo(6);
+    //             break;
+    //         case "workshop":
+    //             $.fn.fullpage.moveTo(5);
+    //             break;
+    //         case "client":
+    //             $.fn.fullpage.moveTo(4);
+    //             break;
+    //         case "about":
+    //             $.fn.fullpage.moveTo(3);
+    //             break;
+    //         case "what":
+    //             $.fn.fullpage.moveTo(2);
+    //             break;
+    //         case "home":
+    //             $.fn.fullpage.moveTo(1);
+    //             break;
+    //         default:
+    //             $.fn.fullpage.moveTo(1);
+    //             break;
+    //     }
+    // };
 
     $scope.$on('$viewContentLoaded', function () {
         $timeout(function () {
@@ -211,13 +224,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
         });
         }, 1000);
-    });
-
-        $scope.$on('$viewContentLoaded', function () {
-        if (!$.jStorage.get("popupShow")) {
-            $scope.openpops();
-        }
-      
     });
 
 })
@@ -561,7 +567,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('headerctrl', function($scope, TemplateService, NavigationService) {
+.controller('headerctrl', function($scope, TemplateService, NavigationService,$timeout, $uibModal, $stateParams, $state, $document, $location) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
@@ -573,6 +579,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.Category = data.data.results;
         console.log(data.data.results);
     });
+
+ 
+
+
 
 })
 
