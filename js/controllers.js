@@ -5,6 +5,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+     $scope.template.header = ""; 
 
     NavigationService.getHome(function(data) {
         // console.log(data);
@@ -139,6 +140,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     $scope.section = {
+         header: "views/header.html",
         head: "views/section/section.html",
         zero: "views/section/section0.html",
         one: "views/section/section1.html",
@@ -195,12 +197,28 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
     };
 
-    // $scope.$on('$viewContentLoaded', function () {
-    //     $timeout(function () {
-    //         $('body').addClass('fp-');
-    //         $scope.changePage($stateParams.id);
-    //     }, 1000);
-    // });
+    $scope.$on('$viewContentLoaded', function () {
+        $timeout(function () {
+             $(window).scroll(function () {
+            var scroller = $(document).scrollTop();
+            var height = $(window).height() +  $(window).height();
+            if (height <= scroller) {
+                $('body').addClass('show-header');
+
+            } else {
+                $('body').removeClass('show-header');
+
+            }
+        });
+        }, 1000);
+    });
+
+        $scope.$on('$viewContentLoaded', function () {
+        if (!$.jStorage.get("popupShow")) {
+            $scope.openpops();
+        }
+      
+    });
 
 })
 

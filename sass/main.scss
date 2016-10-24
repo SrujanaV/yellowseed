@@ -141,7 +141,14 @@ a {
     text-decoration: none;
   }
 }
-
+ .header-home {
+   display: none;
+ }
+ .show-header{
+   .header-home {
+   display: block;
+ }
+ }
 header {
   .navbar {
     background-color: #403635;
