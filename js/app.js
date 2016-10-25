@@ -13,11 +13,12 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
     // for http request with session
     $httpProvider.defaults.withCredentials = true;
     $stateProvider
-       .state('homeid', {
-      url: "/:id",
+        .state('home', {
+      url: "/",
       templateUrl: "views/template.html",
       controller: 'HomeCtrl'
     })
+
         .state('form', {
             url: "/form",
             templateUrl: "views/template.html",
@@ -87,7 +88,14 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             url: "/awsomeness",
             templateUrl: "views/template.html",
             controller: 'AwsomenessCtrl'
-        });
+        })
+             .state('homeid', {
+      url: "/:id",
+      templateUrl: "views/template.html",
+      controller: 'HomeCtrl'
+    })
+        
+        ;
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
 });

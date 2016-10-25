@@ -6,7 +6,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
      $scope.template.header = ""; 
-
+  console.log($stateParams.id);
+  $scope.menutitle = NavigationService.makeactive($stateParams.id);
     NavigationService.getHome(function(data) {
         // console.log(data);
         $scope.home = data.data.results;
@@ -138,7 +139,31 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         para: "We are very pleased with our decision to use Yellow Seed. We had excellent support from the team for the content required for our website. To successfully implement an extensive website content task, we needed a versatile, well-structured and proven company to do it; Yellow Seed has proved to be all of this and more. "
     }];
 
+              function makeAnimation(id) {
+    if (_.isEmpty(id)) {
+      id = "home";
+    }
+    var someElement = angular.element(document.getElementById(id));
+    $document.scrollToElement(someElement, 0, 1400);
+  }
 
+  $scope.$on('$viewContentLoaded', function(event) {
+    setTimeout(function() {
+      makeAnimation($stateParams.id);
+    }, 1000);
+  });
+
+
+  $scope.changeURL = function(id) {
+    $scope.menutitle = NavigationService.makeactive(id);
+    $state.transitionTo('homeid', {
+      id: id
+    }, {
+      notify: false
+    });
+    makeAnimation(id);
+    $location.replace();
+  };
     $scope.section = {
          header: "views/header.html",
         head: "views/section/section.html",
@@ -166,32 +191,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
             }
         });
-
-              function makeAnimation(id) {
-    if (_.isEmpty(id)) {
-      id = "home";
-    }
-    var someElement = angular.element(document.getElementById(id));
-    $document.scrollToElement(someElement, 0, 1400);
-  }
-
-  $scope.$on('$viewContentLoaded', function(event) {
-    setTimeout(function() {
-      makeAnimation($stateParams.id);
-    }, 1000);
-  });
-
-
-  $scope.changeURL = function(id) {
-    $scope.menutitle = NavigationService.makeactive(id);
-    $state.transitionTo('homeid', {
-      id: id
-    }, {
-      notify: false
-    });
-    makeAnimation(id);
-    $location.replace();
-  };
         }, 1000);
     });
 
@@ -593,18 +592,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('headerctrl', function($scope, TemplateService, NavigationService,$timeout, $uibModal, $stateParams, $state, $document, $location) {
+.controller('headerctrl', function($scope, TemplateService) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
 
-    NavigationService.getCategory(function(data) {
-        console.log(data);
-        $scope.Category = data.data.results;
-        console.log(data.data.results);
-    });
+    // NavigationService.getCategory(function(data) {
+    //     console.log(data);
+    //     $scope.Category = data.data.results;
+    //     console.log(data.data.results);
+    // });
 
  
 
