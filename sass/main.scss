@@ -1135,7 +1135,16 @@ display: block !important;
   width: 10px;
   height: 10px;
 }
-
+.btns{
+      border: 1px solid #403635 !important;
+          position: absolute;
+    top: 50px;
+    left: 230px;
+      &:hover{
+            background: #403635 !important;
+             border: 1px solid #ffca08!important;
+      }
+}
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";

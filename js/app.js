@@ -60,7 +60,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             controller: 'WorkshopCtrl'
         })
         .state('brainwave', {
-            url: "/brainwave",
+            url: "/brainwave-detail",
             templateUrl: "views/template.html",
             controller: 'BrainwaveCtrl'
         })
