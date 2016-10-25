@@ -5,7 +5,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-     $scope.template.header = ""; 
+     $scope.template.header = "";
   console.log($stateParams.id);
   $scope.menutitle = NavigationService.makeactive($stateParams.id);
     NavigationService.getHome(function(data) {
@@ -409,12 +409,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Blog");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+
+    // NavigationService.getBlog(function(data) {
+    //
+    //     $scope.blog = data.data.results;
+    //
+    // });
          $scope.changeURL = function(id) {
       console.log(id);
       $location.path("" + id);
     };
 
-    NavigationService.getBlog(function(data) {
+    NavigationService.getTag(function(data) {
 
         $scope.blog = data.data.results;
         console.log($scope.blog);
@@ -427,19 +433,25 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.oneAtATime = true;
 
     TemplateService.menu = "";
-    $scope.tabchanges = function(tabs, a) {
-
-        $scope.tabs = tabs;
-        if (a == 1) {
-
-            $scope.classp = "active-tab";
-            $scope.classv = '';
-
-        } else {
-
-            $scope.classp = '';
-            $scope.classv = "active-tab";
-        }
+    $scope.tabs = "";
+    $scope.tabchanges = function(tab) {
+console.log(tab);
+NavigationService.getTagBlog(tab, function(data) {
+    $scope.getoneBlogs = data.data;
+    console.log(data.data);
+});
+// console.log(a);
+        $scope.tabs = tab;
+//         if (a == 1) {
+// console.log('inside 1');
+//             $scope.classp = "active-tab";
+//             $scope.classv = '';
+//
+//         } else {
+//
+//             $scope.classp = '';
+//             $scope.classv = "active-tab";
+//         }
     };
 
 
@@ -605,7 +617,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //     console.log(data.data.results);
     // });
 
- 
+
 
 
 

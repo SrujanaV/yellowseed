@@ -105,6 +105,14 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
+        getTag : function(callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Tag/search',
+                method: 'POST',
+                withCredentials: true
+            }).success(callback);
+        },
         getRelatedBlogs : function(id,callback) {
       // console.log('nevigate');
             $http({
@@ -114,6 +122,15 @@ var navigationservice = angular.module('navigationservice', [])
                 data: {
                     _id: id
                 }
+            }).success(callback);
+        },
+        getTagBlog : function(data,callback) {
+      // console.log('nevigate');
+            $http({
+                url: adminurl + 'Blog/getOneBlog',
+                method: 'POST',
+                withCredentials: true,
+                data: data
             }).success(callback);
         },
         getOneBlog : function(id, callback) {
