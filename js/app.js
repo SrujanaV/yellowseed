@@ -55,7 +55,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             controller: 'TheStudioCtrl'
         })
         .state('workshop', {
-            url: "/workshop",
+            url: "/workshop-detail",
             templateUrl: "views/template.html",
             controller: 'WorkshopCtrl'
         })
@@ -75,7 +75,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             controller: 'WeBelieveCtrl'
         })
         .state('blog', {
-            url: "/blog",
+            url: "/blog-detail",
             templateUrl: "views/template.html",
             controller: 'BlogCtrl'
         })
