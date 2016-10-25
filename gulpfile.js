@@ -21,6 +21,7 @@ var jsArray = [
     './bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js',
     './bower_components/angular-swiper/dist/angular-swiper.js',
     './bower_components/fullpage.js/dist/jquery.fullpage.min.js',
+   './bower_components/angular-scroll/angular-scroll.min.js',
 
     //Work files
     './js/app.js',
