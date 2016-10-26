@@ -36,60 +36,18 @@
             <div class="row img-spac">
             </div>
             <div class="row img-spac">
-                <div class="col-md-6">
-                    <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
+                <div class="col-md-6" ng-repeat="item in getoneBlogs track by $index">
+                    <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive">
                     <div class="img-sec" ui-sref="individual-blog({id:s._id})">
                     <div class="img-sec" >
-                        <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
-                        <p class="date">January 15, 2016</p>
-                        <p class="txt">The internet is filled with updates about Friends! Its's trending on Twitter, your Facebook News Feed is... </p>
+                        <h3>{{item.name}}</h3>
+                        <p class="date">{{item.date|date:'longDate'}}</p>
+                        <p class="txt" ng-bind-html="item.content | rawHtml"></p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
-                    <div class="img-sec">
-                        <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
-                        <p class="date">January 15, 2016</p>
-                        <p class="txt">The internet is filled with updates about Friends! Its's trending on Twitter, your Facebook News Feed is... </p>
-                    </div>
-                </div>
+
             </div>
-            <div class="row img-spac">
-                <div class="col-md-6">
-                    <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
-                    <div class="img-sec">
-                        <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
-                        <p class="date">January 15, 2016</p>
-                        <p class="txt">The internet is filled with updates about Friends! Its's trending on Twitter, your Facebook News Feed is... </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
-                    <div class="img-sec">
-                        <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
-                        <p class="date">January 15, 2016</p>
-                        <p class="txt">The internet is filled with updates about Friends! Its's trending on Twitter, your Facebook News Feed is... </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row img-spac">
-                <div class="col-md-6">
-                    <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
-                    <div class="img-sec">
-                        <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
-                        <p class="date">January 15, 2016</p>
-                        <p class="txt">The internet is filled with updates about Friends! Its's trending on Twitter, your Facebook News Feed is... </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/inside-pages/blog-1.jpg" alt="" class="img-responsive">
-                    <div class="img-sec">
-                        <h3>Why You Shouldn't Expect Too Much From The F.R.I.E.N.D.S Reunion</h3>
-                        <p class="date">January 15, 2016</p>
-                        <p class="txt">The internet is filled with updates about Friends! Its's trending on Twitter, your Facebook News Feed is... </p>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
 
