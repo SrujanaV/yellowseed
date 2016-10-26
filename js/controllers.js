@@ -6,6 +6,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
      $scope.template.header = "";
+     TemplateService.banner = "";
   console.log($stateParams.id);
   $scope.menutitle = NavigationService.makeactive($stateParams.id);
     NavigationService.getHome(function(data) {
@@ -216,6 +217,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("content-strategy");
     $scope.menutitle = NavigationService.makeactive("Content Strategy");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
        $scope.changeURL = function(id) {
       console.log(id);
@@ -228,6 +231,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("digital");
     $scope.menutitle = NavigationService.makeactive("Digital");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -240,6 +245,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("branded-content");
     $scope.menutitle = NavigationService.makeactive("Branded Content");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -252,6 +259,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("internal-communication");
     $scope.menutitle = NavigationService.makeactive("Internal Communication");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -264,6 +273,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("design");
     $scope.menutitle = NavigationService.makeactive("Design");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -276,6 +287,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("the-studio");
     $scope.menutitle = NavigationService.makeactive("The Studio");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -288,6 +301,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("workshop");
     $scope.menutitle = NavigationService.makeactive("Workshop");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -300,6 +315,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("brainwave");
     $scope.menutitle = NavigationService.makeactive("Brainwave");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -312,6 +329,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("media");
     $scope.menutitle = NavigationService.makeactive("Media");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -408,6 +427,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("blog");
     $scope.menutitle = NavigationService.makeactive("Blog");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
 
     // NavigationService.getBlog(function(data) {
@@ -491,6 +512,8 @@ NavigationService.getTagBlog(tab, function(data) {
     $scope.template = TemplateService.changecontent("individual-blog");
     $scope.menutitle = NavigationService.makeactive("Individual Blog");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
          $scope.changeURL = function(id) {
       console.log(id);
@@ -515,6 +538,8 @@ NavigationService.getTagBlog(tab, function(data) {
     $scope.template = TemplateService.changecontent("awsomeness");
     $scope.menutitle = NavigationService.makeactive("awsomeness");
     TemplateService.title = $scope.menutitle;
+    TemplateService.footer = "";
+      TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
     $scope.detail = {};
     NavigationService.getAllBrand(function(data) {
