@@ -227,7 +227,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('DigitalCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('DigitalCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("digital");
     $scope.menutitle = NavigationService.makeactive("Digital");
     TemplateService.title = $scope.menutitle;
@@ -241,7 +241,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('BrandedContentCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('BrandedContentCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("branded-content");
     $scope.menutitle = NavigationService.makeactive("Branded Content");
     TemplateService.title = $scope.menutitle;
@@ -255,7 +255,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('InternalCommunicationCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('InternalCommunicationCtrl', function($scope, TemplateService, NavigationService,$timeout, $location) {
     $scope.template = TemplateService.changecontent("internal-communication");
     $scope.menutitle = NavigationService.makeactive("Internal Communication");
     TemplateService.title = $scope.menutitle;
@@ -269,7 +269,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('DesignCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('DesignCtrl', function($scope, TemplateService, NavigationService,$timeout, $location) {
     $scope.template = TemplateService.changecontent("design");
     $scope.menutitle = NavigationService.makeactive("Design");
     TemplateService.title = $scope.menutitle;
@@ -283,7 +283,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('TheStudioCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('TheStudioCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("the-studio");
     $scope.menutitle = NavigationService.makeactive("The Studio");
     TemplateService.title = $scope.menutitle;
@@ -297,7 +297,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('WorkshopCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('WorkshopCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("workshop");
     $scope.menutitle = NavigationService.makeactive("Workshop");
     TemplateService.title = $scope.menutitle;
@@ -311,7 +311,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('BrainwaveCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('BrainwaveCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("brainwave");
     $scope.menutitle = NavigationService.makeactive("Brainwave");
     TemplateService.title = $scope.menutitle;
@@ -325,7 +325,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('MediaCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('MediaCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("media");
     $scope.menutitle = NavigationService.makeactive("Media");
     TemplateService.title = $scope.menutitle;
@@ -423,7 +423,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('BlogCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('BlogCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("blog");
     $scope.menutitle = NavigationService.makeactive("Blog");
     TemplateService.title = $scope.menutitle;
@@ -508,7 +508,7 @@ NavigationService.getTagBlog(tab, function(data) {
 
 })
 
-.controller('IndividualBlogCtrl', function($scope, TemplateService, NavigationService, $timeout, $state, $stateParams) {
+.controller('IndividualBlogCtrl', function($scope, TemplateService, NavigationService, $timeout, $location, $state, $stateParams) {
     $scope.template = TemplateService.changecontent("individual-blog");
     $scope.menutitle = NavigationService.makeactive("Individual Blog");
     TemplateService.title = $scope.menutitle;
@@ -534,7 +534,7 @@ NavigationService.getTagBlog(tab, function(data) {
 
 })
 
-.controller('AwsomenessCtrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal) {
+.controller('AwsomenessCtrl', function($scope, TemplateService, NavigationService, $timeout, $location, $uibModal) {
     $scope.template = TemplateService.changecontent("awsomeness");
     $scope.menutitle = NavigationService.makeactive("awsomeness");
     TemplateService.title = $scope.menutitle;
