@@ -1,50 +1,37 @@
 <div class="container">
-
     <div class="row">
         <div class="col-md-offset-1 col-md-11">
-            <div class="relative">  
- <h1>Blog</h1>
-              <a type="button" class="btn btn2 btns" name="knowmore" ui-sref="blog">know more</a>
+            <div class="relative">
+                <h1>Blog</h1>
+                <a type="button" class="btn btn2 btns" name="knowmore" ui-sref="blog">know more</a>
             </div>
-           
         </div>
     </div>
-
-
-
     <div class="row">
         <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-
             <div class="blog-slider">
                 <flex-slider class="carousel" slide="s in blog track by $index" animation="slide" item-width="310">
                     <li auto-heightfixed>
-                      <a ui-sref="individual-blog({id:s._id})">
-                        <div class="blogs-details">
-                            <div class="blog-image">
-                                <img ng-src="{{s.image|uploadpath}}" class="img-responsive" alt="blog-image">
+                        <a ui-sref="individual-blog({id:s._id})">
+                            <div class="blogs-details">
+                                <div class="blog-image">
+                                    <img ng-src="{{s.image|uploadpath}}" class="img-responsive" alt="blog-image">
+                                </div>
+                                <div class="blog-info">
+                                    <p>{{s.name|shorten : 60}}</p>
+                                </div>
                             </div>
-                            <div class="blog-info">
-                                <p>{{s.name|shorten : 60}}</p>
-                            </div>
-                        </div>
-                      </a>
+                        </a>
                     </li>
                 </flex-slider>
             </div>
-
         </div>
     </div>
-
     <div class="pen-stand">
         <img src="img/home-page/pen-stand.png" class="img-responsive" alt="" />
     </div>
-
-
 </div>
-
-<div class="testimonials">
-
-
+<!--<div class="testimonials">
     <h1 class="no-margin">Testimonials</h1>
     <a type="button" class="btn btn1 view-all" name="viewall">view all</a>
     <div class="slider">
@@ -55,6 +42,4 @@
             </li>
         </flex-slider>
     </div>
-
-
-</div>
+</div>-->

@@ -1,9 +1,11 @@
 <div class="container">
   <div class="row">
-
     <div class="col-md-offset-1 col-md-4">
-      <h1>
+      <h1 ng-show="showHead1">
         Clients
+      </h1>
+      <h1 ng-show="showHead2">
+        Our Partnerships
       </h1>
       <p>
         Since our inception, we’ve worked on a plethora of sectors and brands, often over a sustained period of time. We do respect
@@ -13,13 +15,15 @@
         Write to us at <a href="mailto:contact@itsyellowseed.com">contact@itsyellowseed.com</a> for a detailed credential
         presentation or work samples.
       </p>
-      <p class="view">
-        Also View : Our Partners
+      <p class="view" ng-show="showHead1" ng-click="showHeading1()">
+        Also View : Our Partnerships
+      </p>
+      <p class="view" ng-show="showHead2" ng-click="showHeading2()">
+        Also View : Clients
       </p>
     </div>
   </div>
 </div>
-
 <div class="brands">
   <div class="client-slider">
     <!-- console.log(client); -->
@@ -30,7 +34,6 @@
           <div class="row bord-cus" ng-repeat="row in img track by $index">
             <div class="col-xs-4 bord-cus1" ng-repeat="clientimg in row track by $index">
               <div class="img-holder listing">
-
                 <img ng-src="{{clientimg.logo|uploadpath}}" alt="" class="img-responsive">
               </div>
             </div>
