@@ -12,26 +12,24 @@
 <div class="pen-stand">
   <img src="img/home-page/pen-stand.png" class="img-responsive" alt="" />
 </div>-->
-<div class="container">
-  <div class="testimonials">
-    <div class="test-vw">
-      <h1 class="no-margin">Testimonials</h1>
-      <a type="button" class="btn btn1 view-all" name="viewall">view all</a>
-    </div>
-    <div class="slider">
-      <flex-slider flex-slide="s in testimonial track by $index" animation="slide" item-width="1000">
-        <li auto-heightfixed>
-          <p class="relative" ng-bind-html="s.content | rawHtml"></p>
-          <span class="yellow" ng-bind-html="s.name | rawHtml"></span>
-        </li>
-      </flex-slider>
-    </div>
+<div class="testimonials">
+  <div class="test-vw">
+    <h1 class="no-margin">Testimonials</h1>
+    <a type="button" class="btn btn1 view-all" name="viewall">view all</a>
   </div>
-  <div class="shd hidden-sm hidden-xs">
+  <div class="slider">
+    <flex-slider flex-slide="s in testimonial track by $index" animation="slide" item-width="1000">
+      <li auto-heightfixed>
+        <p class="relative" ng-bind-html="s.content | rawHtml"></p>
+        <span class="yellow" ng-bind-html="s.name | rawHtml"></span>
+      </li>
+    </flex-slider>
   </div>
-  <div class="shd1 hidden-sm hidden-xs">
-  </div>
-  <div class="pen-stand">
-    <img src="img/home-page/pen-stand.png" class="img-responsive" alt="" />
-  </div>
+</div>
+<div class="shd hidden-sm hidden-xs">
+</div>
+<div class="shd1 hidden-sm hidden-xs">
+</div>
+<div class="pen-stand">
+  <img src="img/home-page/pen-stand.png" class="img-responsive" alt="" />
 </div>

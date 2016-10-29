@@ -8,43 +8,43 @@ var imgpath = adminurl + "upload/readFile";
 var uploadurl = adminurl + "upload/";
 var navigationservice = angular.module('navigationservice', [])
 
-.factory('NavigationService', function($http) {
+.factory('NavigationService', function ($http) {
     var navigation = [{
         name: "What We Do",
         classis: "active",
         anchor: "wedo",
         target: "_self",
-        subnav: [{
-            name: "Content Strategy and Wisdom",
-            classis: "",
-            link: "content-strategy"
-        }, {
-            name: "Digital",
-            classis: "",
-            link: "digital"
-        }, {
-            name: "Branded Content",
-            classis: "",
-            link: "branded-content"
-        }, {
-            name: "Internal Communications",
-            classis: "",
-            link: "internal-communications"
-        }, {
-            name: "Media Centre",
-            classis: "",
-            link: "media"
-        }, {
-            name: "Design",
-            classis: "",
-            link: "design"
-        }]
+        // subnav: [{
+        //     name: "Content Strategy and Wisdom",
+        //     classis: "",
+        //     link: "content-strategy"
+        // }, {
+        //     name: "Digital",
+        //     classis: "",
+        //     link: "digital"
+        // }, {
+        //     name: "Branded Content",
+        //     classis: "",
+        //     link: "branded-content"
+        // }, {
+        //     name: "Internal Communications",
+        //     classis: "",
+        //     link: "internal-communications"
+        // }, {
+        //     name: "Media Centre",
+        //     classis: "",
+        //     link: "media"
+        // }, {
+        //     name: "Design",
+        //     classis: "",
+        //     link: "design"
+        // }]
     }, {
         name: " Clients",
         classis: "active",
         anchor: "clients",
         target: "_self",
-        subnav: []
+
     }, {
         name: "Testimonials",
         classis: "active",
@@ -83,10 +83,10 @@ var navigationservice = angular.module('navigationservice', [])
     }, ];
 
     return {
-        getnav: function() {
+        getnav: function () {
             return navigation;
         },
-        makeactive: function(menuname) {
+        makeactive: function (menuname) {
             for (var i = 0; i < navigation.length; i++) {
                 if (navigation[i].name == menuname) {
                     navigation[i].classis = "active";
@@ -96,7 +96,7 @@ var navigationservice = angular.module('navigationservice', [])
             }
             return menuname;
         },
-        getHome: function(callback) {
+        getHome: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Home/search',
@@ -104,7 +104,7 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
-        getCategory: function(callback) {
+        getCategory: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Category/search',
@@ -112,7 +112,7 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
-        getTestimonial: function(callback) {
+        getTestimonial: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Testimonial/Search',
@@ -120,7 +120,7 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
-        getBlog: function(callback) {
+        getBlog: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Blog/search',
@@ -128,7 +128,7 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
-        getTag: function(callback) {
+        getTag: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Tag/search',
@@ -136,7 +136,7 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
-        getRelatedBlogs: function(id, callback) {
+        getRelatedBlogs: function (id, callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Blog/getOneBlog',
@@ -147,7 +147,7 @@ var navigationservice = angular.module('navigationservice', [])
                 }
             }).success(callback);
         },
-        getTagBlog: function(id, callback) {
+        getTagBlog: function (id, callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Blog/getOneBlog',
@@ -158,7 +158,7 @@ var navigationservice = angular.module('navigationservice', [])
                 }
             }).success(callback);
         },
-        getOneBlog: function(id, callback) {
+        getOneBlog: function (id, callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Blog/getOneBlog',
@@ -169,7 +169,7 @@ var navigationservice = angular.module('navigationservice', [])
                 }
             }).success(callback);
         },
-        getPartner: function(callback) {
+        getPartner: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Partner/search',
@@ -177,7 +177,7 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
-        getClients: function(callback) {
+        getClients: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Client/search',
@@ -185,7 +185,7 @@ var navigationservice = angular.module('navigationservice', [])
                 withCredentials: true
             }).success(callback);
         },
-        saveContact: function(request, callback) {
+        saveContact: function (request, callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Contact/save',
@@ -194,7 +194,7 @@ var navigationservice = angular.module('navigationservice', [])
                 data: request
             }).success(callback);
         },
-        getAllBrand: function(callback) {
+        getAllBrand: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Brand/Search',
@@ -203,7 +203,7 @@ var navigationservice = angular.module('navigationservice', [])
 
             }).success(callback);
         },
-        getAllAgency: function(callback) {
+        getAllAgency: function (callback) {
             // console.log('nevigate');
             $http({
                 url: adminurl + 'Agency/search',
