@@ -458,7 +458,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     NavigationService.getTag(function (data) {
 
         $scope.blog = data.data.results;
-        console.log($scope.blog);
+        console.log("blog",$scope.blog);
 
     });
     $scope.tabs = 'media';
@@ -472,11 +472,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.tabchanges = function (tab) {
         console.log(tab);
         NavigationService.getTagBlog(tab, function (data) {
+
             $scope.getoneBlogs = data.data;
-            console.log(data.data);
+            console.log("$scope.getoneBlogs",$scope.getoneBlogs);
         });
         // console.log(a);
-        $scope.tabs = tab;
+        // $scope.tabs = tab;
         //         if (a == 1) {
         // console.log('inside 1');
         //             $scope.classp = "active-tab";
