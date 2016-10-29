@@ -240,6 +240,24 @@
 }
 
 @media (max-width: $screen-sm-max) {
+  .four {
+    .testimonials {
+      width: 100%;
+    }
+    .pen-stand {
+      top: 35%;
+      left: -8%;
+    }
+  }
+  .five {
+    .blog-slider {
+      width: 597px;
+    }
+    .btns {
+      top: 54px;
+      left: 186px;
+    }
+  }
   .one {
     z-index: 0;
   }
@@ -331,6 +349,39 @@
 }
 
 @media (max-width: $screen-xs-max) {
+  .list-inline {
+    padding: none;
+    list-style: none;
+  }
+  .one {
+    .circle-cont {
+      margin: 0 auto;
+    }
+  }
+  .no-padding {
+    padding: 0px 25px!important;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #403635;
+  }
+  // .navbar-default .navbar-toggle:hover,
+  // .navbar-default .navbar-toggle:focus {
+  //   background-color: #fff;
+  // }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .five {
+    .btns {
+      top: 26px;
+      left: 128px;
+    }
+    .blog-slider {
+      width: 286px;
+      margin: 0 auto;
+    }
+  }
   .header {
     .head-padd {
       padding: 0 2em;
@@ -555,6 +606,18 @@
 }
 
 @media (max-width: 480px) {
+  .four {
+    .testimonials {
+      padding: 5em 0 0 0;
+      .slider p {
+        padding: 0;
+      }
+    }
+  }
+  .four .testimonials .slider {
+    width: 310px;
+    margin: 0 auto;
+  }
   .head {
     .head-tag {
       h2 {
