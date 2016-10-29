@@ -150,7 +150,7 @@ var navigationservice = angular.module('navigationservice', [])
         getTagBlog: function(id, callback) {
             // console.log('nevigate');
             $http({
-                url: adminurl + 'Blog/getOneBlog',
+                url: adminurl + 'blog/getBlogDetails',
                 method: 'POST',
                 withCredentials: true,
                 data: {
