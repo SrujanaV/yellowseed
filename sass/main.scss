@@ -243,13 +243,13 @@ header {
   padding: 8em 0;
   z-index: 1 !important;
   h3 {
-    color: #ffc946;
+    color: #ffca08;
   }
   p {
     color: #fff;
   }
   label {
-    color: #ffc946;
+    color: #ffca08;
   }
   .wait {
     margin: 6em 2em 0 0;
@@ -263,10 +263,10 @@ header {
 }
 
 .three {
-  background-color: #ffc946;
+  background-color: #ffca08;
   padding: 7em 0 12em 0;
   h1 {
-    color: #ffc946;
+    color: #ffca08;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #616161 2px 2px 4px!important;
   }
   p {
@@ -321,6 +321,26 @@ header {
 }
 
 .four {
+  height: 520px;
+  background: #ffca08;
+  padding: 56px 0;
+  .shd {
+    position: absolute;
+    top: 0;
+    height: 200px;
+    width: 100%;
+    background: #ffca08;
+  }
+  .shd1 {
+    position: absolute;
+    top: 200px;
+    height: 200px;
+    width: 100%;
+    background: #ffca08;
+    -webkit-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
+  }
   h1 {
     color: #4e4242;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px !important;
@@ -329,15 +349,17 @@ header {
     width: 82%;
     padding: 6em 0 0 7em;
     @include position(absolute,
-    77px 0 null null);
+    216px 0 null null);
     background-image: url(../img/home-page/testimon-bg.jpg);
     background-size: cover;
     z-index: 1;
     @include transform(translateY(-40%));
-    height: 375px;
+    height: 400px;
+    right: 0;
     h1 {
       color: #4e4242;
       text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 2px 2px 4px !important;
+      display: inline-block;
     }
     // span {
     //   display: block;
@@ -360,27 +382,27 @@ header {
           font-size: 42px;
           @include position(absolute,
           -28px null null 9%);
-          color: #fec60f;
+          color: #ffca08;
         }
       }
       .yellow {
-        color: #ffc946 !important;
+        color: #ffca08 !important;
         padding: 0 109px;
       }
       .flex-control-nav {
         bottom: -20%;
       }
       .flex-control-paging li a.flex-active {
-        background: #ffc946;
+        background: #ffca08;
         cursor: default;
       }
     }
-    .view-all {
-      z-index: 9999;
-      @include position(absolute,
-      36% 23% null null);
-      display: none;
-    }
+    // .view-all {
+    //   z-index: 9999;
+    //   @include position(absolute,
+    //   36% 45% null null);
+    //    display: none;
+    // }
   }
   .flex-control-nav {
     bottom: -30%;
@@ -388,15 +410,15 @@ header {
 }
 
 .five {
-  background-color: #ffc946;
-  -webkit-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
-  padding-top: 26em;
-  padding-bottom: 5em;
+  background-color: #ffca08;
+  // -webkit-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
+  // -moz-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
+  // box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
+  padding-top: 8em;
+  padding-bottom: 16em;
   h1 {
     font-size: 7em!important;
-    color: #ffc946;
+    color: #ffca08;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #616161 2px 2px 4px!important;
   }
   .flex-control-nav {
@@ -626,35 +648,35 @@ p {
     border: none;
     border-bottom: 1px solid #d3d0d0;
     width: 100%;
-    margin: 25px 0 10px 0;
+    margin: 82px 0 10px 0;
     resize: none;
     color: #fff;
     @include placeholder {}
   }
   .btn1 {
     background: transparent;
-    color: #ffc946;
-    border: 1px solid #ffc946;
+    color: #ffca08;
+    border: 1px solid #ffca08;
     font-size: 9px;
     text-transform: uppercase;
     padding: 6px 15px;
     letter-spacing: 1px;
     &:hover {
-      background: #ffc946;
+      background: #ffca08;
       color: #fff;
     }
   }
   .btn2 {
     color: #000;
-    border: 1px solid #ffc946;
+    border: 1px solid #ffca08;
     font-size: 9px;
     text-transform: uppercase;
-    background: #ffc946;
+    background: #ffca08;
     padding: 6px 15px;
     letter-spacing: 1px;
     &:hover {
       background: transparent;
-      color: #ffc946!important;
+      color: #ffca08!important;
     }
   }
   ul.img-list li:hover span.text-content {
@@ -677,7 +699,7 @@ p {
       }
       &:hover {
         span.text-content {
-          border-left: 4px solid #ffc946;
+          border-left: 4px solid #ffca08;
         }
       }
     }
@@ -732,7 +754,7 @@ p {
       border-radius: 50%;
       width: 100px;
       height: 100px;
-      background: #ffc946;
+      background: #ffca08;
       overflow: hidden;
       left: 5%;
       top: 3px;
@@ -916,7 +938,7 @@ p {
   }
   .pen-stand {
     @include position(absolute,
-    5% null null 5%);
+    35% null null 8%);
     z-index: 2;
     img {
       height: 400px;
@@ -947,10 +969,10 @@ p {
     padding: 5em 0 2em;
   }
   .we-two {
-    background-color: #ffc946;
+    background-color: #ffca08;
     padding: 4em 0 1em 0;
     h1 {
-      color: #ffc946!important;
+      color: #ffca08!important;
       text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #616161 2px 2px 4px !important;
     }
   }
@@ -1101,7 +1123,7 @@ footer {
 }
 
 // .yellow {
-//   color: #ffc946 !important;
+//   color: #ffca08 !important;
 // }
 .bold {
   font-weight: 500;
@@ -1171,7 +1193,7 @@ footer {
       margin: 0 0 10px;
     }
     .date {
-      background: #ffc946;
+      background: #ffca08;
       width: 150px;
       text-transform: uppercase;
       padding: 0 8px;
@@ -1209,7 +1231,7 @@ footer {
   left: 234px;
   &:hover {
     background: #403635 !important;
-    border: 1px solid #ffc946!important;
+    border: 1px solid #ffca08!important;
   }
 }
 

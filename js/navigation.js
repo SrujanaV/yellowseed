@@ -14,25 +14,41 @@ var navigationservice = angular.module('navigationservice', [])
         classis: "active",
         anchor: "wedo",
         target: "_self",
-    }, {
-        name: "About Us",
-        classis: "active",
-        anchor: "abouts",
-        target: "_self",
+        subnav: [{
+            name: "Content Strategy and Wisdom",
+            classis: "",
+            link: "content-strategy"
+        }, {
+            name: "Digital",
+            classis: "",
+            link: "digital"
+        }, {
+            name: "Branded Content",
+            classis: "",
+            link: "branded-content"
+        }, {
+            name: "Internal Communications",
+            classis: "",
+            link: "internal-communications"
+        }, {
+            name: "Media Centre",
+            classis: "",
+            link: "media"
+        }, {
+            name: "Design",
+            classis: "",
+            link: "design"
+        }]
     }, {
         name: " Clients",
         classis: "active",
         anchor: "clients",
         target: "_self",
+        subnav: []
     }, {
         name: "Testimonials",
         classis: "active",
         anchor: "testimonials",
-        target: "_self",
-    }, {
-        name: "Blog",
-        classis: "active",
-        anchor: "blog",
         target: "_self",
     }, {
         name: "Workshops",
@@ -45,16 +61,26 @@ var navigationservice = angular.module('navigationservice', [])
         anchor: "brainwave",
         target: "_self",
     }, {
-        name: " Contact Us",
-        classis: "active",
-        anchor: "contact",
-        target: "_self",
-    }, {
         name: "Media",
         classis: "active",
         anchor: "media",
         target: "_self",
-    }];
+    }, {
+        name: "Blog",
+        classis: "active",
+        anchor: "blog",
+        target: "_self",
+    }, {
+        name: "About Us",
+        classis: "active",
+        anchor: "abouts",
+        target: "_self",
+    }, {
+        name: " Contact Us",
+        classis: "active",
+        anchor: "contact",
+        target: "_self",
+    }, ];
 
     return {
         getnav: function () {
