@@ -487,6 +487,14 @@
             letter-spacing: 1px;
         }
     }
+    .blog-active {
+        background-color: #534334;
+    }
+    li.blog-active {
+        a {
+            color: #fff !important;
+        }
+    }
 }
 
 //Individual-blog
