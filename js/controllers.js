@@ -455,23 +455,36 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         $scope.blog = data.data.results;
         console.log("blog",$scope.blog);
+        $scope.tabchanges($scope.blog[0]._id,0);
 
     });
-    $scope.tabs = 'media';
-    $scope.classp = 'active-tab';
-    $scope.classv = '';
-
-    $scope.oneAtATime = true;
-
-    TemplateService.menu = "";
-    $scope.tabs = "";
-    $scope.tabchanges = function (tab) {
+    // $scope.tabs = 'media';
+    // $scope.classp = 'active-tab';
+    // $scope.classv = '';
+    //
+    // $scope.oneAtATime = true;
+    //
+    // TemplateService.menu = "";
+    // $scope.tabs = "";
+    $scope.tabchanges = function (tab,indexid) {
         console.log(tab);
+        
+        _.each($scope.blog, function(key) {
+            key.activetab = false;
+        });
+          $scope.blog[indexid].activetab = true;
         NavigationService.getTagBlog(tab, function (data) {
 
             $scope.getoneBlogs = data.data;
             console.log("$scope.getoneBlogs",$scope.getoneBlogs);
+
+
         });
+
+
+
+
+
         // console.log(a);
         // $scope.tabs = tab;
         //         if (a == 1) {

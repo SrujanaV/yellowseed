@@ -10,8 +10,9 @@
 
           <div class="tab-slider">
             <flex-slider flex-slide="s in blog track by $index"  class="bg-color" animation="slide" item-width="280" item-margin="10" animationloop="true" move="2">
-               <li auto-heightfixed>
-                  <a ng-click="tabchanges(s._id)">{{s.name}}</a>
+               <!-- <li class="blog-active" auto-heightfixed  ng-click="tabchanges(s._id,$index)">{{s.activetab}} -->
+               <li auto-heightfixed ng-class={'blog-active':s.activetab} ng-click="tabchanges(s._id,$index)">
+                  <a>{{s.name}}</a>
                   <!-- <a ng-click="tabchanges('Media')">{{s.name}}</a> -->
                    <!-- <img ng-src="{{s}}" class="img-responsive" alt="Hindustan Platinum" auto-heightfixed> -->
                </li>
@@ -32,7 +33,7 @@
 
 
         <!--Media Grid-->
-        <div class="{{classp}} img-grid" ng-if="tabs=='media'">
+        <div class="{{classp}} img-grid">
             <div class="row img-spac">
             </div>
             <div class="row img-spac">
@@ -53,6 +54,6 @@
 
 
     </div>
-      <div ng-if="getoneBlogs.blog===null" class="text-center">No Blog Found.</div>
+      <div ng-if="getoneBlogs.length===0" class="text-center">No Blog Found.</div>
 
 </section>
