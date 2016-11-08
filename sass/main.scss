@@ -597,6 +597,13 @@ p {
         border-radius: 50%;
         padding: 5px;
         text-align: center;
+        &:hover{
+          background-color: #ffca08;
+          i{
+color:#fff;
+          }
+          
+        }
       }
       li+li {
         margin-top: 5px;
@@ -1261,7 +1268,13 @@ footer {
 //     width: 100%;
 // }
 
+.one .img-list li span.text-content{
+  color: #fff;
+}
 
+.pointer{
+  cursor:pointer;
+}
 
 @import "fancybox-override";
 @import "mobile";
