@@ -421,11 +421,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('WeBelieveCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+.controller('WeBelieveCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     $scope.template = TemplateService.changecontent("we-believe");
     $scope.menutitle = NavigationService.makeactive("We Believe");
     TemplateService.title = $scope.menutitle;
+        TemplateService.footer = "";
+    TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
+    $scope.changeURL = function (id) {
+        console.log(id);
+        $location.path("" + id);
+    };
     $scope.changeURL = function (id) {
         console.log(id);
         $location.path("" + id);
