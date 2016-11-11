@@ -14,72 +14,80 @@ var navigationservice = angular.module('navigationservice', [])
         classis: "active",
         anchor: "wedo",
         target: "_self",
-        // subnav: [{
-        //     name: "Content Strategy and Wisdom",
-        //     classis: "",
-        //     link: "content-strategy"
-        // }, {
-        //     name: "Digital",
-        //     classis: "",
-        //     link: "digital"
-        // }, {
-        //     name: "Branded Content",
-        //     classis: "",
-        //     link: "branded-content"
-        // }, {
-        //     name: "Internal Communications",
-        //     classis: "",
-        //     link: "internal-communications"
-        // }, {
-        //     name: "Media Centre",
-        //     classis: "",
-        //     link: "media"
-        // }, {
-        //     name: "Design",
-        //     classis: "",
-        //     link: "design"
-        // }]
+        subnav: [{
+            name: "Content Strategy and Wisdom",
+            classis: "",
+            link: "content-strategy"
+        }, {
+            name: "Digital",
+            classis: "",
+            link: "digital"
+        }, {
+            name: "Branded Content",
+            classis: "",
+            link: "branded-content"
+        }, {
+            name: "Internal Communications",
+            classis: "",
+            link: "internal-communications"
+        }, {
+            name: "Media Centre",
+            classis: "",
+            link: "media"
+        }, {
+            name: "Design",
+            classis: "",
+            link: "design"
+        }]
     }, {
         name: " Clients",
         classis: "active",
         anchor: "clients",
         target: "_self",
+        subnav: []
 
     }, {
         name: "Testimonials",
         classis: "active",
         anchor: "testimonials",
         target: "_self",
+        subnav: []
     }, {
         name: "Workshops",
         classis: "active",
         anchor: "workshop",
         target: "_self",
+        subnav: []
     }, {
         name: "Brainwave",
         classis: "active",
         anchor: "brainwave",
         target: "_self",
+        subnav: []
     }, {
         name: "Media",
         classis: "active",
         anchor: "media",
         target: "_self",
+        subnav: []
     }, {
         name: "Blog",
         classis: "active",
         anchor: "blog",
         target: "_self",
+        subnav: []
     }, {
         name: "About Us",
         classis: "active",
         anchor: "abouts",
         target: "_self",
+        subnav: []
     }, {
         name: " Contact Us",
         classis: "active",
         anchor: "contact",
         target: "_self",
+        subnav: []
     }, ];
 
     return {

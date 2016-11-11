@@ -175,6 +175,49 @@ header {
       margin-top: -3px;
     }
   }
+  .dropdown-menu {
+    background: #403635;
+    li {
+      padding: 0 10px;
+      a {
+        // border-left: 2px solid transparent;
+        background-color: transparent;
+        padding: 0 !important;
+        // span {
+        //   border-left: 2px solid transparent;
+        //   padding: 0 6px;
+        //   &:hover {
+        //     border-color: #ffca08;
+        //   }
+        // }
+      }
+      span {
+        padding: 10px;
+        // border-top: 1px solid #fff;
+        display: block;
+        position: relative;
+        &:after {
+          content: '';
+          width: 2px;
+          height: 15px;
+          @include position(absolute, 11px null null 0);
+          background-color: transparent;
+        }
+      }
+      &:hover {
+        a {
+          background-color: transparent;
+        }
+        span:after {
+          background-color: #ffca08;
+        }
+      }
+    }
+    li+li a span {
+      border-top: 1px solid #fff;
+      display: block;
+    }
+  }
 }
 
 .pn50 {
