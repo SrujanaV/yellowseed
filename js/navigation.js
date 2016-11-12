@@ -16,28 +16,28 @@ var navigationservice = angular.module('navigationservice', [])
         target: "_self",
         subnav: [{
             name: "Content Strategy and Wisdom",
-            classis: "",
-            link: "content-strategy"
+            classis: "active",
+            anchor: "content-strategy"
         }, {
             name: "Digital",
-            classis: "",
-            link: "digital"
+            classis: "active",
+            anchor: "digital"
         }, {
             name: "Branded Content",
-            classis: "",
-            link: "branded-content"
+            classis: "active",
+            anchor: "branded-content"
         }, {
             name: "Internal Communications",
-            classis: "",
-            link: "internal-communications"
+            classis: "active",
+            anchor: "internal-communication"
         }, {
             name: "Media Centre",
-            classis: "",
-            link: "media"
+            classis: "active",
+            anchor: "media"
         }, {
             name: "Design",
-            classis: "",
-            link: "design"
+            classis: "active",
+            anchor: "design"
         }]
     }, {
         name: " Clients",

@@ -220,6 +220,41 @@ header {
   }
 }
 
+.acc-nav {
+  .panel {
+    background-color: transparent;
+    border: none;
+  }
+   ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.panel-body {
+  padding: 0 12px 8px;
+  ul li {
+    padding: 9px 15px 0;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.panel-default>.panel-heading {
+  color: #333333;
+  background-color: transparent;
+  border-color: none;
+  .acc-menu {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body,
+.panel-group .panel-heading+.panel-collapse>.list-group {
+  border: none;
+}
+
 .pn50 {
   padding-top: 50px;
 }

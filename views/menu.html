@@ -11,15 +11,31 @@
   <li><a href="">Media</a></li> 
 </ul>
 </div>-->
-<ul class="nav navbar-nav navbar-middle">
+<ul class="nav navbar-nav navbar-middle hidden-xs">
     <li ng-repeat="menu in navigation" class="{{menu.classis}}">
         <a href="{{menu.link}}" ng-if="menu.link" target="_blank">{{menu.name}}</a>
         <a ng-click="changeURL(menu.anchor)" ng-if="!menu.link">{{menu.name}}</a>
-        <ul class="dropdown-menu" ng-if="menu.subnav!='';">
+        <ul class="dropdown-menu hidden-xs" ng-if="menu.subnav!='';">
             <li ng-repeat="submenu in menu.subnav">
-                <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor"><span>{{submenu.name}}</span></a>
-                <a herf="{{submenu.link}}" ng-if="submenu.link"><span>{{submenu.name}}</span></a>
+                <a ui-sref="{{submenu.anchor}}" ng-if="submenu.anchor"><span>{{submenu.name}}</span></a>
+                <a href="{{submenu.link}}" ng-if="submenu.link"><span>{{submenu.name}}</span></a>
             </li>
         </ul>
     </li>
 </ul>
+<div class="hidden-sm hidden-md hidden-lg acc-nav">
+    <uib-accordion close-others="true">
+        <div ng-repeat="menu in navigation" uib-accordion-group class="panel-default" is-open="status.open2">
+            <uib-accordion-heading>
+                <!--<i ng-if="menu.subnav.length>0" class="pull-right fa " ng-class="{'fa fa-chevron-up': status.open2, 'fa fa-chevron-down ': !status.open2}"></i>-->
+                <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor" class="acc-menu">{{menu.name}}</a>
+                <a href="{{menu.link}}" ng-if="menu.link">{{menu.name}}</a>
+            </uib-accordion-heading>
+            <ul ng-if="menu.subnav.length>0" class="list-unstyled">
+                <li ng-repeat="submenu in menu.subnav" class="acc-mainmenu">
+                    <a ui-sref="{{submenu.anchor}}">{{submenu.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </uib-accordion>
+</div>

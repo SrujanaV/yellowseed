@@ -425,7 +425,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("we-believe");
     $scope.menutitle = NavigationService.makeactive("We Believe");
     TemplateService.title = $scope.menutitle;
-        TemplateService.footer = "";
+    TemplateService.footer = "";
     TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
     $scope.changeURL = function (id) {
@@ -458,8 +458,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     };
 
     NavigationService.getTag(function (data) {
-      $scope.blog = data.data.results;
-      $scope.tabchanges($scope.blog[0]._id,0);
+        $scope.blog = data.data.results;
+        $scope.tabchanges($scope.blog[0]._id, 0);
 
     });
     // $scope.tabs = 'media';
@@ -470,13 +470,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //
     // TemplateService.menu = "";
     // $scope.tabs = "";
-    $scope.tabchanges = function (tab,indexid) {
-      _.each($scope.blog, function(key) {
+    $scope.tabchanges = function (tab, indexid) {
+        _.each($scope.blog, function (key) {
             key.activetab = false;
         });
-          $scope.blog[indexid].activetab = true;
+        $scope.blog[indexid].activetab = true;
         NavigationService.getTagBlog(tab, function (data) {
-          $scope.getoneBlogs = data.data;
+            $scope.getoneBlogs = data.data;
         });
 
 
@@ -657,6 +657,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
+    $scope.oneAtATime = true;
 
     // NavigationService.getCategory(function(data) {
     //     console.log(data);
