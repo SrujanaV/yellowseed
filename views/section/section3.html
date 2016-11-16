@@ -27,7 +27,7 @@
 <div class="brands">
   <div class="client-slider">
     <!-- console.log(client); -->
-    <flex-slider class="carousel" flex-slide="img in client track by $index" item-width="1200" item-margin="10" animation="slide"
+    <flex-slider  ng-if="showHead1" class="carousel" flex-slide="img in client track by $index" item-width="1200" item-margin="10" animation="slide"
       animation-loop="false" as-nav-for="#slider" slide-show="false">
       <li>
         <div class="client-imgholder">
@@ -35,6 +35,20 @@
             <div class="col-xs-4 bord-cus1" ng-repeat="clientimg in row track by $index">
               <div class="img-holder listing">
                 <img ng-src="{{clientimg.logo|uploadpath}}" alt="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </flex-slider>
+    <flex-slider ng-if="!showHead1" class="carousel" flex-slide="img in partners track by $index" item-width="1200" item-margin="10" animation="slide"
+      animation-loop="false" as-nav-for="#slider" slide-show="false">
+      <li>
+        <div class="client-imgholder">
+          <div class="row bord-cus" ng-repeat="row in img track by $index">
+            <div class="col-xs-4 bord-cus1" ng-repeat="partnerimg in row track by $index">
+              <div class="img-holder listing">
+                <img ng-src="{{partnerimg.logo|uploadpath}}" alt="" class="img-responsive">
               </div>
             </div>
           </div>

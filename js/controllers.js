@@ -29,7 +29,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     });
     NavigationService.getPartner(function (data) {
 
-        $scope.blog = data.data.results;
+        $scope.partners = data.data.results;
+        $scope.partners = _.chunk($scope.partners, 9);
+        for (var i = 0; i < $scope.partners.length; i++) {
+            $scope.partners[i] = _.chunk($scope.partners[i], 3);
+            // console.log($scope.client);
+        }
+        console.log('888888888',$scope.partners);
+
 
     });
     NavigationService.getClients(function (data) {
