@@ -652,7 +652,7 @@ p {
   }
   .zero-tag {
     @include position(absolute,
-    -10% null null -10%);
+    -18% null null -10%);
     z-index: 1;
     p {
       font-size: 35px;
@@ -1354,7 +1354,19 @@ footer {
 .pointer {
   cursor: pointer;
 }
-
+.backgroundtrans{
+  background-color: transparent!important;
+}
+.pd40{
+  padding: 30px 40px!important;
+}
+.mgt30{
+  margin-top: 30px;
+}
+.pd0{
+  padding: 0px 40px;
+  letter-spacing: 0.4px;
+}
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";
