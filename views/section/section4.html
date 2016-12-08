@@ -20,7 +20,7 @@
   <div class="slider">
     <flex-slider flex-slide="s in testimonial track by $index" animation="slide" item-width="1000">
       <li auto-heightfixed>
-        <p class="relative" ng-bind-html="s.content | rawHtml"></p>
+        <div class="relative" ng-bind-html="s.content | rawHtml"></div>
         <span class="yellow" ng-bind-html="s.name | rawHtml"></span>
       </li>
     </flex-slider>
