@@ -30,11 +30,13 @@ var navigationservice = angular.module('navigationservice', [])
             name: "Internal Communications",
             classis: "active",
             anchor: "internal-communication"
-        }, {
-            name: "Media Centre",
-            classis: "active",
-            anchor: "media"
-        }, {
+        },
+        // {
+        //     name: "Media Centre",
+        //     classis: "active",
+        //     anchor: "media"
+        // },
+         {
             name: "Design",
             classis: "active",
             anchor: "design"

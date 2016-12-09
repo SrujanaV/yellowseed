@@ -1276,8 +1276,43 @@ footer {
 }
 
 //BLOG
+.inline-block{
+  display: inline-block;
+}
 .blog {
+  .img-banner{
+      padding: 40px;
+    }
+    .five-ways{
+    letter-spacing: 0.5px;
+      font-weight: bold;
+  color: #403635;
+  font-family: 'Rubik', sans-serif;
+    }
+.review-sec{
+background: #ffca08;
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    display: inline-block;
+        padding: 2px 15px;
+        border-right: 1px solid;
+        margin: 6px 0px;
+a{
+  text-decoration: none;
+  color: #403635;
+}
+}
+li:last-child{
+  border: none;
+}
+}
+}
+
+
   .sub-para {
+      margin-top: 80px!important;
     ul {
       text-transform: uppercase;
       font-size: 16px;
@@ -1414,6 +1449,21 @@ footer {
     right: 20%!important;
     position: absolute;
 }
+.video-sec{
+  position: relative;
+}
+.skip-btn{
+  position: absolute;
+top: 40px;
+right: 40px;
+border-radius: 20px;
+background-color: transparent;
+color: #fff;
+&:focus{
+  outline: none;
+}
+}
+
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";
