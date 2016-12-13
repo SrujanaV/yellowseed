@@ -1,905 +1,1237 @@
 @media (min-width: 1200px) {
-  .testimonials .view-all {
-    top: 41%;
-    right: 24%;
-  }
+    .testimonials .view-all {
+        top: 41%;
+        right: 24%;
+    }
 }
-
 @media (max-width: 1200px) {
-  .testimonials .view-all {
-    top: 30%;
-    right: 28%;
-  }
-  .nav>li>a {
-    padding: 15px 3px;
-  }
-  .header {
-    .head-padd {
-      // padding: 0;
+    .testimonials .view-all {
+        top: 30%;
+        right: 28%;
     }
-  }
-  .head {
-    .img-banner {
-      img {
-        height: 100%;
-        width: auto;
-      }
+
+    .nav > li > a {
+        padding: 15px 3px;
     }
-  }
-  .zero {
-    .head-padd {
-      // padding: 0;
-    }
-  }
-  .one {
-    z-index: 0;
-    .circle-cont {
-      margin-left: 12px;
-    }
-  }
-  .five {
-    .testimonials {
-      .slider {
-        p {
-          padding: 0;
-          margin: 0 0 0 40px;
-          &::before {
-            left: 0;
-          }
+
+    .header {
+        .head-padd {
+            // padding: 0;
         }
-        .yellow {
-          padding: 0 80px;
+    }
+
+    .head {
+        .img-banner {
+            img {
+                height: 100%;
+                width: auto;
+            }
         }
-        .flexslider-container {
-          width: 73%;
+    }
+
+    .zero {
+        .head-padd {
+            // padding: 0;
         }
-      }
     }
-  }
-  .six {
-    padding: 17em 0 10em 0;
-    z-index: 0;
-  }
-  .head,
-  .zero,
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
-  .seven,
-  .eight {
-    h1 {
-      font-size: 5.5em;
+
+    .one {
+        z-index: 0;
+        // .circle-cont {
+        //   margin-left: 12px;
+        // }
     }
-    h3 {
-      font-size: 28px;
-    }
-    .circle-cont {
-      margin-left: 14em!important;
-    }
-    .blogs {
-      .circle1 {
-        top: 0;
-        left: 0;
-      }
-    }
-    .crack {
-      top: -7px;
-      left: 12%;
-      ul {
-        li {
-          font-size: 19px;
+
+    .five {
+        .testimonials {
+            .slider {
+                p {
+                    padding: 0;
+                    margin: 0 0 0 40px;
+
+                    &::before {
+                        left: 0;
+                    }
+                }
+
+                .yellow {
+                    padding: 0 80px;
+                }
+
+                .flexslider-container {
+                    width: 73%;
+                }
+            }
         }
-      }
     }
-    .chasma {
-      z-index: -1;
-      top: -22px;
+
+    .six {
+        padding: 17em 0 10em;
+        z-index: 0;
     }
-    .coffee {
-      top: -12%!important;
-    }
-    .note-book {
-      left: 5%;
-      img {
-        height: 100px;
-      }
-    }
-    .ipad {
-      img {
-        height: 200px;
-      }
-    }
-    .pencil {
-      z-index: -1;
-    }
-    .pinpaper {
-      z-index: -1;
-    }
-    .pen-stand {
-      top: 8%;
-      left: 2%;
-      img {
-        height: 365px;
-      }
-    }
-  }
-  .the-studio,
-  .branded,
-  .cont-strategy,
-  .design,
-  .digital,
-  .internal,
-  .workshop,
-  .media,
-  .blog,
-  .brainwave,
-  .awsome {
-    z-index: 0;
-    .sub-para {
-      padding: 3em!important;
-    }
-    .resize-padd {
-      padding: 30px 3em 0 3em !important;
-      min-height: 0!important;
-      p {
-        line-height: 18px;
-      }
-    }
-    .pencil-inner {
-      top: 62% !important;
-      img {
-        height: 220px !important;
-      }
-    }
-    .paper {
-      top: 43% !important;
-      img {
-        height: 240px !important;
-      }
-    }
-    .mac {
-      top: 24% !important;
-      img {
-        height: 355px !important;
-      }
-    }
-    .pot {
-      top: 27% !important;
-      img {
-        height: 242px !important;
-      }
-    }
-    .iphone {
-      img {
-        height: 250px !important;
-      }
-    }
-    .news-paper {
-      top: 52% !important;
-      img {
-        height: 410px !important;
-      }
-    }
-  }
-  .we-believe {
-    .we-one,
-    .we-two,
-    .we-three,
-    .we-four {
-      h1 {
-        font-size: 64px;
-      }
-      .extra-size {
-        font-size: 6em;
-      }
-      h2 {
-        font-size: 18px;
-      }
-      .mt2em {
-        margin-top: 2em;
-      }
-      .tree {
-        right: 22%;
-      }
-      .clock {
-        top: -22%;
-      }
-      .pencil {
-        top: 0;
-        img {
-          height: 228px;
+
+    .eight,
+    .five,
+    .four,
+    .head,
+    .one,
+    .seven,
+    .six,
+    .three,
+    .two,
+    .zero {
+        h1 {
+            font-size: 5.5em;
         }
-      }
-    }
-  }
-  .blog {
-    .sub-para {
-      padding: 2em !important;
-    }
-    p {
-      line-height: 20px!important;
-    }
-    .img-grid {
-      .img-sec {
-        padding: 15px;
-      }
-      .foot-sec {
-        .img-spac {
-          padding: 5px 5px 30px;
-        }
+
         h3 {
-          font-size: 16px!important;
-          line-height: 18px!important;
+            font-size: 28px;
         }
-      }
-    }
-  }
-}
 
-@media (max-width: $screen-sm-max) {
-  .four {
-    .testimonials {
-      width: 100%;
+        .circle-cont {}
+
+        .circle {
+            width: 150px;
+            height: 150px;
+
+            img {
+                height: 150px;
+            }
+        }
+
+        .blogs {
+            .circle1 {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .crack {
+            top: -7px;
+            left: 12%;
+
+            ul {
+                li {
+                    font-size: 19px;
+                }
+            }
+        }
+
+        .chasma {
+            z-index: -1;
+            top: -22px;
+        }
+
+        .coffee {
+            top: -12%!important;
+        }
+
+        .note-book {
+            left: 5%;
+
+            img {
+                height: 100px;
+            }
+        }
+
+        .ipad {
+            img {
+                height: 200px;
+            }
+        }
+
+        .pencil {
+            z-index: -1;
+        }
+
+        .pinpaper {
+            z-index: -1;
+        }
+
+        .pen-stand {
+            top: 8%;
+            left: 2%;
+
+            img {
+                height: 365px;
+            }
+        }
     }
-    .pen-stand {
-      top: 35%;
-      left: -8%;
-    }
-  }
-  .five {
-    .blog-slider {
-      width: 597px;
-    }
-    .btns {
-      top: 54px;
-      left: 186px;
-    }
-  }
-  .one {
-    z-index: 0;
-  }
-  .three {
-    .brands {
-      position: relative;
-      width: 100%;
-    }
-  }
-  .five {
-    .testimonials {
-      padding: 2em 0 0 7em;
-      .view-all {
-        top: 34%;
-        right: 0;
-      }
-      .slider {
-        ul {
-          li {
-            padding: 2em 4px 0 0 !important;
+
+    .awsome,
+    .blog,
+    .brainwave,
+    .branded,
+    .cont-strategy,
+    .design,
+    .digital,
+    .internal,
+    .media,
+    .the-studio,
+    .workshop {
+        z-index: 0;
+
+        .sub-para {
+            padding: 3em !important;
+        }
+
+        .resize-padd {
+            padding: 30px 3em 0 !important;
+            min-height: 0!important;
+
             p {
-              padding: 0;
-              margin: 0 0 0 4em;
-              &::before {
-                left: -38px;
-              }
+                line-height: 18px;
             }
-          }
         }
-        .flexslider-container {
-          width: 73%;
+
+        .pencil-inner {
+            top: 62% !important;
+
+            img {
+                height: 220px !important;
+            }
         }
+
+        .paper {
+            top: 43% !important;
+
+            img {
+                height: 240px !important;
+            }
+        }
+
+        .mac {
+            top: 24% !important;
+
+            img {
+                height: 355px !important;
+            }
+        }
+
+        .pot {
+            top: 27% !important;
+
+            img {
+                height: 242px !important;
+            }
+        }
+
+        .iphone {
+            img {
+                height: 250px !important;
+            }
+        }
+
+        .news-paper {
+            top: 52% !important;
+
+            img {
+                height: 410px !important;
+            }
+        }
+    }
+
+    .we-believe {
+        .we-four,
+        .we-one,
+        .we-three,
+        .we-two {
+            h1 {
+                font-size: 64px;
+            }
+
+            .extra-size {
+                font-size: 6em;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .mt2em {
+                margin-top: 2em;
+            }
+
+            .tree {
+                right: 22%;
+            }
+
+            .clock {
+                top: -22%;
+            }
+
+            .pencil {
+                top: 0;
+
+                img {
+                    height: 228px;
+                }
+            }
+        }
+    }
+
+    .blog {
+        .sub-para {
+            padding: 2em !important;
+        }
+
+        p {
+            line-height: 20px!important;
+        }
+
+        .img-grid {
+            .img-sec {
+                padding: 15px;
+            }
+
+            .foot-sec {
+                .img-spac {
+                    padding: 5px 5px 30px;
+                }
+
+                h3 {
+                    font-size: 16px!important;
+                    line-height: 18px!important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $screen-sm-max) {
+    .four {
+        .testimonials {
+            width: 100%;
+        }
+
+        .pen-stand {
+            top: 35%;
+            left: -8%;
+        }
+    }
+
+    .five {
+        .blog-slider {
+            width: 597px;
+        }
+
+        .btns {
+            top: 54px;
+            left: 186px;
+        }
+    }
+
+    .one {
+        z-index: 0;
+    }
+
+    .three {
+        .brands {
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    .five {
+        .testimonials {
+            padding: 2em 0 0 7em;
+
+            .view-all {
+                top: 34%;
+                right: 0;
+            }
+
+            .slider {
+                ul {
+                    li {
+                        padding: 2em 4px 0 0 !important;
+
+                        p {
+                            padding: 0;
+                            margin: 0 0 0 4em;
+
+                            &::before {
+                                left: -38px;
+                            }
+                        }
+                    }
+                }
+
+                .flexslider-container {
+                    width: 73%;
+                }
+            }
+        }
+    }
+
+    .eight,
+    .five,
+    .four,
+    .head,
+    .one,
+    .seven,
+    .six,
+    .three,
+    .two,
+    .zero {
+        h1 {
+            font-size: 5.5em!important;
+        }
+
+        .blogs {
+            .circle1 {
+                top: 0;
+                left: 0;
+            }
+        }
+
+
+
+        .spee-blg {
+            top: 0;
+        }
+
+        .right-arrow {
+            display: none;
+        }
+
+        .imac {
+            img {
+                height: 300px;
+            }
+        }
+
+        .coffee {
+            top: -18%;
+
+            img {
+                height: 238px;
+            }
+        }
+
+        .con-top {
+            top: 0;
+            left: 0;
+
+            img {
+                height: 105px;
+            }
+        }
+    }
+
+    .we-believe {
+        .we-four,
+        .we-one,
+        .we-three,
+        .we-two {}
+    }
+
+    .extra-size{
+      margin-top: 50px;
+    }
+    .btn-ipad{
+      margin: 0 auto;
+width: 50%;
+margin-top: 10px;
+    }
+    .testimonials{
+      padding: 40px 30px!important;
+      .flex-direction-nav{
+        display: none;
+      }
+
+      h1{
+        display: block!important;
+        text-align: center;
       }
     }
-  }
-  .head,
-  .zero,
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
-  .seven,
-  .eight {
-    h1 {
-      font-size: 5.5em!important;
+header .navbar .nav li a{
+  padding: 18px 10px;
+}
+}
+@media (max-width: $screen-xs-max) {
+    .list-inline {
+        padding: none;
+        list-style: none;
     }
-    .blogs {
-      .circle1 {
-        top: 0;
-        left: 0;
-      }
-    }
-    .circle-cont {
-      margin-left: 7em!important;
-    }
-    .spee-blg {
-      top: 0;
-    }
-    .right-arrow {
-      display: none;
-    }
-    .imac {
-      img {
-        height: 300px;
-      }
-    }
-    .coffee {
-      top: -18%;
-      img {
-        height: 238px;
-      }
-    }
-    .con-top {
-      top: 0;
-      left: 0;
-      img {
-        height: 105px;
-      }
-    }
-  }
-  .we-believe {
-    .we-one,
-    .we-two,
-    .we-three,
-    .we-four {}
+.zero-tag{
+  left: 10px!important;
+  p{
+    font-size: 27px!important;
   }
 }
+.testimonials{
+  li{
+    p{
+      padding: 0 50px;
+      width: 68%;
+    }
+  }
+}
+    .one {
+        .circle-cont {
+            // margin: 0 auto!important;
+            text-align: center;
+        }
+    }
 
-@media (max-width: $screen-xs-max) {
-  .list-inline {
-    padding: none;
-    list-style: none;
-  }
-  .one {
-    .circle-cont {
-      margin: 0 auto;
+    .no-padding {
+        // padding: 0 25px !important;
     }
-  }
-  .no-padding {
-    padding: 0px 25px!important;
-  }
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
-    background-color: #403635;
-  }
-  // .navbar-default .navbar-toggle:hover,
-  // .navbar-default .navbar-toggle:focus {
-  //   background-color: #fff;
-  // }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-  }
-  .five {
-    .btns {
-      top: 26px;
-      left: 128px;
+.pd10{
+  padding: 15px;
+  text-align: left;
+}
+.pl0{
+  padding-left: 10px;
+}
+.pr60 {
+    padding: 0px 60px 0px 10px;
+}
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: #403635;
     }
-    .blog-slider {
-      width: 286px;
-      margin: 0 auto;
+    // .navbar-default .navbar-toggle:hover,
+    // .navbar-default .navbar-toggle:focus {
+    //   background-color: #fff;
+    // }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
     }
-  }
-  .header {
-    .head-padd {
-      padding: 0 2em;
+
+    .five {
+        .btns {
+            top: 26px;
+            left: 128px;
+        }
+
+        .blog-slider {
+            width: 286px;
+            margin: 0 auto;
+        }
     }
-  }
-  .head {
-    min-height: 0!important;
-    .head-tag {
-      h2 {
-        font-size: 14px;
-      }
+
+    .header {
+        .head-padd {
+            padding: 0 2em;
+        }
     }
-    .scroll-down {
-      img {
-        width: 50px;
-      }
-    }
-  }
-  .zero {
-    .navbar-toggle .icon-bar {
-      background: #403635;
-    }
-  }
-  .one {
-    padding: 16em 0 10em 0;
-  }
-  .three {
-    padding: 7em 0;
-    .brands {
-      position: relative;
-      width: 100%;
-      .flexslider .slides img {
-        max-width: 100%;
-        margin: 0;
-      }
-    }
-  }
-  .five {
-    padding: 21em 0 5em 0;
-    h1 {
-      font-size: 3.5em!important;
-    }
-    .testimonials {
-      padding: 1em 0 0 5em;
-      height: 350px;
-      h1 {
-        font-size: 3.5em !important;
-      }
-      .view-all {
-        @include position(absolute, 25% 0 null null)
-      }
-      .flexslider-container {
-        width: 67%!important;
-      }
-      .slider {
-        li {
-          padding: 0;
-          p {
-            padding: 0;
-            margin: 0 0 0 2em!important;
-            &:before {
-              @include position(absolute, -30px null null -14%);
+
+    .head {
+        min-height: 0!important;
+
+        .head-tag {
+            h2 {
+                font-size: 14px;
             }
-          }
         }
-      }
-    }
-  }
-  .six {
-    padding: 19em 0 7em 0;
-  }
-  .seven {
-    padding: 18em 0 11em 0;
-  }
-  .head,
-  .zero,
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
-  .seven,
-  .eight {
-    h1 {
-      font-size: 3.5em!important;
-    }
-    p {
-      font-size: 13px;
-    }
-    span.text-content {
-      left: -3%;
-      font-size: 18px;
-      line-height: 18px;
-    }
-    .circle-cont {
-      margin-left: 0!important;
-      ul {
-        li {
-          padding-left: 12px;
-          padding-right: 5px;
+
+        .scroll-down {
+            img {
+                width: 50px;
+            }
         }
-        li+li {
-          padding-left: 0;
+    }
+
+    .zero {
+        .navbar-toggle .icon-bar {
+            background: #403635;
         }
-      }
     }
-    .extra-size {
-      font-size: 5em!important;
+
+    .one {
+        padding: 16em 0 10em;
     }
-    .wait {
-      margin: 0;
-    }
-    .blogs {
-      .circle1 {
-        top: 0;
-        left: 0;
-      }
-    }
-    .crack {
-      top: 0;
-      left: 0;
-      width: 100%;
-      ul {
-        li {
-          font-size: 14px;
+
+    .three {
+        padding: 7em 0;
+
+        .brands {
+            position: relative;
+            width: 100%;
+
+            .flexslider .slides img {
+                max-width: 100%;
+                margin: 0;
+            }
         }
-      }
     }
-    .spee-blg {
-      top: 0;
-      right: 0;
-      ul {
-        li {
-          font-size: 14px;
+
+    .five {
+        padding: 21em 0 5em;
+
+        h1 {
+            font-size: 3.5em!important;
         }
-      }
-    }
-    .right-arrow {
-      display: none;
-    }
-    .pen-stand {
-      display: none;
-    }
-    .note-book {
-      left: 20%;
-      img {
-        height: 80px;
-      }
-    }
-    .pinpaper {
-      img {
-        height: 172px;
-      }
-    }
-    .ipad {
-      bottom: -9%;
-    }
-    .tree {
-      top: -7%;
-      right: 6%;
-      img {
-        height: 90px;
-      }
-    }
-    .coffee {
-      top: -9%;
-      img {
-        height: 170px;
-      }
-    }
-    .imac {
-      img {
-        height: 300px;
-      }
-    }
-  }
-  .we-believe {
-    .we-one {
-      padding: 0;
-    }
-    .we-one,
-    .we-two,
-    .we-three,
-    .we-four {
-      h1 {
-        font-size: 69px;
-      }
-      .respect {
-        padding: 25px 15px;
-        position: relative;
-        width: auto;
-      }
-      .clock {
-        top: -13%;
-        img {
-          height: 160px;
+
+        .testimonials {
+            padding: 1em 0 0 5em;
+            height: 350px;
+
+            h1 {
+                font-size: 3.5em !important;
+            }
+
+            .view-all {
+                @include position(absolute, 25% 0 null null)
+            }
+
+            .flexslider-container {
+                width: 67%!important;
+            }
+
+            .slider {
+                li {
+                    padding: 0;
+
+                    p {
+                        padding: 0;
+                        margin: 0 0 0 2em !important;
+
+                        &:before {
+                            @include position(absolute, -30px null null -14%);
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
-  .blog {
-    .sub-para {
-      padding: 2em !important;
+
+    .six {
+        padding: 19em 0 7em;
     }
-    p {
-      line-height: 20px!important;
-      margin: 0 0 5px;
+
+    .seven {
+        padding: 18em 0 11em;
     }
-    .mb30 {
-      margin-bottom: 30px;
-    }
-    .img-grid {
-      .img-spac {
-        margin-bottom: 0!important;
-        .img-sec {
-          padding: 10px;
+
+    .eight,
+    .five,
+    .four,
+    .head,
+    .one,
+    .seven,
+    .six,
+    .three,
+    .two,
+    .zero {
+        h1 {
+            font-size: 3.5em!important;
         }
-      }
+
+        p {
+            font-size: 13px;
+        }
+
+        span.text-content {
+            left: -3%;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        // .sm-set{
+        //   text-align: center;
+        // }
+        .circle-cont {
+            // margin-left: 0 !important;
+
+            ul {
+                li {
+                        padding: 10px 25px!important;
+                }
+
+                // li+li {
+                //     padding-left: 0;
+                // }
+            }
+        }
+
+        .extra-size {
+            font-size: 5em!important;
+        }
+
+        .wait {
+            margin: 0;
+        }
+
+        .blogs {
+            .circle1 {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .crack {
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .spee-blg {
+            top: 0;
+            right: 0;
+
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .right-arrow {
+            display: none;
+        }
+
+        .pen-stand {
+            display: none;
+        }
+
+        .note-book {
+            left: 20%;
+
+            img {
+                height: 80px;
+            }
+        }
+
+        .pinpaper {
+            img {
+                height: 172px;
+            }
+        }
+
+        .ipad {
+            bottom: -9%;
+        }
+
+        .tree {
+            top: -7%;
+            right: 6%;
+
+            img {
+                height: 90px;
+            }
+        }
+
+        .coffee {
+            top: -9%;
+
+            img {
+                height: 170px;
+            }
+        }
+
+        .imac {
+            img {
+                height: 300px;
+            }
+        }
     }
-  }
-  // navbar
-  .head-padd {
-     ::-webkit-scrollbar {
-      width: 0px;
+
+    .we-believe {
+        .we-one {
+            padding: 0;
+        }
+
+        .we-four,
+        .we-one,
+        .we-three,
+        .we-two {
+            h1 {
+                font-size: 69px;
+            }
+
+            .respect {
+                padding: 25px 15px;
+                position: relative;
+                width: auto;
+            }
+
+            .clock {
+                top: -13%;
+
+                img {
+                    height: 160px;
+                }
+            }
+        }
     }
-    /* Track */
-     ::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+    .blog {
+        .sub-para {
+            padding: 2em !important;
+        }
+
+        p {
+            line-height: 20px!important;
+            margin: 0 0 5px;
+        }
+
+        .mb30 {
+            margin-bottom: 30px;
+        }
+
+        .img-grid {
+            .img-spac {
+                margin-bottom: 0 !important;
+
+                .img-sec {
+                    padding: 10px;
+                }
+            }
+        }
     }
-    /* Handle */
-     ::-webkit-scrollbar-thumb {
-      background: rgba(255, 0, 0, 0.8);
+    // navbar
+    .head-padd {
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 0, 0, 0.8);
+        }
     }
-  }
 }
 
 @media (max-width: 480px) {
-  .four {
-    .testimonials {
-      padding: 5em 0 0 0;
-      .slider p {
-        padding: 0;
+    .list-inline {
+      margin: 0;
+    }
+    .pd10{
+      li{
+        padding: 10px!important;
       }
     }
+.testimonials{
+p{
+  &:before,&:after{
+    @include transform(rotate(180deg));
+    line-height: 0.2;
+    font-size: 36px!important;
+    position: relative;
+    margin-left: 5px !important;
+    top: -5px;
   }
-  .four .testimonials .slider {
-    width: 310px;
-    margin: 0 auto;
+}
+.flex-direction-nav{
+  display: none;
+}
+.flex-control-nav{
+  bottom: -10px!important;
+}
+}
+.blog-slider{
+  .flex-direction-nav{
+    display: none;
   }
-  .head {
-    .head-tag {
-      h2 {
-        font-size: 13px;
-      }
+}
+.pl0{
+  padding-left: 15px;
+}
+.btn-full{
+  width: 100%;
+}
+.pr60 {
+    padding: 0 60px 0px 10px;
+}
+.mr40{
+  margin-right: 0;
+}
+.spee-blg{
+   float: none;
+ text-align: left;
+width: 100%;
+position: absolute;
+top: -60px;
+right: 25px;
+}
+    .circle-center {
+        text-align: center;
     }
-  }
-  .one {
-    padding: 16em 0 8em 0;
-  }
-  .three {
-    padding: 3em 0 10em 0;
-    .brands {
-      .flexslider .slides li {
-        padding: 30px;
-      }
-      .flexslider .slides img {
-        height: 50px;
-      }
+
+    .one .img-list li span.text-content {
+        font-size: 14px;
+        text-align: left!important;
     }
-  }
-  .five {
-    .testimonials {
-      width: 100%;
-      padding: 1em 0 0 1em;
-      h1 {
-        font-size: 3em !important;
-      }
-      .slider {
-        li {
-          p {
-            padding: 0;
-            &:before {
-              @include position(absolute, -30px null null -20px);
-              left: -20px!important;
+
+    .four {
+        .testimonials {
+            padding: 5em 0 0;
+
+            .slider p {
+                padding: 0;
             }
-          }
         }
-      }
     }
-  }
-  p {
-    font-size: 12px!important;
-  }
-  .head,
-  .zero,
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
-  .seven,
-  .eight {
-    h3 {
-      font-size: 26px;
+
+    .four .testimonials .slider {
+        width: 310px;
+        margin: 0 auto;
     }
-    .extra-size {
-      font-size: 4em !important;
-    }
-    .blogs {
-      margin: 22px 0 0 0;
-      .prof {
-        padding: 0 0 0 8em;
-      }
-    }
-    span.text-content {
-      left: -3%;
-      font-size: 12px;
-      line-height: 12px;
-    }
-    .circle-cont {
-      margin-left: 0!important;
-      ul {
-        li {
-          padding-left: 8px;
-          .circle {
-            width: auto;
-            height: auto;
-            img {
-              height: 98px;
+
+    .head {
+        .head-tag {
+            h2 {
+                font-size: 13px;
             }
-          }
         }
-      }
     }
-    .ipad {
-      bottom: -4.5%;
-      img {
-        height: 150px;
-      }
+
+    .one {
+        padding: 16em 0 8em;
     }
-    .chasma {
-      top: 6%;
-      img {
-        height: 230px;
-      }
-    }
-    .note-book {
-      left: 0;
-    }
-    .imac {
-      img {
-        height: 230px;
-      }
-    }
-    .pinpaper {
-      img {
-        height: 140px;
-      }
-    }
-    .coffee {
-      top: -6%;
-      img {
-        height: 130px;
-      }
-    }
-  }
-  .the-studio,
-  .branded,
-  .cont-strategy,
-  .design,
-  .digital,
-  .internal,
-  .workshop,
-  .media,
-  .blog,
-  .brainwave,
-  .awsome {
-    z-index: 0;
-    h3 {
-      font-size: 15px!important;
-    }
-    .sub-para {
-      padding: 2em !important;
-      .yellow-tag {
-        font-size: 13px !important;
-      }
-    }
-    .resize-padd {
-      padding: 30px 0 0 0!important;
-      h3 {
-        text-align: left;
-      }
-    }
-    .pencil-inner,
-    .paper,
-    .book,
-    .mac,
-    .pot,
-    .iphone,
-    .news-paper,
-    .mike,
-    .headphone,
-    .note-tab,
-    .pencil-color-box,
-    .reel,
-    .camera,
-    .pencil-crap,
-    .ys-book,
-    .coffee,
-    .brain-clock,
-    .macbook-pro,
-    .pen-book {
-      display: none;
-    }
-  }
-  .we-believe {
-    .we-one {
-      padding: 0;
-    }
-    .we-four {
-      padding: 2em 0;
-    }
-    .we-one,
-    .we-two,
-    .we-three,
-    .we-four {
-      h1 {
-        font-size: 3.5em;
-      }
-      .extra-size {
-        font-size: 4.5em;
-      }
-      .mt2em {
-        margin-top: 2em;
-      }
-      h2 {
-        font-size: 18px;
-      }
-      p {
-        margin: 0 0 15px;
-      }
-      .respect {
-        width: auto;
-        position: relative;
-        .tree {
-          @include position(absolute, -29% 15% null null);
+
+    .three {
+        padding: 3em 0 10em;
+
+        .brands {
+            .flexslider .slides li {
+                padding: 30px;
+            }
+
+            .flexslider .slides img {
+                height: 50px;
+            }
         }
-      }
-      .pencil {
-        top: 0;
-        img {
-          height: 180px;
-        }
-      }
-      .clock {
-        top: -13%;
-        img {
-          height: 120px;
-        }
-      }
-      .coffee {
-        img {
-          height: 150px;
-        }
-      }
     }
-  }
-  .blog {
-    .sub-para {
-      padding: 2em !important;
+
+    .five {
+        .testimonials {
+            width: 100%;
+            padding: 1em 0 0 1em;
+
+            h1 {
+                font-size: 3em !important;
+            }
+
+            .slider {
+                li {
+                    p {
+                        padding: 0;
+
+                        &:before {
+                            @include position(absolute, -30px null null -20px);
+                            left: -20px!important;
+                        }
+                    }
+                }
+            }
+        }
     }
+
     p {
-      line-height: 20px!important;
+        font-size: 12px!important;
     }
-    .img-grid {
-      margin: 20px 0!important;
-      h2 {
-        font-size: 22px;
-      }
-      .img-sec {
-        padding: 15px;
-        .txt {
-          letter-spacing: 0px;
-        }
+
+    .eight,
+    .five,
+    .four,
+    .head,
+    .one,
+    .seven,
+    .six,
+    .three,
+    .two,
+    .zero {
         h3 {
-          line-height: 18px;
-          letter-spacing: 0;
-          margin: 0 0 10px;
+            font-size: 26px;
         }
-      }
-      .calender {
-        width: auto;
-        ul {
-          li {
+
+        .extra-size {
+            font-size: 40px !important;
+            text-align: center;
+            padding-left: 0;
+            margin-top: 50px;
+        }
+.yseed-small{
+  bottom: -40px;
+}
+.yseed-top{
+  top: 40%;
+  left: 5px;
+}
+.test-vw{
+  text-align: center;
+}
+
+        .zero-tag {
+            position: absolute;
+            top: -18%;
+            left: 6px;
+            z-index: 1;
+
+            p {
+                font-size: 15px !important;
+            }
+        }
+
+        .blogs {
+            margin: 22px 0 0;
+
+            .prof {
+                padding: 0 0 0 8em;
+            }
+        }
+
+        span.text-content {
+            left: -3%;
             font-size: 12px;
-          }
+            line-height: 12px;
         }
-      }
-      .foot-sec {
-        margin: 10px 0;
-        ul {
-          text-align: center;
+
+        .circle-cont {
+            margin-left: 0 !important;
+
+            ul {
+                li {
+                    padding-left: 8px;
+
+                    .circle {
+                        width: auto;
+                        height: auto;
+
+                        img {
+                            height: 98px;
+                        }
+                    }
+                }
+            }
         }
-        h2 {
-          font-size: 20px;
+
+        .ipad {
+            bottom: -4.5%;
+
+            img {
+                height: 150px;
+            }
         }
-        h3 {
-          font-size: 14px !important;
-          line-height: 18px!important;
+
+        .chasma {
+            top: 6%;
+
+            img {
+                height: 230px;
+            }
         }
-        .img-spac {
-          .img-sec {
-            padding: 10px 0;
-          }
+
+        .note-book {
+            left: 0;
         }
-      }
+
+        .imac {
+            img {
+                height: 230px;
+            }
+        }
+
+        .pinpaper {
+            img {
+                height: 140px;
+            }
+        }
+
+        .coffee {
+            top: -6%;
+
+            img {
+                height: 130px;
+            }
+        }
     }
-  }
+
+    .awsome,
+    .blog,
+    .brainwave,
+    .branded,
+    .cont-strategy,
+    .design,
+    .digital,
+    .internal,
+    .media,
+    .the-studio,
+    .workshop {
+        z-index: 0;
+
+        h3 {
+            font-size: 15px!important;
+        }
+
+        .sub-para {
+            padding: 2em !important;
+
+            .yellow-tag {
+                font-size: 13px !important;
+            }
+        }
+
+        .resize-padd {
+            padding: 30px 0 0 !important;
+
+            h3 {
+                text-align: left;
+            }
+        }
+
+        .book,
+        .brain-clock,
+        .camera,
+        .coffee,
+        .headphone,
+        .iphone,
+        .mac,
+        .macbook-pro,
+        .mike,
+        .news-paper,
+        .note-tab,
+        .paper,
+        .pen-book,
+        .pencil-color-box,
+        .pencil-crap,
+        .pencil-inner,
+        .pot,
+        .reel,
+        .ys-book {
+            display: none;
+        }
+    }
+
+    .we-believe {
+        .we-one {
+            padding: 0;
+        }
+
+        .we-four {
+            padding: 2em 0;
+        }
+
+        .we-four,
+        .we-one,
+        .we-three,
+        .we-two {
+            h1 {
+                font-size: 3.5em;
+            }
+
+            .extra-size {
+                font-size: 4.5em;
+            }
+
+            .mt2em {
+                margin-top: 2em;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                margin: 0 0 15px;
+            }
+
+            .respect {
+                width: auto;
+                position: relative;
+
+                .tree {
+                    @include position(absolute, -29% 15% null null);
+                }
+            }
+
+            .pencil {
+                top: 0;
+
+                img {
+                    height: 180px;
+                }
+            }
+
+            .clock {
+                top: -13%;
+
+                img {
+                    height: 120px;
+                }
+            }
+
+            .coffee {
+                img {
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    .blog {
+        .sub-para {
+            padding: 2em !important;
+        }
+
+        p {
+            line-height: 20px!important;
+        }
+
+        .img-grid {
+            margin: 20px 0 !important;
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .img-sec {
+                padding: 15px;
+
+                .txt {
+                    letter-spacing: 0;
+                }
+
+                h3 {
+                    line-height: 18px;
+                    letter-spacing: 0;
+                    margin: 0 0 10px;
+                }
+            }
+
+            .calender {
+                width: auto;
+
+                ul {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .foot-sec {
+                margin: 10px 0;
+
+                ul {
+                    text-align: center;
+                }
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                h3 {
+                    font-size: 14px !important;
+                    line-height: 18px!important;
+                }
+
+                .img-spac {
+                    .img-sec {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
 }

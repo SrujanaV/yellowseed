@@ -478,6 +478,9 @@ header {
           margin-top: 3em !important;
         }
       }
+      span{
+        color: #fff!important;
+      }
       p {
         color: #fff;
         padding: 0 95px 0 55px;
@@ -831,7 +834,7 @@ p {
     }
   }
   .circle-cont {
-    margin-left: 50px;
+    margin-left: 40px;
     z-index: 1;
     position: relative;
     ul {
@@ -840,15 +843,24 @@ p {
           display: block;
         }
       }
-      li+li {
-        padding-left: 25px;
-        padding-bottom: 10px;
+      li{
+      padding-right: 50px;
+        padding-bottom: 20px;
+      }
+      li:last-child{
+        padding-right: 0;
+      }
+      li:nth-child(3n){
+        padding-right: 0;
       }
     }
     .circle {
       border-radius: 50%;
-      width: 165px;
-      height: 165px;
+      // width: 165px;
+      // height: 165px;
+      height: 150px;
+      width: 150px;
+
       // box-shadow: inset 10px 9px 10px -10px #000000;
       // -webkit-box-shadow: inset 10px 9px 10px -10px #000000;
       // -moz-box-shadow: inset 10px 9px 10px -10px #000000;
@@ -857,7 +869,8 @@ p {
         position: relative;
       }
       img {
-        height: 165px;
+        // height: 165px;
+        height: 150px;
         border-radius: 50%;
         @include filter(grayscale(100%));
         &:hover {
@@ -912,7 +925,7 @@ p {
   .spee-blg {
     float: right;
     text-align: right;
-    width: 50%!important;
+    width: 50%;
     @include position(absolute,
     -60px 25px null null);
   }
@@ -999,7 +1012,7 @@ p {
   .yseed-big {
     @include position(absolute,
     -5% null null 27.5%);
-    z-index: 9999;
+    z-index: 99;
     img {
       height: 150px;
     }
@@ -1216,6 +1229,7 @@ footer {
   }
   .list-inline {
     li {
+
       a {
         color: #8f8f8f;
       }
@@ -1241,6 +1255,7 @@ footer {
   }
   .list-inline {
     li {
+
       a {
         color: #fff;
       }
@@ -1456,14 +1471,26 @@ li:last-child{
   position: absolute;
 top: 40px;
 right: 40px;
-border-radius: 20px;
 background-color: transparent;
 color: #fff;
 &:focus{
   outline: none;
 }
 }
-
+.zero .navbar .nav li a:hover{
+  background-color: transparent;
+}
+.navbar-nav > li{
+  z-index: 999;
+}
+.head{
+  z-index: 9;
+}
+.mobile-circle{
+  img{
+  filter: none!important;
+  }
+}
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";

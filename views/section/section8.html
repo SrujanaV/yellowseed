@@ -31,12 +31,17 @@
         <div class="form-group" ng-class="{'form-invalid': formName.mobile.$invalid && formName.mobile.$touched}">
           <input type="text" name="mobile" class="form-control" ng-model="formData.mobile" placeholder="Mobile No.*" required>
         </div>
-      </div>
-      <div class="col-md-3 pr0">
-        <div class="form-group" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
+        <div class="form-group visible-sm visible-xs" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
           <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Summary*" required></textarea>
         </div>
-        <button type="submit" class="btn btn2 pull-right" name="submit" ng-disabled="formName.$invalid">Submit</button>
+      </div>
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="form-group hidden-sm hidden-xs" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
+          <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Summary*" required></textarea>
+        </div>
+        <button type="submit" class="btn btn2 pull-right btn-full hidden-sm hidden-xs" name="submit" ng-disabled="formName.$invalid">Submit</button>
+          <button type="submit" class="btn btn2 btn-full visible-sm visible-xs btn-ipad" name="submit" ng-disabled="formName.$invalid">Submit</button>
+
       </div>
     </form>
     <div class="form-submission text-center" ng-if="formSubmitted">
