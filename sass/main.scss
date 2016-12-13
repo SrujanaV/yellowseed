@@ -1453,11 +1453,16 @@ li:last-child{
   padding: 0px 40px;
   letter-spacing: 0.4px;
 }
-.sharp-pencil{
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 215px;
+.pencil-dust{
+  position: absolute;
+  top: 16px;
+  width: 165px;
+  left: 35px;
+}
+.pencil-pen{
+  position: absolute;
+  width: 234px;
+top: 20%;
 }
 .testimonials .view-all {
     top: 35%!important;

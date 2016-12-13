@@ -447,12 +447,18 @@ margin-top: 10px;
 header .navbar .nav li a{
   padding: 18px 10px;
 }
+.pencil-pen {
+position: absolute;
+width: 234px;
+top: 15%;
+}
 }
 @media (max-width: $screen-xs-max) {
     .list-inline {
         padding: none;
         list-style: none;
     }
+
 .zero-tag{
   left: 10px!important;
   p{
@@ -636,7 +642,7 @@ header .navbar .nav li a{
 
             ul {
                 li {
-                        padding: 10px 25px!important;
+                        padding: 10px 12px!important;
                 }
 
                 // li+li {
@@ -806,12 +812,29 @@ header .navbar .nav li a{
     .list-inline {
       margin: 0;
     }
+
     .pd10{
+      padding: 0;
+      text-align: center;
       li{
         padding: 10px!important;
       }
     }
+//     .pencil-dust {
+//     position: absolute;
+//     top: 16px;
+//     width: 120px;
+//     left: 35px;
+//   }
+.pencil-pen {
+    position: absolute;
+    width: 234px;
+    top: 10%;
+  }
 .testimonials{
+      h1{
+      font-size: 40px!important;
+      }
 p{
   &:before,&:after{
     @include transform(rotate(180deg));
@@ -989,8 +1012,8 @@ right: 25px;
         }
 
         .circle-cont {
-            margin-left: 0 !important;
-
+            text-align: center;
+margin-left: 0;
             ul {
                 li {
                     padding-left: 8px;
