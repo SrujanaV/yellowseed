@@ -3,15 +3,17 @@
         <!--<img src="img/inside-pages/bg-blog.jpg" alt="">-->
     </div>
     <div class="container">
+      <div class="sub-para">
       <div class="tab-slider">
             <flex-slider flex-slide="s in blog track by $index"  class="bg-color" animation="slide" item-width="280" item-margin="10" animationloop="true" move="2">
                <!-- <li class="blog-active" auto-heightfixed  ng-click="tabchanges(s._id,$index)">{{s.activetab}} -->
                <li auto-heightfixed ng-class={'blog-active':s.activetab} ng-click="tabchanges(s._id,$index)">
-                  <a>{{s.name}}</a>
+                  <a ui-sref="blog({index:$index})">{{s.name}}</a>
                   <!-- <a ng-click="tabchanges('Media')">{{s.name}}</a> -->
                    <!-- <img ng-src="{{s}}" class="img-responsive" alt="Hindustan Platinum" auto-heightfixed> -->
                </li>
             </flex-slider>
+          </div>
           </div>
         <!--<div class="sub-para">
             <ul class="list-inline text-center">

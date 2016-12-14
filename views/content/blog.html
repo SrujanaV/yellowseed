@@ -39,7 +39,7 @@
             <div class="row img-spac">
                 <div class="col-md-6" ng-repeat="item in getoneBlogs track by $index">
                     <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive">
-                    <div class="img-sec" ui-sref="individual-blog({id:s._id})">
+                    <div class="img-sec" ui-sref="individual-blog({id:item._id})">
                     <div class="img-sec" >
                         <h3>{{item.name}}</h3>
                         <p class="date">{{item.date|date:'longDate'}}</p>

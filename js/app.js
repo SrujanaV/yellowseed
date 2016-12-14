@@ -75,7 +75,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             controller: 'WeBelieveCtrl'
         })
         .state('blog', {
-            url: "/blog-detail",
+            url: "/blog-detail/:index",
             templateUrl: "views/template.html",
             controller: 'BlogCtrl'
         })
@@ -94,7 +94,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
       templateUrl: "views/template.html",
       controller: 'HomeCtrl'
     })
-        
+
         ;
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
