@@ -435,7 +435,7 @@ header {
     background-size: cover;
     z-index: 1;
     @include transform(translateY(-40%));
-    height: 400px;
+    height: auto;   ///new height    ///old height 400px
     right: 0;
     h1 {
       color: #4e4242;
@@ -489,17 +489,16 @@ header {
           content: ' " ';
               font-style: italic;
           font-family: 'Rubik', sans-serif;
-          font-size: 75px;
+          font-size: 43px;
           color: #ffca08;
           display: inline-block;
+            transform: rotate(180deg);
         }
         &:before{
-              transform: rotate(180deg);
-                    line-height: 0.2;
+                line-height: 0.2;
                     margin-left: -25px;
               }
               &:after{
-              transform: rotate(180deg);
                 line-height: 0;
                     height: 0;
                     margin-left: 10px;
@@ -844,8 +843,8 @@ p {
         }
       }
       li{
-      padding-right: 50px;
-        padding-bottom: 20px;
+        padding-right: 50px;
+    padding-bottom: 30px;
       }
       li:last-child{
         padding-right: 0;
