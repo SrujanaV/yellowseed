@@ -466,10 +466,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 console.log("$stateParams.index",$stateParams.index);
     NavigationService.getTag(function (data) {
         $scope.blog = data.data.results;
-        // if ($stateParams.index) {
-        //   $scope.id=$stateParams.index;
-        //   $scope.tabchanges($scope.blog[$scope.id]._id, 0);
-        // }
+        if ($stateParams.index && $stateParams.id) {
+          $scope.index=$stateParams.index;
+          $scope.id=$stateParams.id;
+
+          $scope.tabchanges($scope.blog[$scope.id], $scope.index);
+        }
         $scope.tabchanges($scope.blog[0]._id, 0);
 
 
