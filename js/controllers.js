@@ -469,8 +469,10 @@ console.log("$stateParams.index",$stateParams.index);
         if ($stateParams.index && $stateParams.id) {
           $scope.index=$stateParams.index;
           $scope.id=$stateParams.id;
+          console.log($scope.index,$scope.id);
 
           $scope.tabchanges($scope.blog[$scope.id], $scope.index);
+          console.log("in stateParams");
         }
         $scope.tabchanges($scope.blog[0]._id, 0);
 
@@ -491,6 +493,7 @@ console.log("$stateParams.index",$stateParams.index);
         $scope.blog[indexid].activetab = true;
         NavigationService.getTagBlog(tab, function (data) {
             $scope.getoneBlogs = data.data;
+            console.log("  $scope.getoneBlogs",  $scope.getoneBlogs);
         });
 
 
