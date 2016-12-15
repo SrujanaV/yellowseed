@@ -58,7 +58,7 @@
                     <div class="row img-spac">
                         <h2>Related Post</h2>
                         <div class="col-md-4 col-sm-4" ng-repeat="item in rel track by $index">
-                            <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive">
+                            <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive" ui-sref="individual-blog({id:item._id})">
                             <div class="img-sec">
                                 <h3>{{item.name}}</h3>
                             </div>
