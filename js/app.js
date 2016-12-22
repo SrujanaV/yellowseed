@@ -74,8 +74,9 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'WeBelieveCtrl'
         })
+
         .state('blog', {
-            url: "/blog-detail/:index",
+            url: "/blog-detail/:id/:index",
             templateUrl: "views/template.html",
             controller: 'BlogCtrl'
         })

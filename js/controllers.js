@@ -466,29 +466,28 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 console.log("$stateParams.index",$stateParams.index);
     NavigationService.getTag(function (data) {
         $scope.blog = data.data.results;
-        // if ($stateParams.index) {
-        //   $scope.id=$stateParams.index;
-        //   $scope.tabchanges($scope.blog[$scope.id]._id, 0);
-        // }
-        $scope.tabchanges($scope.blog[0]._id, 0);
+        if ($stateParams.id && $stateParams.index) {
+            $scope.id=$stateParams.id;
+          $scope.index=$stateParams.index;
+          $scope.tabchanges($scope.id, $scope.index);
+        }else {
+              $scope.tabchanges($scope.blog[0]._id, 0);
+        }
+
 
 
     });
-    // $scope.tabs = 'media';
-    // $scope.classp = 'active-tab';
-    // $scope.classv = '';
-    //
-    // $scope.oneAtATime = true;
-    //
-    // TemplateService.menu = "";
-    // $scope.tabs = "";
+
     $scope.tabchanges = function (tab, indexid) {
+      console.log("tab",tab);
+      console.log(indexid,"indexid");
         _.each($scope.blog, function (key) {
             key.activetab = false;
         });
         $scope.blog[indexid].activetab = true;
         NavigationService.getTagBlog(tab, function (data) {
             $scope.getoneBlogs = data.data;
+            console.log("  $scope.getoneBlogs",  $scope.getoneBlogs);
         });
 
 
@@ -566,7 +565,7 @@ console.log("$stateParams.index",$stateParams.index);
     $scope.blogDetail();
     NavigationService.getTag(function (data) {
         $scope.blog = data.data.results;
-        $scope.tabchanges($scope.blog[0]._id, 0);
+        // $scope.tabchanges($scope.blog[0]._id, 0);
 
     });
 
