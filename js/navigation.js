@@ -70,13 +70,15 @@ var navigationservice = angular.module('navigationservice', [])
         anchor: "brainwave",
         target: "_self",
         subnav: []
-    }, {
-        name: "Media",
-        classis: "active",
-        anchor: "media",
-        target: "_self",
-        subnav: []
-    }, {
+    },
+    // {
+    //     name: "Media",
+    //     classis: "active",
+    //     anchor: "media",
+    //     target: "_self",
+    //     subnav: []
+    // },
+    {
         name: "Blog",
         classis: "active",
         anchor: "blog",
