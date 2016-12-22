@@ -872,7 +872,7 @@ p {
         // height: 165px;
         height: 150px;
         border-radius: 50%;
-        @include filter(grayscale(100%));
+        @include filter(grayscale(75%));
         &:hover {
           @include filter(none);
         }
