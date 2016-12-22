@@ -506,7 +506,7 @@ header {
     }
       .yellow {
         color: #ffca08 !important;
-        padding: 0 109px;
+        padding: 0 57px;
       }
       .flex-control-nav {
         bottom: -20%;
@@ -872,9 +872,10 @@ p {
         // height: 165px;
         height: 150px;
         border-radius: 50%;
-        @include filter(grayscale(75%));
+        @include filter(grayscale(75%) opacity(85%));
+        // @include filter(grayscale(75%));
         &:hover {
-          @include filter(none);
+          @include filter(opacity(75%));
         }
       }
       .img-responsive {
@@ -1477,6 +1478,11 @@ top: 20%;
     top: 35%!important;
     right: 20%!important;
     position: absolute;
+}
+.testimonials{
+  br{
+    display: none;
+  }
 }
 .video-sec{
   position: relative;
