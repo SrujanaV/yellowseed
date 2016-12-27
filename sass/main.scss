@@ -214,11 +214,14 @@ header {
       }
     }
     li+li a span {
-      border-top: 1px solid #fff;
+      // border-top: 1px solid #fff;
       display: block;
     }
   }
 }
+.zero header .navbar .nav li .dropdown-menu li a {
+    color: #fff;
+  }
 
 .acc-nav {
   .panel {
@@ -302,7 +305,7 @@ header {
   }
   .head-padd {
     .logo {
-      height: 30px;
+      height: 40px;
       margin-top: -3px;
     }
   }
