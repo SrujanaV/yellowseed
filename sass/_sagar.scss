@@ -266,7 +266,7 @@
     }
     .camera {
         @include position(absolute,
-        30% 0 null null);
+        25% 0 null null);
         z-index: 2;
         img {
             width: 230px;
@@ -339,7 +339,7 @@
         @include position(absolute,
         35% null null 0);
         img {
-            height: 320px;
+            height: 300px;
         }
     }
     .note-tab {

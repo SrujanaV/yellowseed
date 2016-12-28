@@ -9,6 +9,11 @@
         top: 30%;
         right: 28%;
     }
+    .camera{
+      img{
+          width: 155px!important;
+      }
+  }
 
     .nav > li > a {
         padding: 15px 3px;
@@ -298,7 +303,22 @@
     }
 }
 @media (max-width: $screen-sm-max) {
-
+  .pencil-color-box {
+    img{
+      height: 165px!important;
+    }
+  }
+.camera{
+  top:20%!important;
+    img{
+        width: 130px!important;
+    }
+}
+.img-list{
+  li:nth-child(3n){
+    padding-right: 0!important;
+  }
+}
     .four {
         .testimonials {
             width: 100%;
@@ -464,8 +484,12 @@ header .navbar .nav li a{
     text-align: left!important;
   }
 }
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
 }
 @media (max-width: $screen-xs-max) {
+
     .list-inline {
         padding: none;
         list-style: none;
@@ -825,9 +849,15 @@ width: 100%;
             background: rgba(255, 0, 0, 0.8);
         }
     }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent;
+  }
 }
 
 @media (max-width: 480px) {
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
   .navbar-toggle{
     padding: 11px 10px;
   }
