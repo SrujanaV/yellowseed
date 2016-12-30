@@ -32,12 +32,12 @@
           <input type="text" name="mobile" class="form-control" ng-model="formData.mobile" placeholder="Mobile No.*" required>
         </div>
         <div class="form-group visible-sm visible-xs" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
-          <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Summary*" required></textarea>
+          <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Message*" required></textarea>
         </div>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12">
         <div class="form-group hidden-sm hidden-xs" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
-          <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Summary*" required></textarea>
+          <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Message*" required></textarea>
         </div>
         <button type="submit" class="btn btn2 pull-right btn-full hidden-sm hidden-xs" name="submit" ng-disabled="formName.$invalid">Submit</button>
           <button type="submit" class="btn btn2 btn-full visible-sm visible-xs btn-ipad" name="submit" ng-disabled="formName.$invalid">Submit</button>
@@ -45,7 +45,7 @@
       </div>
     </form>
     <div class="form-submission text-center" ng-if="formSubmitted">
-      <h3 class="color-white">Thanks for reaching out to us We'll connect with you soon</h3>
+      <h3 class="color-white">Thanks for reaching out to us.<br>We'll connect with you soon</h3>
       <!-- <p>We will get back to you soon.</p> -->
     </div>
   </div>

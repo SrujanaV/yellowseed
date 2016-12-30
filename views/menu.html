@@ -11,8 +11,8 @@
   <li><a href="">Media</a></li>
 </ul>
 </div>-->
-<ul class="nav navbar-nav navbar-middle hidden-xs">
-    <li ng-repeat="menu in navigation" class="{{menu.classis}}">
+<ul class="nav navbar-nav navbar-middle hidden-xs yellow-under">
+    <li ng-repeat="menu in navigation" class="{{menu.classis}} yellow-und">
         <a href="{{menu.link}}" ng-if="menu.link" target="_blank">{{menu.name}}</a>
         <a ng-click="changeURL(menu.anchor)" ng-if="!menu.link">{{menu.name}}</a>
         <ul class="dropdown-menu hidden-xs nav-col" ng-if="menu.subnav!='';">
