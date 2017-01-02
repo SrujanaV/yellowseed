@@ -39,13 +39,13 @@
             <div class="row img-spac">
             </div>
             <div class="row img-spac">
-                <div class="col-md-6" ng-repeat="item in getoneBlogs track by $index">
+                <div class="col-md-6 mb-20" ng-repeat="item in getoneBlogs track by $index">
                     <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive">
                     <div class="img-sec" ui-sref="individual-blog({id:item._id})">
                     <div class="img-sec" >
                         <h3>{{item.name}}</h3>
                         <p class="date">{{item.date|date:'longDate'}}</p>
-                        <p class="txt" ng-bind-html="item.content | shorten :135 | rawHtml "></p>
+                        <p class="txt min-h" ng-bind-html="item.content | shorten :135 | rawHtml "></p>
                     </div>
                 </div>
 
