@@ -455,7 +455,7 @@ width: 50%;
 margin-top: 10px;
     }
     .testimonials{
-      padding: 40px 30px!important;
+      padding: 40px 30px;
       .flex-direction-nav{
         display: none;
       }
@@ -940,7 +940,7 @@ right: 25px;
 
     .four {
         .testimonials {
-            padding: 5em 0 0;
+            padding: 7em 0 0;
 
             .slider p {
 
@@ -949,9 +949,11 @@ right: 25px;
             }
         }
     }
-    .testimonials {
-        padding: 40px 0px !important;
-    }
+
+
+    // .testimonials {
+    //     padding: 40px 0px !important;
+    // }
     .four .testimonials .slider {
         width: 310px;
         margin: 0 auto;
@@ -969,11 +971,13 @@ right: 25px;
     }
 
     .one {
-        padding: 16em 0 8em;
+        padding: 8em 0 8em;
     }
 
     .three {
-        padding: 3em 0 10em;
+        // padding: 3em 0 10em;
+    padding: 6em 0 2em;
+
 
         .brands {
             .flexslider .slides li {
@@ -985,6 +989,9 @@ right: 25px;
             }
         }
     }
+    .five {
+    padding: 5em 0;
+}
 
 .skip-btn {
     position: absolute;
@@ -1072,7 +1079,7 @@ right: 25px;
             margin: 22px 0 0;
 
             .prof {
-                padding: 0 0 0 8em;
+                padding: 0;
             }
         }
 
@@ -1110,10 +1117,10 @@ margin-left: 0;
         }
 
         .chasma {
-            top: 6%;
+            top: 1%;
 
             img {
-                height: 230px;
+                height: 180px;
             }
         }
 
@@ -1197,7 +1204,11 @@ margin-left: 0;
             display: none;
         }
     }
-
+.sec-nav{
+  a{
+    color: #fff;
+  }
+}
     .we-believe {
         .we-one {
             padding: 0;
