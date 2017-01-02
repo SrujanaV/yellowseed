@@ -864,7 +864,9 @@ width: 100%;
     .list-inline {
       margin: 0;
     }
-
+    .seven {
+        padding: 11em 0;
+      }
     .pd10{
       padding: 0;
       text-align: center;
@@ -959,6 +961,8 @@ right: 25px;
         margin: 0 auto;
         .yellow{
           padding: 0;
+          display: block;
+    text-align: center;
         }
     }
 
@@ -1130,7 +1134,7 @@ margin-left: 0;
 
         .imac {
             img {
-                height: 230px;
+                height: 190px;
             }
         }
 
