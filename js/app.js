@@ -220,6 +220,7 @@ firstapp.filter('shorten', function() {
 
     };
 });
+
 firstapp.filter('rawHtml', ['$sce',
     function($sce) {
         return function(val) {
