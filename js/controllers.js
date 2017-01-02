@@ -12,8 +12,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     NavigationService.getHome(function (data) {
         // console.log(data);
         $scope.home = data.data.results;
-        console.log($scope.home[0].banner);
-        $scope.home.banner = $filter('uploadpath')($scope.home[0].banner);
+        console.log("$scope.home",$scope.home);
+      if ($scope.home.length >0 && $scope.home[0].banner) {
+              $scope.home.banner = $filter('uploadpath')($scope.home[0].banner);
+        }
+
 
         // console.log($scope.getHome);
     });
@@ -466,6 +469,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 console.log("$stateParams.index",$stateParams.index);
     NavigationService.getTag(function (data) {
         $scope.blog = data.data.results;
+        console.log("  $scope.blog",  $scope.blog);
+
         if ($stateParams.id && $stateParams.index) {
             $scope.id=$stateParams.id;
           $scope.index=$stateParams.index;
