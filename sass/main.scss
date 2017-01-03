@@ -856,7 +856,7 @@ p {
         padding-right: 0;
       }
       li:nth-child(3n){
-        padding-right: 0;
+        padding-right: 50px;
       }
     }
     .circle {
@@ -890,11 +890,11 @@ p {
   }
   .new-circle{
     li{
-      padding-right: 50px!important;
+      padding-right: 50px;
   padding-bottom: 30px!important;
     }
     li:last-child{
-      padding-right: 0!important;
+      padding-right: 0;
     }
   }
   .wait {
@@ -1517,7 +1517,7 @@ color: #fff;
   }
 }
 .sec-nav{
-  background: #d8d6d6;
+  background: #403635;
 }
 .zero .navbar .nav li {
   &:hover a{

@@ -858,12 +858,27 @@ width: 100%;
   .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
+.btn2{
+  font-size: 10px!important;
+}
+.mgt55{
+      margin-top: 55px;
+}
+.header-home{
+  display: block;
+}
   .navbar-toggle{
     padding: 11px 10px;
   }
     .list-inline {
-      margin: 0;
+    font-size: 15px;
     }
+    .list-inline{
+      li:last-child{
+              padding-right: 12px!important;
+        }
+    }
+
     .seven {
         padding: 11em 0;
       }
@@ -874,15 +889,12 @@ width: 100%;
         padding: 10px!important;
       }
     }
-//     .pencil-dust {
-//     position: absolute;
-//     top: 16px;
-//     width: 120px;
-//     left: 35px;
-//   }
+    .pencil-dust {
+      width: 120px;
+  }
 .pencil-pen {
     position: absolute;
-    width: 234px;
+    width: 160px;
     top: 10%;
   }
 .testimonials{
@@ -917,9 +929,12 @@ p{
 .btn-full{
   width: 100%;
 }
-.pr60 {
-    padding: 0 60px 0px 10px;
+.eight{
+  .pr60 {
+      padding: 0 15px;
+  }
 }
+
 .mr40{
   margin-right: 0;
 }
@@ -942,7 +957,7 @@ right: 25px;
 
     .four {
         .testimonials {
-            padding: 7em 0 0;
+            padding: 9em 0 0;
 
             .slider p {
 
@@ -951,8 +966,33 @@ right: 25px;
             }
         }
     }
+.six{
+  padding: 12em 0 7em
+}
 
-
+.ml35{
+    margin: 10px 5px;
+}
+.list-under{
+  li{
+      border-bottom: 2px solid #fff;
+margin-bottom: 3px;
+padding-bottom: 3px;
+width: 50%;
+  }
+  }
+.seven {
+    padding: 11em 0 5em;
+    .pl10{
+      padding-left: 15px;
+    }
+    .mobile-head{
+      text-align: center;
+    }
+  }
+  .two{
+    padding: 6em 0;
+  }
     // .testimonials {
     //     padding: 40px 0px !important;
     // }
@@ -965,7 +1005,13 @@ right: 25px;
     text-align: center;
         }
     }
-
+    .zero{
+      height: 100%;
+          padding: 0em 0 40px 0;
+    }
+    .zero .padd-top {
+    padding: 8em 0 4em;
+}
     .head {
         .head-tag {
             h2 {
@@ -975,26 +1021,40 @@ right: 25px;
     }
 
     .one {
-        padding: 8em 0 8em;
+            padding: 5em 0;
     }
-
+    .three .brands .flex-control-nav {
+        bottom: -19%;
+    }
     .three {
         // padding: 3em 0 10em;
-    padding: 6em 0 2em;
+    padding: 6em 0 5em;
 
-
+.client-slider{
+  .flex-direction-nav{
+    display: none;
+  }
+  .client-imgholder {
+      padding: 10px;
+  }
+}
+.color-mobile{
+}
+.sec-nav{
+    background-color: #403635;
+}
         .brands {
             .flexslider .slides li {
-                padding: 30px;
+                padding: 0;
             }
 
             .flexslider .slides img {
-                height: 50px;
+                height: 80px;
             }
         }
     }
     .five {
-    padding: 5em 0;
+    padding: 7em 0;
 }
 
 .skip-btn {
@@ -1005,6 +1065,12 @@ right: 25px;
     right: 30px;
     background-color: transparent;
     color: #fff;
+}
+.ml20{
+  margin: 0;
+}
+.pr60{
+  padding: 20;
 }
     .five {
         .testimonials {
@@ -1034,7 +1100,7 @@ right: 25px;
     }
 
     p {
-        font-size: 12px!important;
+        font-size: 14px!important;
     }
 
     .eight,
@@ -1067,7 +1133,9 @@ right: 25px;
 .test-vw{
   text-align: center;
 }
-
+.list-inline li a{
+  font-size: 15px;
+}
         .zero-tag {
             position: absolute;
             top: -18%;
@@ -1075,7 +1143,7 @@ right: 25px;
             z-index: 1;
 
             p {
-                font-size: 15px !important;
+                font-size: 16px !important;
             }
         }
 
@@ -1086,7 +1154,12 @@ right: 25px;
                 padding: 0;
             }
         }
-
+        .list-unstyled {
+            padding-left: 6px;
+          }
+          .mgt24{
+                margin-top: 24px;
+          }
         span.text-content {
             left: -3%;
             font-size: 12px;
@@ -1098,7 +1171,7 @@ right: 25px;
 margin-left: 0;
             ul {
                 li {
-                    padding-left: 8px;
+                    padding-left: 10px 12px!important;
 
                     .circle {
                         width: auto;
@@ -1124,10 +1197,13 @@ margin-left: 0;
             top: 1%;
 
             img {
-                height: 180px;
+                height: 120px;
             }
         }
-
+.mgb2{
+  margin-bottom: 2px;
+  font-size: 15px;
+}
         .note-book {
             left: 0;
         }

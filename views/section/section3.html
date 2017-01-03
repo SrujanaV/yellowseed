@@ -39,7 +39,7 @@
             </div>
           </div>
         </div>
-      </li>
+    </li>
     </flex-slider>
     <flex-slider ng-if="!showHead1" class="carousel" flex-slide="img in partners track by $index" item-width="1200" item-margin="10" animation="slide"
       animation-loop="false" as-nav-for="#slider" slide-show="false">
@@ -55,5 +55,40 @@
         </div>
       </li>
     </flex-slider>
+
+
+<!-- mobile-slide -->
+<!-- <flex-slider  ng-if="showHead1" class="carousel hidden-sm hidden-md hidden-lg" flex-slide="img in clientxs track by $index" item-width="1200" item-margin="10" animation="slide"
+  animation-loop="false" as-nav-for="#slider" slide-show="false">
+  <li>
+    <div class="client-imgholder">
+      <div class="row bord-cus" ng-repeat="row in img track by $index">
+        <div class="col-xs-6" ng-repeat="clientimg in row track by $index">
+          <div class="img-holder listing">
+            <img ng-src="{{clientimg.logo|uploadpath}}" alt="" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+</li>
+</flex-slider>
+<flex-slider ng-if="!showHead1" class="carousel hidden-sm hidden-md hidden-lg" flex-slide="img in partnersxs track by $index" item-width="1200" item-margin="10" animation="slide"
+  animation-loop="false" as-nav-for="#slider" slide-show="false">
+  <li>
+    <div class="client-imgholder">
+      <div class="row bord-cus" ng-repeat="row in img track by $index">
+        <div class="col-xs-6" ng-repeat="partnerimg in row track by $index">
+          <div class="img-holder listing">
+            <img ng-src="{{partnerimg.logo|uploadpath}}" alt="" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</flex-slider> -->
+
+
+
+
   </div>
 </div>

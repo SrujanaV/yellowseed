@@ -38,6 +38,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.partners[i] = _.chunk($scope.partners[i], 3);
             // console.log($scope.client);
         }
+
+        //for mobile
+        $scope.partnersxs = data.data.results;
+        $scope.partnersxs = _.chunk($scope.partnersxs,6);
+        for (var i = 0; i < $scope.partners.length; i++) {
+            $scope.partnersxs[i] = _.chunk($scope.partnersxs[i], 2);
+            // console.log($scope.client);
+        }
         console.log('888888888',$scope.partners);
 
 
@@ -49,6 +57,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         for (var i = 0; i < $scope.client.length; i++) {
             $scope.client[i] = _.chunk($scope.client[i], 3);
             // console.log($scope.client);
+        }
+
+        // for mobile slider
+        $scope.clientxs = data.data.results;
+        $scope.clientxs = _.chunk($scope.clientxs, 6);
+        for (var i = 0; i < $scope.client.length; i++) {
+            $scope.clientxs[i] = _.chunk($scope.clientxs[i], 2);
         }
         console.log($scope.client);
 

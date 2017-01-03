@@ -23,18 +23,18 @@
         </ul>
     </li>
 </ul>
-<div class="hidden-sm hidden-md hidden-lg acc-nav sec-nav ">
+<div class="hidden-sm hidden-md hidden-lg acc-nav sec-nav color-mobile">
     <uib-accordion close-others="true">
         <div ng-repeat="menu in navigation" uib-accordion-group class="panel-default" is-open="status.open2">
             <uib-accordion-heading>
-              <a ng-click="changeURL(menu.anchor)" ng-if="!menu.link" class="collapsed">{{menu.name}}</a>
+              <a ng-click="changeURL(menu.anchor)" ng-if="!menu.link" class="collapsed"  data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">{{menu.name}}</a>
                 <!--<i ng-if="menu.subnav.length>0" class="pull-right fa " ng-class="{'fa fa-chevron-up': status.open2, 'fa fa-chevron-down ': !status.open2}"></i>-->
                 <!-- <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor" class="acc-menu">{{menu.name}}</a> -->
-                <a href="{{menu.link}}" ng-if="menu.link" class="collapsed">{{menu.name}}</a>
+                <a href="{{menu.link}}" ng-if="menu.link" class="collapsed"  data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">{{menu.name}}</a>
             </uib-accordion-heading>
             <ul ng-if="menu.subnav.length>0" class="list-unstyled">
-                <li ng-repeat="submenu in menu.subnav" class="acc-mainmenu">
-                    <a ui-sref="{{submenu.anchor}}" class="collapsed">{{submenu.name}}</a>
+                <li ng-repeat="submenu in menu.subnav" class="acc-mainmenu"  data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                    <a ui-sref="{{submenu.anchor}}" class="collapsed"  data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">{{submenu.name}}</a>
                 </li>
             </ul>
         </div>
