@@ -996,6 +996,18 @@ width: 50%;
     // .testimonials {
     //     padding: 40px 0px !important;
     // }
+    .mobile-connect{
+      text-align: left!important;
+    }
+    .we-believe .we-one .tree img{
+      height: 120px;
+    }
+    .we-believe .we-one .respect{
+      padding: 30px 15px;
+    }
+    .we-believe .we-four .coffee {
+  top: -13%;
+}
     .four .testimonials .slider {
         width: 310px;
         margin: 0 auto;
@@ -1065,6 +1077,20 @@ width: 50%;
     right: 30px;
     background-color: transparent;
     color: #fff;
+}
+.pd0{
+  padding: 0;
+}
+// .bg-color{
+//   padding: 14px!important;
+// }
+.bg-color .flexslider .slides {
+    text-align: center!important;
+    margin: 10px 16px!important;
+
+  }
+.prl40{
+    padding: 0!important;
 }
 .ml20{
   margin: 0;
@@ -1327,7 +1353,7 @@ margin-left: 0;
                 position: relative;
 
                 .tree {
-                    @include position(absolute, -29% 15% null null);
+                    @include position(absolute, -29% 5% null null);
                 }
             }
 
@@ -1340,24 +1366,30 @@ margin-left: 0;
             }
 
             .clock {
-                top: -13%;
+                top: -10%;
 
                 img {
-                    height: 120px;
+                    height: 110px;
                 }
             }
 
             .coffee {
                 img {
-                    height: 150px;
+                    height: 130px;
                 }
             }
         }
     }
 
     .blog {
-        .sub-para {
-            padding: 2em !important;
+        // .sub-para {
+        //     padding: 2em !important;
+        // }
+        .sub-para{
+      padding: 10px!important;
+      .flex-direction-nav{
+        display: none;
+      }
         }
 
         p {

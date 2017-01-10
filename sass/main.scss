@@ -1552,6 +1552,14 @@ border-bottom: 2px solid $brand-warning;
 .mb-20{
  margin-bottom: 20px;
 }
+.logo-brand{
+  display: inline-block;
+width: 7%;
+}
+.head-brand{
+  display: inline-block;
+      width: 89%;
+}
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";

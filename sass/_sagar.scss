@@ -6,7 +6,7 @@
 
 .blog {
     .sub-para {
-        padding: 1em 0 !important;
+        padding: 1em 0;
         ul {
             font-size: 20px !important;
             li {
@@ -276,14 +276,14 @@
         @include position(absolute,
         39% null null 0);
         img {
-            height: 400px;
+            height: 350px;
         }
     }
     .news-paper {
         @include position(absolute,
         42% 0 null null);
         img {
-            height: 565px;
+            height: 500px;
         }
     }
     .pencil-inner {
