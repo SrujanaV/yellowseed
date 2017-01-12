@@ -5,6 +5,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    TemplateService.removeLoaderOn(5);
     $scope.template.header = "";
     TemplateService.banner = "";
     console.log($stateParams.id);
@@ -16,7 +17,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       if ($scope.home.length >0 && $scope.home[0].banner) {
               $scope.home.banner = $filter('uploadpath')($scope.home[0].banner);
         }
-
+          TemplateService.removeLoader();
 
         // console.log($scope.getHome);
     });
@@ -24,10 +25,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         // console.log(data);
         $scope.testimonial = data.data.results;
         // console.log($scope.testimonial);
+            TemplateService.removeLoader();
     });
     NavigationService.getBlog(function (data) {
 
         $scope.blog = data.data.results;
+            TemplateService.removeLoader();
 
     });
     NavigationService.getPartner(function (data) {
@@ -47,6 +50,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             // console.log($scope.client);
         }
         console.log('888888888',$scope.partners);
+            TemplateService.removeLoader();
 
 
     });
@@ -66,6 +70,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.clientxs[i] = _.chunk($scope.clientxs[i], 2);
         }
         console.log($scope.client);
+            TemplateService.removeLoader();
 
     });
 
