@@ -15,7 +15,7 @@
                         <a ui-sref="individual-blog({id:s._id})">
                             <div class="blogs-details">
                                 <div class="blog-image">
-                                    <img ng-src="{{s.image|uploadpath}}" class="img-responsive" alt="blog-image">
+                                    <img ng-src="{{s.image|uploadpath :500}}" class="img-responsive" alt="blog-image">
                                 </div>
                                 <div class="blog-info">
                                     <p>{{s.name|shorten : 60}}</p>
