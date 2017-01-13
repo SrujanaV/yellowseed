@@ -27,7 +27,7 @@
             </ul>
         </div>-->
         <div class="img-grid">
-            <div class="row img-spac">
+            <div class="row img-spac" ng-if="getone.banner">
                 <div class="col-md-12">
                     <img ng-src="{{getone.banner|uploadpath}}" alt="" class="img-responsive">
                 </div>
@@ -55,7 +55,7 @@
                         <li><a href="" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
                         <li><a href="" target="_blank" class="email"><i class="fa fa-envelope-o ico" aria-hidden="true"></i></a></li>
                     </ul> -->
-                    <div class="row img-spac">
+                    <div class="row img-spac" ng-if="rel.length>0">
                         <h2>Related Post</h2>
                         <div class="col-md-4 col-sm-4" ng-repeat="item in rel track by $index">
                             <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive" ui-sref="individual-blog({id:item._id})">

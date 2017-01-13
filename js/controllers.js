@@ -12,67 +12,69 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive($stateParams.id);
     NavigationService.getHome(function (data) {
         // console.log(data);
-        $scope.home = data.data.results;
-        console.log("$scope.home",$scope.home);
-      if ($scope.home.length >0 && $scope.home[0].banner) {
-              $scope.home.banner = $filter('uploadpath')($scope.home[0].banner);
-        }
-          TemplateService.removeLoader();
+        if (data.value) {
+          $scope.home = data.data.results;
+          console.log("$scope.home",$scope.home);
+        if ($scope.home.length >0 && $scope.home[0].banner) {
+                $scope.home.banner = $filter('uploadpath')($scope.home[0].banner);
+                  TemplateService.removeLoader();
+          }
 
-        // console.log($scope.getHome);
+        }
     });
     NavigationService.getTestimonial(function (data) {
         // console.log(data);
-        $scope.testimonial = data.data.results;
-        // console.log($scope.testimonial);
-            TemplateService.removeLoader();
+        if (data.value) {
+          $scope.testimonial = data.data.results;
+          TemplateService.removeLoader();
+        }
+
     });
     NavigationService.getBlog(function (data) {
-
-        $scope.blog = data.data.results;
-            TemplateService.removeLoader();
-
-    });
+          if (data.value) {
+            $scope.blog = data.data.results;
+                TemplateService.removeLoader();
+          }
+      });
     NavigationService.getPartner(function (data) {
+        if (data.value) {
+          $scope.partners = data.data.results;
+          $scope.partners = _.chunk($scope.partners, 9);
+          for (var i = 0; i < $scope.partners.length; i++) {
+              $scope.partners[i] = _.chunk($scope.partners[i], 3);
+              // console.log($scope.client);
+          }
 
-        $scope.partners = data.data.results;
-        $scope.partners = _.chunk($scope.partners, 9);
-        for (var i = 0; i < $scope.partners.length; i++) {
-            $scope.partners[i] = _.chunk($scope.partners[i], 3);
-            // console.log($scope.client);
+          //for mobile
+          $scope.partnersxs = data.data.results;
+          $scope.partnersxs = _.chunk($scope.partnersxs,6);
+          for (var i = 0; i < $scope.partners.length; i++) {
+              $scope.partnersxs[i] = _.chunk($scope.partnersxs[i], 2);
+              // console.log($scope.client);
+          }
+          console.log('888888888',$scope.partners);
+          TemplateService.removeLoader();
         }
-
-        //for mobile
-        $scope.partnersxs = data.data.results;
-        $scope.partnersxs = _.chunk($scope.partnersxs,6);
-        for (var i = 0; i < $scope.partners.length; i++) {
-            $scope.partnersxs[i] = _.chunk($scope.partnersxs[i], 2);
-            // console.log($scope.client);
-        }
-        console.log('888888888',$scope.partners);
-            TemplateService.removeLoader();
-
-
-    });
+      });
     NavigationService.getClients(function (data) {
+          if (data.value) {
+            $scope.client = data.data.results;
+            $scope.client = _.chunk($scope.client, 9);
+            for (var i = 0; i < $scope.client.length; i++) {
+                $scope.client[i] = _.chunk($scope.client[i], 3);
+                // console.log($scope.client);
+            }
 
-        $scope.client = data.data.results;
-        $scope.client = _.chunk($scope.client, 9);
-        for (var i = 0; i < $scope.client.length; i++) {
-            $scope.client[i] = _.chunk($scope.client[i], 3);
-            // console.log($scope.client);
-        }
-
-        // for mobile slider
-        $scope.clientxs = data.data.results;
-        $scope.clientxs = _.chunk($scope.clientxs, 6);
-        for (var i = 0; i < $scope.client.length; i++) {
-            $scope.clientxs[i] = _.chunk($scope.clientxs[i], 2);
-        }
-        console.log($scope.client);
-            TemplateService.removeLoader();
-
-    });
+            // for mobile slider
+            $scope.clientxs = data.data.results;
+            $scope.clientxs = _.chunk($scope.clientxs, 6);
+            for (var i = 0; i < $scope.client.length; i++) {
+                $scope.clientxs[i] = _.chunk($scope.clientxs[i], 2);
+            }
+            console.log($scope.client);
+                TemplateService.removeLoader();
+          }
+      });
 
     $scope.formSubmitted = false;
     $scope.formData = {};
@@ -476,7 +478,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.footer = "";
     TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
-
+      TemplateService.removeLoaderOn(2);
     // NavigationService.getBlog(function(data) {
     //
     //     $scope.blog = data.data.results;
@@ -488,20 +490,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     };
 console.log("$stateParams.index",$stateParams.index);
     NavigationService.getTag(function (data) {
-        $scope.blog = data.data.results;
-        console.log("  $scope.blog",  $scope.blog);
+        if (data.value) {
+          $scope.blog = data.data.results;
+          console.log("  $scope.blog",  $scope.blog);
 
-        if ($stateParams.id && $stateParams.index) {
-            $scope.id=$stateParams.id;
-          $scope.index=$stateParams.index;
-          $scope.tabchanges($scope.id, $scope.index);
-        }else {
-              $scope.tabchanges($scope.blog[0]._id, 0);
+          if ($stateParams.id && $stateParams.index) {
+              $scope.id=$stateParams.id;
+            $scope.index=$stateParams.index;
+            $scope.tabchanges($scope.id, $scope.index);
+          }else {
+                $scope.tabchanges($scope.blog[0]._id, 0);
+          }
+          TemplateService.removeLoader();
         }
-
-
-
-    });
+        });
 
     $scope.tabchanges = function (tab, indexid) {
       console.log("tab",tab);
@@ -511,8 +513,12 @@ console.log("$stateParams.index",$stateParams.index);
         });
         $scope.blog[indexid].activetab = true;
         NavigationService.getTagBlog(tab, function (data) {
+          if (data.value) {
             $scope.getoneBlogs = data.data;
             console.log("  $scope.getoneBlogs",  $scope.getoneBlogs);
+                TemplateService.removeLoader();
+          }
+
         });
 
 
@@ -573,6 +579,7 @@ console.log("$stateParams.index",$stateParams.index);
     TemplateService.footer = "";
     TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
+          TemplateService.removeLoaderOn(2);
     $scope.changeURL = function (id) {
         console.log(id);
         $location.path("" + id);
@@ -580,19 +587,26 @@ console.log("$stateParams.index",$stateParams.index);
 
     $scope.blogDetail = function () {
         NavigationService.getOneBlog($stateParams.id, function (data) {
-            $scope.getone = data.data.blog;
-            $scope.rel = data.data.related;
-            // $scope.getRelatedBlogs = data.data;
-            console.log(data.data);
+            if (data.value) {
+              $scope.getone = data.data.blog;
+              $scope.rel = data.data.related;
+              console.log("rel",  $scope.rel);
+              // $scope.getRelatedBlogs = data.data;
+              console.log(data.data);
+              TemplateService.removeLoader();
+            }
+
         });
     }
 
     $scope.blogDetail();
     NavigationService.getTag(function (data) {
-        $scope.blog = data.data.results;
-        // $scope.tabchanges($scope.blog[0]._id, 0);
-
-    });
+        if (data.value) {
+          $scope.blog = data.data.results;
+          // $scope.tabchanges($scope.blog[0]._id, 0);
+          TemplateService.removeLoader();
+        }
+      });
 
 
 })
@@ -604,18 +618,19 @@ console.log("$stateParams.index",$stateParams.index);
     TemplateService.footer = "";
     TemplateService.banner = "views/footer1.html";
     $scope.navigation = NavigationService.getnav();
+      TemplateService.removeLoaderOn(2);
     $scope.detail = {};
     NavigationService.getAllBrand(function (data) {
-
-        $scope.brand = data.data.results;
-        $scope.brand = _.chunk($scope.brand, 9);
-        for (var i = 0; i < $scope.brand.length; i++) {
-            $scope.brand[i] = _.chunk($scope.brand[i], 3);
-            console.log($scope.brand);
+        if (data.value) {
+          $scope.brand = data.data.results;
+          $scope.brand = _.chunk($scope.brand, 9);
+          for (var i = 0; i < $scope.brand.length; i++) {
+              $scope.brand[i] = _.chunk($scope.brand[i], 3);
+              console.log($scope.brand);
+          }
+            TemplateService.removeLoader();
         }
-
-
-    });
+      });
 
     $scope.changeURL = function (id) {
         console.log(id);
@@ -624,16 +639,17 @@ console.log("$stateParams.index",$stateParams.index);
 
 
     NavigationService.getAllAgency(function (data) {
-
-        $scope.agency = data.data.results;
-        $scope.agency = _.chunk($scope.agency, 9);
-        for (var i = 0; i < $scope.agency.length; i++) {
-            $scope.agency[i] = _.chunk($scope.agency[i], 3);
-            console.log($scope.agency);
+        if (data.value) {
+          $scope.agency = data.data.results;
+          $scope.agency = _.chunk($scope.agency, 9);
+          for (var i = 0; i < $scope.agency.length; i++) {
+              $scope.agency[i] = _.chunk($scope.agency[i], 3);
+              console.log($scope.agency);
+          }
+          console.log($scope.client);
+            TemplateService.removeLoader();
         }
-        console.log($scope.client);
-
-    });
+      });
 
     $scope.awsomebrands = [{
         img: "img/home-page/clients/1.png",
