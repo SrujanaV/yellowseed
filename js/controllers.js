@@ -578,6 +578,7 @@ console.log("$stateParams.index",$stateParams.index);
     TemplateService.title = $scope.menutitle;
     TemplateService.footer = "";
     TemplateService.banner = "views/footer1.html";
+     $scope.myUrl = $location.absUrl();
     $scope.navigation = NavigationService.getnav();
           TemplateService.removeLoaderOn(2);
     $scope.changeURL = function (id) {

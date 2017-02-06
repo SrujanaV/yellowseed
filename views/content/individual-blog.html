@@ -55,6 +55,21 @@
                         <li><a href="" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
                         <li><a href="" target="_blank" class="email"><i class="fa fa-envelope-o ico" aria-hidden="true"></i></a></li>
                     </ul> -->
+
+                    <ul class="social-icons list-inline inline-block pull-right">
+                                                    <p class="inline-block">Share</p>
+                                                    <li>
+                                                       <a ng-href="https://www.facebook.com/sharer/sharer.php?u={{myUrl|urlEncode}};p[summary]=This is a blog article written by the team at Yellowseed." target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                       <a ng-href="https://twitter.com/intent/tweet?url={{myUrl|urlEncode}}" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                       <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                                                    </li>
+
+                                                 </ul>
+
                     <div class="row img-spac" ng-if="rel.length>0">
                         <h2>Related Post</h2>
                         <div class="col-md-4 col-sm-4" ng-repeat="item in rel track by $index">

@@ -1579,6 +1579,14 @@ position: absolute;
 @include transform(translateX(-50%));
 }
 
+.navbar-default .navbar-nav>.active,:hover>a{
+  background-color: transparent;
+  color: #fff;
+}
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav > .active > a {
+    color: #fff;
+    background-color: transparent;
+}
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";
