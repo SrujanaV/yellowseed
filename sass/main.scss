@@ -1587,6 +1587,12 @@ position: absolute;
     color: #fff;
     background-color: transparent;
 }
+.soc-sml-icons i{
+  &:hover{
+    background: #ffca08;
+    color: #fff!important;
+  }
+}
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";

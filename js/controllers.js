@@ -612,9 +612,9 @@ console.log("$stateParams.index",$stateParams.index);
 
 })
 
-.controller('AwsomenessCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $uibModal) {
-    $scope.template = TemplateService.changecontent("awsomeness");
-    $scope.menutitle = NavigationService.makeactive("awsomeness");
+.controller('AwesomenessCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $uibModal) {
+    $scope.template = TemplateService.changecontent("awesomeness");
+    $scope.menutitle = NavigationService.makeactive("Awesomeness");
     TemplateService.title = $scope.menutitle;
     TemplateService.footer = "";
     TemplateService.banner = "views/footer1.html";

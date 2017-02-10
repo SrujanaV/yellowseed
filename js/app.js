@@ -85,10 +85,10 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'IndividualBlogCtrl'
         })
-        .state('awsomeness', {
-            url: "/awsomeness",
+        .state('awesomeness', {
+            url: "/awesomeness",
             templateUrl: "views/template.html",
-            controller: 'AwsomenessCtrl'
+            controller: 'AwesomenessCtrl'
         })
              .state('homeid', {
       url: "/:id",
