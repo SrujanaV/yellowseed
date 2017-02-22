@@ -1593,6 +1593,50 @@ position: absolute;
     color: #fff!important;
   }
 }
+
+//ruchira
+
+.roots-run{ 
+  background-color: #403635;
+  padding: 40px 0;
+  }
+
+.box-text{ 
+  h3{
+    color: #ffca08 !important ;
+    font-family: 'Rubik', sans-serif  !important;
+    font-size: 42px  !important;
+    font-weight: 400  !important;
+    }
+
+    p{ color: #fff !important; }
+}
+
+.box-img{
+  height: 200px;
+    width: 200px;
+    margin: 15px auto 0;
+
+    img{ width: 100%; }
+}
+
+.disclaimer{ 
+  background-color:#818080;
+  padding: 30px 0;
+  p{
+    margin: 0 !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 500;
+    line-height: 20px !important;
+  }
+  p+p{
+    font-size: 11px !important;  
+    font-weight: 400;
+  }
+  }
+
+//ruchira
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";
