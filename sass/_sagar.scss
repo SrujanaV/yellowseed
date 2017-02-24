@@ -698,12 +698,12 @@ h2 {
     padding: 92px 0 0;
     text-align: center;
     h1 {
-        text-transform: uppercase;
-        font-size: 88px;
-        color: #ffca08;
-        font-family: 'Rubik', sans-serif;
-        font-weight: bold;
-        text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), #cca000 4px 4px 4px
+    text-transform: uppercase;
+    font-size: 88px;
+    color: #ffca08;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px -2px 0px rgba(255, 255, 255, 0.3), #cca000 6px 7px 8px;
     }
 }
 
@@ -712,12 +712,12 @@ h2 {
     padding: 92px 0 0;
     text-align: center;
     h1 {
-        text-transform: uppercase;
-        font-size: 88px;
-        color: #4e4242;
-        font-family: 'Rubik', sans-serif;
-        font-weight: bold;
-        text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #2b2929 4px 4px 4px;
+    text-transform: uppercase;
+    font-size: 88px;
+    color: #4e4242;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1), #2b2929 6px 6px 4px;
     }
 }
 
@@ -787,6 +787,26 @@ h2 {
         right: 15px;
     }
 }
+
+.we-won{ background-color:  #ffcb08;
+        h2{ 
+            font-size:25px !important;
+    }
+    span{ font-weight:600;}
+ }
+
+.won-padding{    padding: 30px 0;}
+
+.won{
+     padding:0px;
+    h1{ text-align: left; }
+}
+
+.won-img{  margin: 58px auto; }
+
+.sub-won{ background-color:#e6e6e6;
+          padding: 50px 0px 20px 0;
+     }
 
 video {
     width: 100%;

@@ -303,6 +303,48 @@
     }
 }
 @media (max-width: $screen-sm-max) {
+ //awesomeness
+ .won-img{    margin: 150px auto !important;}
+
+.agency-slide .flexslider .slides img {
+    width: 100% !important;
+    cursor: pointer;
+}
+
+.brand-slide .flexslider .slides img {
+    width: 100% !important;
+    cursor: pointer;
+}
+
+.brand-slide .flexslider {
+    margin: 0;
+    padding: 0px !important;
+}
+
+.agency-slide .flexslider {
+    margin: 0;
+    padding: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .pencil-color-box {
     img{
       height: 165px!important;
