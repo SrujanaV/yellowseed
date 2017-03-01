@@ -301,8 +301,11 @@
             }
         }
     }
+    //awesomeness
+
 }
 @media (max-width: $screen-sm-max) {
+
  //awesomeness
  .won-img{    margin: 150px auto !important;}
 
@@ -310,6 +313,15 @@
     width: 100% !important;
     cursor: pointer;
 }
+
+.img-banner{padding-top: 58px;}
+
+.agency-slide .flex-control-nav { top: 34% !important;}
+
+.brand-slide .flex-control-nav { 
+    top: 8% !important; 
+    left:-22px !important;
+    }
 
 .brand-slide .flexslider .slides img {
     width: 100% !important;
@@ -326,25 +338,26 @@
     padding: 10px !important;
 }
 
+.won {
+    padding-top: 35px;
+}
+// .awsome .slides{
+//     width:500px !important;
+//     height:100% !important;
+//     position: none;
+//     padding-left: 0
+// }
 
+.awe-brands h1{ font-size:56px !important;
+                padding-bottom: 30px; 
+                }
 
+.agency h1{  
+    font-size:56px !important;
+    margin-top: -10px;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//end of awsemoness
   .pencil-color-box {
     img{
       height: 165px!important;
@@ -531,6 +544,48 @@ header .navbar .nav li a{
 }
 }
 @media (max-width: $screen-xs-max) {
+    .awe-brands { padding: 68px 0 0 !important;}
+
+    .agency{    padding:0 !important;}
+
+    .title-agency-xs  .agency h1{padding-top:68px !important;}
+
+    .won-logo{
+    margin: 0px auto !important;
+    width: 145px;
+    padding-top: 20px;
+    }
+
+    .agency-slide .flex-control-nav{
+        top: -142px !important;
+        right: 7px;       
+       left: initial !important;
+       }
+
+    p {  font-size: 12px !important;}
+
+.awsome p {line-height: 19px;}
+
+.awsome .slides{width:100% !important}
+
+.we-won h2 {
+       font-size: 18px !important;
+        text-align: justify;
+   }
+.flex-direction-nav{    display: none !important;}
+
+.agency h1,.awe-brands h1{      margin: 0;font-size:50px !important; padding-bottom: 0px!important;}
+
+  .title h1{  padding-bottom: 70px!important;}  
+
+.img-banner{ padding-top:0px !important; }
+
+.row-flex{    display: block !important;}
+
+.col-flex1,.col-flex2{    display: block;    width: 100% !important;}
+
+.brand-slide .flex-control-nav{    right: 7px !important;    top: -184px !important;}
+//end of awsemoness
 
     .list-inline {
         padding: none;

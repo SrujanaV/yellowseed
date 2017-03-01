@@ -632,6 +632,17 @@ console.log("$stateParams.index",$stateParams.index);
             TemplateService.removeLoader();
         }
       });
+       NavigationService.getAllBrand(function (data) {
+        if (data.value) {
+          $scope.brands = data.data.results;
+          $scope.brands = _.chunk($scope.brands, 4);
+          for (var i = 0; i < $scope.brands.length; i++) {
+              $scope.brands[i] = _.chunk($scope.brands[i], 2);
+              console.log($scope.brands);
+          }
+            TemplateService.removeLoader();
+        }
+      });
 
     $scope.changeURL = function (id) {
         console.log(id);
@@ -646,6 +657,19 @@ console.log("$stateParams.index",$stateParams.index);
           for (var i = 0; i < $scope.agency.length; i++) {
               $scope.agency[i] = _.chunk($scope.agency[i], 3);
               console.log($scope.agency);
+          }
+          console.log($scope.client);
+            TemplateService.removeLoader();
+        }
+      });
+
+        NavigationService.getAllAgency(function (data) {
+        if (data.value) {
+          $scope.agencies = data.data.results;
+          $scope.agencies = _.chunk($scope.agencies, 4);
+          for (var i = 0; i < $scope.agencies.length; i++) {
+              $scope.agencies[i] = _.chunk($scope.agencies[i], 2);
+              console.log($scope.agencies);
           }
           console.log($scope.client);
             TemplateService.removeLoader();
