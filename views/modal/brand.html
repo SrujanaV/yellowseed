@@ -1,17 +1,17 @@
 <div class="brand-modal">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="b-content">
-                <div class="close-brand" ng-click="$close()"><span>X</span></div>
-                <div class="brand-img">
-                    <img ng-src="{{detail.logo|uploadpath}}" alt="">
-                </div>
-                <div class="txt">
-                    <p ng-bind-html="detail.content | rawHtml">
-                    </p>
-                    <p><span class="hightlighted">Industry: {{detail.industry}}</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="b-content">
+				<div class="close-brand" ng-click="$close()"><span>X</span></div>
+				<div class="brand-img">
+					<img ng-src="{{detail.logo|uploadpath}}" alt="">
+				</div>
+				<div class="txt">
+					<p ng-bind-html="detail.content | rawHtml">
+					</p>
+					<!--<p><span class="hightlighted">Industry: {{detail.industry}}</span></p>-->
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
