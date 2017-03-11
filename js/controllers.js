@@ -65,16 +65,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 // console.log($scope.client);
             }
 
-            // for mobile slider
+             // for mobile slider
             $scope.clientxs = data.data.results;
-            $scope.clientxs = _.chunk($scope.clientxs, 6);
-            for (var i = 0; i < $scope.client.length; i++) {
+            $scope.clientxs = _.chunk($scope.clientxs, 4);
+            for (var i = 0; i < $scope.clientxs.length; i++) {
                 $scope.clientxs[i] = _.chunk($scope.clientxs[i], 2);
             }
             console.log($scope.client);
                 TemplateService.removeLoader();
           }
       });
+
+
 
     $scope.formSubmitted = false;
     $scope.formData = {};
@@ -145,11 +147,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     ];
     // NavigationService.getClients(function (data) {
     // $scope.AllClients = data;
-    $scope.client = _.chunk($scope.client, 9);
-    for (var i = 0; i < $scope.client.length; i++) {
-        $scope.client[i] = _.chunk($scope.client[i], 3);
-        // console.log($scope.client);
-    }
+    // $scope.client = _.chunk($scope.client, 9);
+    // for (var i = 0; i < $scope.client.length; i++) {
+    //     $scope.client[i] = _.chunk($scope.client[i], 3);
+    //     // console.log($scope.client);
+    // }
     console.log($scope.client);
     // console.log($scope.AllClients);
     // })

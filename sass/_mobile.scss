@@ -690,7 +690,7 @@
             width: 100%;
             .flexslider .slides img {
                 max-width: 100%;
-                margin: 0;
+                margin: 0 auto;
             }
         }
     }
@@ -1109,9 +1109,9 @@
             .flexslider .slides li {
                 padding: 0;
             }
-            .flexslider .slides img {
-                height: 80px;
-            }
+            // .flexslider .slides img {
+            //     height: 80px;
+            // }
         }
     }
     .five {
