@@ -154,6 +154,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // console.log($scope.AllClients);
     // })
 
+
     //Our clients
     $scope.showHead1 = true;
     $scope.showHead2 = false;
