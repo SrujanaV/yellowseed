@@ -10,11 +10,11 @@
                 </div>
             </div>
             <div class="col-flex2 agency-slide">
-                <flex-slider flex-slide="slide in agency track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
+                <flex-slider flex-slide="slide in agency track by $index " animation="slide" animation-loop="false" slideshow="false" prev-text=""
                     next-text="" direction="vertical">
                     <li>
                         <div class="row img-border" ng-repeat="row in slide track by $index">
-                            <div class="col-md-4 col-sm-4 col-xs-4 col" ng-repeat="wall in row track by $index">
+                            <div class="col-md-4 col-sm-4 col-xs-4 col" ng-repeat="wall in row  |orderBy:'-order' track by $index">
                                 <!--<a fancybox href="{{wall.image|uploadpath}}">-->
                                 <div class="media-image">
                                     <img ng-src="{{wall.logo|uploadpath}}" alt="" class="" ng-click="openBrand(wall)">
@@ -36,11 +36,11 @@
                 </div>
             </div>
             <div class="col-flex2 agency-slide">
-                <flex-slider flex-slide="slide in agencies track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
+                <flex-slider flex-slide="slide in agencies track by $index " animation="slide" animation-loop="false" slideshow="false" prev-text=""
                     next-text="" direction="vertical">
                     <li>
                         <div class="row img-border" ng-repeat="row in slide track by $index">
-                            <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
+                            <div class="col-xs-6 col" ng-repeat="wall in row |orderBy:'-order' track by $index">
                                 <!--<a fancybox href="{{wall.image|uploadpath}}">-->
                                 <div class="media-image">
                                     <img ng-src="{{wall.logo|uploadpath}}" alt="" class="" ng-click="openBrand(wall)">
@@ -62,11 +62,11 @@
                 </div>
             </div>-->
             <div class="col-flex2 brand-slide">
-                <flex-slider flex-slide="slide in brand track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
+                <flex-slider flex-slide="slide in brand track by $index " animation="slide" animation-loop="false" slideshow="false" prev-text=""
                     next-text="" direction="vertical">
                     <li>
-                        <div class="row img-border" ng-repeat="row in slide track by $index">
-                            <div class="col-md-4  col-sm-4 col-xs-4 col" ng-repeat="wall in row track by $index">
+                        <div class="row img-border" ng-repeat="row in slide track by $index ">
+                            <div class="col-md-4  col-sm-4 col-xs-4 col" ng-repeat="wall in row |orderBy:'-order' track by $index ">
                                 <!--<a fancybox href="{{wall.image|uploadpath}}">-->
                                 <div class="media-image">
                                     <img ng-src="{{wall.logo|uploadpath}}" alt="" class="" ng-click="openBrand(wall)">
@@ -93,11 +93,11 @@
                 </div>
             </div>
             <div class="brand-slide">
-                <flex-slider flex-slide="slide in brands track by $index" animation="slide" animation-loop="false" slideshow="false" prev-text=""
+                <flex-slider flex-slide="slide in brands track by $index " animation="slide" animation-loop="false" slideshow="false" prev-text=""
                     next-text="" direction="vertical">
                     <li>
-                        <div class="row img-border" ng-repeat="row in slide track by $index">
-                            <div class="col-xs-6 col" ng-repeat="wall in row track by $index">
+                        <div class="row img-border" ng-repeat="row in slide track by $index ">
+                            <div class="col-xs-6 col" ng-repeat="wall in row |orderBy:'-order' track by $index ">{{wall.order}}
                                 <!--<a fancybox href="{{wall.image|uploadpath}}">-->
                                 <div class="media-image">
                                     <img ng-src="{{wall.logo|uploadpath}}" alt="" class="" ng-click="openBrand(wall)">
