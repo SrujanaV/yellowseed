@@ -14,10 +14,10 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
     $httpProvider.defaults.withCredentials = true;
     $stateProvider
         .state('home', {
-      url: "/",
-      templateUrl: "views/template.html",
-      controller: 'HomeCtrl'
-    })
+            url: "/",
+            templateUrl: "views/template.html",
+            controller: 'HomeCtrl'
+        })
 
         .state('form', {
             url: "/form",
@@ -90,13 +90,13 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'AwesomenessCtrl'
         })
-             .state('homeid', {
-      url: "/:id",
-      templateUrl: "views/template.html",
-      controller: 'HomeCtrl'
-    })
+        .state('homeid', {
+            url: "/:id",
+            templateUrl: "views/template.html",
+            controller: 'HomeCtrl'
+        })
 
-        ;
+    ;
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
 });
@@ -178,8 +178,8 @@ firstapp.directive('scrolldown', function ($compile, $parse) {
 });
 
 
-firstapp.filter('uploadpath', function() {
-    return function(input, width, height, style, defaultFlag) {
+firstapp.filter('uploadpath', function () {
+    return function (input, width, height, style, defaultFlag) {
         //console.log(width, height, style, defaultFlag)
         var other = "";
         if (width && width !== "") {
@@ -208,8 +208,8 @@ firstapp.filter('uploadpath', function() {
         }
     };
 });
-firstapp.filter('shorten', function() {
-    return function(value, limit) {
+firstapp.filter('shorten', function () {
+    return function (value, limit) {
         if (value)
             if (value.length < limit) {
                 return value;
@@ -222,14 +222,14 @@ firstapp.filter('shorten', function() {
 });
 
 firstapp.filter('rawHtml', ['$sce',
-    function($sce) {
-        return function(val) {
+    function ($sce) {
+        return function (val) {
             return $sce.trustAsHtml(val);
         };
     }
 ]);
-firstapp.filter('urlEncode', [function() {
-   return window.encodeURIComponent;
+firstapp.filter('urlEncode', [function () {
+    return window.encodeURIComponent;
 }]);
 firstapp.config(function ($translateProvider) {
     $translateProvider.translations('en', LanguageEnglish);
