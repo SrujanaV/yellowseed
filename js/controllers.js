@@ -47,7 +47,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
           //for mobile
           $scope.partnersxs = data.data.results;
-          $scope.partnersxs = _.chunk($scope.partnersxs,6);
+          $scope.partnersxs = _.chunk($scope.partnersxs,4);
           for (var i = 0; i < $scope.partners.length; i++) {
               $scope.partnersxs[i] = _.chunk($scope.partnersxs[i], 2);
               // console.log($scope.client);
