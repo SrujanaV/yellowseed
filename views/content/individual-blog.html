@@ -3,18 +3,19 @@
         <!--<img src="img/inside-pages/bg-blog.jpg" alt="">-->
     </div>
     <div class="container">
-      <div class="sub-para">
-      <div class="tab-slider">
-            <flex-slider flex-slide="s in blog track by $index"  class="bg-color" animation="slide" item-width="280" item-margin="10" animationloop="true" move="2">
-               <!-- <li class="blog-active" auto-heightfixed  ng-click="tabchanges(s._id,$index)">{{s.activetab}} -->
-               <li auto-heightfixed >
-                  <a ui-sref="blog({index:$index,id:s._id})">{{s.name}}</a>
-                  <!-- <a ng-click="tabchanges('Media')">{{s.name}}</a> -->
-                   <!-- <img ng-src="{{s}}" class="img-responsive" alt="Hindustan Platinum" auto-heightfixed> -->
-               </li>
-            </flex-slider>
-          </div>
-          </div>
+        <div class="sub-para">
+            <div class="tab-slider">
+                <flex-slider flex-slide="s in blog track by $index" class="bg-color" animation="slide" item-width="280" item-margin="10"
+                    animationloop="true" move="2">
+                    <!-- <li class="blog-active" auto-heightfixed  ng-click="tabchanges(s._id,$index)">{{s.activetab}} -->
+                    <li auto-heightfixed>
+                        <a ui-sref="blog({index:$index,id:s._id})">{{s.name}}</a>
+                        <!-- <a ng-click="tabchanges('Media')">{{s.name}}</a> -->
+                        <!-- <img ng-src="{{s}}" class="img-responsive" alt="Hindustan Platinum" auto-heightfixed> -->
+                    </li>
+                </flex-slider>
+            </div>
+        </div>
         <!--<div class="sub-para">
             <ul class="list-inline text-center">
                 <li><a href="">Media</a></li>
@@ -28,22 +29,106 @@
         </div>-->
         <div class="img-grid">
             <div class="row img-spac" ng-if="getone.banner">
+                    
                 <div class="col-md-12">
                     <img ng-src="{{getone.banner|uploadpath }}" alt="" class="img-responsive">
                 </div>
             </div>
             <div>
+                    <div class="foot-sec">
+                            <ul class="social-icons list-inline inline-block pull-right">
+                                <p class="inline-block">Share</p>
+                                <li>   
+                                    <!-- <a ng-href="https://www.facebook.com/sharer/sharer.php?u={{myUrl|urlEncode}};p[summary]=This is a blog article written by the team at Yellowseed."
+                                        target="_blank"> -->
+                                        <a ng-href="https://www.facebook.com/sharer/sharer.php?u={{myUrl|urlEncode}}/&quote={{getone.name}}"
+                                        target="_blank">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ng-href="https://twitter.com/intent/tweet?url={{myUrl|urlEncode}}" target="_blank">
+                                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank">
+                                        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </div>
                 <h2>{{getone.name}}</h2>
                 <div class="calender">
                     <ul class="list-inline">
-                        <li><span><i class="fa fa-calendar" aria-hidden="true"></i></span> {{getone.date |date:'longDate'}}</li>
-                        <li><span><i class="fa fa-comment-o" aria-hidden="true"></i></span> Comment</li>
-                        <li><span><i class="fa fa-eye" aria-hidden="true"></i></span> Views</li>
-                        <li><span><i class="fa fa-pencil" aria-hidden="true"></i></span> We Write</li>
+                        <li>
+                            <span>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span> {{getone.date |date:'longDate'}}</li>
+                        <li>
+                            <span>
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                            </span> Comment</li>
+                        <li>
+                            <span>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </span> Views</li>
+                        <li>
+                            <span>
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </span> We Write</li>
                     </ul>
                 </div>
                 <div class="sec-border">
                     <p ng-bind-html="getone.content | rawHtml"></p>
+                    <!-- <div class="foot-sec">
+                        <ul class="social-icons list-inline inline-block pull-right">
+                            <p class="inline-block">Share</p>
+                            <li>
+                                <a ng-href="https://www.facebook.com/sharer/sharer.php?u={{myUrl|urlEncode}};p[summary]=This is a blog article written by the team at Yellowseed."
+                                    target="_blank">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-href="https://twitter.com/intent/tweet?url={{myUrl|urlEncode}}" target="_blank">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank">
+                                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div> -->
+
+                    <div class="foot-sec text-right">
+                            <ul class="social-icons list-inline inline-block ">
+                                <p class="inline-block">Share</p>
+                                <li>   
+                                    <!-- <a ng-href="https://www.facebook.com/sharer/sharer.php?u={{myUrl|urlEncode}};p[summary]=This is a blog article written by the team at Yellowseed."
+                                        target="_blank"> -->
+                                        <a ng-href="https://www.facebook.com/sharer/sharer.php?u={{myUrl|urlEncode}}&quote={{getone.name}}"
+                                        target="_blank">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ng-href="https://twitter.com/intent/tweet?url={{myUrl|urlEncode}}" target="_blank">
+                                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank">
+                                        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </div>
                 </div>
                 <div class="foot-sec">
                     <!-- <ul class="list-inline">
@@ -55,20 +140,27 @@
                         <li><a href="" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
                         <li><a href="" target="_blank" class="email"><i class="fa fa-envelope-o ico" aria-hidden="true"></i></a></li>
                     </ul> -->
-
+<!-- 
                     <ul class="social-icons list-inline inline-block pull-right">
-                                                    <p class="inline-block">Share</p>
-                                                    <li>
-                                                       <a ng-href="https://www.facebook.com/sharer/sharer.php?u={{myUrl|urlEncode}};p[summary]=This is a blog article written by the team at Yellowseed." target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                                                    </li>
-                                                    <li>
-                                                       <a ng-href="https://twitter.com/intent/tweet?url={{myUrl|urlEncode}}" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                                                    </li>
-                                                    <li>
-                                                       <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                                                    </li>
+                        <p class="inline-block">Share</p>
+                        <li>
+                            <a ng-href="https://www.facebook.com/sharer/sharer.php?u={{myUrl|urlEncode}};p[summary]=This is a blog article written by the team at Yellowseed."
+                                target="_blank">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a ng-href="https://twitter.com/intent/tweet?url={{myUrl|urlEncode}}" target="_blank">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank">
+                                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
 
-                                                 </ul>
+                    </ul> -->
 
                     <div class="row img-spac" ng-if="rel.length>0">
                         <h2>Related Post</h2>
