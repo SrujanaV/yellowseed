@@ -24,11 +24,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'FormCtrl'
         })
-        .state('content-strategy', {
-            url: "/content-strategy",
-            templateUrl: "views/template.html",
-            controller: 'ContentStrategyCtrl'
-        })
+        // .state('content-strategy', {
+        //     url: "/content-strategy",
+        //     templateUrl: "views/template.html",
+        //     controller: 'ContentStrategyCtrl'
+        // })
         .state('digital', {
             url: "/digital",
             templateUrl: "views/template.html",
@@ -44,11 +44,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'InternalCommunicationCtrl'
         })
-        .state('design', {
-            url: "/design",
-            templateUrl: "views/template.html",
-            controller: 'DesignCtrl'
-        })
+        // .state('design', {
+        //     url: "/design",
+        //     templateUrl: "views/template.html",
+        //     controller: 'DesignCtrl'
+        // })
         .state('the-studio', {
             url: "/the-studio",
             templateUrl: "views/template.html",

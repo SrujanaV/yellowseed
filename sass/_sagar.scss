@@ -32,7 +32,7 @@
                         font-weight: 500;
                         padding: 8px;
                         &:hover {
-                            color: #fff;
+                            color: #fdfdfd;
                         }
                     }
                 }
@@ -240,11 +240,11 @@
     }
     .sub-para {
         background-color: #ffca08;
-        padding: 2.5em 4em;
+        padding: 0 4em;
         z-index: 0;
         position: relative;
         margin-top: -7%;
-        min-height: 155px;
+        // min-height: 155px;
     }
     .shout {
         label {
@@ -452,7 +452,7 @@
                 &:hover {
                     background: #534334;
                     a {
-                        color: white;
+                        color: #fdfdfd;
                     }
                 }
                 a {
@@ -470,7 +470,7 @@
     }
     .img-sec {
         background: #ffffff;
-        padding: 12px 26px;
+        padding: 12px 25px;
         h3 {
             line-height: 22px;
             letter-spacing: 1px;
@@ -492,7 +492,7 @@
     }
     li.blog-active {
         a {
-            color: #fff !important;
+            color: #fdfdfd !important;
         }
     }
 }
@@ -505,7 +505,7 @@ h2 {
 
 .calender {
     background: #f8c301;
-    width: 400px;
+    width: 160px;
     ul {
         padding: 5px 5px 5px 10px;
         li+li {

@@ -11,15 +11,15 @@
         Since our inception, we’ve worked on a plethora of sectors and brands, often over a sustained period of time. We do respect
         confidentiality & that’s why all we can say is that there is more to us than meets the eye.
       </p>
-      <p>
+      <!-- <p>
         Write to us at <a href="mailto:contact@itsyellowseed.com">contact@itsyellowseed.com</a> for a detailed credential
         presentation or work samples.
+      </p> -->
+      <p class="view btn btn-primary" ng-click="showHead1 = false; showHead2 = true;">
+        Our Partnerships
       </p>
-      <p class="view" ng-show="showHead1" ng-click="showHeading1()">
-        Also View : Our Partnerships
-      </p>
-      <p class="view" ng-show="showHead2" ng-click="showHeading2()">
-        Also View : Clients
+      <p class="view btn btn-primary" ng-click="showHead1 = true; showHead2 = false;">
+        Clients
       </p>
     </div>
   </div>
@@ -59,8 +59,8 @@
 <!--{{partnersxs}}-->
 <div class="client-slider hidden-xs">
     <!-- console.log(client); -->
-    <flex-slider  ng-if="showHead1" class="carousel" flex-slide="img in client track by $index" item-width="1200" item-margin="10" animation="slide"
-      animation-loop="false" as-nav-for="#slider1" slide-show="false">
+    <flex-slider  ng-if="showHead1" flex-slide="img in client track by $index" item-width="1200" item-margin="10"
+      animationLoop="false" as-nav-for="#slider1" slideshow="false">
       <li>
         <div class="client-imgholder">
           <div class="row bord-cus" ng-repeat="row in img track by $index">
@@ -74,8 +74,8 @@
       </li>
     </flex-slider>
 
-    <flex-slider ng-if="!showHead1" class="carousel" flex-slide="img in partners track by $index" item-width="1200" item-margin="10" animation="slide"
-      animation-loop="false" as-nav-for="#slider" slide-show="false">
+    <flex-slider ng-if="!showHead1"  flex-slide="img in partners track by $index" item-width="1200" item-margin="10"
+      animationLoop="false" slideshow="false">
       <li>
         <div class="client-imgholder">
           <div class="row bord-cus" ng-repeat="row in img track by $index">

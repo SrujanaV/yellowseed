@@ -14,11 +14,11 @@ var navigationservice = angular.module('navigationservice', [])
         classis: "active",
         anchor: "wedo",
         target: "_self",
-        subnav: [{
-            name: "Content Strategy and Wisdom",
-            classis: "active",
-            anchor: "content-strategy"
-        }, {
+        subnav: [
+            // {name: "Content Strategy and Wisdom",
+            // classis: "active",
+            // anchor: "content-strategy"}
+        {
             name: "Digital",
             classis: "active",
             anchor: "digital"
@@ -27,7 +27,7 @@ var navigationservice = angular.module('navigationservice', [])
             classis: "active",
             anchor: "branded-content"
         }, {
-            name: "Internal Communications",
+            name: "Corporate Communications",
             classis: "active",
             anchor: "internal-communication"
         },{
@@ -40,11 +40,12 @@ var navigationservice = angular.module('navigationservice', [])
         //     classis: "active",
         //     anchor: "media"
         // },
-         {
-            name: "Design",
-            classis: "active",
-            anchor: "design"
-        }]
+        //  {
+        //     name: "Design",
+        //     classis: "active",
+        //     anchor: "design"
+        // }
+    ]
     }, {
         name: " Clients",
         classis: "active",
