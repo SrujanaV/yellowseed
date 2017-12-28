@@ -240,7 +240,7 @@
     }
     .sub-para {
         background-color: #ffca08;
-        padding: 0 4em;
+        padding: 3em 4em;
         z-index: 0;
         position: relative;
         margin-top: -7%;
@@ -434,6 +434,7 @@
 .blog {
     background: #dadada;
     .sub-para {
+        padding: 0 4em !important;
         margin: 0;
         min-height: auto;
         ul {

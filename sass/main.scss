@@ -785,7 +785,7 @@ p {
     margin-bottom: 30px;
   }
   .form-group {
-    margin-bottom: 0;
+    margin-bottom: 40px
   }
   .form-control {
     padding: 0;
@@ -798,6 +798,7 @@ p {
     color: #fdfdfd;
   }
   textarea {
+    padding: 7px 0 !important;
     background: none;
     border: none;
     border-bottom: 1px solid #d3d0d0;
@@ -1688,10 +1689,11 @@ footer {
   margin-top: 20px;
 }
 .categories{
+  margin-left: 15px;
+  padding-top: 20px;
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: bold;
-  margin-top: 50px;
   color: #333;
 }
 //ruchira

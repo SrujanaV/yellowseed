@@ -4,6 +4,7 @@
     </div>
     <div class="container">
         <div class="sub-para">
+            <div class="categories">CATEGORIES</div>
             <div class="tab-slider">
                 <flex-slider flex-slide="s in blog track by $index" class="bg-color" animation="slide" slideshow="false" item-width="310" item-margin="10"
                     animationloop="true" move="2">
@@ -167,7 +168,7 @@
                         <div class="col-md-4 col-sm-4" ng-repeat="item in rel track by $index">
                             <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive" ui-sref="individual-blog({id:item._id})">
                             <div class="img-sec">
-                                <h3>{{item.name}}</h3>
+                                <h3 ui-sref="individual-blog({id:item._id})">{{item.name}}</h3>
                             </div>
                         </div>
                     </div>
