@@ -374,31 +374,30 @@ header {
     border: #fdfdfd;
   }
   .brands {
-    position: absolute;
-    width: 735px;
-    right: 0;
-    top: 17%;
-    z-index: 99;
+    // position: absolute;
+    // width: 735px;
+    // right: 0;
+    // top: 17%;
+    // z-index: 99;
     .client-imgholder {
-      padding: 50px;
+      padding: 35px;
     }
     .flexslider .slides img {
       margin: 0 auto;
-      padding: 12px; // height: 75px;
+      padding: 5px 0; // height: 75px;
       width: auto;
     }
-    .flexslider .slides li {
-      // padding: 50px;
-    } // .flex-control-paging li appearance: .flex active; {
-    //   background: #fff;
-    //   cursor: default;
-    // }
     .flex-control-nav {
       bottom: -15%;
     }
     .client-slider {
       background-color: #fff;
       li {
+        .bord-cus1 {
+          min-height: 90px;
+          display: flex;
+          align-items: center;
+        }
         .bord-cus+.bord-cus {
           border-top: 1px solid #fec60f;
         }
@@ -1293,7 +1292,7 @@ footer {
   font-weight: 500;
 }
 
-.flex-direction-nav a:before{
+.flex-direction-nav a:before {
   font-size: 28px;
 }
 
