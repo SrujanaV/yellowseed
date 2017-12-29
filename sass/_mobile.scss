@@ -113,10 +113,10 @@
         }
         .circle-cont {}
         .circle {
-            width: 150px;
-            height: 150px;
+            width: 130px !important;
+            height: 130px !important;
             img {
-                height: 150px;
+                height: 130px !important;
             }
         }
         .blogs {
@@ -165,6 +165,12 @@
                 height: 365px;
             }
         }
+    }
+    // .blog .bg-color .flexslider .slides li a{
+    //     font-size: 16px;
+    // }
+    .categories{
+        font-size: 20px;
     }
     .awsome,
     .blog,
@@ -522,7 +528,8 @@
 
 @media (max-width: $screen-xs-max) {
     // temporrary css for awesomeness starts here
-    .brand-slide .flex-control-nav li {
+    
+    .blog-slider .flex-control-nav li,.brand-slide .flex-control-nav li {
         margin: 0 3px !important;
         display: inline-block !important;
         zoom: 1;
@@ -684,7 +691,7 @@
         padding: 16em 0 10em;
     }
     .three {
-        padding: 7em 0;
+        padding: 3em 0;
         .brands {
             position: relative;
             width: 100%;
@@ -726,10 +733,10 @@
         }
     }
     .six {
-        padding: 19em 0 7em;
+        padding: 6em 0 7em;
     }
     .seven {
-        padding: 18em 0 11em;
+        padding: 5em 0 11em;
     }
     .eight,
     .five,
@@ -938,7 +945,7 @@
         }
     }
     .seven {
-        padding: 11em 0;
+        padding: 5em 0;
     }
     .pd10 {
         padding: 0;
@@ -1013,7 +1020,7 @@
     }
     .four {
         .testimonials {
-            padding: 9em 0 0;
+            padding: 4em 0 0;
             .slider p {
                 padding: 0 10px;
                 width: 100%;
@@ -1021,7 +1028,7 @@
         }
     }
     .six {
-        padding: 12em 0 7em
+        padding: 6em 0 7em
     }
     .ml35 {
         margin: 10px 5px;
@@ -1035,7 +1042,7 @@
         }
     }
     .seven {
-        padding: 11em 0 5em;
+        padding: 5em 0 5em;
         .pl10 {
             padding-left: 15px;
         }
@@ -1092,7 +1099,7 @@
     }
     .three {
         // padding: 3em 0 10em;
-        padding: 6em 0 5em;
+        padding: 1em 0 5em;
         .client-slider {
             .flex-direction-nav {
                 display: none;
@@ -1135,6 +1142,11 @@
     .bg-color .flexslider .slides {
         text-align: center!important;
         margin: 10px 16px!important;
+        li{
+            a{
+                font-size: 16px !important;
+            }
+        }
     }
     .prl40 {
         padding: 0!important;
@@ -1439,6 +1451,7 @@
                 .img-spac {
                     .img-sec {
                         padding: 10px 0;
+                        min-height: 0;
                     }
                 }
             }

@@ -16,7 +16,7 @@
         }
     }
     .bg-color {
-        padding-bottom: 10px;
+        padding-top: 20px;
         .flexslider {
             margin: 0;
             background: none;
@@ -30,7 +30,7 @@
                         font-size: 19px;
                         text-transform: uppercase;
                         font-weight: 500;
-                        padding: 8px;
+                        // padding: 8px;
                         &:hover {
                             color: #fdfdfd;
                         }
@@ -38,9 +38,10 @@
                 }
             }
             .flex-control-nav {
-                display: none;
+                display: block;
             }
             .flex-direction-nav {
+                display: block;
                 a {
                     text-decoration: none;
                     display: block;
@@ -51,7 +52,7 @@
                     top: 40%;
                     z-index: 10;
                     overflow: hidden;
-                    opacity: 0;
+                    opacity: 1;
                     cursor: pointer;
                     color: rgba(0, 0, 0, 0.8);
                     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
@@ -92,7 +93,7 @@
     background-color: #e4e4e4;
     position: relative;
     h3 {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
         color: #403635;
         font-family: 'Rubik', sans-serif;
@@ -505,10 +506,10 @@ h2 {
 }
 
 .calender {
-    background: #f8c301;
+    // background: #f8c301;
     width: 160px;
     ul {
-        padding: 5px 5px 5px 10px;
+        // padding: 5px 5px 5px 10px;
         li+li {
             border-left: 1px solid #534334;
         }
@@ -556,6 +557,18 @@ h2 {
             font-size: 30px;
             color: #534334;
             cursor: pointer;
+            .fa-facebook-square {
+        color: #3c5997;
+      }
+      .fa-twitter-square {
+        color: #23a1f3;
+      }
+      .fa-linkedin-square {
+        color: #1b7ab5;
+      }
+      .fa-google-plus-square {
+                color: #dd4b39;
+            }
         }
         .stumble,
         .email {

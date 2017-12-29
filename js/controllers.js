@@ -160,16 +160,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //Our clients
     $scope.showHead1 = true;
     $scope.showHead2 = false;
-    // $scope.showHeading1 = function () {
-    //     $scope.showHead1 = false;
-    //     $scope.showHead2 = true;
-    // };
+    $scope.showHeading1 = function () {
+        $scope.showHead1 = false;
+        $scope.showHead2 = true;
+    };
 
 
-    // $scope.showHeading2 = function () {
-    //     $scope.showHead1 = true;
-    //     $scope.showHead2 = false;
-    // };
+    $scope.showHeading2 = function () {
+        $scope.showHead1 = true;
+        $scope.showHead2 = false;
+    };
 
     $scope.testimon = [{
         id: 0,
