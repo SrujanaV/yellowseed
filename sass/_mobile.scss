@@ -169,7 +169,7 @@
     // .blog .bg-color .flexslider .slides li a{
     //     font-size: 16px;
     // }
-    .categories{
+    .categories {
         font-size: 20px;
     }
     .awsome,
@@ -383,6 +383,7 @@
     .four {
         .testimonials {
             width: 100%;
+            padding: 6em 0 0 4em;
         }
         .pen-stand {
             top: 35%;
@@ -528,8 +529,8 @@
 
 @media (max-width: $screen-xs-max) {
     // temporrary css for awesomeness starts here
-    
-    .blog-slider .flex-control-nav li,.brand-slide .flex-control-nav li {
+    .blog-slider .flex-control-nav li,
+    .brand-slide .flex-control-nav li {
         margin: 0 3px !important;
         display: inline-block !important;
         zoom: 1;
@@ -543,6 +544,9 @@
         margin: 0 3px !important;
         display: inline-block !important;
         zoom: 1;
+    }
+    .four .testimonials {
+        padding: 70px 0 0 0;
     }
     .agency-slide .flex-control-nav {
         left: 50% !important;
@@ -1142,8 +1146,8 @@
     .bg-color .flexslider .slides {
         text-align: center!important;
         margin: 10px 16px!important;
-        li{
-            a{
+        li {
+            a {
                 font-size: 16px !important;
             }
         }
