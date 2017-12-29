@@ -170,6 +170,8 @@ header {
         a {
           color: #fdfdfd;
           padding: 18px 12px;
+          font-size: 16px;
+          font-weight: bold;
           &:hover {
             color: #fdfdfd;
           }
@@ -180,7 +182,7 @@ header {
   .head-padd {
     // padding: 0 7em;
     .logo {
-      height: 30px;
+      height: 26px;
       margin-top: -3px;
     }
   }
@@ -312,7 +314,7 @@ header {
   }
   .head-padd {
     .logo {
-      height: 40px;
+      height: 43px;
       margin-top: -3px;
     }
   }
@@ -695,6 +697,8 @@ p {
     text-transform: uppercase;
     line-height: 0.9em;
     padding-left: 25px;
+    letter-spacing: 2px;
+    padding-top: 20px;
   }
   .zero-tag {
     @include position(absolute,
@@ -946,6 +950,12 @@ p {
           border-radius: 50%;
           padding: 4px;
         }
+        .fa-twitter {
+        color: #23a1f3;
+      }
+      .fa-linkedin {
+        color: #1b7ab5;
+      }
       }
     }
   }
@@ -1588,7 +1598,7 @@ footer {
 
 .logo-brand {
   display: inline-block;
-  width: 7%;
+  width: 32px;
 }
 
 .head-brand {
@@ -1681,11 +1691,21 @@ footer {
 }
 
 .categories {
-  padding-top: 15px;
+  padding-top: 10px;
   font-size: 28px;
   letter-spacing: 2px;
   font-weight: bold;
   color: #333;
+}
+.workshop{
+  label{
+    padding: 10px !important;
+    margin: 20px;
+    background-color: #ffcb08;
+  }
+  h3{
+    font-size: 26px;
+  }
 }
 
 //ruchira
