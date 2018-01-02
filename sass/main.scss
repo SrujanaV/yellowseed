@@ -588,7 +588,7 @@ header {
   }
 }
 
-.eight {
+.eight,.contact-page {
   background-color: #403635;
   padding: 5em 0 2em 0;
   h1 {
@@ -681,7 +681,8 @@ p {
 .five,
 .six,
 .seven,
-.eight {
+.eight,
+.contact-page {
   position: relative; // z-index: 0;
   .partner-h1 {
     font-size: 55px;
@@ -1708,7 +1709,15 @@ footer {
     font-size: 26px;
   }
 }
-
+.home-blog{
+  width: 320px !important;
+}
+.contact-page{
+  padding: 9.5em 5em 7em 5em !important;
+}
+.contact-page .inner-foot{
+  background-color: #0c0c0c;
+}
 //ruchira
 @import "fancybox-override";
 @import "mobile";
