@@ -171,9 +171,9 @@
                     <div class="row img-spac" ng-if="rel.length>0">
                         <h2>Related Post</h2>
                         <div class="col-md-4 col-sm-4" ng-repeat="item in rel track by $index">
-                            <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive" ui-sref="individual-blog({id:item._id})">
+                            <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive" ui-sref="individual-blog({id:item._id,name:item.name})">
                             <div class="img-sec">
-                                <h3 ui-sref="individual-blog({id:item._id})">{{item.name}}</h3>
+                                <h3 ui-sref="individual-blog({id:item._id,name:item.name})">{{item.name}}</h3>
                             </div>
                         </div>
                     </div>
