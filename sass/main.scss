@@ -1712,8 +1712,14 @@ footer {
 .home-blog{
   width: 320px !important;
 }
-.contact-page{
-  padding: 9.5em 5em 7em 5em !important;
+.eight,.contact-page{
+  padding: 9.4em 5em 7em 5em !important;
+  .select-field{
+  background-color: #403635;
+  color: #84948d;
+  border: 0;
+  border-bottom: solid 1px #d3d0d0;
+  }
 }
 .contact-page .inner-foot{
   background-color: #0c0c0c;

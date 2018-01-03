@@ -35,6 +35,15 @@
         <!-- <div class="form-group visible-sm visible-xs" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
           <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Message*" required></textarea>
         </div> -->
+        <div class="form-group">
+            <select name="category" class="form-control select-field" ng-model="formData.category" required>
+                <option value="" disabled selected hidden>Category*</option>                    
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+        </div>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12">
           <div class="form-group" ng-class="{'form-invalid': formName.email.$invalid && formName.email.$touched}">

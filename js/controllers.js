@@ -743,8 +743,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     })
 
     .controller('ContactCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
-        $scope.template = TemplateService.changecontent("contact-us");
-        $scope.menutitle = NavigationService.makeactive("Contact us");
+        $scope.template = TemplateService.changecontent("contact_us");
+        $scope.menutitle = NavigationService.makeactive("contact_us");
         TemplateService.title = $scope.menutitle;
         TemplateService.footer = "";
         TemplateService.banner = "views/footer1.html";

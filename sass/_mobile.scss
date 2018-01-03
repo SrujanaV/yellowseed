@@ -529,6 +529,14 @@
 
 @media (max-width: $screen-xs-max) {
     // temporrary css for awesomeness starts here
+    .contact-page{
+        h1 {
+            font-size: 3.5em!important;
+        }
+        .pr60{
+            padding: 0 !important;
+        }
+    }
     .list-under {
         li {
             border-bottom: 2px solid #fff;
@@ -1264,6 +1272,10 @@
                         height: auto;
                         img {
                             height: 98px;
+                            @include filter(grayscale(100%) opacity(55%) !important);
+                            &:hover {
+                              @include filter(opacity(75%));
+                            }
                         }
                     }
                 }

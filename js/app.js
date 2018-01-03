@@ -85,6 +85,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'IndividualBlogCtrl'
         })
+        .state('contact-us', {
+            url: "/contact-us",
+            templateUrl: "views/template.html",
+            controller: 'ContactCtrl'
+        })
         .state('awesomeness', {
             url: "/awesomeness",
             templateUrl: "views/template.html",
@@ -95,11 +100,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'HomeCtrl'
         })
-        .state('contact-us', {
-            url: "/contact-us",
-            templateUrl: "views/template.html",
-            controller: 'ContactCtrl'
-        })
+
 
     ;
     $urlRouterProvider.otherwise("/");
