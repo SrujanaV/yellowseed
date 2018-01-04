@@ -588,7 +588,8 @@ header {
   }
 }
 
-.eight,.contact-page {
+.eight,
+.contact-page {
   background-color: #403635;
   padding: 5em 0 2em 0;
   h1 {
@@ -953,11 +954,11 @@ p {
           padding: 4px;
         }
         .fa-twitter {
-        color: #23a1f3;
-      }
-      .fa-linkedin {
-        color: #1b7ab5;
-      }
+          color: #23a1f3;
+        }
+        .fa-linkedin {
+          color: #1b7ab5;
+        }
       }
     }
   }
@@ -1400,7 +1401,6 @@ footer {
   .img-sec {
     background: #ffffff;
     padding: 12px 25px;
-    min-height: 210px;
     h3 {
       line-height: 22px;
       letter-spacing: 1px;
@@ -1699,31 +1699,43 @@ footer {
   font-weight: bold;
   color: #333;
 }
-.workshop{
-  label{
+
+.workshop {
+  label {
     padding: 10px !important;
     margin: 20px;
     background-color: #ffcb08;
   }
-  h3{
+  h3 {
     font-size: 26px;
   }
 }
-.home-blog{
+
+.home-blog {
   width: 320px !important;
 }
-.eight,.contact-page{
+
+.eight,
+.contact-page {
   padding: 9.4em 5em 7em 5em !important;
-  .select-field{
-  background-color: #403635;
-  color: #84948d;
-  border: 0;
-  border-bottom: solid 1px #d3d0d0;
+  .select-field {
+    background-color: #403635;
+    color: #84948d;
+    border: 0;
+    border-bottom: solid 1px #d3d0d0;
   }
 }
-.contact-page .inner-foot{
+
+.contact-page .inner-foot {
   background-color: #0c0c0c;
 }
+
+.blog {
+  .set-height {
+    height: 330px;
+  }
+}
+
 //ruchira
 @import "fancybox-override";
 @import "mobile";
