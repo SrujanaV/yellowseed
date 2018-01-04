@@ -13,7 +13,8 @@
       <div class="tab-slider">
             <flex-slider flex-slide="s in blog track by $index"  class="bg-color" slideshow="false" animation="slide" item-width="290" item-margin="10" animationloop="true" move="2">
                <!-- <li class="blog-active" auto-heightfixed  ng-click="tabchanges(s._id,$index)">{{s.activetab}} -->
-               <li auto-heightfixed ng-class={'blog-active':s.activetab}  ui-sref="blog({id:s._id,index:$index,name:s.name})">
+               <!--<li auto-heightfixed ng-class={'blog-active':s.activetab}  ui-sref="blog({id:s._id,index:$index,name:s.name})">-->
+                   <li auto-heightfixed ng-class={'blog-active':s.activetab}  ng-click="inBlog(s._id,s.name,$index)">
                <!-- <li auto-heightfixed ng-class={'blog-active':s.activetab} ng-click="tabchanges(s._id,$index)" ui-sref="blog({id:s._id,index:$index})"> -->
                   <a>{{s.name}}</a>
                   <!-- <a ng-click="tabchanges('Media')">{{s.name}}</a> -->
@@ -41,8 +42,10 @@
             </div>
             <div class="row img-spac">
                 <div class="col-md-6 mb-20" ng-repeat="item in getoneBlogs track by $index">
-                    <img ui-sref="individual-blog({id:item._id,name:item.name})" ng-src="{{item.image|uploadpath:800}}" alt="" class="img-responsive">
-                    <div class="img-sec" ui-sref="individual-blog({id:item._id,name:item.name})">
+                    <!--<img ui-sref="individual-blog({id:item._id,name:item.name})" ng-src="{{item.image|uploadpath:800}}" alt="" class="img-responsive">-->
+                    <img ng-click="inIndividualBlog(item._id,item.name)" ng-src="{{item.image|uploadpath:800}}" alt="" class="img-responsive">
+                    <!--<div class="img-sec" ui-sref="individual-blog({id:item._id,name:item.name})">-->
+                        <div class="img-sec set-height" ng-click="inIndividualBlog(item._id,item.name)">
                     <div class="img-sec" >
                         <h3>{{item.name}}</h3>
                         <p class="date">{{item.date|date:'longDate'}}</p>

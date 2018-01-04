@@ -76,14 +76,21 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
         })
 
         .state('blog', {
+             url: "/blog/:name",
+            templateUrl: "views/template.html",
+            controller: 'BlogCtrl',
+            params: {
+                id: '/:id',
+                index: '/:index'
+            }
+        })
+        .state('blog-detail', {
             url: "/blog-detail/:name",
             templateUrl: "views/template.html",
-            controller: 'BlogCtrl'
-        })
-        .state('individual-blog', {
-            url: "/individual-blog/:name/:id",
-            templateUrl: "views/template.html",
-            controller: 'IndividualBlogCtrl'
+            controller: 'IndividualBlogCtrl',
+            params: {
+                id: '/:id'
+            }
         })
         .state('contact-us', {
             url: "/contact-us",

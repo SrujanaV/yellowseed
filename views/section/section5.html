@@ -12,7 +12,8 @@
             <div class="blog-slider">
                 <flex-slider flex-slide="s in blog track by $index" animation="slide" slideshow="false" item-width="280">
                     <li auto-heightfixed class="home-blog">
-                        <a ui-sref="individual-blog({id:s._id,name:s.name})">
+                        <!--<a ui-sref="individual-blog({id:s._id,name:s.name})">-->
+                            <a ng-click="inIndividualBlog(s._id,s.name)">
                             <div class="blogs-details">
                                 <div class="blog-image">
                                     <img ng-src="{{s.image|uploadpath}}" class="img-responsive" alt="blog-image">

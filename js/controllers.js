@@ -78,6 +78,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 
+ $scope.inIndividualBlog = function (id,name) {
+    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+    console.log("$scope.name",$scope.name);
+     $scope.id=id;
+      console.log("$scope.id",$scope.id);
+            $state.go('blog-detail', {
+                            'name': $scope.name,
+                           'id': $scope.id
+                        });
+        }
+
+
+
         $scope.formSubmitted = false;
         $scope.formData = {};
         $scope.submitForm = function (formData) {
@@ -469,7 +482,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
     })
 
-    .controller('BlogCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $stateParams) {
+    .controller('BlogCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $stateParams,$state) {
         $scope.template = TemplateService.changecontent("blog");
         $scope.menutitle = NavigationService.makeactive("Blog");
         TemplateService.title = $scope.menutitle;
@@ -482,18 +495,42 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         //     $scope.blog = data.data.results;
         //
         // });
+
+
+
+
+console.log("$stateParams.index", $stateParams.index);
+console.log("$stateParams.id",$stateParams.id);
+
+$scope.inBlog = function (id,name,index) {
+    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+    console.log("$scope.name",$scope.name);
+     $scope.id=id;
+     $scope.index=index;
+      console.log("$scope.id",$scope.id);
+       console.log("$scope.index",$scope.index);
+            $state.go('blog', {
+                            name: $scope.name,
+                           id: $scope.id,
+                           index:$scope.index
+                        });
+        }
+
+
+
+
+
         $scope.changeURL = function (id) {
             console.log(id);
             $location.path("" + id);
         };
-        console.log("$stateParams.index", $stateParams.index);
-        console.log("$stateParams.name",$stateParams.name);
+        
         NavigationService.getTag(function (data) {
             if (data.value) {
                 $scope.blog = data.data.results;
                 console.log("  $scope.blog", $scope.blog);
 
-                if ($stateParams.id && $stateParams.index) {
+                if ($stateParams.id!='/:id' && $stateParams.index !='/:index') {
                     $scope.id = $stateParams.id;
                     $scope.index = $stateParams.index;
                     $scope.name=$stateParams.name;
@@ -569,11 +606,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             blogname: "Live Well"
 
         }];
+        $scope.inIndividualBlog = function (id,name) {
+    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+    console.log("$scope.name",$scope.name);
+     $scope.id=id;
+      console.log("$scope.id",$scope.id);
+            $state.go('blog-detail', {
+                            'name': $scope.name,
+                           'id': $scope.id
+                        });
+        }
+
+
 
     })
 
     .controller('IndividualBlogCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $state, $stateParams) {
-        $scope.template = TemplateService.changecontent("individual-blog");
+        $scope.template = TemplateService.changecontent("blog-detail");
         $scope.menutitle = NavigationService.makeactive("Individual Blog");
         TemplateService.title = $scope.menutitle;
         TemplateService.footer = "";
@@ -586,9 +635,41 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $location.path("" + id);
         };
 
+ $scope.inIndividualBlog = function (id,name) {
+    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+    console.log("$scope.name",$scope.name);
+     $scope.id=id;
+      console.log("$scope.id",$scope.id);
+            $state.go('blog-detail', {
+                            'name': $scope.name,
+                           'id': $scope.id
+                        });
+        };
+
+
+        $scope.inBlog = function (id,name,index) {
+    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+    console.log("$scope.name",$scope.name);
+     $scope.id=id;
+     $scope.index=index;
+      console.log("$scope.id",$scope.id);
+       console.log("$scope.index",$scope.index);
+            $state.go('blog', {
+                            name: $scope.name,
+                           id: $scope.id,
+                           index:$scope.index
+                        });
+        };
+
+
+
         console.log("$stateParams.name",$stateParams.name);
         console.log("$stateParams.id",$stateParams.id);
         $scope.b_name=$stateParams.name;
+
+
+
+
 
         $scope.blogDetail = function () {
             NavigationService.getOneBlog($stateParams.id, function (data) {
@@ -603,6 +684,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
             });
         }
+
 
         $scope.blogDetail();
 
