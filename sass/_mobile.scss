@@ -113,10 +113,10 @@
         }
         .circle-cont {}
         .circle {
-            width: 130px !important;
-            height: 130px !important;
+            width: 120px !important;
+            height: 120px !important;
             img {
-                height: 130px !important;
+                height: 120px !important;
             }
         }
         .blogs {
@@ -288,6 +288,17 @@
 
 @media (max-width: $screen-sm-max) {
     // temporrary css for awesomeness starts here
+    .flexslider:hover .flex-direction-nav{
+opacity: 1;
+    }
+    .blog{
+        .bg-color{
+            padding-top: 0 !important;
+            .flexslider .slides li{
+                width: 200px !important;
+            }
+        }
+    }
     .col-flex1 {
         width: 42.6% !important;
     }
@@ -528,6 +539,25 @@
 }
 
 @media (max-width: $screen-xs-max) {
+    .eight, .contact-page{
+        padding: 0 !important;
+        .select-field{
+            background-color: #403635;
+            color: #84948d;
+            border: 0;
+            border-bottom: solid 1px #d3d0d0;
+            }
+    }
+    .seven .mobile-head{
+        text-align: left;
+    }
+    .four .test-vw h1{
+        text-align: left;
+        padding: 0 15px;
+        .slider p{
+            padding: 0 15px !important;
+        }
+    }
     // temporrary css for awesomeness starts here
     .contact-page{
         h1 {
@@ -728,9 +758,10 @@
         }
         .testimonials {
             padding: 1em 0 0 5em;
-            height: 350px;
+            // height: 350px;
             h1 {
                 font-size: 3.5em !important;
+                padding: 0 15px;
             }
             .view-all {
                 @include position(absolute, 25% 0 null null)
@@ -743,7 +774,8 @@
                     padding: 0;
                     p {
                         padding: 0;
-                        margin: 0 0 0 2em !important;
+                        // margin: 0 0 0 2em !important;
+                padding: 0 15px;                
                         &:before {
                             @include position(absolute, -30px null null -14%);
                         }
@@ -896,7 +928,7 @@
         }
     }
     .slider p {
-        padding: 0 30px!important;
+        padding: 0 30px;
         width: 100%;
     }
     .blog {
@@ -1066,9 +1098,6 @@
         .pl10 {
             padding-left: 15px;
         }
-        .mobile-head {
-            text-align: center;
-        }
     }
     .two {
         padding: 6em 0;
@@ -1230,7 +1259,7 @@
             left: 5px;
         }
         .test-vw {
-            text-align: center;
+            text-align: left;
         }
         .list-inline li a {
             font-size: 15px;
