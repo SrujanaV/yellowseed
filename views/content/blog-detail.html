@@ -58,11 +58,11 @@
                                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                                     </a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank">
                                         <i class="fa fa-google-plus-square" aria-hidden="true"></i>
                                     </a>
-                                </li>
+                                </li> -->
     
                             </ul>
                         </div>
@@ -128,11 +128,11 @@
                                         <i class="fa fa-twitter-square" aria-hidden="true"></i>
                                     </a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank">
                                         <i class="fa fa-google-plus-square" aria-hidden="true"></i>
                                     </a>
-                                </li>
+                                </li> -->
     
                             </ul>
                         </div>
@@ -171,7 +171,7 @@
 
                     <div class="row img-spac" ng-if="rel.length>0">
                         <h2>Related Post</h2>
-                        <div class="col-md-4 col-sm-4" ng-repeat="item in rel track by $index">
+                        <div class="col-md-4 col-sm-4 cursor-pointer" ng-repeat="item in rel track by $index">
                             <!--<img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive" ui-sref="individual-blog({id:item._id,name:item.name})">-->
                             <img ng-src="{{item.image|uploadpath}}" alt="" class="img-responsive" ng-click="inIndividualBlog(item._id,item.name)">
                             <div class="img-sec">

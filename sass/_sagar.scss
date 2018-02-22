@@ -529,7 +529,7 @@ h2 {
 }
 
 .foot-sec {
-    margin: 10px 25px;
+    margin: 10px 0;
     ul li {
         &:hover {
             .fa-linkedin-square {
@@ -587,9 +587,9 @@ h2 {
         }
     }
     .img-spac {
-        background-color: #f7c200;
+        // background-color: #f7c200;
         margin: 0;
-        padding: 5px 24px 30px;
+        // padding: 5px 24px 30px;
         h2 {
             font-size: 28px;
             font-weight: bold;
