@@ -78,15 +78,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 
- $scope.inIndividualBlog = function (id,name) {
-    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-    console.log("$scope.name",$scope.name);
-     $scope.id=id;
-      console.log("$scope.id",$scope.id);
+        $scope.inIndividualBlog = function (id, name) {
+            $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+            console.log("$scope.name", $scope.name);
+            $scope.id = id;
+            console.log("$scope.id", $scope.id);
             $state.go('blog-detail', {
-                            'name': $scope.name,
-                           'id': $scope.id
-                        });
+                'name': $scope.name,
+                'id': $scope.id
+            });
         }
 
 
@@ -237,22 +237,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             eight: "views/section/section8.html",
         };
 
-        $scope.$on('$viewContentLoaded', function () {
-            $timeout(function () {
-                $(window).scroll(function () {
-                    var scroller = $(document).scrollTop();
-                    var height = $(window).height() + $(window).height();
-                    if (height <= scroller) {
-                        $('body').addClass('show-header');
+        // $scope.$on('$viewContentLoaded', function () {
+        //     $timeout(function () {
+        //         $(window).scroll(function () {
+        //             var scroller = $(document).scrollTop();
+        //             var height = $(window).height() + $(window).height();
+        //             if (height <= scroller) {
+        //                 $('body').addClass('show-header');
 
-                    } else {
-                        $('body').removeClass('show-header');
+        //             } else {
+        //                 $('body').removeClass('show-header');
 
-                    }
-                });
-            }, 1000);
+        //             }
+        //         });
+        //     }, 1000);
+        // });
+        //for header scroll scss change
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 150) {
+                $("body").addClass("show-header");
+            } else {
+                $("body").removeClass("show-header");
+            }
         });
-
 
 
     })
@@ -482,7 +489,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
     })
 
-    .controller('BlogCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $stateParams,$state) {
+    .controller('BlogCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $stateParams, $state) {
         $scope.template = TemplateService.changecontent("blog");
         $scope.menutitle = NavigationService.makeactive("Blog");
         TemplateService.title = $scope.menutitle;
@@ -499,21 +506,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 
-console.log("$stateParams.index", $stateParams.index);
-console.log("$stateParams.id",$stateParams.id);
+        console.log("$stateParams.index", $stateParams.index);
+        console.log("$stateParams.id", $stateParams.id);
 
-$scope.inBlog = function (id,name,index) {
-    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-    console.log("$scope.name",$scope.name);
-     $scope.id=id;
-     $scope.index=index;
-      console.log("$scope.id",$scope.id);
-       console.log("$scope.index",$scope.index);
+        $scope.inBlog = function (id, name, index) {
+            $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+            console.log("$scope.name", $scope.name);
+            $scope.id = id;
+            $scope.index = index;
+            console.log("$scope.id", $scope.id);
+            console.log("$scope.index", $scope.index);
             $state.go('blog', {
-                            name: $scope.name,
-                           id: $scope.id,
-                           index:$scope.index
-                        });
+                name: $scope.name,
+                id: $scope.id,
+                index: $scope.index
+            });
         }
 
 
@@ -524,16 +531,16 @@ $scope.inBlog = function (id,name,index) {
             console.log(id);
             $location.path("" + id);
         };
-        
+
         NavigationService.getTag(function (data) {
             if (data.value) {
                 $scope.blog = data.data.results;
                 console.log("  $scope.blog", $scope.blog);
 
-                if ($stateParams.id!='/:id' && $stateParams.index !='/:index') {
+                if ($stateParams.id != '/:id' && $stateParams.index != '/:index') {
                     $scope.id = $stateParams.id;
                     $scope.index = $stateParams.index;
-                    $scope.name=$stateParams.name;
+                    $scope.name = $stateParams.name;
                     $scope.tabchanges($scope.id, $scope.index);
                 } else {
                     $scope.tabchanges($scope.blog[0]._id, 0);
@@ -606,15 +613,15 @@ $scope.inBlog = function (id,name,index) {
             blogname: "Live Well"
 
         }];
-        $scope.inIndividualBlog = function (id,name) {
-    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-    console.log("$scope.name",$scope.name);
-     $scope.id=id;
-      console.log("$scope.id",$scope.id);
+        $scope.inIndividualBlog = function (id, name) {
+            $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+            console.log("$scope.name", $scope.name);
+            $scope.id = id;
+            console.log("$scope.id", $scope.id);
             $state.go('blog-detail', {
-                            'name': $scope.name,
-                           'id': $scope.id
-                        });
+                'name': $scope.name,
+                'id': $scope.id
+            });
         }
 
 
@@ -635,37 +642,37 @@ $scope.inBlog = function (id,name,index) {
             $location.path("" + id);
         };
 
- $scope.inIndividualBlog = function (id,name) {
-    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-    console.log("$scope.name",$scope.name);
-     $scope.id=id;
-      console.log("$scope.id",$scope.id);
+        $scope.inIndividualBlog = function (id, name) {
+            $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+            console.log("$scope.name", $scope.name);
+            $scope.id = id;
+            console.log("$scope.id", $scope.id);
             $state.go('blog-detail', {
-                            'name': $scope.name,
-                           'id': $scope.id
-                        });
+                'name': $scope.name,
+                'id': $scope.id
+            });
         };
 
 
-        $scope.inBlog = function (id,name,index) {
-    $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-    console.log("$scope.name",$scope.name);
-     $scope.id=id;
-     $scope.index=index;
-      console.log("$scope.id",$scope.id);
-       console.log("$scope.index",$scope.index);
+        $scope.inBlog = function (id, name, index) {
+            $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+            console.log("$scope.name", $scope.name);
+            $scope.id = id;
+            $scope.index = index;
+            console.log("$scope.id", $scope.id);
+            console.log("$scope.index", $scope.index);
             $state.go('blog', {
-                            name: $scope.name,
-                           id: $scope.id,
-                           index:$scope.index
-                        });
+                name: $scope.name,
+                id: $scope.id,
+                index: $scope.index
+            });
         };
 
 
 
-        console.log("$stateParams.name",$stateParams.name);
-        console.log("$stateParams.id",$stateParams.id);
-        $scope.b_name=$stateParams.name;
+        console.log("$stateParams.name", $stateParams.name);
+        console.log("$stateParams.id", $stateParams.id);
+        $scope.b_name = $stateParams.name;
 
 
 
