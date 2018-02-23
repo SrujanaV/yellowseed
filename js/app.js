@@ -6,7 +6,8 @@ var firstapp = angular.module('firstapp', [
     'navigationservice',
     'pascalprecht.translate',
     'angulartics',
-    'angulartics.google.analytics'
+    'angulartics.google.analytics',
+    'ui.select'
 ]);
 
 firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
@@ -76,7 +77,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
         })
 
         .state('blog', {
-             url: "/blog/:name",
+            url: "/blog/:name",
             templateUrl: "views/template.html",
             controller: 'BlogCtrl',
             params: {

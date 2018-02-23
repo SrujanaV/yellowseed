@@ -1,4 +1,4 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'duScroll'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'duScroll', 'ui.select'])
 
     .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $filter, $stateParams, $document, $location) {
         $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
@@ -100,8 +100,34 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 }
             });
         };
-
-
+        if (!$scope.formData) {
+            $scope.formData = {};
+        }
+        $scope.itemArray = [
+            // {
+            //     id: 1,
+            //     name: 'Category*'
+            // },
+            {
+                id: 2,
+                name: 'Digital'
+            },
+            {
+                id: 3,
+                name: 'Branded Content'
+            },
+            {
+                id: 4,
+                name: 'Corporate Communications'
+            },
+            {
+                id: 5,
+                name: 'The Studio'
+            },
+        ];
+        $scope.selected = {
+            value: $scope.itemArray[0]
+        };
         $scope.blogs = [
             'img/home-page/b1.jpg',
             'img/home-page/b2.png',
@@ -851,6 +877,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 }
             });
         };
+
     })
 
     .controller('headerctrl', function ($scope, TemplateService) {
