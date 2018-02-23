@@ -329,7 +329,7 @@ header {
 
 .two {
   background-color: #403635;
-  padding: 8em 0;
+  padding: 5em 0;
   z-index: 1 !important;
   h3 {
     color: #ffca08;
@@ -416,7 +416,6 @@ header {
 .four {
   height: 520px;
   background: #ffca08;
-  padding: 56px 0;
   .shd {
     position: absolute;
     top: 0;
@@ -543,8 +542,8 @@ header {
   background-color: #ffca08; // -webkit-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
   // -moz-box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
   // box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
-  padding-top: 8em;
-  padding-bottom: 16em;
+  padding-top: 5em;
+  padding-bottom: 5em;
   h1 {
     font-size: 7em !important;
     color: #fdfdfd;
@@ -563,7 +562,7 @@ header {
 
 .six {
   background-color: #dedede;
-  padding: 80px 0 10em 0;
+  padding: 5em 0 5em 0;
   h1 {
     font-size: 80px !important;
     color: #fdfdfd;
@@ -576,7 +575,7 @@ header {
 
 .seven {
   background-color: #d2d1cf;
-  padding: 12em 0 11em 0;
+  padding: 5em 0 5em 0;
   h1 {
     font-size: 80px !important;
     color: #fdfdfd;
@@ -590,7 +589,7 @@ header {
 .eight,
 .contact-page {
   background-color: #403635;
-  padding: 5em 0 2em 0;
+  padding: 5em;
   h1 {
     font-size: 7em !important;
     color: #fdfdfd;
@@ -1721,7 +1720,7 @@ footer {
 
 .eight,
 .contact-page {
-  padding: 9.4em 5em 7em 5em !important;
+  padding: 5em !important;
   .select-field {
     background-color: #403635 !important;
     color: #84948d;
