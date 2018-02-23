@@ -8,7 +8,7 @@
 @media (max-width: 1200px) {
     // temporrary css for awesomeness starts here
     .awsome ul {
-        padding: 0 40px 0 20px!important;
+        padding: 0 40px 0 20px !important;
     }
     .agency-slide .flexslider .slides img {
         width: 100% !important;
@@ -34,15 +34,14 @@
     }
     .flex-direction-nav {
         display: none !important;
-    }
-    // end temporrary css for awesomeness starts here
+    } // end temporrary css for awesomeness starts here
     .testimonials .view-all {
         top: 30%;
         right: 28%;
     }
     .camera {
         img {
-            width: 155px!important;
+            width: 155px !important;
         }
     }
     .nav>li>a {
@@ -67,8 +66,7 @@
         }
     }
     .one {
-        z-index: 0;
-        // .circle-cont {
+        z-index: 0; // .circle-cont {
         //   margin-left: 12px;
         // }
     }
@@ -139,7 +137,7 @@
             top: -22px;
         }
         .coffee {
-            top: -12%!important;
+            top: -12% !important;
         }
         .note-book {
             left: 5%;
@@ -165,8 +163,7 @@
                 height: 365px;
             }
         }
-    }
-    // .blog .bg-color .flexslider .slides li a{
+    } // .blog .bg-color .flexslider .slides li a{
     //     font-size: 16px;
     // }
     .categories {
@@ -189,7 +186,7 @@
         }
         .resize-padd {
             padding: 30px 3em 0 !important;
-            min-height: 0!important;
+            min-height: 0 !important;
             p {
                 line-height: 18px;
             }
@@ -266,7 +263,7 @@
             padding: 2em !important;
         }
         p {
-            line-height: 20px!important;
+            line-height: 20px !important;
         }
         .img-grid {
             .img-sec {
@@ -277,24 +274,23 @@
                     padding: 5px 5px 30px;
                 }
                 h3 {
-                    font-size: 16px!important;
-                    line-height: 18px!important;
+                    font-size: 16px !important;
+                    line-height: 18px !important;
                 }
             }
         }
-    }
-    //awesomeness
+    } //awesomeness
 }
 
 @media (max-width: $screen-sm-max) {
     // temporrary css for awesomeness starts here
-    .flexslider:hover .flex-direction-nav{
-opacity: 1;
+    .flexslider:hover .flex-direction-nav {
+        opacity: 1;
     }
-    .blog{
-        .bg-color{
+    .blog {
+        .bg-color {
             padding-top: 0 !important;
-            .flexslider .slides li{
+            .flexslider .slides li {
                 width: 200px !important;
             }
         }
@@ -325,8 +321,7 @@ opacity: 1;
     }
     .awsome ul {
         padding: 0 !important;
-    }
-    // temporrary css for awesomeness starts here
+    } // temporrary css for awesomeness starts here
     //awesomeness
     .won-img {
         margin: 150px auto !important;
@@ -340,8 +335,7 @@ opacity: 1;
     }
     .agency-slide .flex-control-nav {
         top: 34% !important;
-    }
-    // .brand-slide .flex-control-nav {
+    } // .brand-slide .flex-control-nav {
     //     top: 8% !important;
     //     left: -22px !important;
     // }
@@ -359,36 +353,33 @@ opacity: 1;
     }
     .won {
         padding-top: 35px;
-    }
-    // .awsome .slides{
+    } // .awsome .slides{
     //     width:500px !important;
     //     height:100% !important;
     //     position: none;
     //     padding-left: 0
     // }
     .awe-brands h1 {
-        font-size: 56px !important;
-        // padding-bottom: 30px;
+        font-size: 56px !important; // padding-bottom: 30px;
     }
     .agency h1 {
         font-size: 56px !important;
         margin-top: -10px;
-    }
-    //end of awsemoness
+    } //end of awsemoness
     .pencil-color-box {
         img {
-            height: 165px!important;
+            height: 165px !important;
         }
     }
     .camera {
-        top: 20%!important;
+        top: 20% !important;
         img {
-            width: 130px!important;
+            width: 130px !important;
         }
     }
     .img-list {
         li:nth-child(3n) {
-            padding-right: 0!important;
+            padding-right: 0 !important;
         }
     }
     .four {
@@ -456,7 +447,7 @@ opacity: 1;
     .two,
     .zero {
         h1 {
-            font-size: 5.5em!important;
+            font-size: 5.5em !important;
         }
         .blogs {
             .circle1 {
@@ -509,14 +500,13 @@ opacity: 1;
             display: none;
         }
         h1 {
-            display: block!important;
+            display: block !important;
             text-align: center;
         }
     }
     header .navbar .nav li a {
         padding: 18px 10px;
-    }
-    // .pencil-pen {
+    } // .pencil-pen {
     // position: absolute;
     // width: 234px;
     // top: 15%;
@@ -529,7 +519,7 @@ opacity: 1;
     .pd10 {
         text-align: center;
         li {
-            text-align: left!important;
+            text-align: left !important;
         }
     }
     .navbar-default .navbar-toggle:focus,
@@ -539,31 +529,31 @@ opacity: 1;
 }
 
 @media (max-width: $screen-xs-max) {
-    .eight, .contact-page{
+    .eight,
+    .contact-page {
         padding: 0 !important;
-        .select-field{
+        .select-field {
             background-color: #403635;
             color: #84948d;
             border: 0;
             border-bottom: solid 1px #d3d0d0;
-            }
+        }
     }
-    .seven .mobile-head{
+    .seven .mobile-head {
         text-align: left;
     }
-    .four .test-vw h1{
+    .four .test-vw h1 {
         text-align: left;
         padding: 0 15px;
-        .slider p{
+        .slider p {
             padding: 0 15px !important;
         }
-    }
-    // temporrary css for awesomeness starts here
-    .contact-page{
+    } // temporrary css for awesomeness starts here
+    .contact-page {
         h1 {
-            font-size: 3.5em!important;
+            font-size: 3.5em !important;
         }
-        .pr60{
+        .pr60 {
             padding: 0 !important;
         }
     }
@@ -598,8 +588,7 @@ opacity: 1;
         left: 50% !important;
         top: -14% !important;
         @include transform( translate(-50%, 0));
-    }
-    // temporrary css for awesomeness starts here
+    } // temporrary css for awesomeness starts here
     .awe-brands {
         padding: 68px 0 0 !important;
     }
@@ -613,8 +602,7 @@ opacity: 1;
         margin: 0px auto !important;
         width: 145px;
         padding-top: 20px;
-    }
-    // .agency-slide .flex-control-nav {
+    } // .agency-slide .flex-control-nav {
     //     top: -142px !important;
     //     right: 7px;
     //     left: initial !important;
@@ -639,10 +627,10 @@ opacity: 1;
     .awe-brands h1 {
         margin: 0;
         font-size: 50px !important;
-        padding-bottom: 0px!important;
+        padding-bottom: 0px !important;
     }
     .title h1 {
-        padding-bottom: 70px!important;
+        padding-bottom: 70px !important;
     }
     .img-banner {
         padding-top: 0px !important;
@@ -654,8 +642,7 @@ opacity: 1;
     .col-flex2 {
         display: block;
         width: 100% !important;
-    }
-    // .brand-slide .flex-control-nav {
+    } // .brand-slide .flex-control-nav {
     //     right: 7px !important;
     //     top: -184px !important;
     // }
@@ -663,15 +650,14 @@ opacity: 1;
     .list-inline {
         padding: none;
         list-style: none;
-    }
-    // p {
+    } // p {
     //     color: #fff;
     //     padding: 0 104px 0 100px;
     // }
     .zero-tag {
-        left: 10px!important;
+        left: 10px !important;
         p {
-            font-size: 27px!important;
+            font-size: 27px !important;
         }
     }
     .one {
@@ -696,8 +682,7 @@ opacity: 1;
     .navbar-default .navbar-toggle:focus,
     .navbar-default .navbar-toggle:hover {
         background-color: #403635;
-    }
-    // .navbar-default .navbar-toggle:hover,
+    } // .navbar-default .navbar-toggle:hover,
     // .navbar-default .navbar-toggle:focus {
     //   background-color: #fff;
     // }
@@ -720,7 +705,7 @@ opacity: 1;
         }
     }
     .head {
-        min-height: 0!important;
+        min-height: 0 !important;
         .head-tag {
             h2 {
                 font-size: 14px;
@@ -754,11 +739,10 @@ opacity: 1;
     .five {
         padding: 21em 0 5em;
         h1 {
-            font-size: 3.5em!important;
+            font-size: 3.5em !important;
         }
         .testimonials {
-            padding: 1em 0 0 5em;
-            // height: 350px;
+            padding: 1em 0 0 5em; // height: 350px;
             h1 {
                 font-size: 3.5em !important;
                 padding: 0 15px;
@@ -767,15 +751,14 @@ opacity: 1;
                 @include position(absolute, 25% 0 null null)
             }
             .flexslider-container {
-                width: 67%!important;
+                width: 67% !important;
             }
             .slider {
                 li {
                     padding: 0;
                     p {
-                        padding: 0;
-                        // margin: 0 0 0 2em !important;
-                padding: 0 15px;                
+                        padding: 0; // margin: 0 0 0 2em !important;
+                        padding: 0 15px;
                         &:before {
                             @include position(absolute, -30px null null -14%);
                         }
@@ -801,7 +784,7 @@ opacity: 1;
     .two,
     .zero {
         h1 {
-            font-size: 3.5em!important;
+            font-size: 3.5em !important;
         }
         p {
             font-size: 13px;
@@ -810,23 +793,21 @@ opacity: 1;
             left: -3%;
             font-size: 18px;
             line-height: 18px;
-        }
-        // .sm-set{
+        } // .sm-set{
         //   text-align: center;
         // }
         .circle-cont {
             // margin-left: 0 !important;
             ul {
                 li {
-                    padding: 10px 12px!important;
-                }
-                // li+li {
+                    padding: 10px 12px !important;
+                } // li+li {
                 //     padding-left: 0;
                 // }
             }
         }
         .extra-size {
-            font-size: 5em!important;
+            font-size: 5em !important;
         }
         .wait {
             margin: 0;
@@ -918,8 +899,7 @@ opacity: 1;
                 }
             }
         }
-    }
-    //testimonials
+    } //testimonials
     .four .testimonials .slider {
         width: 450px;
         margin: 0 auto;
@@ -936,7 +916,7 @@ opacity: 1;
             padding: 2em !important;
         }
         p {
-            line-height: 20px!important;
+            line-height: 20px !important;
             margin: 0 0 5px;
         }
         .mb30 {
@@ -950,18 +930,17 @@ opacity: 1;
                 }
             }
         }
-    }
-    // navbar
+    } // navbar
     .head-padd {
-         ::-webkit-scrollbar {
+        ::-webkit-scrollbar {
             width: 0;
         }
         /* Track */
-         ::-webkit-scrollbar-track {
+        ::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         }
         /* Handle */
-         ::-webkit-scrollbar-thumb {
+        ::-webkit-scrollbar-thumb {
             background: rgba(255, 0, 0, 0.8);
         }
     }
@@ -977,7 +956,7 @@ opacity: 1;
         background-color: transparent;
     }
     .btn2 {
-        font-size: 10px!important;
+        font-size: 10px !important;
     }
     .mgt55 {
         margin-top: 55px;
@@ -993,7 +972,7 @@ opacity: 1;
     }
     .list-inline {
         li:last-child {
-            padding-right: 12px!important;
+            padding-right: 12px !important;
         }
     }
     .seven {
@@ -1003,7 +982,7 @@ opacity: 1;
         padding: 0;
         text-align: center;
         li {
-            padding: 10px!important;
+            padding: 10px !important;
         }
     }
     .pencil-dust {
@@ -1016,14 +995,14 @@ opacity: 1;
     }
     .testimonials {
         h1 {
-            font-size: 40px!important;
+            font-size: 40px !important;
         }
         p {
             &:before,
             &:after {
                 @include transform(rotate(180deg));
                 line-height: 0.2;
-                font-size: 36px!important;
+                font-size: 36px !important;
                 position: relative;
                 margin-left: 5px !important;
                 top: -5px;
@@ -1033,7 +1012,7 @@ opacity: 1;
             display: none;
         }
         .flex-control-nav {
-            bottom: -10px!important;
+            bottom: -10px !important;
         }
     }
     .blog-slider {
@@ -1068,7 +1047,7 @@ opacity: 1;
     }
     .one .img-list li span.text-content {
         font-size: 14px;
-        text-align: left!important;
+        text-align: left !important;
     }
     .four {
         .testimonials {
@@ -1101,12 +1080,11 @@ opacity: 1;
     }
     .two {
         padding: 6em 0;
-    }
-    // .testimonials {
+    } // .testimonials {
     //     padding: 40px 0px !important;
     // }
     .mobile-connect {
-        text-align: left!important;
+        text-align: left !important;
     }
     .we-believe .we-one .tree img {
         height: 120px;
@@ -1124,6 +1102,7 @@ opacity: 1;
             padding: 0;
             display: block;
             text-align: center;
+            margin-bottom: 20px;
         }
     }
     .zero {
@@ -1164,8 +1143,7 @@ opacity: 1;
         .brands {
             .flexslider .slides li {
                 padding: 0;
-            }
-            // .flexslider .slides img {
+            } // .flexslider .slides img {
             //     height: 80px;
             // }
         }
@@ -1184,13 +1162,12 @@ opacity: 1;
     }
     .pd0 {
         padding: 0;
-    }
-    // .bg-color{
+    } // .bg-color{
     //   padding: 14px!important;
     // }
     .bg-color .flexslider .slides {
-        text-align: center!important;
-        margin: 10px 16px!important;
+        text-align: center !important;
+        margin: 10px 16px !important;
         li {
             a {
                 font-size: 14px !important;
@@ -1198,7 +1175,7 @@ opacity: 1;
         }
     }
     .prl40 {
-        padding: 0!important;
+        padding: 0 !important;
     }
     .ml20 {
         margin: 0;
@@ -1222,7 +1199,7 @@ opacity: 1;
                         width: 80%;
                         &:before {
                             @include position(absolute, -30px null null -20px);
-                            left: -20px!important;
+                            left: -20px !important;
                         }
                     }
                 }
@@ -1230,7 +1207,7 @@ opacity: 1;
         }
     }
     p {
-        font-size: 14px!important;
+        font-size: 14px !important;
     }
     .eight,
     .five,
@@ -1295,7 +1272,7 @@ opacity: 1;
             margin-left: 0;
             ul {
                 li {
-                    padding-left: 10px 12px!important;
+                    padding-left: 10px 12px !important;
                     .circle {
                         width: auto;
                         height: auto;
@@ -1303,7 +1280,7 @@ opacity: 1;
                             height: 98px;
                             @include filter(grayscale(100%) opacity(55%) !important);
                             &:hover {
-                              @include filter(opacity(75%));
+                                @include filter(opacity(75%));
                             }
                         }
                     }
@@ -1359,7 +1336,7 @@ opacity: 1;
     .workshop {
         z-index: 0;
         h3 {
-            font-size: 15px!important;
+            font-size: 15px !important;
         }
         .sub-para {
             padding: 2em !important;
@@ -1457,13 +1434,13 @@ opacity: 1;
         //     padding: 2em !important;
         // }
         .sub-para {
-            padding: 10px!important;
+            padding: 10px !important;
             .flex-direction-nav {
                 display: none;
             }
         }
         p {
-            line-height: 20px!important;
+            line-height: 20px !important;
         }
         .img-grid {
             margin: 20px 0 !important;
@@ -1499,7 +1476,7 @@ opacity: 1;
                 }
                 h3 {
                     font-size: 14px !important;
-                    line-height: 18px!important;
+                    line-height: 18px !important;
                 }
                 .img-spac {
                     .img-sec {
