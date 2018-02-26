@@ -6,8 +6,8 @@
         <div class="sub-para">
             <!--<div class="categories">CATEGORIES</div>-->
             <div class="tab-slider">
-                <flex-slider flex-slide="s in blog track by $index" class="bg-color" animation="slide" slideshow="false" item-width="290"
-                    item-margin="3" animationloop="true" move="2">
+                <flex-slider flex-slide="s in blog track by $index" class="bg-color" animation="slide" slideshow="false" item-width="360"
+                    item-margin="3" move="4" animationloop="true" max-items="3">
                     <!-- <li class="blog-active" auto-heightfixed  ng-click="tabchanges(s._id,$index)">{{s.activetab}} -->
                     <li auto-heightfixed>
                         <!--<a ui-sref="blog({index:$index,id:s._id})">{{s.name}}</a>-->
@@ -52,11 +52,11 @@
                                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <!-- <li>
-                                    <a ng-href="https://www.linkedin.com/in/asifupadhye?authType=NAME_SEARCH&authToken=Ljo5&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A7098787%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1478602680930%2Ctas%3Aasif" target="_blank">
+                        <li>
+                            <a ng-href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.itsyellowseed.com/blog-detail/{{b_name}}" target="_blank">
                                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                                     </a>
-                                </li> -->
+                        </li>
                         <!-- <li>
                                     <a ng-href="https://plus.google.com/share?url={{myUrl|urlEncode}}" target="_blank">
                                         <i class="fa fa-google-plus-square" aria-hidden="true"></i>
@@ -124,6 +124,11 @@
                             <li>
                                 <a ng-href="https://twitter.com/intent/tweet?url={{myUrl|urlEncode}}" target="_blank">
                                     <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.itsyellowseed.com/blog-detail/{{b_name}}" target="_blank">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <!-- <li>

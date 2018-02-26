@@ -668,6 +668,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $location.path("" + id);
         };
 
+        // var mySwiper = new Swiper('.swiper-container', {
+        //     speed: 400,
+        //     spaceBetween: 100
+        //   });  
+
         $scope.inIndividualBlog = function (id, name) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
             console.log("$scope.name", $scope.name);
@@ -729,6 +734,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
         });
 
+        // var mySwiper = new Swiper('.swiper-container', {
+        //     speed: 400,
+        //     spaceBetween: 100
+        // });
 
     })
 
