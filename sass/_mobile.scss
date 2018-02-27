@@ -531,7 +531,7 @@
 @media (max-width: $screen-xs-max) {
     .eight,
     .contact-page {
-        padding: 0 !important;
+        padding: 5em 1em !important;
         .select-field {
             background-color: #403635;
             color: #84948d;
@@ -633,7 +633,7 @@
         padding-bottom: 70px !important;
     }
     .img-banner {
-        padding-top: 0px !important;
+        padding-top: 5px !important;
     }
     .row-flex {
         display: block !important;
@@ -1128,6 +1128,7 @@
     .three {
         // padding: 3em 0 10em;
         padding: 1em 0 5em;
+        overflow: hidden;
         .client-slider {
             .flex-direction-nav {
                 display: none;
