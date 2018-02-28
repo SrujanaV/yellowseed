@@ -243,7 +243,7 @@
     }
     .sub-para {
         background-color: #ffca08;
-        padding: 3em 4em;
+        // padding: 3em 4em;
         z-index: 0;
         position: relative;
         margin-top: -7%;
@@ -437,7 +437,7 @@
 .blog {
     background: #dadada;
     .sub-para {
-        padding: 0 4em !important;
+        // padding: 0 4em !important;
         margin: 0;
         min-height: auto;
         ul {
@@ -448,11 +448,11 @@
                 border-left: 1px solid #534334;
             }
             li {
-                padding: 0 12px;
+                // padding: 0 12px;
                 color: #534334;
                 font-weight: 500;
                 cursor: pointer;
-                margin: 0 -3px;
+                // margin: 0 -3px;
                 &:hover {
                     background: #534334;
                     a {

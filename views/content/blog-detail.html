@@ -6,16 +6,29 @@
         <div class="sub-para">
             <!--<div class="categories">CATEGORIES</div>-->
             <div class="tab-slider">
-                <flex-slider flex-slide="s in blog track by $index" class="bg-color" animation="slide" slideshow="false" item-width="360"
-                    item-margin="3" move="4" animationloop="true" max-items="3">
-                    <!-- <li class="blog-active" auto-heightfixed  ng-click="tabchanges(s._id,$index)">{{s.activetab}} -->
-                    <li auto-heightfixed>
-                        <!--<a ui-sref="blog({index:$index,id:s._id})">{{s.name}}</a>-->
+                <div class="new-swiper">
+                    <div class="swiper-container">
+                        <!-- <div class="swiper-wrapper"> -->
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide swiper-style" ng-class={ 'blog-active':s.activetab} ng-click="inBlog(s._id,s.name,$index)" ng-repeat="s in blog track by $index">
+                                <a>{{s.name}}</a>
+                            </li>
+                        </ul>
+                        <!-- </div> -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <!-- Add Pagination -->
+                        <!-- <div class="swiper-pagination "></div> -->
+                    </div>
+                </div>
+                <!-- <flex-slider flex-slide="s in blog track by $index" class="bg-color" slideshow="false" animation="slide" item-width="370"
+                    animationloop="true" max-items="3" move="3">
+                    <li auto-heightfixed ng-class={ 'blog-active':s.activetab} ng-click="inBlog(s._id,s.name,$index)">
+                     
                         <a ng-click="inBlog(s._id,s.name,$index)">{{s.name}}</a>
-                        <!-- <a ng-click="tabchanges('Media')">{{s.name}}</a> -->
-                        <!-- <img ng-src="{{s}}" class="img-responsive" alt="Hindustan Platinum" auto-heightfixed> -->
+                      
                     </li>
-                </flex-slider>
+                </flex-slider> -->
             </div>
         </div>
         <!--<div class="sub-para">

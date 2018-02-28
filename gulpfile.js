@@ -20,6 +20,8 @@ var jsArray = [
     './bower_components/angulartics/dist/angulartics.min.js',
     './bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js',
     './bower_components/angular-swiper/dist/angular-swiper.js',
+    './bower_components/swiper/dist/js/swiper.js',
+   
     './bower_components/fullpage.js/dist/jquery.fullpage.min.js',
     './bower_components/angular-scroll/angular-scroll.min.js',
     './bower_components/angular-ui-select/dist/select.js',

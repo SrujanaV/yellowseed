@@ -35,7 +35,8 @@
     "fullpage.js": "^2.8.6",
     "angular-scroll": "^1.0.0",
     "angular-ui-select3": "ui-select#*",
-    "angular-ui-select": "^0.19.8"
+    "angular-ui-select": "^0.19.8",
+    "swiper": "^4.1.6"
   },
   "devDependencies": {
     "angular-translate": "^2.12.1"

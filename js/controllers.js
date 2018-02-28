@@ -1,3 +1,4 @@
+var mySwiper;
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'duScroll', 'ui.select'])
 
     .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $filter, $stateParams, $document, $location) {
@@ -530,7 +531,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         // });
 
 
-
+        $timeout(function () {
+            mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+            });
+        }, 1000);
 
         console.log("$stateParams.index", $stateParams.index);
         console.log("$stateParams.id", $stateParams.id);
@@ -609,7 +626,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             //         }
         };
 
-
         $scope.blogcontent = [{
 
             blogname: "Media"
@@ -649,9 +665,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 'id': $scope.id
             });
         }
-
-
-
     })
 
     .controller('IndividualBlogCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $state, $stateParams) {
@@ -666,12 +679,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.changeURL = function (id) {
             console.log(id);
             $location.path("" + id);
-        };
-
-        // var mySwiper = new Swiper('.swiper-container', {
-        //     speed: 400,
-        //     spaceBetween: 100
-        //   });  
+        }; 
 
         $scope.inIndividualBlog = function (id, name) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
@@ -683,7 +691,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 'id': $scope.id
             });
         };
-
 
         $scope.inBlog = function (id, name, index) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
@@ -699,15 +706,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             });
         };
 
-
-
         console.log("$stateParams.name", $stateParams.name);
         console.log("$stateParams.id", $stateParams.id);
         $scope.b_name = $stateParams.name;
-
-
-
-
 
         $scope.blogDetail = function () {
             NavigationService.getOneBlog($stateParams.id, function (data) {
@@ -731,14 +732,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.blog = data.data.results;
                 // $scope.tabchanges($scope.blog[0]._id, 0);
                 TemplateService.removeLoader();
+                console.log("blog blog blogblogblogblog",$scope.blog);
             }
         });
 
-        // var mySwiper = new Swiper('.swiper-container', {
-        //     speed: 400,
-        //     spaceBetween: 100
-        // });
-
+        $timeout(function () {
+            mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+            });
+        }, 1000);
     })
 
     .controller('AwesomenessCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $uibModal) {
@@ -927,6 +941,4 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
 
 
-    })
-
-;
+    });
