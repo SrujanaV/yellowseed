@@ -9,13 +9,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.removeLoaderOn(5);
         $scope.template.header = "";
         TemplateService.banner = "";
-        console.log($stateParams.id);
         $scope.menutitle = NavigationService.makeactive($stateParams.id);
         NavigationService.getHome(function (data) {
-            // console.log(data);
             if (data.value) {
                 $scope.home = data.data.results;
-                console.log("$scope.home", $scope.home);
                 if ($scope.home.length > 0 && $scope.home[0].banner) {
                     $scope.home.banner = $filter('uploadpath')($scope.home[0].banner);
                     TemplateService.removeLoader();
@@ -24,7 +21,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
         });
         NavigationService.getTestimonial(function (data) {
-            // console.log(data);
             if (data.value) {
                 $scope.testimonial = data.data.results;
                 TemplateService.removeLoader();
@@ -43,7 +39,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.partners = _.chunk($scope.partners, 9);
                 for (var i = 0; i < $scope.partners.length; i++) {
                     $scope.partners[i] = _.chunk($scope.partners[i], 3);
-                    // console.log($scope.client);
                 }
 
                 //for mobile
@@ -51,9 +46,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.partnersxs = _.chunk($scope.partnersxs, 4);
                 for (var i = 0; i < $scope.partners.length; i++) {
                     $scope.partnersxs[i] = _.chunk($scope.partnersxs[i], 2);
-                    // console.log($scope.client);
                 }
-                console.log('888888888', $scope.partners);
                 TemplateService.removeLoader();
             }
         });
@@ -63,7 +56,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.client = _.chunk($scope.client, 9);
                 for (var i = 0; i < $scope.client.length; i++) {
                     $scope.client[i] = _.chunk($scope.client[i], 3);
-                    // console.log($scope.client);
                 }
 
                 // for mobile slider
@@ -72,7 +64,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 for (var i = 0; i < $scope.clientxs.length; i++) {
                     $scope.clientxs[i] = _.chunk($scope.clientxs[i], 2);
                 }
-                console.log($scope.client);
                 TemplateService.removeLoader();
             }
         });
@@ -81,9 +72,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         $scope.inIndividualBlog = function (id, name) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-            console.log("$scope.name", $scope.name);
             $scope.id = id;
-            console.log("$scope.id", $scope.id);
             $state.go('blog-detail', {
                 'name': $scope.name,
                 'id': $scope.id
@@ -190,10 +179,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         // $scope.client = _.chunk($scope.client, 9);
         // for (var i = 0; i < $scope.client.length; i++) {
         //     $scope.client[i] = _.chunk($scope.client[i], 3);
-        //     // console.log($scope.client);
         // }
-        console.log($scope.client);
-        // console.log($scope.AllClients);
         // })
 
 
@@ -300,7 +286,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = false;
 
         $scope.submitForm = function (data) {
-            console.log(data);
             $scope.formSubmitted = true;
         }
     })
@@ -313,7 +298,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -327,7 +311,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -341,7 +324,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -355,7 +337,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -369,7 +350,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -383,7 +363,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -397,7 +376,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -411,7 +389,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -425,7 +402,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -496,10 +472,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.medias = _.chunk($scope.medias, 15);
         for (var i = 0; i < $scope.medias.length; i++) {
             $scope.medias[i] = _.chunk($scope.medias[i], 5);
-            console.log($scope.medias);
         }
-        console.log("this is client");
-        console.log($scope.medias);
 
     })
 
@@ -511,7 +484,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
     })
@@ -549,16 +521,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             });
         }, 1000);
 
-        console.log("$stateParams.index", $stateParams.index);
-        console.log("$stateParams.id", $stateParams.id);
 
         $scope.inBlog = function (id, name, index) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-            console.log("$scope.name", $scope.name);
             $scope.id = id;
             $scope.index = index;
-            console.log("$scope.id", $scope.id);
-            console.log("$scope.index", $scope.index);
             $state.go('blog', {
                 name: $scope.name,
                 id: $scope.id,
@@ -571,14 +538,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
         NavigationService.getTag(function (data) {
             if (data.value) {
                 $scope.blog = data.data.results;
-                console.log("  $scope.blog", $scope.blog);
 
                 if ($stateParams.id != '/:id' && $stateParams.index != '/:index') {
                     $scope.id = $stateParams.id;
@@ -593,8 +558,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         });
 
         $scope.tabchanges = function (tab, indexid) {
-            console.log("tab", tab);
-            console.log(indexid, "indexid");
             _.each($scope.blog, function (key) {
                 key.activetab = false;
             });
@@ -602,7 +565,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             NavigationService.getTagBlog(tab, function (data) {
                 if (data.value) {
                     $scope.getoneBlogs = data.data;
-                    console.log("  $scope.getoneBlogs", $scope.getoneBlogs);
                     TemplateService.removeLoader();
                 }
 
@@ -612,10 +574,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 
-            // console.log(a);
             // $scope.tabs = tab;
             //         if (a == 1) {
-            // console.log('inside 1');
             //             $scope.classp = "active-tab";
             //             $scope.classv = '';
             //
@@ -657,9 +617,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }];
         $scope.inIndividualBlog = function (id, name) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-            console.log("$scope.name", $scope.name);
             $scope.id = id;
-            console.log("$scope.id", $scope.id);
             $state.go('blog-detail', {
                 'name': $scope.name,
                 'id': $scope.id
@@ -677,15 +635,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
         TemplateService.removeLoaderOn(2);
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         }; 
 
         $scope.inIndividualBlog = function (id, name) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-            console.log("$scope.name", $scope.name);
             $scope.id = id;
-            console.log("$scope.id", $scope.id);
             $state.go('blog-detail', {
                 'name': $scope.name,
                 'id': $scope.id
@@ -694,11 +649,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         $scope.inBlog = function (id, name, index) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
-            console.log("$scope.name", $scope.name);
             $scope.id = id;
             $scope.index = index;
-            console.log("$scope.id", $scope.id);
-            console.log("$scope.index", $scope.index);
             $state.go('blog', {
                 name: $scope.name,
                 id: $scope.id,
@@ -706,8 +658,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             });
         };
 
-        console.log("$stateParams.name", $stateParams.name);
-        console.log("$stateParams.id", $stateParams.id);
         $scope.b_name = $stateParams.name;
 
         $scope.blogDetail = function () {
@@ -715,9 +665,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 if (data.value) {
                     $scope.getone = data.data.blog;
                     $scope.rel = data.data.related;
-                    console.log("rel", $scope.rel);
                     // $scope.getRelatedBlogs = data.data;
-                    console.log(data.data);
                     TemplateService.removeLoader();
                 }
 
@@ -732,7 +680,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.blog = data.data.results;
                 // $scope.tabchanges($scope.blog[0]._id, 0);
                 TemplateService.removeLoader();
-                console.log("blog blog blogblogblogblog",$scope.blog);
             }
         });
 
@@ -771,7 +718,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.brand = _.chunk($scope.brand, 9);
                 for (var i = 0; i < $scope.brand.length; i++) {
                     $scope.brand[i] = _.chunk($scope.brand[i], 3);
-                    console.log($scope.brand);
                 }
                 TemplateService.removeLoader();
             }
@@ -783,14 +729,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.brands = _.chunk($scope.brands, 4);
                 for (var i = 0; i < $scope.brands.length; i++) {
                     $scope.brands[i] = _.chunk($scope.brands[i], 2);
-                    console.log($scope.brands);
                 }
                 TemplateService.removeLoader();
             }
         });
 
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
 
@@ -802,9 +746,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.agency = _.chunk($scope.agency, 9);
                 for (var i = 0; i < $scope.agency.length; i++) {
                     $scope.agency[i] = _.chunk($scope.agency[i], 3);
-                    console.log($scope.agency);
                 }
-                console.log($scope.client);
                 TemplateService.removeLoader();
             }
         });
@@ -816,9 +758,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 $scope.agencies = _.chunk($scope.agencies, 4);
                 for (var i = 0; i < $scope.agencies.length; i++) {
                     $scope.agencies[i] = _.chunk($scope.agencies[i], 2);
-                    console.log($scope.agencies);
                 }
-                console.log($scope.client);
                 TemplateService.removeLoader();
             }
         });
@@ -867,7 +807,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
 
         $scope.openBrand = function (selected) {
-            console.log(selected);
             $scope.detail = selected;
             $uibModal.open({
                 animation: true,
@@ -888,7 +827,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.banner = "views/footer1.html";
         $scope.navigation = NavigationService.getnav();
         $scope.changeURL = function (id) {
-            console.log(id);
             $location.path("" + id);
         };
         $scope.formSubmitted = false;
@@ -912,9 +850,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.oneAtATime = true;
 
         // NavigationService.getCategory(function(data) {
-        //     console.log(data);
         //     $scope.Category = data.data.results;
-        //     console.log(data.data.results);
         // });
     })
 
@@ -923,7 +859,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     .controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
 
         $scope.changeLanguage = function () {
-            console.log("Language CLicked");
 
             if (!$.jStorage.get("language")) {
                 $translate.use("hi");
