@@ -558,9 +558,9 @@ header {
     bottom: -30%;
   }
   .blog-slider {
-    width: 925px;
+    width: 100%;
     .blogs-details {
-      padding: 0 20px 0 0;
+      // padding: 0 20px 0 0;
     }
   }
 }
@@ -1734,7 +1734,7 @@ footer {
 }
 
 .home-blog {
-  width: 320px !important;
+  width: 302px !important;
 }
 
 .eight,
@@ -1797,7 +1797,16 @@ footer {
     height: 330px;
   }
 }
-
+//scss for swiper pagination
+.swiper-pagination{
+  width: 100%;
+  bottom: -35px;
+  span{
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+  }
+}
 
 //ruchira
 @import "fancybox-override";
