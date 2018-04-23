@@ -6,7 +6,7 @@
 
 .blog {
     .sub-para {
-        padding: 0 4em !important;
+        padding: 0 3em !important;
         ul {
             font-size: 20px !important;
             li {
@@ -45,7 +45,7 @@
                 a {
                     text-decoration: none;
                     display: block;
-                    width: 42px;
+                    width: 20px;
                     height: 45px;
                     margin: -20px 0 0;
                     position: absolute;
@@ -405,7 +405,7 @@
         cursor: default;
     }
     .flex-direction-nav a {
-        height: 45px!important;
+        height: 30px!important;
     }
     .flex-control-paging li a.flex-active {
         background: #fec60f;
