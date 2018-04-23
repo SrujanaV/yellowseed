@@ -7,6 +7,13 @@
 
 @media (max-width: 1200px) {
     // temporrary css for awesomeness starts here
+    .blog-slider{
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    header .navbar .nav li a{
+        font-size: 11px !important;
+    }
     .awsome ul {
         padding: 0 40px 0 20px !important;
     }
@@ -287,11 +294,16 @@
     .flexslider:hover .flex-direction-nav {
         opacity: 1;
     }
+    .brands{
+        .flex-control-paging{
+            display: none;
+        }
+    }
     .blog {
         .bg-color {
             padding-top: 0 !important;
             .flexslider .slides li {
-                width: 200px !important;
+                // width: 200px !important;
             }
         }
     }

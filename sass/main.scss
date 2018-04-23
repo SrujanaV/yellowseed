@@ -228,7 +228,7 @@ header {
   }
 }
 
-.display-flex-div{
+.display-flex-div {
   display: flex;
   align-items: center;
 }
@@ -1319,9 +1319,11 @@ footer {
     display: none;
   }
 }
+
 .swiper-container {
   width: 100%;
 }
+
 .blog-info {
   background-color: #fff;
   padding: 20px;
@@ -1334,13 +1336,13 @@ footer {
     margin: 0;
     line-height: 120%;
   }
-  p{
+  p {
     line-height: 18px !important;
   }
-  span{
+  span {
     line-height: 18px !important;
   }
-  .txt{
+  .txt {
     line-height: 18px;
   }
 }
@@ -1391,8 +1393,7 @@ footer {
       font-size: 16px;
       margin: 0;
       list-style-type: none;
-      padding-left: 0;
-      // li+li {
+      padding-left: 0; // li+li {
       //   border-left: 1px solid #534334;
       // }
       li {
@@ -1401,8 +1402,7 @@ footer {
         color: #534334;
         font-weight: 500;
         cursor: pointer;
-        border-left: 1px solid #534334;
-        // margin: 0 -3px;
+        border-left: 1px solid #534334; // margin: 0 -3px;
         &:hover {
           background: #534334;
           a {
@@ -1738,7 +1738,6 @@ footer {
 // .home-blog {
 //   width: 302px !important;
 // }
-
 .eight,
 .contact-page {
   padding: 5em !important;
@@ -1799,11 +1798,12 @@ footer {
     height: 330px;
   }
 }
+
 //scss for swiper pagination
-.swiper-pagination{
+.swiper-pagination {
   width: 100%;
   bottom: -35px;
-  span{
+  span {
     margin: 0 5px;
     width: 10px;
     height: 10px;
