@@ -48,7 +48,7 @@
           </select>
         </div> -->
         <div class="select-cat form-group">
-          <ui-select class="select-field" ng-model="formData.category">
+          <ui-select class="select-field" ng-model="formData.categories">
             <ui-select-match placeholder="Category*">
               <span ng-if="$select.selected.name">{{$select.selected.name}}</span>
               <span ng-if="!$select.selected.name">{{$select.selected}}</span>
@@ -58,7 +58,6 @@
             </ui-select-choices>
           </ui-select>
         </div>
-
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12">
         <div class="form-group" ng-class="{'form-invalid': formName.email.$invalid && formName.email.$touched}">

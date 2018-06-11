@@ -33,15 +33,18 @@
           <div class="form-group" ng-class="{'form-invalid': formName.mobile.$invalid && formName.mobile.$touched}">
             <input type="text" name="mobile" class="form-control" ng-model="formData.mobile" placeholder="Mobile No.*" required>
           </div>
-          <div class="form-group">
-            <select name="category" class="form-control select-field" ng-model="formData.category">
-                    <option value="" disabled selected hidden>Category*</option>                    
-                    <option value="Digital">Digital</option>
-                    <option value="Branded Content">Branded Content</option>
-                    <option value="Corporate Communications">Corporate Communications</option>
-                    <option value="The Studio">The Studio</option>
-                  </select>
+          <div class="select-cat form-group">
+            <ui-select class="select-field" ng-model="formData.categories">
+              <ui-select-match placeholder="Category*">
+                <span ng-if="$select.selected.name">{{$select.selected.name}}</span>
+                <span ng-if="!$select.selected.name">{{$select.selected}}</span>
+              </ui-select-match>
+              <ui-select-choices repeat="item in itemArray">
+                <span class="select-field" ng-bind="item.name"></span>
+              </ui-select-choices>
+            </ui-select>
           </div>
+          <pre>{{formData.categories}}</pre>
           <!-- <div class="form-group visible-sm visible-xs" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
               <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Message*" required></textarea>
             </div> -->

@@ -84,6 +84,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = false;
         $scope.formData = {};
         $scope.submitForm = function (formData) {
+            formData.category=formData.categories.name;
             NavigationService.saveContact($scope.formData, function (data) {
                 if (data.value === true) {
                     $scope.formSubmitted = true;
@@ -847,9 +848,35 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.changeURL = function (id) {
             $location.path("" + id);
         };
+        $scope.itemArray = [
+            // {
+            //     id: 1,
+            //     name: 'Category*'
+            // },
+            {
+                id: 2,
+                name: 'Digital'
+            },
+            {
+                id: 3,
+                name: 'Branded Content'
+            },
+            {
+                id: 4,
+                name: 'Corporate Communications'
+            },
+            {
+                id: 5,
+                name: 'The Studio'
+            },
+        ];
+        $scope.selected = {
+            value: $scope.itemArray[0]
+        };
         $scope.formSubmitted = false;
         $scope.formData = {};
         $scope.submitForm = function (formData) {
+            formData.category=formData.categories.name;
             NavigationService.saveContact($scope.formData, function (data) {
                 if (data.value === true) {
                     $scope.formSubmitted = true;
