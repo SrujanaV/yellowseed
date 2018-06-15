@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="display-flex-div">
+    <div class="">
       <div class="col-md-offset-1 col-md-4 col-xs-12 col-sm-12">
         <h1 ng-show="showHead1" class="partner-h1">
           Clients
@@ -72,8 +72,7 @@
                 </div>
               </li>
             </flex-slider>
-            <flex-slider ng-if="!showHead1" flex-slide="img in partners track by $index" item-width="1200" item-margin="10" animationLoop="false"
-              slideshow="false">
+            <flex-slider ng-if="!showHead1" flex-slide="img in partners track by $index" item-width="1200" item-margin="10" animationLoop="false" slideshow="false">
               <li>
                 <div class="client-imgholder">
                   <div class="row bord-cus" ng-repeat="row in img track by $index">

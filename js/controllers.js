@@ -1,7 +1,7 @@
 var mySwiper;
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'duScroll', 'ui.select'])
 
-    .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $filter, $stateParams, $document, $location) {
+    .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $filter, $stateParams, $document, $location, $window) {
         $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
@@ -84,7 +84,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = false;
         $scope.formData = {};
         $scope.submitForm = function (formData) {
-            formData.category=formData.categories.name;
+            formData.category = formData.categories.name;
             NavigationService.saveContact($scope.formData, function (data) {
                 if (data.value === true) {
                     $scope.formSubmitted = true;
@@ -94,11 +94,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         if (!$scope.formData) {
             $scope.formData = {};
         }
-        $scope.itemArray = [
-            // {
-            //     id: 1,
-            //     name: 'Category*'
-            // },
+        $scope.itemArray = [{
+                id: 1,
+                name: 'Content Strategy & Wisdom'
+            },
             {
                 id: 2,
                 name: 'Digital'
@@ -115,6 +114,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 id: 5,
                 name: 'The Studio'
             },
+            {
+                id: 6,
+                name: 'Design'
+            }
         ];
         $scope.selected = {
             value: $scope.itemArray[0]
@@ -226,6 +229,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }, 1000);
         });
 
+
+        // $(window).scroll(function () {
+        //     console.log("position", $('#wedo').position().top);
+        //     var top = this.scrollY,
+        //         left = this.scrollX;
+        //         console.log("top", top);
+        //     if (top >= $('#wedo').position().top) {
+        //         var host = $window.location.host;
+        //         var landingUrl = '/#/wedo';
+        //         event.preventDefault();
+        //         $window.location.href = landingUrl;
+        //     }
+        // });
 
         $scope.changeURL = function (id) {
             $scope.menutitle = NavigationService.makeactive(id);
@@ -530,12 +546,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 loop: true,
                 loopFillGroupWithBlank: true,
                 pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
                 navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
             });
         }, 1000);
@@ -655,7 +671,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.removeLoaderOn(2);
         $scope.changeURL = function (id) {
             $location.path("" + id);
-        }; 
+        };
 
         $scope.inIndividualBlog = function (id, name) {
             $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
@@ -710,12 +726,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 loop: true,
                 loopFillGroupWithBlank: true,
                 pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
                 navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
             });
         }, 1000);
@@ -876,7 +892,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = false;
         $scope.formData = {};
         $scope.submitForm = function (formData) {
-            formData.category=formData.categories.name;
+            formData.category = formData.categories.name;
             NavigationService.saveContact($scope.formData, function (data) {
                 if (data.value === true) {
                     $scope.formSubmitted = true;

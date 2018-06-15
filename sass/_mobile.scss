@@ -40,7 +40,7 @@
         border: none;
     }
     .flex-direction-nav {
-        display: none !important;
+        // display: none !important;
     } // end temporrary css for awesomeness starts here
     .testimonials .view-all {
         top: 30%;
@@ -294,17 +294,17 @@
     .flexslider:hover .flex-direction-nav {
         opacity: 1;
     }
-    .brands{
-        .flex-control-paging{
-            display: none;
-        }
-    }
+    // .brands{
+    //     .flex-control-paging{
+    //         display: none;
+    //     }
+    // }
     .blog {
         .bg-color {
             padding-top: 0 !important;
             .flexslider .slides li {
                 // width: 200px !important;
-            }
+            } 
         }
     }
     .col-flex1 {
@@ -633,7 +633,7 @@
         text-align: justify;
     }
     .flex-direction-nav {
-        display: none !important;
+        // display: none !important;
     }
     .agency h1,
     .awe-brands h1 {
@@ -1143,7 +1143,7 @@
         overflow: hidden;
         .client-slider {
             .flex-direction-nav {
-                display: none;
+                // display: none;
             }
             .client-imgholder {
                 padding: 10px;
