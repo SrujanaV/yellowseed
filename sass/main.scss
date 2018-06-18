@@ -427,15 +427,14 @@ header {
 }
 
 .four {
-  height: 520px;
-  background: #fdcb30;
-  .shd {
-    position: absolute;
-    top: 0;
-    height: 200px;
-    width: 100%;
-    background: #fdcb30;
-  }
+  height: 1000px;
+  background: #fdcb30; // .shd {
+  //   position: absolute;
+  //   top: 0;
+  //   height: 200px;
+  //   width: 100%;
+  //   background: #fdcb30;
+  // }
   .shd1 {
     position: absolute;
     top: 200px;
@@ -450,11 +449,27 @@ header {
     color: #4e4242;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), #383232 4px 4px 4px !important;
   }
+  .testimonials-inside {
+    position: absolute;
+    bottom: -22px;
+    right: 10px;
+    z-index: 2;
+    width: 25%;
+  }
+  .testimonials-hand{
+    position: absolute;
+    left: 1%;
+    bottom: -60px;
+    z-index: 3;
+  }
+  .clients_img {
+    border-top: solid 1px white;
+  }
   .testimonials {
-    width: 82%;
+    width: 88%;
     padding: 6em 0 0 7em;
     @include position(absolute,
-    216px 0 null null);
+    null 0 -200px null);
     background-image: url(../img/home-page/testimon-bg.jpg);
     background-size: cover;
     z-index: 1;
@@ -506,8 +521,7 @@ header {
       }
       p {
         color: #fdfdfd;
-        padding: 25px 95px 0 0;
-        // &:before,
+        padding: 25px 95px 0 0; // &:before,
         // &:after {
         //   height: 0;
         //   content: ' " ';
@@ -529,8 +543,7 @@ header {
         // }
       }
       .yellow {
-        color: #fdcb30 !important;
-        // padding: 0 57px;
+        color: #fdcb30 !important; // padding: 0 57px;
       }
       .flex-control-nav {
         bottom: -20%;
@@ -569,7 +582,7 @@ header {
     width: 100%;
     .blogs-details {
       // padding: 0 20px 0 0;
-      .content-text{
+      .content-text {
         width: 260px;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -584,7 +597,10 @@ header {
 
 .six {
   background-color: #dedede;
-  padding: 5em 0 5em 0;
+  padding: 3em 0 0 0;
+  .workshop-section{
+    padding-bottom:3em;
+  }
   h1 {
     font-size: 80px !important;
     color: #fdfdfd;
@@ -611,7 +627,6 @@ header {
 .eight,
 .contact-page {
   background-color: #403635;
-  padding: 5em;
   h1 {
     font-size: 7em !important;
     color: #fdfdfd;
@@ -939,11 +954,11 @@ p {
     }
   }
   .wait {
-    margin: 6em 4em 0 0;
+    margin: 0 4em 0 0;
   }
   .blogs {
     position: relative;
-    margin: 22px 2em 0 0;
+    margin: 0 2em 0 0;
     .circle1 {
       position: absolute;
       border-radius: 50%;
@@ -1765,12 +1780,19 @@ footer {
 // }
 .eight,
 .contact-page {
-  padding: 5em !important;
+  .contact-inside{
+  padding: 5em 0 3em 0 !important;
+  }
   .select-field {
     background-color: #403635 !important;
     color: #84948d;
     border: 0;
     border-bottom: solid 1px #d3d0d0;
+  }
+  .contact_flying{
+    position: absolute;
+    top: 8%;
+    right: 5px;
   }
 }
 
