@@ -342,8 +342,19 @@ header {
 
 .two {
   background-color: #403635;
-  padding: 5em 0;
   z-index: 1 !important;
+  .about-page{
+    padding: 5em 0 10em 0;
+  }
+  .about-image{
+    position: absolute;
+    bottom: 0;
+  }
+  .hand-about{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
   h3 {
     color: #fdcb30;
     margin-top: 0;
@@ -570,6 +581,11 @@ header {
   // box-shadow: inset 0px 24px 96px -37px rgba(0, 0, 0, 0.75);
   padding-top: 5em;
   padding-bottom: 5em;
+  .blog-arrow{
+    position: absolute;
+    right: 9.5%;
+    top: -12%;
+  }
   h1 {
     font-size: 7em !important;
     color: #fdfdfd;
