@@ -47,7 +47,7 @@
                 width: 18px;
                 transform: rotate(180deg);
                 background-repeat: no-repeat;
-                background-position: top left;           
+                background-position: top left;
             }
             .flex-direction-nav a.flex-next:before {
                 content: '';
@@ -123,7 +123,7 @@
                 @include position(absolute, 55px null null 0);
             }
             &.brain-tweet:before {
-                content: url('../img/icons/twitter-logo.png');
+                content: url('../img/icons/brain-tweet.png');
             }
             &.brain-pen:before {
                 content: url('../img/icons/speed.png');
@@ -280,8 +280,7 @@
         img {
             width: 230px;
         }
-    }
-    // .media-slider {
+    } // .media-slider {
     //     margin-top: -50px;
     // }
     .camera {
@@ -489,7 +488,7 @@
     }
     .img-sec {
         background: #ffffff;
-        padding: 12px 25px;
+        padding: 0 25px;
         h3 {
             line-height: 22px;
             letter-spacing: 1px;
@@ -834,6 +833,10 @@ h2 {
         text-transform: uppercase;
         font-size: 14px;
     }
+}
+
+.navbar {
+    min-height: 70px;
 }
 
 .modal-open {

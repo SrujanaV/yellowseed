@@ -188,6 +188,7 @@ header {
   }
   .head-padd {
     // padding: 0 7em;
+    padding-top: 5px;
     .logo {
       height: 50px;
       margin-top: 4px;
@@ -1479,7 +1480,7 @@ footer {
   }
   .img-sec {
     background: #ffffff;
-    padding: 12px 25px;
+    padding: 0 25px;
     h3 {
       line-height: 22px;
       letter-spacing: 1px;
@@ -1802,7 +1803,7 @@ footer {
 .eight,
 .contact-page {
   .contact-inside{
-  padding: 5em 0 3em 0 !important;
+  padding: 5em 0 0 0 !important;
   }
   .select-field {
     background-color: #403635 !important;
