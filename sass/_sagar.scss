@@ -117,10 +117,10 @@
         font-weight: bold;
         color: #403635;
         font-family: 'Rubik', sans-serif;
+        padding: 5px 0;
         .icon {
-            padding-right: 30px;
             &:before {
-                @include position(absolute, 48px null null null);
+                @include position(absolute, 55px null null 0);
             }
             &.brain-tweet:before {
                 content: url('../img/icons/twitter-logo.png');
@@ -253,7 +253,7 @@
         }
     }
     .resize-padd {
-        padding: 30px 6em 0 6em;
+        padding: 30px 4em 0 4em;
         min-height: 0;
         p {
             margin: 0;

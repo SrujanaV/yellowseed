@@ -1,7 +1,7 @@
 <div class="container">
+    <div class="relative">
   <div class="row">
-    <div class="">
-      <div class="col-md-offset-1 col-md-4 col-xs-12 col-sm-12">
+      <div class="col-md-offset-1 col-md-4 col-xs-12 col-sm-12"> 
         <h1 ng-show="showHead1" class="partner-h1">
           Clients
         </h1>
@@ -14,13 +14,14 @@
         <!-- <p>
         Write to us at <a href="mailto:contact@itsyellowseed.com">contact@itsyellowseed.com</a> for a detailed credential
         presentation or work samples.
-      </p> -->
+       </p> -->
         <p class="view btn btn-primary" ng-if="showHead1" ng-click="showHeading1();">
           Partnerships
         </p>
         <p class="view btn btn-primary" ng-if="!showHead1" ng-click="showHeading2();">
           Clients
         </p>
+      <!-- <div class="shakehand"><img src="img/home-page/shakehand.png"></div> -->
       </div>
       <div class="col-md-7 col-xs-12 col-sm-12">
         <div class="brands">
@@ -57,8 +58,7 @@
           <!--{{partnersxs}}-->
           <div class="client-slider hidden-xs">
             <!-- console.log(client); -->
-            <flex-slider ng-if="showHead1" flex-slide="img in client track by $index" item-width="1200" item-margin="10" animationLoop="false"
-              as-nav-for="#slider1" slideshow="false">
+            <flex-slider ng-if="showHead1" flex-slide="img in client track by $index" item-width="1200" item-margin="10" animationLoop="false" as-nav-for="#slider1" slideshow="false">
               <li>
                 <div class="client-imgholder">
                   <div class="row bord-cus" ng-repeat="row in img track by $index">

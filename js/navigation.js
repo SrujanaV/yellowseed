@@ -27,7 +27,7 @@ var navigationservice = angular.module('navigationservice', [])
                         classis: "active",
                         anchor: "branded-content"
                     }, {
-                        name: "Corporate Communications",
+                        name: "Internal Communications",
                         classis: "active",
                         anchor: "internal-communication"
                     }, {
