@@ -253,6 +253,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             makeAnimation(id);
             $location.replace();
         };
+
+        angular.module('myApp', ['duScroll']).
+        run(function($rootScope) {
+          if(!window.history || !history.replaceState) {
+            return;
+          }
+          $rootScope.$on('duScrollspy:changeURL', function($event, $element, $target){
+            //Automaticly update location
+            var hash = $element.prop('hash');
+            if (hash) {
+              history.replaceState(null, null, hash);
+            }
+          });
+        });
+
         $scope.section = {
             header: "views/header.html",
             head: "views/section/section.html",
