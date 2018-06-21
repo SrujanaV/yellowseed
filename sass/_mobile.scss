@@ -97,7 +97,7 @@
         }
     }
     .six {
-        padding: 17em 0 10em;
+        padding: 17em 0 0;
         z-index: 0;
     }
     .eight,
@@ -543,7 +543,7 @@
 @media (max-width: $screen-xs-max) {
     .eight,
     .contact-page {
-        padding: 5em 1em !important;
+        padding: 0 1em !important;
         .select-field {
             background-color: #403635;
             color: #84948d;
@@ -735,7 +735,7 @@
         }
     }
     .one {
-        padding: 16em 0 10em;
+        padding: 16em 0 0;
     }
     .three {
         padding: 3em 0;
@@ -780,7 +780,7 @@
         }
     }
     .six {
-        padding: 6em 0 7em;
+        padding: 6em 0 0;
     }
     .seven {
         padding: 5em 0 11em;
@@ -1062,6 +1062,7 @@
         text-align: left !important;
     }
     .four {
+        height: 740px;
         .testimonials {
             padding: 4em 0 0;
             .slider p {
@@ -1071,7 +1072,7 @@
         }
     }
     .six {
-        padding: 6em 0 7em
+        padding: 6em 0 0;
     }
     .ml35 {
         margin: 10px 5px;
@@ -1119,7 +1120,7 @@
     }
     .zero {
         height: 100%;
-        padding: 0em 0 40px 0;
+        padding: 0;
     }
     .zero .padd-top {
         padding: 8em 0 4em;
@@ -1132,7 +1133,7 @@
         }
     }
     .one {
-        padding: 5em 0;
+        padding: 0;
     }
     .three .brands .flex-control-nav {
         bottom: -19%;

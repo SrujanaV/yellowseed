@@ -188,6 +188,13 @@ firstapp.directive('scrolldown', function ($compile, $parse) {
     };
 });
 
+firstapp.directive('mainimage', function ($http, $filter) {
+    return {
+        templateUrl: 'views/directive/main.html',
+        link: function ($scope, element, attrs) {
+        }
+    };
+})
 
 firstapp.filter('uploadpath', function () {
     return function (input, width, height, style, defaultFlag) {
