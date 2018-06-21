@@ -196,6 +196,14 @@ firstapp.directive('mainimage', function ($http, $filter) {
     };
 })
 
+firstapp.directive('wedo', function ($http, $filter) {
+    return {
+        templateUrl: 'views/directive/wedo.html',
+        link: function ($scope, element, attrs) {
+        }
+    };
+})
+
 firstapp.filter('uploadpath', function () {
     return function (input, width, height, style, defaultFlag) {
         //console.log(width, height, style, defaultFlag)

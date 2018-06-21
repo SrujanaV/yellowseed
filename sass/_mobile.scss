@@ -403,6 +403,9 @@
             top: 35%;
             left: -8%;
         }
+        .testimonials-inside,.testimonials-hand {
+            display: none;
+        }
     }
     .five {
         .blog-slider {
@@ -549,6 +552,9 @@
             color: #84948d;
             border: 0;
             border-bottom: solid 1px #d3d0d0;
+        }
+        .contact_flying{
+            top: 0;
         }
     }
     .seven .mobile-head {
@@ -1093,6 +1099,9 @@
     }
     .two {
         padding: 6em 0;
+        .hand-about{
+            display: none;
+        }
     } // .testimonials {
     //     padding: 40px 0px !important;
     // }
@@ -1359,7 +1368,13 @@
             }
         }
         .resize-padd {
-            padding: 30px 0 0 !important;
+            padding: 30px 55px 0 !important;
+            .icon{
+                &:before{
+                    top: 45px;
+                    left: 0%;
+                }
+            }
             h3 {
                 text-align: left;
             }
