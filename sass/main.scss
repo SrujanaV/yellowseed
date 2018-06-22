@@ -655,6 +655,7 @@ header {
 .eight,
 .contact-page {
   background-color: #403635;
+  padding-top: 95px;
   h1 {
     font-size: 7em !important;
     color: #fdfdfd;
@@ -1209,6 +1210,7 @@ p {
   .we-one {
     background-color: #e4e4e4;
     padding: 5em 0 2em;
+    margin-top: -5px;
   }
   .we-two {
     background-color: #ffcb05;
@@ -1267,7 +1269,7 @@ p {
       margin-bottom: 20px;
     }
     .respect {
-      background-image: url(../img/home-page/we-believe-bg.jpg);
+      background-color: #3d3432;
       background-size: cover;
       z-index: 1;
       width: 50%;

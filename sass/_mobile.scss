@@ -545,6 +545,9 @@
 }
 
 @media (max-width: $screen-xs-max) {
+    body{
+        padding-top: 20px;
+    }
     .partnership-img{
         top: -25%;
     }
