@@ -303,10 +303,11 @@ header {
   background-image:url("/img/home-page/elements.svg");
   background-position: center center;
   background-size:auto;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-color: #dedede;
   padding: 5em 0 0 0;
   margin-bottom: -5px;
+  background-position-y: 60%;
   h1 {
     color: #fdfdfd;
   }
@@ -351,7 +352,7 @@ header {
   background-color: #403635;
   z-index: 1 !important;
   .about-page {
-    padding: 5em 0 10em 0;
+    padding: 5em 0 0 0;
   }
   .about-image {
     position: absolute;
