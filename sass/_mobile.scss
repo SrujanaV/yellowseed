@@ -544,6 +544,9 @@
 }
 
 @media (max-width: $screen-xs-max) {
+    .partnership-img{
+        top: -25%;
+    }
     .eight,
     .contact-page {
         padding: 0 1em !important;
