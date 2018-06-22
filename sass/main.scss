@@ -341,6 +341,7 @@ header {
 .one {
   background-color: #d2d1cf;
   padding: 50px 0 0 0;
+  margin-bottom: -5px;
   h1 {
     color: #fdfdfd;
   }
@@ -491,7 +492,7 @@ header {
     padding: 6em 0 0 7em;
     @include position(absolute,
     null 0 -200px null);
-    background-image: url(../img/home-page/testimon-bg.jpg);
+    background-color: #3d3432;
     background-size: cover;
     z-index: 1;
     @include transform(translateY(-40%));
@@ -624,6 +625,7 @@ header {
 .six {
   background-color: #dedede;
   padding: 3em 0 0 0;
+  margin-bottom: -5px;
   .workshop-section {
     padding-bottom: 3em;
   }
@@ -1921,7 +1923,18 @@ footer {
     color: #333;
     font-weight: bold;
   }
-} //ruchira
+}
+.partnership-img{
+  position: absolute;
+  top: -60%;
+  left: 40%;
+}
+.partnershiphand-img{
+  position: absolute;
+  bottom: -90%;
+  right: -73px;
+}
+//ruchira
 @import "fancybox-override";
 @import "mobile";
 @import "sagar";

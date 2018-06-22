@@ -3,10 +3,24 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1500 840" style="enable-background:new 0 0 1500 840;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#DCDEDE;}
-	.st1{fill:#454C4C;}
-	.st2{fill:#fff;}
-	.st2:hover{fill:#FFCA05;}
+	.st0 {
+            fill: #DCDEDE;
+        }
+
+        .st1 {
+            fill: #454C4C;
+        }
+
+        .st2 {
+            fill: #fff;
+            opacity: 0
+        }
+
+        .st2:hover {
+            fill: #FFCA05;
+            opacity: 1;
+            cursor: pointer;
+        }
 </style>
 <g id="shadow">
 	<g>
