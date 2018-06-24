@@ -6,7 +6,7 @@
 	.st0{fill:#FFFFFF;}
 	.st1{clip-path:url(#SVGID_2_);}
 	.st2{fill:#E0DFE6;}
-	.st3{fill:#FFCB05;}
+	<!-- .st3{fill:#FFCB05;} -->
 	.st4{fill:#525D7D;}
 	.st5{opacity:0.4;fill:url(#SVGID_3_);}
 	.st6{clip-path:url(#SVGID_5_);}
@@ -34,7 +34,17 @@
 	.st28{opacity:0.4;clip-path:url(#SVGID_30_);fill:url(#SVGID_31_);}
 	.st29{clip-path:url(#SVGID_33_);}
 	.st30{opacity:0.4;fill:url(#SVGID_34_);}
+		.st3{
+	fill:#FFCB05;
+	opacity:0;
+	}
+	#team7:hover .st3{
+	fill:#FFCB05;
+	opacity:1;
+	cursor:pointer;
+	}
 </style>
+<g id="team7">
 <g>
 	<defs>
 		<path id="SVGID_4_" d="M-472,288L-472,288c-79.5,0-144-64.5-144-144v0c0-79.5,64.5-144,144-144h0c79.5,0,144,64.5,144,144v0
@@ -12903,5 +12913,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAd/0eAAQCc9AvEVbeuOAAAAABJRU5ErkJggg==" transf
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>
 	<rect x="-1173" y="255.7" style="opacity:0.4;clip-path:url(#SVGID_6_);fill:url(#SVGID_8_);" width="1500" height="52.4"/>
+</g>
 </g>
 </svg>

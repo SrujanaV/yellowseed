@@ -176,7 +176,7 @@ header {
       li {
         a {
           color: #fdfdfd;
-          padding: 18px 12px;
+          padding: 24px 12px;
           font-size: 16px;
           font-weight: bold;
           &:hover {
@@ -188,10 +188,10 @@ header {
   }
   .head-padd {
     // padding: 0 7em;
-    padding-top: 5px;
+    // padding-top: 5px;
     .logo {
-      height: 50px;
-      margin-top: 4px;
+      height: 55px;
+      margin-top: 7px;
     }
   }
   .dropdown-menu {
@@ -303,9 +303,10 @@ header {
   background-image:url("/img/home-page/elements.svg");
   background-position: center center;
   background-size:auto;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-color: #dedede;
   padding: 5em 0 0 0;
+  background-position-y:50%; 
   margin-bottom: -5px;
   h1 {
     color: #fdfdfd;
@@ -320,7 +321,7 @@ header {
       li {
         a {
           color: #413636;
-          padding: 18px 12px;
+          padding: 24px 12px;
           &:hover {
             color: #000;
           }

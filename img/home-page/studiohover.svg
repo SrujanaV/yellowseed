@@ -6,7 +6,7 @@
 	.st0{fill:#FFFFFF;}
 	.st1{clip-path:url(#SVGID_2_);}
 	.st2{fill:#E0DFE6;}
-	.st3{fill:#FFCB05;}
+	<!-- .st3{fill:#FFCB05;} -->
 	.st4{fill:#525D7D;}
 	.st5{opacity:0.4;fill:url(#SVGID_3_);}
 	.st6{clip-path:url(#SVGID_5_);}
@@ -34,7 +34,17 @@
 	.st28{opacity:0.4;fill:url(#SVGID_34_);}
 	.st29{font-family:'MyriadPro-Regular';}
 	.st30{font-size:33.0113px;}
+	.st3{
+	fill:#FFCB05;
+	opacity:0;
+	}
+	#team2:hover .st3{
+	fill:#FFCB05;
+	opacity:1;
+	cursor:pointer;
+	}
 </style>
+<g id="team2">
 <g>
 	
 		<image style="overflow:visible;opacity:0.75;" width="1380" height="1381" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABWcAAAVnCAYAAAA+Lt8cAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
@@ -13116,4 +13126,6 @@ AAAAAAAAAACAd/z/AgwAdrAHsHIVpVkAAAAASUVORK5CYII=" transform="matrix(0.24 0 0 0.2
 	</g>
 </g>
 <text transform="matrix(1 0 0 1 56.5874 -0.7559)" class="st29 st30">The Studio </text>
+
+</g>
 </svg>

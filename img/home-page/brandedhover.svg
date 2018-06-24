@@ -6,7 +6,7 @@
 	.st0{fill:#FFFFFF;}
 	.st1{clip-path:url(#SVGID_2_);}
 	.st2{fill:#E0DFE6;}
-	.st3{fill:#FFCB05;}
+	<!-- .st3{fill:#FFCB05;} -->
 	.st4{fill:#525D7D;}
 	.st5{opacity:0.4;fill:url(#SVGID_3_);}
 	.st6{clip-path:url(#SVGID_5_);}
@@ -34,7 +34,18 @@
 	.st28{opacity:0.4;fill:url(#SVGID_34_);}
 	.st29{font-family:'MyriadPro-Regular';}
 	.st30{font-size:33.0113px;}
+
+	.st3{
+	fill:#FFCB05;
+	opacity:0;
+	}
+	#team1:hover .st3{
+	fill:#FFCB05;
+	opacity:1;
+	cursor:pointer;
+	}
 </style>
+<g id="team1"> 
 <g>
 	
 		<image style="overflow:visible;opacity:0.75;" width="1380" height="1381" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABWcAAAVnCAYAAAA+Lt8cAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
@@ -15367,5 +15378,7 @@ AAAAAAAAAAAAAAAAAAAAAAAA8I7/I8AAhrYIzzXJ1ogAAAAASUVORK5CYII=" transform="matrix(
 </g>
 <g>
 	<text transform="matrix(1 0 0 1 4.4141 -0.7559)" class="st29 st30">Branded Content</text>
+</g>
+
 </g>
 </svg>
