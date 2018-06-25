@@ -296,6 +296,19 @@
     //         display: none;
     //     }
     // }
+    .the-studio h3 .icon:before,
+    .branded h3 .icon:before,
+    .cont-strategy h3 .icon:before,
+    .design h3 .icon:before,
+    .digital h3 .icon:before,
+    .internal h3 .icon:before,
+    .workshop h3 .icon:before,
+    .media h3 .icon:before,
+    .blog h3 .icon:before,
+    .brainwave h3 .icon:before,
+    .awsome h3 .icon:before {
+        @include transform (scale(0.85));
+    }
     .header {
         .head-padd .logo {
             // padding: 0;
@@ -304,7 +317,7 @@
     }
     .blog {
         .bg-color {
-            padding: 10px  0!important;
+            padding: 10px 0 !important;
         }
         .flexslider .flex-direction-nav a {
             height: 25px !important;
@@ -555,7 +568,7 @@
     .navbar {
         min-height: 52px !important;
     }
-    .partnership-img{
+    .partnership-img {
         top: -25%;
     }
     .eight,
