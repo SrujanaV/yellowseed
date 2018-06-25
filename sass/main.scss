@@ -1348,6 +1348,8 @@ footer {
   font-size: 12px;
   background-color: #534334;
   padding: 10px 0;
+  position: relative;
+  z-index: 1;
   p {
     font-size: 10px;
     color: #fdfdfd;
@@ -1425,6 +1427,8 @@ footer {
 }
 
 .blog {
+
+  margin-top: 57px;
   .img-banner {
     // padding: 40px;
   }
@@ -1941,7 +1945,7 @@ footer {
 .partnershiphand-img{
   position: absolute;
   bottom: -90%;
-  right: -73px;
+  right: -81px;
 }
 .branded-content{
   width:50%;
