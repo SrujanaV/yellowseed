@@ -1005,12 +1005,13 @@ p {
       }
     }
     .prof {
-      padding: 0 0 0 10em;
+      padding: 0 0 2em 10em;
       label {
         font-family: 'Asap', sans-serif;
       }
       p {
         font-family: 'Asap', sans-serif;
+        margin-bottom: 15px;
       }
       .soc-sml-icons {
         i {
@@ -1802,6 +1803,9 @@ footer {
   }
   h3 {
     font-size: 26px;
+  }
+  .shout{
+    margin-top:200px;
   }
 }
 

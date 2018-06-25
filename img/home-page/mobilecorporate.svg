@@ -6,20 +6,12 @@
 	.st0{fill:#FFFFFF;}
 	.st1{clip-path:url(#SVGID_2_);}
 	.st2{fill:#E0DFE6;}
+	.st3{fill:#FFCB05;}
 	.st4{fill:#525D7D;}
-	.st3{
-	fill:#FFCB05;
-	opacity:0;
-	}
-	#team4:hover .st3{
-	fill:#FFCB05;
-	opacity:1;
-	cursor:pointer;
-	}
 </style>
 <title>What we do Icons</title>
 <g>
-	<g id="team4">
+	<g id="Layer_1_1_">
 		
 			<image style="overflow:visible;opacity:0.75;enable-background:new    ;" width="1206" height="1206" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLYAAAS2CAYAAAAwZiCVAAAACXBIWXMAAC4jAAAuIwF4pT92AAAg
 AElEQVR4Xuyc25IbPa6sUd7r/R/ZvS/8cwyjcUiALJ06vwgGgEywVCr1eESEZq6vry8hhBBCCCGE

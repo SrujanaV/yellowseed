@@ -9,22 +9,13 @@
 	.st3{clip-path:url(#SVGID_4_);}
 	.st4{fill:#E0DFE6;}
 	.st5{clip-path:url(#SVGID_6_);}
-	<!-- .st6{fill:#FFCB05;} -->
+	.st6{fill:#FFCB05;}
 	.st7{fill:#525D7D;}
 	.st8{opacity:0.4;clip-path:url(#SVGID_8_);fill:url(#SVGID_9_);enable-background:new    ;}
-	.st6{
-	fill:#FFCB05;
-	opacity:0;
-	}
-	#team:hover .st6{
-	fill:#FFCB05;
-	opacity:1;
-	cursor:pointer;
-	}
 </style>
 <title>What we do Icons</title>
 <g>
-	<g id="team">
+	<g id="Layer_1_1_">
 		
 			<image style="overflow:visible;opacity:0.75;enable-background:new    ;" width="1206" height="1206" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLYAAAS2CAYAAAAwZiCVAAAACXBIWXMAAC4jAAAuIwF4pT92AAAg
 AElEQVR4Xuyd65IbO66sUT77/R/ZOj+8OIbRuCRAli7d+UUwAGSCpVKpxyMiNHtfj8dDCCGEEEII
