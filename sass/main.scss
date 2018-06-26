@@ -1922,6 +1922,7 @@ footer {
       color: #333;
       margin-top: 10px;
       font-weight: 600;
+      height:50px;
     }
   }
 }
@@ -1932,7 +1933,7 @@ footer {
 .digital,
 .internal,
 .the-studio {
-  cursor: pointer; // @include transition(all ease 300ms);
+  // cursor: pointer; // @include transition(all ease 300ms);
   figure {
     @include transition(all ease 300ms);
     &:hover {

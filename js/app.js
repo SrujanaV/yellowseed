@@ -36,7 +36,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             controller: 'DigitalCtrl'
         })
         .state('branded-content', {
-            url: "/branded-content",
+        url: "/branded-content",
             templateUrl: "views/template.html",
             controller: 'BrandedContentCtrl'
         })
@@ -125,7 +125,7 @@ firstapp.directive('img', function ($compile, $parse) {
                 $element.load(function () {
                     $loading.remove();
                     $(this).addClass("doneLoading");
-                });
+                });blog-detail
             } else {
                 $($element).addClass("doneLoading");
             }
