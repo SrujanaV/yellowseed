@@ -95,8 +95,11 @@
         }
     }
     .six {
-        padding: 17em 0 0;
+        padding: 0;
         z-index: 0;
+        .workshop-section{
+            padding-bottom: 1em;
+        }
     }
     .eight,
     .five,
@@ -395,11 +398,6 @@
         font-size: 56px !important;
         margin-top: -10px;
     } //end of awsemoness
-    .pencil-color-box {
-        img {
-            height: 165px !important;
-        }
-    }
     .camera {
         top: 20% !important;
         img {
@@ -420,10 +418,6 @@
             top: 35%;
             left: -8%;
         }
-        .testimonials-inside,
-        .testimonials-hand {
-            display: none;
-        }
     }
     .five {
         .blog-slider {
@@ -438,6 +432,7 @@
         z-index: 0;
     }
     .three {
+        padding: 0;
         .brands {
             position: relative;
             width: 100%;
@@ -576,22 +571,22 @@
     }
     .eight,
     .contact-page {
-        padding: 50px 1em !important;
+        padding: 0 1em !important;
+        .contact-image{
+            width: 100%;
+        }
         .select-field {
             background-color: #403635;
             color: #84948d;
             border: 0;
             border-bottom: solid 1px #d3d0d0;
         }
-        .contact_flying {
-            top: 0;
-        }
     }
     .seven .mobile-head {
         text-align: left;
     }
     .four .test-vw h1 {
-        text-align: left;
+        text-align: center;
         padding: 0 15px;
         .slider p {
             padding: 0 15px !important;
@@ -774,7 +769,6 @@
         padding: 16em 0 0;
     }
     .three {
-        padding: 3em 0;
         .brands {
             position: relative;
             width: 100%;
@@ -785,7 +779,7 @@
         }
     }
     .five {
-        padding: 21em 0 5em;
+        padding: 0 0 5em;
         h1 {
             font-size: 3.5em !important;
         }
@@ -816,10 +810,10 @@
         }
     }
     .six {
-        padding: 6em 0 0;
+        padding: 0;
     }
     .seven {
-        padding: 5em 0 11em;
+        padding: 0;
     }
     .eight,
     .five,
@@ -848,7 +842,7 @@
             // margin-left: 0 !important;
             ul {
                 li {
-                    padding: 10px 12px !important;
+                    // padding: 10px 12px !important;
                 } // li+li {
                 //     padding-left: 0;
                 // }
@@ -1002,6 +996,10 @@
 }
 
 @media (max-width: 480px) {
+
+    .pd40{
+        padding: 0 !important;
+                }
     .navbar-default .navbar-toggle:focus,
     .navbar-default .navbar-toggle:hover {
         background-color: transparent;
@@ -1027,7 +1025,7 @@
         }
     }
     .seven {
-        padding: 5em 0;
+        padding: 0;
     }
     .pd10 {
         padding: 0;
@@ -1111,7 +1109,7 @@
         }
     }
     .six {
-        padding: 6em 0 0;
+        padding: 0;
     }
     .ml35 {
         margin: 10px 5px;
@@ -1125,15 +1123,18 @@
         }
     }
     .seven {
-        padding: 5em 0 5em;
+        padding: 0;
         .pl10 {
             padding-left: 15px;
         }
     }
     .two {
-        padding: 6em 0;
+        padding: 0;
         .hand-about {
             display: none;
+        }
+        .about-page{
+            padding: 5em 0 17em 0;
         }
         .about-image{
             width: 100%;
@@ -1166,9 +1167,10 @@
     .zero {
         height: 100%;
         padding: 0;
+        background-image: none;
     }
     .zero .padd-top {
-        padding: 8em 0 4em;
+        padding: 8em 0 1em;
     }
     .head {
         .head-tag {
@@ -1184,8 +1186,7 @@
         bottom: -19%;
     }
     .three {
-        // padding: 3em 0 10em;
-        padding: 1em 0 0;
+        padding: 0;
         overflow: hidden;
         .client-slider {
             .flex-direction-nav {
@@ -1208,7 +1209,7 @@
         }
     }
     .five {
-        padding: 7em 0;
+        padding-bottom: 3em;
     }
     .skip-btn {
         position: absolute;
@@ -1331,7 +1332,7 @@
             margin-left: 0;
             ul {
                 li {
-                    padding-left: 10px 12px !important;
+                    padding: 0;
                     .circle {
                         width: auto;
                         height: auto;
@@ -1404,11 +1405,11 @@
             }
         }
         .resize-padd {
-            padding: 30px 55px 0 !important;
+            padding: 10px 0px 15px 60px !important;
             .icon {
                 &:before {
-                    top: 45px;
-                    left: 0%;
+                    top: 30px;
+                    left: 2%;
                 }
             }
             h3 {

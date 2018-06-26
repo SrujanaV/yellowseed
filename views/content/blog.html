@@ -4,19 +4,7 @@
 
     <div class="container">
         <div class="sub-para">
-            <!--<div class="categories">CATEGORIES</div>-->
             <div class="tab-slider">
-                <!-- <div class="new-swiper">
-                    <div class="swiper-container">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide swiper-style" ng-class="{'blog-active':s.activetab}" ng-click="inBlog(s._id,s.name,$index)" ng-repeat="s in blog track by $index">
-                                <a>{{s.name}}</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div> -->
                 <flex-slider flex-slide="s in blog track by $index" class="bg-color" slideshow="false" animation="slide" max-items="3" item-width="350"
                     animation-loop="true" move="3">
                     <li auto-heightfixed ng-class={'blog-active':s.activetab} ng-click="inBlog(s._id,s.name,$index)">
@@ -26,15 +14,6 @@
                     </li>
                 </flex-slider>
             </div>
-            <!-- <ul class="list-inline text-center">
-                <li ng-click="tabchanges('media',1)" ng-class="{{}}"><a href="">Media</a></li>
-                <li ng-click="tabchanges('works',2)"><a href="">Content Works</a></li>
-                <li ng-click="tabchanges('matter',3)"><a href="">People Matter</a></li>
-                <li ng-click="tabchanges('workshop',4)"><a href="">Content Workshop</a></li>
-                <li ng-click="tabchanges('brain',5)"><a href="">Right Brain</a></li>
-                <li ng-click="tabchanges('review',6)"><a href="">Reviews</a></li>
-                <li ng-click="tabchanges('live',7)"><a href="">Live Well</a></li>
-            </ul> -->
         </div>
         <embed class="rocket" src="img/home-page/rocket.svg" type="image/svg+xml" /> 
         
@@ -44,9 +23,7 @@
             </div>
             <div class="row img-spac">
                 <div class="col-md-6 mb-20 cursor-pointer" ng-repeat="item in getoneBlogs track by $index">
-                    <!--<img ui-sref="individual-blog({id:item._id,name:item.name})" ng-src="{{item.image|uploadpath:800}}" alt="" class="img-responsive">-->
                     <img ng-click="inIndividualBlog(item._id,item.name)" ng-src="{{item.image|uploadpath:800}}" alt="" class="img-responsive">
-                    <!--<div class="img-sec" ui-sref="individual-blog({id:item._id,name:item.name})">-->
                     <div class="img-sec set-height" ng-click="inIndividualBlog(item._id,item.name)">
                         <div class="img-sec">
                             <h3>{{item.name}}</h3>

@@ -1,4 +1,6 @@
-<div class="contact_flying"><img src="img/home-page/contact-fly.png" class="img-responsive"></div>
+
+<embed class="hidden-xs contact_flying" src="img/home-page/contact-fly.svg" type="image/svg+xml" />
+<div class="visible-xs contact_flying"><img src="img/home-page/mobilecontactfly.svg"></div>
 <div class="container">
   <div class="contact-inside">
   <div class="row">
@@ -28,24 +30,9 @@
         <div class="form-group" ng-class="{'form-invalid': formName.name.$invalid && formName.name.$touched}">
           <input type="text" name="name" class="form-control" ng-model="formData.name" placeholder="Name*" required>
         </div>
-        <!-- <div class="form-group visible-sm visible-xs" ng-class="{'form-invalid': formName.email.$invalid && formName.email.$touched}">
-          <input type="email" name="email" class="form-control" ng-model="formData.email" placeholder="Email*" required>
-        </div> -->
         <div class="form-group" ng-class="{'form-invalid': formName.mobile.$invalid && formName.mobile.$touched}">
           <input type="text" name="mobile" class="form-control" ng-model="formData.mobile" placeholder="Mobile No.*" required>
         </div>
-        <!-- <div class="form-group visible-sm visible-xs" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
-          <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Message*" required></textarea>
-        </div> -->
-        <!-- <div class="form-group">
-          <select name="category" class="form-control select-field" ng-model="formData.category" required>
-            <option value="" selected>Category*</option>
-            <option value="Digital">Digital</option>
-            <option value="Branded Content">Branded Content</option>
-            <option value="Corporate Communications">Corporate Communications</option>
-            <option value="The Studio">The Studio</option>
-          </select>
-        </div> -->
         <div class="select-cat form-group">
           <ui-select class="select-field" ng-model="formData.categories">
             <ui-select-match placeholder="Category*">
@@ -73,12 +60,9 @@
     <div class="form-submission text-center" ng-if="formSubmitted">
       <h3 class="color-white">Thanks for reaching out to us.
         <br>We'll connect with you soon</h3>
-      <!-- <p>We will get back to you soon.</p> -->
     </div>
   </div>
   </div>
 </div>
-<!-- <div class="con-top">
-  <img src="img/home-page/yseed-top.png" class="img-responsive" alt="" />
-</div> -->
-<div class="contact-image"><img src="img/home-page/contact.png" class="img-responsive"></div>
+<embed class="hidden-xs contact-image" src="img/home-page/contact.svg" type="image/svg+xml" />
+<div class="visible-xs contact-image"><img src="img/home-page/mobilecontact.svg"></div>

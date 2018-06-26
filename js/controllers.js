@@ -215,6 +215,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             para: "We are very pleased with our decision to use Yellow Seed. We had excellent support from the team for the content required for our website. To successfully implement an extensive website content task, we needed a versatile, well-structured and proven company to do it; Yellow Seed has proved to be all of this and more. "
         }];
 
+        $scope.goto = function () {
+            console.log("inside this function");
+        }
+
         function makeAnimation(id) {
             if (_.isEmpty(id)) {
                 id = "home";
@@ -255,17 +259,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
 
         angular.module('myApp', ['duScroll']).
-        run(function($rootScope) {
-          if(!window.history || !history.replaceState) {
-            return;
-          }
-          $rootScope.$on('duScrollspy:changeURL', function($event, $element, $target){
-            //Automaticly update location
-            var hash = $element.prop('hash');
-            if (hash) {
-              history.replaceState(null, null, hash);
+        run(function ($rootScope) {
+            if (!window.history || !history.replaceState) {
+                return;
             }
-          });
+            $rootScope.$on('duScrollspy:changeURL', function ($event, $element, $target) {
+                //Automaticly update location
+                var hash = $element.prop('hash');
+                if (hash) {
+                    history.replaceState(null, null, hash);
+                }
+            });
         });
 
         $scope.section = {

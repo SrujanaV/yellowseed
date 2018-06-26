@@ -259,6 +259,9 @@
             margin: 0;
         }
     }
+    .resize-padd-branded{
+        padding: 8em 4em 8em 4em;
+    }
     .sub-para {
         background-color: #ffca08;
         padding: 3em 4em;
@@ -272,142 +275,6 @@
             font-size: 18px;
             font-family: 'Rubik', sans-serif;
             font-weight: 500;
-        }
-    }
-    .reel {
-        @include position(absolute,
-        null null 14% null);
-        img {
-            width: 230px;
-        }
-    } // .media-slider {
-    //     margin-top: -50px;
-    // }
-    .camera {
-        @include position(absolute,
-        25% 0 null null);
-        z-index: 2;
-        img {
-            width: 230px;
-        }
-    }
-    .iphone {
-        @include position(absolute,
-        39% null null 0);
-        img {
-            height: 350px;
-        }
-    }
-    .news-paper {
-        @include position(absolute,
-        42% 0 null null);
-        img {
-            height: 500px;
-        }
-    }
-    .pencil-inner {
-        @include position(absolute,
-        63% null null 0);
-        img {
-            height: 321px;
-        }
-    }
-    .paper {
-        @include position(absolute,
-        39% 0 null null);
-        img {
-            height: 343px;
-        }
-    }
-    .book {
-        @include position(absolute,
-        null 0% 0 null);
-        img {
-            height: 108px;
-        }
-    }
-    .mac {
-        @include position(absolute,
-        22% 0 null null);
-        img {
-            height: 458px;
-        }
-    }
-    .pot {
-        @include position(absolute,
-        26% null null 0);
-        img {
-            height: 370px;
-        }
-    }
-    .mike {
-        @include position(absolute,
-        30% null null -5px);
-        img {
-            height: 370px;
-        }
-    }
-    .headphone {
-        @include position(absolute,
-        null 0 0 null);
-        img {
-            height: 145px;
-        }
-    }
-    .pencil-color-box {
-        @include position(absolute,
-        35% null null 0);
-        img {
-            height: 300px;
-        }
-    }
-    .note-tab {
-        @include position(absolute,
-        null 15% 0 null);
-        img {
-            height: 185px;
-        }
-    }
-    .pencil-crap {
-        @include position(absolute,
-        58% null null -10%);
-        img {
-            height: 362px;
-        }
-    }
-    .ys-book {
-        @include position(absolute,
-        null 0 0 null);
-        img {
-            height: 90px;
-        }
-    }
-    .coffee {
-        @include position(absolute,
-        41% 0 null null);
-        img {
-            height: 185px;
-        }
-    }
-    .brain-clock {
-        @include position(absolute,
-        64% null null -4%);
-        img {
-            height: 185px;
-        }
-    }
-    .macbook-pro {
-        @include position(absolute,
-        35% 0 null null);
-        img {
-            height: 430px;
-        }
-    }
-    .pen-book {
-        @include position(absolute,
-        null 0 0 null);
-        img {
-            height: 280px;
         }
     }
     .flexslider .slides img {

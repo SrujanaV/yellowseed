@@ -306,8 +306,11 @@ header {
   background-repeat: no-repeat;
   background-color: #dedede;
   padding: 5em 0 0 0;
-  background-position-y:50%; 
+  background-position-y:40%; 
   margin-bottom: -5px;
+  embed{
+    margin-top: -50px;
+  }
   h1 {
     color: #fdfdfd;
   }
@@ -483,6 +486,7 @@ header {
   }
   .testimonials-hand {
     position: absolute;
+    width: 9%;
     left: 1%;
     bottom: -60px;
     z-index: 3;
@@ -1820,6 +1824,9 @@ footer {
 // }
 .eight,
 .contact-page {
+  .contact-image{
+    width: 40%;
+  }
   .contact-inside {
     padding: 5em 0 0 0 !important;
   }
@@ -1831,8 +1838,9 @@ footer {
   }
   .contact_flying {
     position: absolute;
-    top: 8%;
-    right: 5px;
+    top: 2%;
+    right: 0px;
+    width: 50%;
   }
 }
 
@@ -1941,16 +1949,17 @@ footer {
   position: absolute;
   top: -60%;
   left: 40%;
+  width: 55%;
 }
 .partnershiphand-img{
   position: absolute;
   bottom: -90%;
-  right: -81px;
+  right: -72px;
+  width: 50%;
 }
 .branded-content{
-  width:50%;
-  margin-left:-95px;
-  margin-top: -50px;
+  margin-left: -73px;
+  margin-top: -30px;
 }
 .fish{
   position: absolute;

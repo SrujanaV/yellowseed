@@ -1,16 +1,4 @@
-<!--<div ng-controller="headerctrl">
-  <ul class="nav navbar-nav pull-right" ng-repeat="item in Category">
-  <li><a ui-sref="{{item.categoryUrl}}">{{item.name}}</a></li>
-   <li><a href="" >About Us</a></li>
-  <li><a href="">Clients</a></li>
-  <li><a href="">Testimonials</a></li>
-  <li><a href="">Blog</a></li>
-  <li><a href="">Workshops</a></li>
-  <li><a href="">Brainwave</a></li>
-  <li><a href="" ng-click="changePage(abouts)">Contact Us</a></li>
-  <li><a href="">Media</a></li>
-</ul>
-</div>-->
+
 <ul class="nav navbar-nav navbar-middle hidden-xs yellow-under collapsed">
     <li ng-repeat="menu in navigation" class="{{menu.classis}} yellow-und">
         <a href="{{menu.link}}" ng-if="menu.link" target="_blank" class="collapsed">{{menu.name}}</a>

@@ -65,11 +65,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'BrainwaveCtrl'
         })
-        .state('media', {
-            url: "/media",
-            templateUrl: "views/template.html",
-            controller: 'MediaCtrl'
-        })
+        // .state('media', {
+        //     url: "/media",
+        //     templateUrl: "views/template.html",
+        //     controller: 'MediaCtrl'
+        // })
         .state('we-believe', {
             url: "/we-believe",
             templateUrl: "views/template.html",
