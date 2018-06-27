@@ -615,6 +615,7 @@
     .four .test-vw h1 {
         text-align: center;
         padding: 0 15px;
+        padding-top: 15px;
         .slider p {
             padding: 0 15px !important;
         }
@@ -1129,7 +1130,7 @@
     .four {
         height: 530px;
         .testimonials {
-            padding: 2em 0 0;
+            padding: 0;
             .slider p {
                 padding: 0 10px;
                 width: 100%;
