@@ -74,6 +74,9 @@
         z-index: 0; // .circle-cont {
         //   margin-left: 12px;
         // }
+        h1 {
+            margin-bottom: 0;
+        }
     }
     .five {
         .testimonials {
@@ -92,12 +95,17 @@
                     width: 73%;
                 }
             }
+            .flexslider {
+                .slides {
+                    margin-top: -20px;
+                }
+            }
         }
     }
     .six {
         padding: 0;
         z-index: 0;
-        .workshop-section{
+        .workshop-section {
             padding-bottom: 1em;
         }
     }
@@ -430,6 +438,15 @@
     }
     .one {
         z-index: 0;
+        .new-circle {
+            li {
+                padding-bottom: 80px !important;
+                padding-top: 0 !important;
+            }
+            li:last-child {
+                padding-bottom: 0 !important;
+            }
+        }
     }
     .three {
         padding: 0;
@@ -560,14 +577,16 @@
     // body{
     //     padding-top: 20px;
     // }
-
-    .resize-padd-branded{
+    .another-contact{
+        padding: 3em 1em !important;
+    }
+    .resize-padd-branded {
         padding: 0 !important;
         padding-top: 2em !important;
     }
-    .shout{
-        margin-top:0 !important;
-      }
+    .shout {
+        margin-top: 0 !important;
+    }
     .navbar {
         min-height: 52px !important;
     }
@@ -576,8 +595,11 @@
     }
     .eight,
     .contact-page {
-        padding: 0 1em !important;
-        .contact-image{
+        .contact-inside {
+            padding: 0 !important;
+          }
+        // padding: 0 1em !important;
+        .contact-image {
             width: 100%;
         }
         .select-field {
@@ -1001,10 +1023,9 @@
 }
 
 @media (max-width: 480px) {
-
-    .pd40{
+    .pd40 {
         padding: 0 !important;
-                }
+    }
     .navbar-default .navbar-toggle:focus,
     .navbar-default .navbar-toggle:hover {
         background-color: transparent;
@@ -1081,8 +1102,10 @@
         width: 100%;
     }
     .eight {
+        padding-top: 60px;
         .pr60 {
             padding: 0 15px;
+        
         }
     }
     .mr40 {
@@ -1104,7 +1127,7 @@
         text-align: left !important;
     }
     .four {
-        height: 560px;
+        height: 530px;
         .testimonials {
             padding: 2em 0 0;
             .slider p {
@@ -1138,10 +1161,10 @@
         .hand-about {
             display: none;
         }
-        .about-page{
+        .about-page {
             padding: 2em 0 17em 0;
         }
-        .about-image{
+        .about-image {
             width: 100%;
         }
     } // .testimonials {
@@ -1400,7 +1423,7 @@
     .the-studio,
     .workshop {
         z-index: 0;
-        figcaption{
+        figcaption {
             width: 150px;
             margin-left: -15px;
         }
