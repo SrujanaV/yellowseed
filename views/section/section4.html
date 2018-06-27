@@ -8,7 +8,7 @@
     <!-- <a type="button" class="btn btn1 view-all" name="viewall">view all</a> -->
   </div>
   <div class="slider">
-    <flex-slider flex-slide="s in testimonial track by $index" slideshow="false" item-width="1000">
+    <flex-slider flex-slide="s in testimonial track by $index" slideshow="true" item-width="1000" animation-loop="true">
       <li auto-heightfixed>
         <div class="relative" ng-bind-html="s.content | rawHtml"></div>
         <span class="yellow mobile-span" ng-bind-html="s.name | rawHtml"></span>

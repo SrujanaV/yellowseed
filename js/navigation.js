@@ -206,7 +206,7 @@ var navigationservice = angular.module('navigationservice', [])
             saveContact: function (request, callback) {
                 // console.log('nevigate');
                 $http({
-                    url: adminurl + 'Contact/save',
+                    url: adminurl + 'Contact/saveAndSendMailForEnquiry',
                     method: 'POST',
                     withCredentials: true,
                     data: request

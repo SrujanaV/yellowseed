@@ -200,6 +200,10 @@
         .sub-para {
             padding: 3em !important;
         }
+        .mail{
+            width: 68%;
+            left: 55px;
+        }
         .resize-padd {
             padding: 30px 3em 0 !important;
             min-height: 0 !important;
@@ -426,6 +430,9 @@
             top: 35%;
             left: -8%;
         }
+        .flexslider{
+            margin-bottom: 30px !important;
+        }
     }
     .five {
         .blog-slider {
@@ -582,7 +589,6 @@
     }
     .resize-padd-branded {
         padding: 0 !important;
-        padding-top: 2em !important;
     }
     .shout {
         margin-top: 0 !important;
@@ -1024,6 +1030,9 @@
 }
 
 @media (max-width: 480px) {
+    .blog-info{
+        padding: 15px 3px !important;
+    }
     .pd40 {
         padding: 0 !important;
     }
@@ -1128,7 +1137,7 @@
         text-align: left !important;
     }
     .four {
-        height: 530px;
+        // height: 480px;
         .testimonials {
             padding: 0;
             .slider p {
@@ -1586,4 +1595,12 @@
             }
         }
     }
+}
+.footer,.inner-foot{
+.list-inline{
+    font-size: 10px;
+}
+p{
+    font-size: 10px !important;
+}
 }

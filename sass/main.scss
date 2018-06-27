@@ -349,6 +349,11 @@ header {
   h1 {
     color: #fdfdfd;
   }
+  embed{
+    svg{
+      cursor:pointer;
+    }
+  }
 }
 
 .two {
@@ -1815,7 +1820,8 @@ footer {
     font-size: 26px;
   }
   .shout{
-    margin-top:200px;
+    margin-top: 130px;
+    margin-bottom: 130px;
   }
 }
 
@@ -1926,13 +1932,15 @@ footer {
     }
   }
 }
-
 .branded,
 .cont-strategy,
 .design,
 .digital,
 .internal,
 .the-studio {
+  .conclusion{
+    padding-top: 4em;
+  }
   // cursor: pointer; // @include transition(all ease 300ms);
   figure {
     @include transition(all ease 300ms);
@@ -1958,7 +1966,7 @@ footer {
   width: 50%;
 }
 .branded-content{
-  margin-left: -73px;
+  // margin-left: -73px;
   margin-top: -30px;
 }
 .fish{
@@ -1970,9 +1978,9 @@ footer {
 }
 .mail{
   position: absolute;
-  width: 35%;
+  width: 30%;
   left: -10px;
-  bottom: -33px;
+  bottom: -27px;
   z-index: 0;
 }
 .rocket{
