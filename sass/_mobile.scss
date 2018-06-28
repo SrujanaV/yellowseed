@@ -200,7 +200,7 @@
         .sub-para {
             padding: 3em !important;
         }
-        .mail{
+        .mail {
             width: 68%;
             left: 55px;
         }
@@ -287,7 +287,8 @@
         }
         .img-grid {
             .img-sec {
-                padding: 5px;;
+                padding: 5px;
+                ;
             }
             .foot-sec {
                 .img-spac {
@@ -430,7 +431,7 @@
             top: 35%;
             left: -8%;
         }
-        .flexslider{
+        .flexslider {
             margin-bottom: 30px !important;
         }
     }
@@ -584,7 +585,7 @@
     // body{
     //     padding-top: 20px;
     // }
-    .another-contact{
+    .another-contact {
         padding: 3em 1em !important;
     }
     .resize-padd-branded {
@@ -603,8 +604,7 @@
     .contact-page {
         .contact-inside {
             padding: 0 !important;
-          }
-        // padding: 0 1em !important;
+        } // padding: 0 1em !important;
         .contact-image {
             width: 100%;
         }
@@ -1030,7 +1030,7 @@
 }
 
 @media (max-width: 480px) {
-    .blog-info{
+    .blog-info {
         padding: 5px 3px !important;
     }
     .pd40 {
@@ -1115,7 +1115,6 @@
         padding-top: 60px;
         .pr60 {
             padding: 0 15px;
-        
         }
     }
     .mr40 {
@@ -1306,6 +1305,11 @@
     }
     p {
         font-size: 14px !important;
+    }
+    .eight {
+        h3 {
+            font-size: 20px !important;
+        }
     }
     .eight,
     .five,
@@ -1591,12 +1595,13 @@
             }
         }
     }
-    .footer,.inner-foot{
-    .list-inline{
-        font-size: 10px;
-    }
-    p{
-        font-size: 10px !important;
-    }
+    .footer,
+    .inner-foot {
+        .list-inline {
+            font-size: 10px;
+        }
+        p {
+            font-size: 10px !important;
+        }
     }
 }
