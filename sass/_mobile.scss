@@ -283,11 +283,11 @@
             padding: 2em !important;
         }
         p {
-            line-height: 20px !important;
+            line-height: 16px !important;
         }
         .img-grid {
             .img-sec {
-                padding: 15px;
+                padding: 5px;;
             }
             .foot-sec {
                 .img-spac {
@@ -1595,12 +1595,12 @@
             }
         }
     }
-}
-.footer,.inner-foot{
-.list-inline{
-    font-size: 10px;
-}
-p{
-    font-size: 10px !important;
-}
+    .footer,.inner-foot{
+    .list-inline{
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px !important;
+    }
+    }
 }

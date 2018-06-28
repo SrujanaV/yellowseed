@@ -4,7 +4,7 @@
     <div class="container">
         <div class="sub-para">
             <div class="tab-slider">
-                <flex-slider flex-slide="s in blog track by $index" class="bg-color" slideshow="false" animation="slide" max-items="3" item-width="350" animation-loop="true" move="3">
+                <flex-slider flex-slide="s in blog track by $index" touch="true" class="bg-color" slideshow="false" animation="slide" max-items="3" item-width="350" animation-loop="true" move="3">
                     <li auto-heightfixed ng-class={'blog-active':s.activetab} ng-click="inBlog(s._id,s.name,$index)">                    
                         <a ng-click="inBlog(s._id,s.name,$index)">{{s.name}}</a>
                       

@@ -29,7 +29,7 @@ Our Partnerships
       <div class="col-md-7 col-xs-12 col-sm-12">
         <div class="brands">
           <div class="client-slider visible-xs">
-            <flex-slider ng-if="showHead1" class="carousel" flex-slide="img in clientxs track by $index" item-width="1200" item-margin="10"
+            <flex-slider ng-if="showHead1" class="carousel" touch="true" flex-slide="img in clientxs track by $index" item-width="1200" item-margin="10"
               animation="slide" animation-loop="true" as-nav-for="#slider" slide-show="true" slideshow-speed="3000">
               <li>
                 <div class="client-imgholder">
@@ -43,7 +43,7 @@ Our Partnerships
                 </div>
               </li>
             </flex-slider>
-            <flex-slider ng-if="!showHead1" class="carousel" flex-slide="img in partnersxs track by $index" item-width="1200" item-margin="10"
+            <flex-slider ng-if="!showHead1" class="carousel" touch="true" flex-slide="img in partnersxs track by $index" item-width="1200" item-margin="10"
               animation="slide" animation-loop="true" as-nav-for="#slider" slide-show="true" slideshow-speed="3000">
               <li>
                 <div class="client-imgholder">
@@ -61,7 +61,7 @@ Our Partnerships
           <!--{{partnersxs}}-->
           <div class="client-slider hidden-xs">
             <!-- console.log(client); -->
-            <flex-slider ng-if="showHead1" flex-slide="img in client track by $index" item-width="1200" item-margin="10" animationLoop="true" as-nav-for="#slider1" slideshow="true" slideshow-speed="3000">
+            <flex-slider ng-if="showHead1" flex-slide="img in client track by $index" touch="true" item-width="1200" item-margin="10" animationLoop="true" as-nav-for="#slider1" slideshow="true" slideshow-speed="3000">
               <li>
                 <div class="client-imgholder">
                   <div class="row bord-cus" ng-repeat="row in img track by $index">
@@ -74,7 +74,7 @@ Our Partnerships
                 </div>
               </li>
             </flex-slider>
-            <flex-slider ng-if="!showHead1" flex-slide="img in partners track by $index" item-width="1200" item-margin="10" animationLoop="true" slideshow="true" slideshow-speed="3000">
+            <flex-slider ng-if="!showHead1" flex-slide="img in partners track by $index" touch="true" item-width="1200" item-margin="10" animationLoop="true" slideshow="true" slideshow-speed="3000">
               <li>
                 <div class="client-imgholder">
                   <div class="row bord-cus" ng-repeat="row in img track by $index">
