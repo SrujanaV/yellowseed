@@ -1376,10 +1376,6 @@
                         height: auto;
                         img {
                             height: 98px;
-                            @include filter(grayscale(100%) opacity(55%) !important);
-                            &:hover {
-                                @include filter(opacity(75%));
-                            }
                         }
                     }
                 }
