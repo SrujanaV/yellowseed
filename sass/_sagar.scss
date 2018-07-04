@@ -601,7 +601,18 @@ h2 {
         font-family: 'Rubik', sans-serif;
         font-weight: bold;
         text-shadow: 0px -2px 0px rgba(255, 255, 255, 0.3), #cca000 6px 7px 8px;
-    } // position: relative;
+        display: inline;
+        border-bottom: solid 5px rgba(0, 0, 0, 0.75);
+    }
+    .click{
+        padding-top: 15px;
+        text-align: left;
+        padding-left: 11%;
+    }
+    .directionarrow{
+        width: 70%;
+        margin-left: 25%;    
+    }  // position: relative;
     // .title {
     //     position: absolute;
     //     top: 50%;
@@ -623,7 +634,19 @@ h2 {
         font-family: 'Rubik', sans-serif;
         font-weight: bold;
         text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1), #2b2929 6px 6px 4px;
-    } // position: relative;
+        display: inline;
+        border-bottom: solid 5px white;
+    } 
+    .clickwhite{
+        padding-top: 15px;
+        text-align: right;
+        padding-right: 17%;
+        color: white;
+    }
+    .directionarrowwhite{
+        width: 70%;
+        margin-right: 25%;    
+    }// position: relative;
     // .title {
     //     position: absolute;
     //     top: 50%;

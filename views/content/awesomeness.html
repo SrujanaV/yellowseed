@@ -5,12 +5,14 @@
         <div class="row-flex">
             <div class="col-flex1 agency">
                 <div class="title">
-                    <h1>Agencies</h1>
+                    <h1 class="thick-border">Agencies</h1>
+                    <div class="click">Click on the logos to know more</div>
+                    <img class="directionarrow" src="img/home-page/awesomeblackarrow.png">
                 </div>
             </div>
             <div class="col-flex2 agency-slide">
-                <flex-slider flex-slide="slide in agency track by $index" touch="true" animation="slide" animation-loop="false" slideshow="false" prev-text=""
-                    next-text="" direction="vertical">
+                <flex-slider flex-slide="slide in agency track by $index" touch="true" animation="slide" animation-loop="false" slideshow="true" prev-text=""
+                    next-text="" direction="vertical" slideshow-speed="3000">
                     <li>
                         <div class="row img-border" ng-repeat="row in slide track by $index">
                             <div class="col-md-4 col-sm-4 col-xs-4 col" ng-repeat="wall in row  |orderBy:'-order' track by $index">
@@ -35,8 +37,8 @@
                 </div>
             </div>
             <div class="col-flex2 agency-slide">
-                <flex-slider flex-slide="slide in agencies track by $index " touch="true" animation="slide" animation-loop="false" slideshow="false" prev-text=""
-                    next-text="" direction="vertical">
+                <flex-slider flex-slide="slide in agencies track by $index " touch="true" animation="slide" animation-loop="false" slideshow="true" prev-text=""
+                    next-text="" direction="vertical" slideshow-speed="3000">
                     <li>
                         <div class="row img-border" ng-repeat="row in slide track by $index">
                             <div class="col-xs-6 col" ng-repeat="wall in row |orderBy:'-order' track by $index">
@@ -61,8 +63,8 @@
                 </div>
             </div>-->
             <div class="col-flex2 brand-slide">
-                <flex-slider flex-slide="slide in brand track by $index " touch="true" animation="slide" animation-loop="false" slideshow="false" prev-text=""
-                    next-text="" direction="vertical">
+                <flex-slider flex-slide="slide in brand track by $index " touch="true" animation="slide" animation-loop="false" slideshow="true" prev-text=""
+                    next-text="" direction="vertical" slideshow-speed="3000">
                     <li>
                         <div class="row img-border" ng-repeat="row in slide track by $index ">
                             <div class="col-md-4  col-sm-4 col-xs-4 col" ng-repeat="wall in row |orderBy:'-order' track by $index ">
@@ -79,7 +81,9 @@
             </div>
             <div class="col-flex1 awe-brands">
                 <div class="title">
-                    <h1>Brands</h1>
+                    <h1 class="thick-borderwhite">Brands</h1>
+                    <div class="clickwhite">Click on the logos to know more</div>
+                    <img class="directionarrowwhite" src="img/home-page/awesomewhitearrow.png">
                 </div>
             </div>
         </div>
@@ -92,8 +96,8 @@
                 </div>
             </div>
             <div class="brand-slide">
-                <flex-slider flex-slide="slide in brands track by $index " touch="true" animation="slide" animation-loop="false" slideshow="false" prev-text=""
-                    next-text="" direction="vertical">
+                <flex-slider flex-slide="slide in brands track by $index " touch="true" animation="slide" animation-loop="false" slideshow="true" prev-text=""
+                    next-text="" direction="vertical" slideshow-speed="3000">
                     <li>
                         <div class="row img-border" ng-repeat="row in slide track by $index ">
                             <div class="col-xs-6 col" ng-repeat="wall in row |orderBy:'-order' track by $index ">{{wall.order}}
