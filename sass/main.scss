@@ -109,6 +109,9 @@ a,
 .d-block{
   display: block;
 }
+svg{
+  pointer-events: all;
+}
 //FLEX SLIDER FIXES
 .flex-direction-nav {
   a {

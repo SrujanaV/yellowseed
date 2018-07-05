@@ -125,7 +125,7 @@ firstapp.directive('img', function ($compile, $parse) {
                 $element.load(function () {
                     $loading.remove();
                     $(this).addClass("doneLoading");
-                });blog-detail
+                });
             } else {
                 $($element).addClass("doneLoading");
             }
