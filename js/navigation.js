@@ -71,6 +71,12 @@ var navigationservice = angular.module('navigationservice', [])
                 anchor: "blog",
                 target: "_self",
                 subnav: []
+            },{
+                name: "Media",
+                classis: "active",
+                link: "blog",
+                target: "_self",
+                subnav: []
             }, {
                 name: "Workshops",
                 classis: "active",

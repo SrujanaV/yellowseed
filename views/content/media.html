@@ -1,40 +1,40 @@
-<section class="media pn50">
-    <div class="img-banner">
-        <img src="img/inside-pages/Media.jpg" alt="">
-    </div>
+<section class="blog">
+    <embed class="hidden-xs" src="img/inside-pages/blog.svg" type="image/svg+xml" /> 
+    <div class="visible-xs"><img src="img/inside-pages/mobileblog.svg"></div>
 
+<div class="container">
+    <div class="sub-para">
+        <div class="tab-slider">
+            <flex-slider flex-slide="s in blog track by $index" touch="true" class="bg-color" slideshow="false" animation="slide" max-items="3" item-width="350"
+                animation-loop="true" move="3">
+                <li auto-heightfixed ng-class={'blog-active':s.activetab} ng-click="inBlog(s._id,s.name,$index)">
 
-    <div class="container mb30">
-        <div class="sub-para">
-            <p class="yellow-tag text-center">
-                You won't really hear us blow our own trumpet. It's just the way we are. But then, you can't really hide being happy. Enough
-            </p>
+                    <a ng-click="inBlog(s._id,s.name,$index)">{{s.name}}</a>
+
+                </li>
+            </flex-slider>
         </div>
-
-        <div class="row">
-            <div class="col-md-offset-1 col-md-10">
-
-                <div class="media-slider">
-                    <flex-slider class="carousel" flex-slide="img in medias track by $index" touch="true" animation="slide" animation-loop="false" as-nav-for="#slider"
-                        slide-show="false">
-                        <li>
-                            <div class="media-imgholder">
-                                <div class="row bord-cus" ng-repeat="row in img track by $index">
-                                    <div class="col-xs-2 bord-cus1" ng-repeat="clientimg in row track by $index">
-                                        <div class="img-holder listing">
-                                            <img ng-src="{{clientimg}}" alt="" class="img-responsive">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </flex-slider>
+    </div>
+    <embed class="rocket" src="img/home-page/rocket.svg" type="image/svg+xml" /> 
+    
+    <!--Media Grid-->
+    <div class="{{classp}} img-grid">
+        <div class="row img-spac">
+        </div>
+        <div class="row img-spac">
+            <div class="col-md-6 mb-20 cursor-pointer" ng-repeat="item in getoneBlogs track by $index">
+                <img ng-click="inIndividualBlog(item._id,item.name)" ng-src="{{item.image|uploadpath:800}}" alt="" class="img-responsive">
+                <div class="img-sec set-height" ng-click="inIndividualBlog(item._id,item.name)">
+                    <div class="img-sec">
+                        <h3>{{item.name}}</h3>
+                        <p class="date">{{item.date|date:'longDate'}}</p>
+                        <p class="txt min-h" ng-bind-html="item.content | shorten :350 | rawHtml "></p>
+                    </div>
                 </div>
 
             </div>
-            <div class="col-md-1"></div>
+
         </div>
-
-
     </div>
+    <div ng-if="getoneBlogs.length===0" class="text-center">No Blog Found.</div>
 </section>

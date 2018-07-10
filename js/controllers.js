@@ -448,7 +448,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     })
 
-    .controller('MediaCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
+    .controller('MediaCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $stateParams,$state) {
         $scope.template = TemplateService.changecontent("media");
         $scope.menutitle = NavigationService.makeactive("Media");
         TemplateService.title = $scope.menutitle;
@@ -527,7 +527,68 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         for (var i = 0; i < $scope.medias.length; i++) {
             $scope.medias[i] = _.chunk($scope.medias[i], 5);
         }
+        $scope.inIndividualBlog = function (id, name) {
+            $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+            $scope.id = id;
+            $state.go('blog-detail', {
+                'name': $scope.name,
+                'id': $scope.id
+            });
+        };
 
+        $scope.inBlog = function (id, name, index) {
+            $scope.name = name.replace(/(?!\w|\s)./g, '').replace(/\s/g, '').replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2').toLowerCase();
+            $scope.id = id;
+            $scope.index = index;
+            $state.go('blog', {
+                name: $scope.name,
+                id: $scope.id,
+                index: $scope.index
+            });
+        };
+
+        $scope.b_name = $stateParams.name;
+
+        $scope.blogDetail = function () {
+            NavigationService.getOneBlog($stateParams.id, function (data) {
+                if (data.value) {
+                    $scope.getone = data.data.blog;
+                    $scope.rel = data.data.related;
+                    // $scope.getRelatedBlogs = data.data;
+                    TemplateService.removeLoader();
+                }
+
+            });
+        }
+
+
+        $scope.blogDetail();
+
+        NavigationService.getTag(function (data) {
+            if (data.value) {
+                $scope.blog = data.data.results;
+                // $scope.tabchanges($scope.blog[0]._id, 0);
+                TemplateService.removeLoader();
+            }
+        });
+
+        $timeout(function () {
+            mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        }, 1000);
     })
 
     .controller('WeBelieveCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
