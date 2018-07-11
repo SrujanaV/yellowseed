@@ -697,6 +697,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                     }
 
                 });
+                // $('#tab-slider').ScrollTo();
+                $('html, body').animate({
+                    scrollTop: $("#tab-slider").offset().top
+                }, 1000);
                 $scope.blog[0].activetab = false;
                 $scope.blog[1].activetab = false;
                 $scope.blog[3].activetab = false;
