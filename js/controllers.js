@@ -673,6 +673,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         });
 
         $scope.tabchanges = function (tab, indexid) {
+            console.log("tab indexid", tab, indexid);
             _.each($scope.blog, function (key) {
                 key.activetab = false;
             });
@@ -688,8 +689,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.mediaValue = $stateParams.name;
 
             if ($scope.mediaValue == "mediainthenews") {
-                // $scope.mediaactive = "activate";
-                $scope.blog[0].activetab = false;                
+                var tab = '5b00bddf7cb61b715b072b75';
+                NavigationService.getTagBlog(tab, function (data) {
+                    if (data.value) {
+                        $scope.getoneBlogs = data.data;
+                        TemplateService.removeLoader();
+                    }
+
+                });
+                $scope.blog[0].activetab = false;
+                $scope.blog[1].activetab = false;
+                $scope.blog[3].activetab = false;
                 $scope.blog[2].activetab = true;
             }
 
