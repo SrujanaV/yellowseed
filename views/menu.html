@@ -1,7 +1,6 @@
 <ul class="nav navbar-nav navbar-middle hidden-xs yellow-under collapsed">
     <li ng-repeat="menu in navigation" class="{{menu.classis}} yellow-und">
-        <!-- <pre>{{menu.anchor}}({ name : mediainthenews })</pre> -->
-        <a ui-sref="{{menu.link}}({ name : 'mediainthenews' })" ng-if="menu.link" class="collapsed">{{menu.name}}</a>
+        <a ui-sref="{{menu.link}}({ name : 'mediainthenews' })" ng-class={'blog-active':mediaValue} ng-if="menu.link" class="collapsed">{{menu.name}}</a>
         <a ng-click="changeURL(menu.anchor)" ng-if="!menu.link" class="collapsed">{{menu.name}}</a>
         <ul class="dropdown-menu hidden-xs nav-col" ng-if="menu.subnav!='';">
             <li ng-repeat="submenu in menu.subnav">

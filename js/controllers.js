@@ -448,7 +448,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     })
 
-    .controller('MediaCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $stateParams,$state) {
+    .controller('MediaCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location, $stateParams, $state) {
         $scope.template = TemplateService.changecontent("media");
         $scope.menutitle = NavigationService.makeactive("Media");
         TemplateService.title = $scope.menutitle;
@@ -685,9 +685,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
             });
 
+            $scope.mediaValue = $stateParams.name;
 
-
-
+            if ($scope.mediaValue == "mediainthenews") {
+                // $scope.mediaactive = "activate";
+                $scope.blog[0].activetab = false;                
+                $scope.blog[2].activetab = true;
+            }
 
             // $scope.tabs = tab;
             //         if (a == 1) {
