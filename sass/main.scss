@@ -106,12 +106,14 @@ a,
 // .form-submission {
 //   min-height: 300px;
 // }
-.d-block{
+.d-block {
   display: block;
 }
-svg{
+
+svg {
   pointer-events: all;
 }
+
 //FLEX SLIDER FIXES
 .flex-direction-nav {
   a {
@@ -305,15 +307,15 @@ header {
 }
 
 .zero {
-  background-image:url("/img/home-page/elements.svg");
+  background-image: url("/img/home-page/elements.svg");
   background-position: center center;
-  background-size:auto;
+  background-size: auto;
   background-repeat: no-repeat;
   background-color: #dedede;
   padding: 5em 0 0 0;
-  background-position-y:40%; 
+  background-position-y: 40%;
   margin-bottom: -5px;
-  embed{
+  embed {
     margin-top: -50px;
   }
   h1 {
@@ -354,9 +356,9 @@ header {
   h1 {
     color: #fdfdfd;
   }
-  embed{
-    svg{
-      cursor:pointer;
+  embed {
+    svg {
+      cursor: pointer;
     }
   }
 }
@@ -1441,7 +1443,6 @@ footer {
 }
 
 .blog {
-
   margin-top: 57px;
   .img-banner {
     // padding: 40px;
@@ -1824,7 +1825,7 @@ footer {
   h3 {
     font-size: 26px;
   }
-  .shout{
+  .shout {
     margin-top: 130px;
     margin-bottom: 130px;
   }
@@ -1835,12 +1836,11 @@ footer {
 // }
 .eight,
 .contact-page {
-  .contact-image{
+  .contact-image {
     width: 40%;
-  }
-  .contact-inside {
-    padding: 5em 0 0 0 !important;
-  }
+  } // .contact-inside {
+  //   padding: 5em 0 0 0 !important;
+  // }
   .select-field {
     background-color: #403635 !important;
     color: #84948d;
@@ -1933,20 +1933,20 @@ footer {
       color: #333;
       margin-top: 10px;
       font-weight: 600;
-      height:50px;
+      height: 50px;
     }
   }
 }
+
 .branded,
 .cont-strategy,
 .design,
 .digital,
 .internal,
 .the-studio {
-  .conclusion{
+  .conclusion {
     padding-top: 4em;
-  }
-  // cursor: pointer; // @include transition(all ease 300ms);
+  } // cursor: pointer; // @include transition(all ease 300ms);
   figure {
     @include transition(all ease 300ms);
     &:hover {
@@ -1958,43 +1958,85 @@ footer {
     font-weight: bold;
   }
 }
-.partnership-img{
+
+.partnership-img {
   position: absolute;
   top: -60%;
   left: 40%;
   width: 55%;
 }
-.partnershiphand-img{
+
+.partnershiphand-img {
   position: absolute;
   bottom: -90%;
   right: -72px;
   width: 50%;
 }
-.branded-content{
+
+.branded-content {
   // margin-left: -73px;
   margin-top: -30px;
 }
-.fish{
+
+.fish {
   position: absolute;
   width: 35%;
   right: -40px;
   bottom: -34px;
   z-index: 0;
 }
-.mail{
+
+.mail {
   position: absolute;
   width: 30%;
   left: -10px;
   bottom: -27px;
   z-index: 0;
 }
-.rocket{
+
+.rocket {
   position: absolute;
   width: 14%;
   right: -35px;
   top: 29%;
   z-index: 0;
 }
+
+.para-bottom {
+  padding-bottom: 8px;
+}
+
+.dropdown-info h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.contact-bg {
+  position: relative;
+  .man-image {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36%;
+  }
+  .small-circle {
+    width: 4.5%;
+    height: 4.5%;
+    border-radius: 50%;
+    border: solid 1px black;
+    background-color: #fdcb30;
+    position: absolute;
+    right: 7.2%;
+    bottom: 31.8%;
+    cursor: pointer;
+  }
+}
+
 //ruchira
 @import "fancybox-override";
 @import "mobile";

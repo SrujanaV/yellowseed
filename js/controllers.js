@@ -284,8 +284,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             six: "views/section/section6.html",
             seven: "views/section/section7.html",
             eight: "views/section/section8.html",
+            nine: "views/section/section9.html",
         };
-
+        $scope.showList = false;
+        $scope.showDropdown = function () {
+            console.log("hi");
+            $scope.showList = !$scope.showList;
+            $timeout(function () {
+                $('html, body').animate({
+                    scrollTop: $('.dropdown-info').offset().top - 100
+                }, 3000);
+            }, 500);
+        }
         // $scope.$on('$viewContentLoaded', function () {
         //     $timeout(function () {
         //         $(window).scroll(function () {
@@ -331,6 +341,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     })
 
+    .controller('ErrorPageCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("error-page"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("error-page"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+        $scope.formSubmitted = false;
+
+        $scope.submitForm = function (data) {
+            $scope.formSubmitted = true;
+        }
+    })
+
     .controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("form"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Form"); //This is the Title of the Website
@@ -356,7 +379,24 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
 
     })
-
+    .controller('ErrorPageCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
+        $scope.template = TemplateService.changecontent("error-page");
+        $scope.menutitle = NavigationService.makeactive("Error");
+        TemplateService.title = $scope.menutitle;
+        TemplateService.header = "";
+        TemplateService.footer = "";
+    })
+    .controller('SitemapCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
+        $scope.template = TemplateService.changecontent("sitemap");
+        $scope.menutitle = NavigationService.makeactive("Sitemap");
+        TemplateService.title = $scope.menutitle;
+        TemplateService.footer = "";
+        TemplateService.banner = "views/footer1.html";
+        $scope.navigation = NavigationService.getnav();
+        $scope.changeURL = function (id) {
+            $location.path("" + id);
+        };
+    })
     .controller('DigitalCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
         $scope.template = TemplateService.changecontent("digital");
         $scope.menutitle = NavigationService.makeactive("Digital");
