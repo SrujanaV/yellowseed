@@ -585,6 +585,9 @@
     // body{
     //     padding-top: 20px;
     // }
+    .sitemap {
+        padding-top: 55px;
+    }
     .another-contact {
         padding: 3em 1em !important;
     }
@@ -1030,6 +1033,9 @@
 }
 
 @media (max-width: 480px) {
+    .sitemap {
+        padding-top: 55px;
+    }
     .blog-info {
         padding: 5px 3px !important;
     }
