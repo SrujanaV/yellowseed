@@ -44,11 +44,7 @@
                 <span class="select-field" ng-bind="item.name"></span>
               </ui-select-choices>
             </ui-select>
-            <span ng-if="formName.category.$touched && !formData.categories || formName.category.$invalid" style="color:red;">Please select category</span>
-            <!-- <select class="select-field" ng-model="formData.categories" required>
-              <option disabled selected="selected">Categories</option>
-              <option ng-repeat="item in itemArray" ng-bind="item.name"></option>
-            </select> -->
+            <span ng-if="validate && !formData.categories" style="color:red;">Please select category</span>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 col-xs-12">
@@ -58,8 +54,8 @@
           <div class="form-group" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
             <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Message*" required></textarea>
           </div>
-          <button type="submit" class="btn btn2 pull-right btn-full hidden-sm hidden-xs" name="submit" ng-click="validate(formData)">Submit</button>
-          <button type="submit" class="btn btn2 btn-full visible-sm visible-xs btn-ipad" name="submit" ng-click="validate(formData)">Submit</button><br>
+          <button type="submit" class="btn btn2 pull-right btn-full hidden-sm hidden-xs" name="submit" ng-click="validate=true">Submit</button>
+          <button type="submit" class="btn btn2 btn-full visible-sm visible-xs btn-ipad" name="submit" ng-click="validate=true">Submit</button><br>
         </div>
       </form>
       <div class="form-submission text-center" ng-if="formSubmitted">
