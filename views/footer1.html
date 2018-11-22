@@ -4,14 +4,15 @@
       <div class="col-md-12 text-center">
         <ul class="list-inline mgb2">
           <li ng-click="changeURL('wedo')"><a>What We Do</a></li>
-         <li  ng-click="changeURL('aboutus')"><a>About Us</a></li>
+          <li ng-click="changeURL('aboutus')"><a>About Us</a></li>
           <li ng-click="changeURL('clients')"><a>Clients</a></li>
           <li ng-click="changeURL('testimonials')"><a>Testimonials</a></li>
-          <li ng-click="changeURL('blog')"><a >Blog</a></li>
-          <li><a ui-sref="blog({ name : 'mediainthenews' })">Media</a></li>
-          <li ng-click="changeURL('workshop')"><a >Workshops</a></li>
-          <li ng-click="changeURL('brainwave')"><a >Brainwave</a></li>
-          <li ng-click="changeURL('contact')"><a >Contact Us</a></li>
+          <li ng-click="changeURL('blog')"><a>Blog</a></li>
+          <li ui-sref="blog({ name : 'mediainthenews' })"><a>Media</a></li>
+          <li ng-click="changeURL('workshop')"><a>Workshops</a></li>
+          <li ng-click="changeURL('brainwave')"><a>Brainwave</a></li>
+          <li ng-click="changeURL('contact')"><a>Contact Us</a></li>
+          <li ui-sref="sitemap"><a>Sitemap</a></li>
         </ul>
 
         <div class="row">
@@ -27,6 +28,6 @@
     </div>
   </div>
 </footer>
-<div  ng-show="template.isLoader"  style="text-align:center"; class="loaderHeader">
- <img src="img/loader.gif" alt="" / style="margin:0 auto;">
+<div ng-show="template.isLoader" style="text-align:center" ; class="loaderHeader">
+  <img src="img/loader.gif" alt="" / style="margin:0 auto;">
 </div>

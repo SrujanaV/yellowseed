@@ -1,67 +1,68 @@
-
-<embed class="hidden-xs contact_flying" src="img/home-page/contact-fly.svg" type="image/svg+xml" />
-<div class="visible-xs contact_flying"><img src="img/home-page/mobilecontactfly.svg"></div>
+<!-- <embed class="hidden-xs contact_flying" src="img/home-page/contact-fly.svg" type="image/svg+xml" />
+<div class="visible-xs contact_flying"><img src="img/home-page/mobilecontactfly.svg"></div> -->
 <div class="container">
   <div class="contact-inside">
-  <div class="row">
-    <div class="col-md-offset-1 col-md-5">
-      <h1 class="">
-        Contact
-      </h1>
+    <div class="row">
+      <div class="col-md-offset-1 col-md-5">
+        <h1 class="">
+          Contact
+        </h1>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-offset-1 col-md-5 pr60">
-      <p>
-          We like to see ourselves as explorers. Our constant search for quality and our commitment to creating relevant, engaging content is what has made us what we are today. If you find a little bit of us in you, let’s collaborate and spread the vibe. 
-      </p>
-      <div class="info">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-5 pr60">
         <p>
-          To begin a conversation,
-          <br> call us on
-          <a href="tel:+917738392744">+91 77 3839 2744 / +91 98 9233 8317</a> or
-          <br> write to us at
-          <a class="yellow" style="color:#ffca08;" href="mailto:contact@itsyellowseed.com,asif@itsyellowseed.com,aashutosh@itsyellowseed.com">contact@itsyellowseed.com</a>
+          We like to see ourselves as explorers. Our constant search for quality and our commitment to creating relevant, engaging
+          content is what has made us what we are today. If you find a little bit of us in you, let’s collaborate and spread
+          the vibe.
         </p>
+        <div class="info">
+          <p>
+            To begin a conversation,
+            <br> call us on
+            <a href="tel:+917738392744">+91 77 3839 2744 / +91 98 9233 8317</a> or
+            <br> write to us at
+            <a class="yellow" style="color:#ffca08;" href="mailto:contact@itsyellowseed.com,asif@itsyellowseed.com,aashutosh@itsyellowseed.com">contact@itsyellowseed.com</a>
+          </p>
+        </div>
+      </div>
+      <form name="formName" ng-submit="submitForm(formData);" ng-if="!formSubmitted">
+        <div class="col-md-3 pl0">
+          <div class="form-group" ng-class="{'form-invalid': formName.name.$invalid && formName.name.$touched}">
+            <input type="text" name="name" class="form-control" ng-model="formData.name" placeholder="Name*" required>
+          </div>
+          <div class="form-group" ng-class="{'form-invalid': formName.mobile.$invalid && formName.mobile.$touched}">
+            <input type="text" name="mobile" class="form-control" ng-model="formData.mobile" placeholder="Mobile No.*" required>
+          </div>
+          <div class="select-cat form-group">
+            <ui-select name="category" class="select-field" ng-model="formData.categories">
+              <ui-select-match placeholder="Category*">
+                <span ng-if="$select.selected.name">{{$select.selected.name}}</span>
+                <span ng-if="!$select.selected.name">{{$select.selected}}</span>
+              </ui-select-match>
+              <ui-select-choices repeat="item in itemArray">
+                <span class="select-field" ng-bind="item.name"></span>
+              </ui-select-choices>
+            </ui-select>
+            <span ng-if="validate && !formData.categories" style="color:red;">Please select category</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="form-group" ng-class="{'form-invalid': formName.email.$invalid && formName.email.$touched}">
+            <input type="email" name="email" class="form-control" ng-model="formData.email" placeholder="Email*" required>
+          </div>
+          <div class="form-group" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
+            <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Message*" required></textarea>
+          </div>
+          <button type="submit" class="btn btn2 pull-right btn-full hidden-sm hidden-xs" name="submit" ng-click="validate=true">Submit</button>
+          <button type="submit" class="btn btn2 btn-full visible-sm visible-xs btn-ipad" name="submit" ng-click="validate=true">Submit</button><br>
+        </div>
+      </form>
+      <div class="form-submission text-center" ng-if="formSubmitted">
+        <h3 class="color-white">Thanks for reaching out to us.
+          <br>We'll connect with you soon</h3>
       </div>
     </div>
-    <form name="formName" ng-submit="submitForm(formData);" ng-if="!formSubmitted">
-      <div class="col-md-3 pl0">
-        <div class="form-group" ng-class="{'form-invalid': formName.name.$invalid && formName.name.$touched}">
-          <input type="text" name="name" class="form-control" ng-model="formData.name" placeholder="Name*" required>
-        </div>
-        <div class="form-group" ng-class="{'form-invalid': formName.mobile.$invalid && formName.mobile.$touched}">
-          <input type="text" name="mobile" class="form-control" ng-model="formData.mobile" placeholder="Mobile No.*" required>
-        </div>
-        <div class="select-cat form-group">
-          <ui-select class="select-field" ng-model="formData.categories">
-            <ui-select-match placeholder="Category*">
-              <span ng-if="$select.selected.name">{{$select.selected.name}}</span>
-              <span ng-if="!$select.selected.name">{{$select.selected}}</span>
-            </ui-select-match>
-            <ui-select-choices repeat="item in itemArray">
-              <span class="select-field" ng-bind="item.name"></span>
-            </ui-select-choices>
-          </ui-select>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12 col-xs-12">
-        <div class="form-group" ng-class="{'form-invalid': formName.email.$invalid && formName.email.$touched}">
-          <input type="email" name="email" class="form-control" ng-model="formData.email" placeholder="Email*" required>
-        </div>
-        <div class="form-group" ng-class="{'form-invalid': formName.summary.$invalid && formName.summary.$touched}">
-          <textarea name="summary" rows="1" cols="40" class="form-control" ng-model="formData.summary" placeholder="Message*" required></textarea>
-        </div>
-        <button type="submit" class="btn btn2 pull-right btn-full hidden-sm hidden-xs" name="submit" ng-disabled="formName.$invalid">Submit</button>
-        <button type="submit" class="btn btn2 btn-full visible-sm visible-xs btn-ipad" name="submit" ng-disabled="formName.$invalid">Submit</button><br>
-
-      </div>
-    </form>
-    <div class="form-submission text-center" ng-if="formSubmitted">
-      <h3 class="color-white">Thanks for reaching out to us.
-        <br>We'll connect with you soon</h3>
-    </div>
-  </div>
   </div>
 </div>
 <embed class="hidden-xs contact-image" src="img/home-page/contact.svg" type="image/svg+xml" />

@@ -36,7 +36,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             controller: 'DigitalCtrl'
         })
         .state('branded-content', {
-        url: "/branded-content",
+            url: "/branded-content",
             templateUrl: "views/template.html",
             controller: 'BrandedContentCtrl'
         })
@@ -75,7 +75,16 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'WeBelieveCtrl'
         })
-
+        .state('sitemap', {
+            url: "/sitemap",
+            templateUrl: "views/template.html",
+            controller: 'SitemapCtrl'
+        })
+        .state('error-page', {
+            url: "/error-page",
+            templateUrl: "views/template.html",
+            controller: 'ErrorPageCtrl'
+        })
         .state('blog', {
             url: "/blog/:name",
             templateUrl: "views/template.html",
