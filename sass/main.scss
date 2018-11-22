@@ -2042,10 +2042,18 @@ footer {
 }
 
 .box-white {
-  border-top: solid 20px black;
   background: #fff;
   padding: 30px;
   margin: 0px 0 20px;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .clients {

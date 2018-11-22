@@ -888,24 +888,24 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             if (data.value) {
                 $scope.brand = data.data.results;
                 $scope.brand = _.orderBy($scope.brand, ['order'], ['desc']);
-                $scope.brand = _.chunk($scope.brand, 9);
-                for (var i = 0; i < $scope.brand.length; i++) {
-                    $scope.brand[i] = _.chunk($scope.brand[i], 3);
-                }
+                $scope.brand = _.chunk($scope.brand, 3);
+                // for (var i = 0; i < $scope.brand.length; i++) {
+                //     $scope.brand[i] = _.chunk($scope.brand[i], 3);
+                // }
                 TemplateService.removeLoader();
             }
         });
-        NavigationService.getAllBrand(function (data) {
-            if (data.value) {
-                $scope.brands = data.data.results;
-                $scope.brands = _.orderBy($scope.brands, ['order'], ['desc']);
-                $scope.brands = _.chunk($scope.brands, 4);
-                for (var i = 0; i < $scope.brands.length; i++) {
-                    $scope.brands[i] = _.chunk($scope.brands[i], 2);
-                }
-                TemplateService.removeLoader();
-            }
-        });
+        // NavigationService.getAllBrand(function (data) {
+        //     if (data.value) {
+        //         $scope.brands = data.data.results;
+        //         $scope.brands = _.orderBy($scope.brands, ['order'], ['desc']);
+        //         // $scope.brands = _.chunk($scope.brands, 4);
+        //         for (var i = 0; i < $scope.brands.length; i++) {
+        //             $scope.brands[i] = _.chunk($scope.brands[i], 2);
+        //         }
+        //         TemplateService.removeLoader();
+        //     }
+        // });
 
         $scope.changeURL = function (id) {
             $location.path("" + id);
@@ -916,25 +916,25 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             if (data.value) {
                 $scope.agency = data.data.results;
                 $scope.agency = _.orderBy($scope.agency, ['order'], ['desc']);
-                $scope.agency = _.chunk($scope.agency, 9);
-                for (var i = 0; i < $scope.agency.length; i++) {
-                    $scope.agency[i] = _.chunk($scope.agency[i], 3);
-                }
+                $scope.agency = _.chunk($scope.agency, 3);
+                // for (var i = 0; i < $scope.agency.length; i++) {
+                //     $scope.agency[i] = _.chunk($scope.agency[i], 3);
+                // }
                 TemplateService.removeLoader();
             }
         });
 
-        NavigationService.getAllAgency(function (data) {
-            if (data.value) {
-                $scope.agencies = data.data.results;
-                $scope.agencies = _.orderBy($scope.agencies, ['order'], ['desc']);
-                $scope.agencies = _.chunk($scope.agencies, 4);
-                for (var i = 0; i < $scope.agencies.length; i++) {
-                    $scope.agencies[i] = _.chunk($scope.agencies[i], 2);
-                }
-                TemplateService.removeLoader();
-            }
-        });
+        // NavigationService.getAllAgency(function (data) {
+        //     if (data.value) {
+        //         $scope.agencies = data.data.results;
+        //         $scope.agencies = _.orderBy($scope.agencies, ['order'], ['desc']);
+        //         $scope.agencies = _.chunk($scope.agencies, 4);
+        //         for (var i = 0; i < $scope.agencies.length; i++) {
+        //             $scope.agencies[i] = _.chunk($scope.agencies[i], 2);
+        //         }
+        //         TemplateService.removeLoader();
+        //     }
+        // });
 
         $scope.awsomebrands = [{
             img: "img/home-page/clients/1.png",

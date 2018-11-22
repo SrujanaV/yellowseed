@@ -186,75 +186,27 @@
             </p>
         </div>
     </div> -->
+
+
     <div class="container">
         <div class="box-white">
-            <div class="row padd-bt-50">
-                <div class="col-md-4">
+            <div class="bg-black">AGENCIES</div>
+            <div class="row padd-bt-50" ng-repeat="slide in agency track by $index">
+                <div class="col-md-4" ng-repeat="row in slide track by $index">
                     <div class="clients">
-                        <div class="clients-image padding-20"><img class="img-responsive" src="img/home-page/clients/1.png"></div>
-                        <div class="clients-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="clients">
-                        <div class="clients-image padding-20"><img class="img-responsive" src="img/home-page/clients/2.jpg"></div>
-                        <div class="clients-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="clients">
-                        <div class="clients-image padding-20"><img class="img-responsive" src="img/home-page/clients/3.jpg"></div>
-                        <div class="clients-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                        <div class="clients-image padding-20"><img class="img-responsive" ng-src="{{row.logo|uploadpath}}"></div>
+                        <div class="clients-content" ng-bind-html="row.content | rawHtml"></div>
                     </div>
                 </div>
             </div>
-            <div class="row padd-bt-50">
-                <div class="col-md-4">
+        </div>
+        <div class="box-white">
+            <div class="bg-black">BRANDS</div>
+            <div class="row padd-bt-50" ng-repeat="slide in brand track by $index">
+                <div class="col-md-4" ng-repeat="row in slide track by $index">
                     <div class="clients">
-                        <div class="clients-image padding-20"><img class="img-responsive" src="img/home-page/clients/4.jpg"></div>
-                        <div class="clients-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="clients">
-                        <div class="clients-image padding-20"><img class="img-responsive" src="img/home-page/clients/5.jpg"></div>
-                        <div class="clients-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="clients">
-                        <div class="clients-image padding-20"><img class="img-responsive" src="img/home-page/clients/6.jpg"></div>
-                        <div class="clients-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                        <div class="clients-image padding-20"><img class="img-responsive" ng-src="{{row.logo|uploadpath}}"></div>
+                        <div class="clients-content" ng-bind-html="row.content | rawHtml"></div>
                     </div>
                 </div>
             </div>
