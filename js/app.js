@@ -80,8 +80,8 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'SitemapCtrl'
         })
-        .state('error-page', {
-            url: "/error-page",
+        .state('404', {
+            url: "/404",
             templateUrl: "views/template.html",
             controller: 'ErrorPageCtrl'
         })

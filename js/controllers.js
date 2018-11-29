@@ -380,7 +380,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     })
     .controller('ErrorPageCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
-        $scope.template = TemplateService.changecontent("error-page");
+        $scope.template = TemplateService.changecontent("404");
         $scope.menutitle = NavigationService.makeactive("Error");
         TemplateService.title = $scope.menutitle;
         TemplateService.header = "";
